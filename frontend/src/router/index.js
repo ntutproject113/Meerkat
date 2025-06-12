@@ -4,7 +4,7 @@ import Planning from '../views/Planning.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/Planning', name: 'Planning', component: Planning }
+  { path: '/planning', name: 'Planning', component: Planning }
 ]
 
 const router = createRouter({
