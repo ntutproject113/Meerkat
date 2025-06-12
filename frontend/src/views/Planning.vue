@@ -21,28 +21,28 @@ const onMouseLeave = () => {
 </script>
 
 <template>
-    <!--地球-->
     <div>
-        <img :src="imgSrc" alt="成就" class="earth"
-        :class="{ 'earth-hover': isHover }"
-        @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
-    </div>
-    <!--ToDoList-->
-    <div>
-        <img src="../assets/images/plan/Todolist.png" alt="ToDoList" class="todo">
+        <!--地球-->
+        <div>
+            <img :src="imgSrc" alt="成就" class="earth"
+            :class="{ 'earth-hover': isHover }"
+            @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
+        </div>
+        <!--ToDoList-->
+        <div>
+            <img src="../assets/images/plan/Todolist.png" alt="ToDoList" class="todo">
 
-        <ul>
-            <li>第一項</li>
-            <li>第二項</li>
-            <li>第三項</li>
-        </ul>
+            <ul>
+                <li>第一項</li>
+                <li>第二項</li>
+                <li>第三項</li>
+            </ul>
+        </div>
+        <!--目標牌-->
+        <div>
+            <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
+        </div>
     </div>
-    <!--目標牌-->
-    <div>
-        <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
-    </div>
-    
-    
 </template>
 
 <style scoped>
