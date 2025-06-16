@@ -1,29 +1,37 @@
 <script setup>
+import Menu from '../components/Menu.vue';
 
 </script>
 
 <template>
-    <div>
+    <div class="page-wrapper">
+        <Menu />
         <div class = "half-view">
             <div class = "blackboardcontainer">
-                <img src="../assets/首頁/blackboard.png" alt="黑板" class ="blackboard" />
+                <img src="../assets/images/home/blackboard.png" alt="黑板" class ="blackboard" />
             </div>
             <div class = "meerkatcontainer">
-                <img src="../assets/首頁/meerkathalf.png" alt="小獴" class ="meerkathalf" />
+                <img src="../assets/images/home/meerkathalf.png" alt="小獴" class ="meerkathalf" />
             </div>
         </div>
         <div class = "full-view">
             <div class = "blackboardcontainer">
-                <img src="../assets/首頁/blackboard.png" alt="黑板" class ="blackboard" />
+                <img src="../assets/images/home/blackboard.png" alt="黑板" class ="blackboard" />
             </div>
             <div class = "meerkatcontainer">
-                <img src="../assets/首頁/meerkatfull.png" alt="小獴" class ="meerkatfull" />
+                <img src="../assets/images/home/meerkatfull.png" alt="小獴" class ="meerkatfull" />
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+    .page-wrapper {
+    background-color: #FFFCBE;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    }
     /* 桌機畫面（預設） */
     .half-view {
         display: block;
@@ -77,13 +85,13 @@
             display: block;
         }
     }
-</style>
-
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        background-color:#FFFCBE ;
-        min-height: 100vh;
+    :global(html),
+    :global(body) {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FFFCBE; /* 可有可無，看是否要統一 */
     }
 </style>
+
+
