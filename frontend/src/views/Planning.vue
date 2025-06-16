@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from 'vue';
+import Menu from '../components/Menu.vue';
 
 //地球hover圖片
 const normalImg = new URL('../assets/images/plan/地球.png', import.meta.url).href
@@ -21,7 +22,8 @@ const onMouseLeave = () => {
 </script>
 
 <template>
-    <div>
+    <div class="page-wrapper">
+        <Menu />
         <!--地球-->
         <div>
             <img :src="imgSrc" alt="成就" class="earth"
@@ -46,6 +48,12 @@ const onMouseLeave = () => {
 </template>
 
 <style scoped>
+.page-wrapper {
+    background-color: #210E59;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    }
 .earth {
   position: absolute;
   left: 0;
@@ -95,11 +103,6 @@ ul{
   font-size:24px;
    
 }
+
 </style>
 
-<style>
-html,body{
-    min-height: 100vh; 
-    background-color: #210E59; 
-}
-</style>
