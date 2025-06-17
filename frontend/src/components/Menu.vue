@@ -31,7 +31,7 @@ const toggleMenu = () => {
 
 // 側邊欄選單資料
 const menuItems = [
-  { img: new URL('../assets/images/menu/home.png', import.meta.url).href, link:'/home'},
+  { img: new URL('../assets/images/menu/home.png', import.meta.url).href, link:'/'},
   { img: new URL('../assets/images/menu/rent.png', import.meta.url).href },
   { img: new URL('../assets/images/menu/intern.png', import.meta.url).href },
   { img: new URL('../assets/images/menu/scholarship.png', import.meta.url).href },
