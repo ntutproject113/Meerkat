@@ -6,14 +6,6 @@ import Menu from '../components/Menu.vue';
 <template>
     <div class="page-wrapper">
         <Menu />
-        <div class = "half-view">
-            <div class = "blackboardcontainer">
-                <img src="../assets/images/home/blackboard.png" alt="黑板" class ="blackboard" />
-            </div>
-            <div class = "meerkatcontainer">
-                <img src="../assets/images/home/meerkathalf.png" alt="小獴" class ="meerkathalf" />
-            </div>
-        </div>
         <div class = "full-view">
             <div class = "blackboardcontainer">
                 <img src="../assets/images/home/blackboard.png" alt="黑板" class ="blackboard" />
@@ -32,59 +24,38 @@ import Menu from '../components/Menu.vue';
     height: 100%;
     width: 100%;
     }
-    /* 桌機畫面（預設） */
-    .half-view {
-        display: block;
-    }
-    .full-view {
-        display: none;
-    }
-
     /* 黑板與獴獴的設定 */
     .blackboardcontainer {
-        display: flex;
+        display: flex; /* 讓container中的內容可以更隨意地排列，原本div預設是垂直排列，img預設是水平排列 */
         justify-content: center; /* 水平置中 */
         height: auto;           /* 要有高度才能垂直置中 */
-        z-index: 1;
+        z-index: 1;  /* 數字越大越上層 */
     }
     .blackboard{
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        position: relative;
+        width: 100%;  /* 寬度100%填滿父容器 */
+        height: auto;  /* 高度由原比例自動縮放 */
+        object-fit: contain;  /* 在contain中完整顯示(不裁切) */
+        position: relative;  /* 讓position: absolute定位用的 */
     }
     .meerkatcontainer{
         display: flex;
-        justify-content: center; /* 水平置中 */
-        height: auto;           /* 要有高度才能垂直置中 */
+        justify-content: center;
+        width: 100vw;   /* 100% 視窗寬度 */
+        height: 85vh;  /* 100% 視窗高度 */
         z-index: 2;
-        left: 50%;
-    }
-    .meerkathalf{
-        width: 30%;
-        height: auto;
-        object-fit: contain;
-        bottom:0;
         position: absolute;
+        left: 50%; transform: translateX(-50%);
+        top: 15%
     }
     .meerkatfull{
-        width: 60%;
+        width: 50%;
         height: auto;
-        object-fit: contain;
-        bottom: 0;
-        position: absolute;
-        transform: translatey(15%);
+        object-fit: cover;
+        object-position: center top;  /* 保留圖片上半部，底部被裁掉 */
+        z-index: 2;
     }
 
-    /* 小螢幕時切換為 mobile 畫面 */
-    @media (max-width: 768px) {
-        .half-view {
-            display: none;
-        }
-        .full-view{
-            display: block;
-        }
-    }
+    
     :global(html),
     :global(body) {
     margin: 0;
