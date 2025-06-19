@@ -85,7 +85,7 @@ const menuItems = [
 }
 
 .menu-img {
-  width: 100px;
+  width: 55%;
   height: auto;
   margin-top:5px ;
   margin-bottom: 5px;
