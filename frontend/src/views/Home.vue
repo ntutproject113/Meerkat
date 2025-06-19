@@ -337,7 +337,7 @@ const isRentHover = ref(false)
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #FFFCBE; /* 可有可無，看是否要統一 */
+    
     }
 </style>
 
