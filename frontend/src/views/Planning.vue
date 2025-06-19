@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from 'vue';
+import {ref,reactive} from 'vue';
 import Menu from '../components/Menu.vue';
 
 //地球hover圖片
@@ -19,6 +19,15 @@ const onMouseLeave = () => {
   isHover.value = false
 }
 
+
+// todolist內容 先假裝是從後端來的資料
+const items = reactive([
+  { label: '背英文單字', checked: false },
+  { label: '學習HTML', checked: false },
+  { label: '學習JAVA', checked: true },
+  { label: '練習題目', checked: false }
+])
+
 </script>
 
 <template>
@@ -31,18 +40,52 @@ const onMouseLeave = () => {
             @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
         </div>
         <!--ToDoList-->
-        <div>
-            <img src="../assets/images/plan/Todolist.png" alt="ToDoList" class="todo">
-
-            <ul>
-                <li>第一項</li>
-                <li>第二項</li>
-                <li>第三項</li>
+        <div class="todolist">
+            <img src="../assets/images/plan/Todolist.png" alt="ToDoList" class="todolist-img">
+             <ul>
+                <li v-for="(item, index) in items" :key="index">
+                <label class="custom-checkbox">
+                    <input
+                    type="checkbox"
+                    v-model="item.checked"
+                    />
+                    <span class="checkmark"></span>
+                    {{ item.label }}
+                </label>
+                </li>
             </ul>
         </div>
         <!--目標牌-->
         <div>
             <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
+        </div>
+        <!--為你推薦-->
+        <div class="recommand">
+            <img src="../assets/images/plan/rec_background.png" alt="背景" class="rec-background">
+            <img src="../assets/images/plan/recommand_icon.png" alt="推薦圖示" class="recommand-icon">
+            <p>
+            <strong style="color: #703C05; font-size: 48px ; position: absolute; top: 70px; left: 160px;">為您推薦</strong>
+            </p>
+            <div class="grid-container">
+                <div class="image-box">
+                    <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" />
+                    <div class="image-text">租屋</div>
+                </div>
+                <div class="image-box">
+                    <img src="../assets/images/plan/rec_content.png" alt="實習推薦" />
+                    <div class="image-text">實習</div>
+                </div>
+                <div class="image-box">
+                    <img src="../assets/images/plan/rec_content.png" alt="比賽推薦" />
+                    <div class="image-text">比賽</div>
+                </div>
+                <div class="image-box">
+                    <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" />
+                    <div class="image-text">獎學金</div>
+                </div>
+               
+            </div>
+
         </div>
     </div>
 </template>
@@ -51,9 +94,9 @@ const onMouseLeave = () => {
 .page-wrapper {
     background-color: #210E59;
     min-height: 100vh;
-    height: 100%;
     width: 100%;
     }
+
 .earth {
   position: absolute;
   left: 0;
@@ -75,34 +118,139 @@ const onMouseLeave = () => {
     position: absolute;
     right:10px;
     top: 0px;
-    height:300px;
+    height:250px;
     width:400px;
 }
-.todo{
+.todolist{
     position: absolute;
     left: 350px;
-    top: 60px;
-    height: 130px;
-    width: 350px;
-}
-ul{
-    position: absolute;
-    left: 350px;
-    top: 200px;
     color:white;
-
 }
- li{
-  list-style: none;
-  background: url('../assets/images/plan/checkbox.png') no-repeat left center;
-  background-size: 40px 40px;
+.todolist-img{
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 12px;
+}
+.custom-checkbox {
   display: flex;
   align-items: center;
-  padding-left: 48px;
-  height: 60px;
-  font-size:24px;
-   
+  position: relative;
+  gap:2px;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 24px;
+  
 }
 
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox .checkmark {
+  flex-shrink:0;
+  height: 50px;
+  width: 50px;
+  background-image: url('../assets/images/plan/unchecked.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-image: url('../assets/images/plan/checked.png');
+}
+
+.recommand{
+    position:relative;
+    left: 350px;
+    top: 500px;
+    width:800px;
+    height: 800px;
+    z-index: 1;
+    
+}
+.rec-background{
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    display:block;
+    position: absolute;
+    z-index:0;
+}
+
+.recommand-icon{
+        position: absolute;
+        top:60px;
+        left:75px;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+}
+.rec-content{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+    z-index: 2;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: fit-content;
+  margin:0 auto;
+  z-index:1;
+  position: relative;
+  padding-top: 160px;
+  right:10px;
+}
+
+.image-box {
+  position: relative;
+  width: 300px; 
+}
+
+.image-box img {
+  width: 320px;
+  height:270px;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 42px;
+  left: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0px;
+  font-size: 28px;
+}
+
+
 </style>
+
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+</style>
+
 
