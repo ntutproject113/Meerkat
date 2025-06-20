@@ -1,7 +1,27 @@
 <script setup>
 import {ref,reactive} from 'vue';
+import { useRouter } from 'vue-router';
 import Menu from '../components/Menu.vue';
 
+
+
+const router = useRouter()
+
+const goToIsland = () => {
+  router.push({ name: 'Island' })
+}
+const goToRenting = () => {
+  router.push({ name: 'Renting' })
+}
+ const goToIntern =() =>{
+  router.push({name:'Intern'})
+ }
+ const goToCompetition =() =>{
+  router.push({name:'Competition'})
+ }
+ const goToScholarship =() =>{
+  router.push({name:'Scholarship'})
+ }
 //地球hover圖片
 const normalImg = new URL('../assets/images/plan/地球.png', import.meta.url).href
 const hoverImg = new URL('../assets/images/plan/地球轉.png', import.meta.url).href
@@ -25,7 +45,7 @@ const items = reactive([
   { label: '背英文單字', checked: false },
   { label: '學習HTML', checked: false },
   { label: '學習JAVA', checked: true },
-  { label: '練習題目', checked: false }
+  { label: '財務管理', checked: false }
 ])
 
 </script>
@@ -37,7 +57,8 @@ const items = reactive([
         <div>
             <img :src="imgSrc" alt="成就" class="earth"
             :class="{ 'earth-hover': isHover }"
-            @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
+            @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"
+            @click="goToIsland">
         </div>
         <!--ToDoList-->
         <div class="todolist">
@@ -67,19 +88,19 @@ const items = reactive([
             <strong style="color: #703C05; font-size: 48px ; position: absolute; top: 70px; left: 160px;">為您推薦</strong>
             </p>
             <div class="grid-container">
-                <div class="image-box">
+                <div class="image-box" @click="goToRenting">
                     <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" />
                     <div class="image-text">租屋</div>
                 </div>
-                <div class="image-box">
+                <div class="image-box" @click="goToIntern">
                     <img src="../assets/images/plan/rec_content.png" alt="實習推薦" />
                     <div class="image-text">實習</div>
                 </div>
-                <div class="image-box">
+                <div class="image-box" @click="goToCompetition">
                     <img src="../assets/images/plan/rec_content.png" alt="比賽推薦" />
                     <div class="image-text">比賽</div>
                 </div>
-                <div class="image-box">
+                <div class="image-box" @click="goToScholarship">
                     <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" />
                     <div class="image-text">獎學金</div>
                 </div>
