@@ -5,6 +5,7 @@ import Renting from '../views/Renting.vue'
 import Intern from '../views/Intern.vue'
 import Scholarships from '../views/Scholarships.vue'
 import Competition from '../views/Competition.vue'
+import Island from '../views/Island.vue'
 
 
 const routes = [
@@ -13,7 +14,8 @@ const routes = [
   { path: '/renting', name: 'Renting', component: Renting },
   { path: '/intern', name: 'Intern', component: Intern },
   { path: '/scholarships', name: 'Scholarships', component: Scholarships },
-  { path: '/competition', name: 'Competition', component: Competition }
+  { path: '/competition', name: 'Competition', component: Competition },
+  { path: '/island', name: 'Island', component: Island }
 ]
 
 const router = createRouter({

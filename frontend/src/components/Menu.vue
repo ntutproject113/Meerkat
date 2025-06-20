@@ -32,10 +32,10 @@ const toggleMenu = () => {
 // 側邊欄選單資料
 const menuItems = [
   { img: new URL('../assets/images/menu/home.png', import.meta.url).href, link:'/'},
-  { img: new URL('../assets/images/menu/rent.png', import.meta.url).href },
-  { img: new URL('../assets/images/menu/intern.png', import.meta.url).href },
-  { img: new URL('../assets/images/menu/scholarship.png', import.meta.url).href },
-  { img: new URL('../assets/images/menu/competition.png', import.meta.url).href },
+  { img: new URL('../assets/images/menu/rent.png', import.meta.url).href,link:'/renting' },
+  { img: new URL('../assets/images/menu/intern.png', import.meta.url).href,link:'/intern' },
+  { img: new URL('../assets/images/menu/scholarship.png', import.meta.url).href,link:'/scholarships' },
+  { img: new URL('../assets/images/menu/competition.png', import.meta.url).href, link:'/competition' },
   { img: new URL('../assets/images/menu/plan.png', import.meta.url).href ,link:'/planning' },
   { img: new URL('../assets/images/menu/login.png', import.meta.url).href }
 ]
