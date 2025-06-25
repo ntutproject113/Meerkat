@@ -3,7 +3,10 @@
 </script>
 
 <template>
-
+    <div>
+        <Menu />
+        <div>這是比賽的頁面</div>
+    </div>
 </template>
 
 <style scoped>
