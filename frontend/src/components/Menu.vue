@@ -37,7 +37,7 @@ const menuItems = [
   { img: new URL('../assets/images/menu/scholarship.png', import.meta.url).href,link:'/scholarships' },
   { img: new URL('../assets/images/menu/competition.png', import.meta.url).href, link:'/competition' },
   { img: new URL('../assets/images/menu/plan.png', import.meta.url).href ,link:'/planning' },
-  { img: new URL('../assets/images/menu/login.png', import.meta.url).href }
+  { img: new URL('../assets/images/menu/login.png', import.meta.url).href, link:'/logIn' }
 ]
 </script>
 

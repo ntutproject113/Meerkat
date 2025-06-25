@@ -3,7 +3,10 @@
 </script>
 
 <template>
-
+    <div>
+        <Menu />
+        <div>這是獎學金的頁面</div>
+    </div>
 </template>
 
 <style scoped>

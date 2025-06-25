@@ -23,26 +23,26 @@ const isRentHover = ref(false)
                     @mouseleave="isMeerkatHover = false"
                 />
             </div>
-            <div class = "rentcontainer">
+            <RouterLink to ="/renting" class = "rentcontainer">
                 <img src="../assets/images/home/rent1.png" alt = "租屋1" class = "rent1"/>
                 <img src="../assets/images/home/rent2.png" alt = "租屋2" class = "rent2"/>
                 <img src="../assets/images/home/rent.png" alt = "租屋文字" class = "rent"/>
-            </div>
-            <div class = "interncontainer">
+            </RouterLink>
+            <RouterLink to = "/intern" class = "interncontainer">
                 <img src="../assets/images/home/intern1.png" alt = "實習1" class = "intern1">
                 <img src="../assets/images/home/intern2.png" alt = "實習2" class = "intern2">
                 <img src="../assets/images/home/intern.png" alt = "實習文字" class = "intern">
-            </div>
-            <div class = "rewardcontainer">
+            </RouterLink>
+            <RouterLink to = "scholarships" class = "rewardcontainer">
                 <img src="../assets/images/home/reward1.png" alt = "獎學金1" class = "reward1">
                 <img src="../assets/images/home/reward2.png" alt = "獎學金2" class = "reward2">
                 <img src="../assets/images/home/reward.png" alt = "獎學金文字" class = "reward">
-            </div>
-            <div class = "racecontainer">
+            </RouterLink>
+            <RouterLink to = "competition" class = "racecontainer">
                 <img src="../assets/images/home/race1.png" alt = "比賽1" class = "race1">
                 <img src="../assets/images/home/race2.png" alt = "比賽2" class = "race2">
                 <img src="../assets/images/home/race.png" alt = "比賽文字" class = "race">
-            </div>
+            </RouterLink>
         </div>
     </div>
 </template>
