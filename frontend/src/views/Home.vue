@@ -16,13 +16,15 @@ const isRentHover = ref(false)
             <img src="../assets/images/home/planning.png" alt="學涯規劃文字" class ="planning" />
             <img src="../assets/images/home/context1.png" alt="今日值日生文字" class ="context1" />
             <img src="../assets/images/home/context2.png" alt="小獴文字" class ="context2" />
-            <div class = "meerkatcontainer">
-                <img :src="isMeerkatHover ? glassesMeerkat: meerkat" 
-                    alt="小獴" class ="meerkat"
-                    @mouseenter="isMeerkatHover = true" 
-                    @mouseleave="isMeerkatHover = false"
-                />
-            </div>
+            <RouterLink to = "/logIn">
+                <div class = "meerkatcontainer">
+                    <img :src="isMeerkatHover ? glassesMeerkat: meerkat" 
+                        alt="小獴" class ="meerkat"
+                        @mouseenter="isMeerkatHover = true" 
+                        @mouseleave="isMeerkatHover = false"
+                    />
+                </div>
+            </RouterLink>
             <RouterLink to ="/renting" class = "rentcontainer">
                 <img src="../assets/images/home/rent1.png" alt = "租屋1" class = "rent1"/>
                 <img src="../assets/images/home/rent2.png" alt = "租屋2" class = "rent2"/>
