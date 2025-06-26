@@ -1,5 +1,17 @@
 <script setup>
     import Menu from '../components/Menu.vue';
+    import { ref } from 'vue'
+
+    const username = ref('')  //用來儲存帳號的變數
+    const password = ref('')  //用來儲存密碼的變數
+
+    function login(){
+        if (!username.value || !password.value){
+            alert('請輸入帳號和密碼')
+            return
+        }
+        console.log('登入中...',username.value,password.value)
+    }
 </script>
 
 <template>
@@ -11,6 +23,21 @@
         <img src = "../assets/images/login/password.png" alt = "密碼文字" class = "password">
         <img src = "../assets/images/login/inputbox.png" alt = "輸入框" class="inputbox1">
         <img src = "../assets/images/login/inputbox.png" alt = "輸入框" class="inputbox2">
+        <form @submit.prevent="login" class = "loginform">
+            <input
+                v-model="username" 
+                type="text"
+                class = "inputaccount"
+                required
+            />
+            <input
+                v-model="password"
+                type="password"
+                class = "inputpassword"
+                required
+            />
+            <img src = "../assets/images/login/logInWord.png" type = "submit" class = "logInWord">
+        </form>
     </div>
 </template>
 
@@ -74,6 +101,33 @@
         height: 20%;
         object-fit: contain;
         z-index: 3;
+    }
+    .logInWord{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-21%);
+        height: 14%;
+        object-fit: contain;
+        z-index: 3;
+    }
+    .inputaccount{
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translateX(-6.2%);
+        height: 35px;
+        width: 175px;
+        font-size: 18px;
+        z-index: 4;
+        background-color: transparent;
+        border: transparent;
+        outline: none;
+        color:white;  
+
+    }
+    .inputpassword{
+
     }
 </style>
 
