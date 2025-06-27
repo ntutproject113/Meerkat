@@ -1,4 +1,3 @@
-import requests as req
 import bs4
 from major import getMajor
 from selenium import webdriver
