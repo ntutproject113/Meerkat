@@ -5,7 +5,7 @@
 
     const username = ref('')  //用來儲存帳號的變數
     const password = ref('')  //用來儲存密碼的變數
-    const router = useRouter();  
+    const router = useRouter()
 
     function login(){
         if (!username.value || !password.value){
@@ -13,7 +13,6 @@
             return
         }
         router.push({ name: 'Planning' })
-        console.log('登入中...',username.value,password.value)
     }
 </script>
 
@@ -27,7 +26,7 @@
         <RouterLink to = '/' class="guestlink">
             <img  src = "../assets/images/login/GuestWord.png" alt = "訪客按鈕" class = "guest">
         </RouterLink>
-        <RouterLink to = "">
+        <RouterLink to = "/SignIn" class = "signInlink">
             <img src = "../assets/images/login/signUpWord.png" alt = "登入按鈕" class = "signIn">
         </RouterLink>
         <form @submit.prevent="login" class = "loginform">
