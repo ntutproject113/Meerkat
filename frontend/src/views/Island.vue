@@ -9,6 +9,10 @@ const stageRef = ref(null)
 function goBack() {
   router.back() // ⬅️ 回到上一頁
 }
+function handleIslandClick(id) {
+  // 跳轉到 InsideIsland.vue，並帶上 islandId
+  router.push({ name: 'InsideIsland', query: { islandId: id } })
+}
 
 // 假裝這是後端傳來的資料
 const imageDataFromServer = [
@@ -148,6 +152,7 @@ onMounted(() => {
 
 <template>
     <div>
+      <!--回前頁的箭頭-->
        <img
             src="../assets/images/plan/arrow.png"
             class="back-arrow"
@@ -185,6 +190,7 @@ onMounted(() => {
               height: item.height,
               draggable: false
             }"
+            @click="() => handleIslandClick(item.id)"
           />  
           <v-image
             v-for="item in decorations"
