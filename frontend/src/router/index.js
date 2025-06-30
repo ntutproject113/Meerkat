@@ -18,7 +18,9 @@ const routes = [
   { path: '/competition', name: 'Competition', component: Competition },
   { path: '/island', name: 'Island', component: Island },
   { path: '/logIn', name: 'LogIn', component: LogIn},
-  { path: '/signIn', name: 'SignIn', component: SignIn}
+  { path: '/signIn', name: 'SignIn', component: SignIn},
+  {path: '/inside-island', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入
+}
 ]
 
 const router = createRouter({
