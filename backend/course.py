@@ -1,6 +1,8 @@
 import bs4
 from major import getMajor
 from selenium import webdriver
+from selenium.webdriver.edge.service import Service
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,8 +12,10 @@ import json
 options = Options()
 options.add_argument("--headless")  
 options.add_argument("--disable-gpu")
-options.use_chromium = True  
-driver = webdriver.Edge(options=options)
+service = Service(EdgeChromiumDriverManager().install())
+
+# 建立 driver
+driver = webdriver.Edge(service=service, options=options)
 
 majorInfo = getMajor(driver)
 courseTypeCH = {
