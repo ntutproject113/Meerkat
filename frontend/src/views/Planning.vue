@@ -65,7 +65,7 @@ const items = reactive([
             <img src="../assets/images/plan/Todolist.png" alt="ToDoList" class="todolist-img">
              <ul>
                 <li v-for="(item, index) in items" :key="index">
-                <label class="custom-checkbox">
+                <label class="custom-checkbox" >
                     <input
                     type="checkbox"
                     v-model="item.checked"

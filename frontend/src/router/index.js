@@ -7,7 +7,7 @@ import Scholarships from '../views/Scholarships.vue'
 import Competition from '../views/Competition.vue'
 import Island from '../views/Island.vue'
 import LogIn from '../views/LogIn.vue'
-
+import SignIn from '../views/SignIn.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -17,7 +17,10 @@ const routes = [
   { path: '/scholarships', name: 'Scholarships', component: Scholarships },
   { path: '/competition', name: 'Competition', component: Competition },
   { path: '/island', name: 'Island', component: Island },
-  { path: '/logIn', name: 'LogIn', component: LogIn}
+  { path: '/logIn', name: 'LogIn', component: LogIn},
+  { path: '/signIn', name: 'SignIn', component: SignIn},
+  {path: '/inside-island', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入
+}
 ]
 
 const router = createRouter({
