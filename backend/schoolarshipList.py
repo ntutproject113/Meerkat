@@ -1,6 +1,8 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from bs4 import BeautifulSoup
 import json
 
@@ -8,8 +10,10 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-driver = webdriver.Edge(options=options)
+service = Service(EdgeChromiumDriverManager().install())
 
+# 建立 driver
+driver = webdriver.Edge(service=service, options=options)
 html = "https://www.edu.tw/helpdreams/Grants.aspx?n=2BBF7170197CE7D3&sms=0A01A72AAB9E5CD4"
 driver.get(html)
 time.sleep(2)

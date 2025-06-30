@@ -1,14 +1,17 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from bs4 import BeautifulSoup
 import json
 options = Options()
 options.add_argument("--headless")
 options.add_argument("--disable-gpu")
-options.use_chromium = True
-driver = webdriver.Edge(options=options)
+service = Service(EdgeChromiumDriverManager().install())
 
+# 建立 driver
+driver = webdriver.Edge(service=service, options=options)
 houseRawData = []
 url0="https://rent.houseprice.tw/list/21_usage/5-10-8-12-9-3-7-4-6-1-2-11_zip/?p={page}"
 '''1 中正 2 大同 3中山 4松山 5大安 6萬華 7信義 8士林 9北投 10內湖 11南港 12文山
