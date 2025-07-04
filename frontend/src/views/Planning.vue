@@ -41,13 +41,22 @@ const onMouseLeave = () => {
 
 
 // todolist內容 先假裝是從後端來的資料
-const items = reactive([
-  { label: '背英文單字', checked: false },
-  { label: '學習HTML', checked: false },
-  { label: '學習JAVA', checked: true },
-  { label: '財務管理', checked: false }
+const items = ref([
+  { label: '背英文單字', checked: false, key:'eng'},
+  { label: '學習HTML', checked: false,  key:'html'},
+  { label: '學習JAVA', checked: true, key:'java'  },
+  { label: '財務管理', checked: false, key:'finance' }
 ])
 
+const handleCheck = (item) => {
+  if (!item.checked) {
+    item.checked = true;
+    router.push({ name: 'Island', query: { focus: item.key } });
+  } else {
+    // 如果取消勾選，就只是更新狀態，不跳頁
+    item.checked = false;
+  }
+};
 </script>
 
 <template>
@@ -64,18 +73,19 @@ const items = reactive([
         <div class="todolist">
             <img src="../assets/images/plan/Todolist.png" alt="ToDoList" class="todolist-img">
              <ul>
-                <li v-for="(item, index) in items" :key="index">
+                <li v-for="(item, index) in items" :key="item.key">
                 <label class="custom-checkbox" >
                     <input
                     type="checkbox"
-                    v-model="item.checked"
-                    />
+                    :checked="item.checked" @change="handleCheck(item, index)" />
                     <span class="checkmark"></span>
                     {{ item.label }}
                 </label>
                 </li>
             </ul>
         </div>
+      
+
         <!--目標牌-->
         <div>
             <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
@@ -104,9 +114,7 @@ const items = reactive([
                     <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" />
                     <div class="image-text">獎學金</div>
                 </div>
-               
             </div>
-
         </div>
     </div>
 </template>
@@ -263,6 +271,7 @@ li {
   padding: 5px 0px;
   font-size: 28px;
 }
+
 
 
 </style>
