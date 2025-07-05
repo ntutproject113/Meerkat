@@ -28,11 +28,11 @@ for page in range(1, 3):
         cpPrize = cpPrizeTag.find("span", class_="bh-amount").text.strip() 
         #最高獎金
         cpData = {}
-        cpData["school"] = cpName
+        cpData["competetion"] = cpName
         cpData["content"] = cpContent
         cpData["link"] = cpLink
         cpData["prize"] = cpPrize
         allData.append(cpData)
-with open("competitions.json", "w", encoding="utf-8") as f:
+with open("competition.json", "w", encoding="utf-8") as f:
     json.dump(allData, f, ensure_ascii=False, indent=2)        
 driver.quit()
