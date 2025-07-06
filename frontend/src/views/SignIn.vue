@@ -20,7 +20,7 @@
             alert('請完成所有表格')
             return
         }else{
-            router.push({ name: 'Home'})
+            router.push({ name: 'AptitudeTest'})
             console.log(name.value,sex.value,email.value,phone.value,school.value,major,grade.value,interest.value,skill.value,plan.value)
         }
     }

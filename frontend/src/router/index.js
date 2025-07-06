@@ -8,6 +8,8 @@ import Competition from '../views/Competition.vue'
 import Island from '../views/Island.vue'
 import LogIn from '../views/LogIn.vue'
 import SignIn from '../views/SignIn.vue'
+import QA from '../views/Q&A.vue'
+import AptitudeTest from '../views/AptitudeTest.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -19,6 +21,8 @@ const routes = [
   { path: '/island', name: 'Island', component: Island },
   { path: '/logIn', name: 'LogIn', component: LogIn},
   { path: '/signIn', name: 'SignIn', component: SignIn},
+  { path: '/q&a', name: 'Q&A', component: QA},
+  { path: '/aptitudeTest', name: 'AptitudeTest', component:AptitudeTest},
   {path: '/inside-island', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入
 }
 ]
