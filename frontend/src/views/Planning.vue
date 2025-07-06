@@ -1,11 +1,16 @@
 <script setup>
 import {ref,reactive} from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter,useRoute } from 'vue-router';
 import Menu from '../components/Menu.vue';
+import { useTodoStore } from '../stores/todo'
+import { storeToRefs } from 'pinia'
+import { nextTick } from 'vue'
 
 
 
 const router = useRouter()
+const route = useRoute()
+
 
 const goToIsland = () => {
   router.push({ name: 'Island' })
@@ -22,6 +27,8 @@ const goToRenting = () => {
  const goToScholarship =() =>{
   router.push({name:'Scholarship'})
  }
+
+ const islandId = route.query.islandId
 //地球hover圖片
 const normalImg = new URL('../assets/images/plan/地球.png', import.meta.url).href
 const hoverImg = new URL('../assets/images/plan/地球轉.png', import.meta.url).href
@@ -38,20 +45,17 @@ const onMouseLeave = () => {
   imgSrc.value = normalImg
   isHover.value = false
 }
+//todolist在todo.js
+const todoStore = useTodoStore()
+const { items } = storeToRefs(todoStore)
 
-
-// todolist內容 先假裝是從後端來的資料
-const items = ref([
-  { label: '背英文單字', checked: false, key:'eng'},
-  { label: '學習HTML', checked: false,  key:'html'},
-  { label: '學習JAVA', checked: true, key:'java'  },
-  { label: '財務管理', checked: false, key:'finance' }
-])
 
 const handleCheck = (item) => {
   if (!item.checked) {
     item.checked = true;
-    router.push({ name: 'Island', query: { focus: item.key } });
+    setTimeout(() =>{
+    router.push({ name: 'InsideIsland', query: { islandId: item.islandId } })
+  },300)
   } else {
     // 如果取消勾選，就只是更新狀態，不跳頁
     item.checked = false;
@@ -120,12 +124,6 @@ const handleCheck = (item) => {
 </template>
 
 <style scoped>
-.page-wrapper {
-    background-color: #210E59;
-    min-height: 100vh;
-    width: 100%;
-    }
-
 .earth {
   position: absolute;
   left: 0;
@@ -280,6 +278,16 @@ li {
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  background: #210E59; /* 保險起見，讓 body 也有底色 */
+}
+
+.page-wrapper {
+  background-color: #210E59;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
 }
 </style>
 

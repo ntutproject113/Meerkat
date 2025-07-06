@@ -1,12 +1,14 @@
 <script setup>
 //要加上串API
 import { ref,onMounted } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter,useRoute } from 'vue-router';
 
 const router = useRouter();
+const route = useRoute();
 const stageRef = ref(null);
 const backgroundImage = ref(null);
 const pyramidImage = ref(null);
+const islandId = route.query.islandId
 
 // 背景圖片資訊
 const imageWidth = 1440;
