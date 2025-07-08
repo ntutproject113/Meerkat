@@ -16,10 +16,10 @@ function handleIslandClick(id) {
 
 // 假裝這是後端傳來的資料
 const imageDataFromServer = [
-  { src: '../assets/images/plan/HTML.png', x: 2100, y: 2500 },
-  { src: '../assets/images/plan/Java.png', x: 2800, y: 2400 },
-  { src: '../assets/images/plan/finmgt.png', x: 2500, y: 2800 },
-  { src: '../assets/images/plan/island2.png', x: 1800, y: 2000 },
+  { src: '../assets/images/plan/island2.png', x: 1800, y: 2000 ,islandId:0 },
+  { src: '../assets/images/plan/HTML.png', x: 2100, y: 2500 ,islandId:1},
+  { src: '../assets/images/plan/Java.png', x: 2800, y: 2400 ,islandId:2},
+  { src: '../assets/images/plan/finmgt.png', x: 2500, y: 2800 ,islandId:3 },
   { src: '../assets/images/plan/island1.png', x: 3200, y: 3000 },
 ]
 

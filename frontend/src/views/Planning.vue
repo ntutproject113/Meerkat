@@ -7,10 +7,8 @@ import { storeToRefs } from 'pinia'
 import { nextTick } from 'vue'
 
 
-
 const router = useRouter()
 const route = useRoute()
-
 
 const goToIsland = () => {
   router.push({ name: 'Island' })
@@ -48,7 +46,6 @@ const onMouseLeave = () => {
 //todolist在todo.js
 const todoStore = useTodoStore()
 const { items } = storeToRefs(todoStore)
-
 
 const handleCheck = (item) => {
   if (!item.checked) {
@@ -271,7 +268,6 @@ li {
 }
 
 
-
 </style>
 
 <style>
@@ -290,5 +286,6 @@ html, body {
   overflow-x: hidden;
 }
 </style>
+
 
 
