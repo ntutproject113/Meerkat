@@ -3,10 +3,10 @@ import { defineStore } from 'pinia'
 export const useTodoStore = defineStore('todo', {
   state: () => ({
     items: [
-      { label: '背英文單字', checked: false, key: 'eng', islandId: 0 },
-      { label: '學習HTML', checked: false, key: 'html', islandId: 1 },
-      { label: '學習JAVA', checked: true, key: 'java', islandId: 2 },
-      { label: '財務管理', checked: false, key: 'finance', islandId: 3 }
+      { label: '背英文單字', checked: false, key: 'eng', id: 0 },
+      { label: '學習HTML', checked: false, key: 'html', id: 1 },
+      { label: '學習JAVA', checked: true, key: 'java', id: 2 },
+      { label: '財務管理', checked: false, key: 'finance', id: 3 }
     ]
   }),
   actions: {
