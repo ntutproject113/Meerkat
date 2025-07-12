@@ -23,7 +23,9 @@ const routes = [
   { path: '/signIn', name: 'SignIn', component: SignIn},
   { path: '/q&a', name: 'Q&A', component: QA},
   { path: '/aptitudeTest', name: 'AptitudeTest', component:AptitudeTest},
-  {path: '/InsideIsland', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入
+  {path: '/InsideIsland', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入 
+    },
+    {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')
 }
 ]
 

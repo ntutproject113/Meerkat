@@ -25,6 +25,10 @@ const goToRenting = () => {
  const goToScholarship =() =>{
   router.push({name:'Scholarship'})
  }
+ //目標牌去短中長目標
+const goToGoal = () => {
+  router.push({ name: 'Goal' }) // 假設你在 router 設定裡 name 是 Goal
+}
 
  const islandId = route.query.islandId
 //地球hover圖片
@@ -88,7 +92,7 @@ const handleCheck = (item) => {
       
 
         <!--目標牌-->
-        <div>
+        <div @click="goToGoal">
             <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
         </div>
         <!--為你推薦-->
