@@ -55,7 +55,7 @@ const handleCheck = (item) => {
   if (!item.checked) {
     item.checked = true;
     setTimeout(() =>{
-    router.push({ name: 'InsideIsland', query: { islandId: item.islandId } })
+    router.push({ name: 'InsideIsland', query: { islandId: item.id } })
   },300)
   } else {
     // 如果取消勾選，就只是更新狀態，不跳頁
