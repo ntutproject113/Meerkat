@@ -1,8 +1,6 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from bs4 import BeautifulSoup
 import json
 import re
@@ -12,9 +10,7 @@ url = "https://www.reallygood.com.tw/newExam/inside?str=0AB98C37435A1716A3CA5BFE
 options = Options()
 options.add_argument("--headless")  # 無頭模式，不開啟視窗
 options.add_argument("--disable-gpu")
-options.use_chromium = True
-service = Service(EdgeChromiumDriverManager().install())
-driver = webdriver.Edge(service=service, options=options)
+driver = webdriver.Edge( options=options)
 driver.get(url)
 time.sleep(5)  # 等待網頁完整載入
 
@@ -60,5 +56,5 @@ else:
     json_output = json.dumps(results, ensure_ascii=False, indent=2)
 with open("master.json", "w", encoding="utf-8") as f:
     f.write(json_output)
-    
+driver.quit()
  
