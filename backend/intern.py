@@ -2,6 +2,7 @@ import requests as req
 import time
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import json
 
 uri = "mongodb+srv://ntutproject113:113wiwibadbad@meetkats.rven60f.mongodb.net/?retryWrites=true&w=majority&appName=Meetkats"
 
@@ -28,6 +29,7 @@ for page in range(1,4):
     response= req.get(url, headers=headers)
     if response.status_code == 200:
      data = response.json()
+     
      for job in data['data']['list']:
         jobName=job['jobName']
         jobRo=job['jobRo']
@@ -55,14 +57,14 @@ for page in range(1,4):
             'custName': custName,
             'appearDate': appearDate
         })
-
+open("intern.json", "w", encoding="utf-8").write(json.dumps(result, indent=4, ensure_ascii=False))
 db=client.intern
 collection=db.internIFM 
 internDB=collection.insert_many(result)
 print("資料已經寫入MongoDB")
 
 
-#open("intern.json", "w", encoding="utf-8").write(json.dumps(result, indent=4, ensure_ascii=False))
+
 
 
 
