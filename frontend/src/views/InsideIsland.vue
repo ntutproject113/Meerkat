@@ -1,12 +1,23 @@
 <script setup>
 //要加上串API
 import { ref,onMounted } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter,useRoute } from 'vue-router';
 
 const router = useRouter();
+const route = useRoute();
 const stageRef = ref(null);
 const backgroundImage = ref(null);
 const pyramidImage = ref(null);
+// 取得 islandId
+const islandId = Number(route.query.islandId || 0)
+
+const islands = [
+  { id: 0, name: '英文單字島', progress: 30 },
+  { id: 1, name: 'HTML島', progress: 60 },
+  { id: 2, name: 'Java島', progress: 90 },
+  { id: 3, name: '財務管理島', progress: 0 },
+]
+const currentIsland = islands.find(island => island.id === islandId)
 
 // 背景圖片資訊
 const imageWidth = 1440;
@@ -70,22 +81,23 @@ function reportProgress() {
   const avoidY1 = 1950
   const avoidY2 = 2650
 
+    // 整個畫布範圍
+  const minX = 0
+  const maxX = canvasSize.width - 900 // 預留金字塔寬度
+  const minY = 0
+  const maxY = canvasSize.height - 900
+
   // 隨機產生不會蓋到立牌的位置
   let x, y
   let tries = 0
   do {
-    const minX = 2500
-    const maxX = 3700
-    const minY = 1600
-    const maxY = 2400
-
     x = Math.floor(Math.random() * (maxX - minX + 1)) + minX
     y = Math.floor(Math.random() * (maxY - minY + 1)) + minY
     tries++
   } while (
-    x + 500 > avoidX1 && x < avoidX2 && // 有重疊
-    y + 500 > avoidY1 && y < avoidY2 && // 有重疊
-    tries < 50 // 避免死循環
+    x + 900 > avoidX1 && x < avoidX2 && // 有重疊
+    y + 900 > avoidY1 && y < avoidY2 && // 有重疊
+    tries < 100 // 避免死循環
   )
 
   revealedPyramid.value.push({ x, y , content: reportText.value })
@@ -96,36 +108,12 @@ function reportProgress() {
   stage.position({ x: newX, y: newY })
   stage.batchDraw()
 }
-  const hoveredPyramidIndex = ref(null)
-  const tooltipPosition = ref({ x: 0, y: 0 })
-
-function handlePyramidMouseEnter(item, index) {
-  console.log('hover in', index)
-  const stage = stageRef.value?.getNode()
-  if (!stage) return
-
-  const scale = stage.scaleX()
-  hoveredPyramidIndex.value = index
-  tooltipPosition.value = {
-    x: (item.x + 450) * scale + stage.x(),
-    y: item.y * scale + stage.y() - 40,
-  }
-}
-
-function handlePyramidMouseLeave() {
-  hoveredPyramidIndex.value = null
-}
-
 
 //進度回報
 const showReportModal = ref(false)
 const reportText = ref('') // 儲存使用者輸入的進度
 
 function submitReport() {
-  if (reportText.value.trim() === '') {
-    alert('請填寫進度再提交！')
-    return
-  }
 
   // 觸發新增金字塔
   reportProgress()
@@ -163,24 +151,36 @@ function handleMouseDown(e) {
 
 //滑鼠拖移畫布
 function handleMouseMove(e) {
- if (!isDragging) return
-  const dx = e.evt.clientX - lastPos.x
-  const dy = e.evt.clientY - lastPos.y
+  if (!isDragging) return;
 
-  let nextX = stageConfig.value.x + dx
-  let nextY = stageConfig.value.y + dy
+  const dx = e.evt.clientX - lastPos.x;
+  const dy = e.evt.clientY - lastPos.y;
 
-  // 限制拖動邊界（以畫布大小為基準）
-  const minX = -(canvasSize.width - window.innerWidth)
-  const minY = -(canvasSize.height - window.innerHeight)
-  const maxX = 0
-  const maxY = 0
+  const stage = stageRef.value.getNode();
+  const scale = stage.scaleX();
 
-  stageConfig.value.x = Math.max(minX, Math.min(maxX, nextX))
-  stageConfig.value.y = Math.max(minY, Math.min(maxY, nextY))
+  let nextX = stageConfig.value.x + dx;
+  let nextY = stageConfig.value.y + dy;
 
-  lastPos = {x: e.evt.clientX,y: e.evt.clientY,}
+  const scaledWidth = canvasSize.width * scale;
+  const scaledHeight = canvasSize.height * scale;
+
+  const viewWidth = window.innerWidth;
+  const viewHeight = window.innerHeight;
+
+  //計算畫布最大可移動邊界
+  const minX = Math.min(0, viewWidth - scaledWidth); // 允許左移最大範圍
+  const maxX = 0;
+  const minY = Math.min(0, viewHeight - scaledHeight);
+  const maxY = 0;
+
+  //限制 X、Y 在範圍內
+  stageConfig.value.x = Math.max(minX, Math.min(maxX, nextX));
+  stageConfig.value.y = Math.max(minY, Math.min(maxY, nextY));
+
+  lastPos = { x: e.evt.clientX, y: e.evt.clientY };
 }
+
 
 function handleMouseUp() {
   isDragging = false
@@ -219,13 +219,13 @@ function handleWheel(e) {
       <div v-if="showReportModal" class="modal-overlay">
         <div class="modal-content">
           <h2>回報今日進度</h2>
-          <textarea v-model="reportText" placeholder="寫下你今天學到的一點小知識吧..." />
           <div class="modal-actions">
-            <button @click="submitReport" class="submit-btn">完成回報</button>
+            <button @click="submitReport" class="submit-btn">我已完成今日進度!</button>
             <button @click="showReportModal = false" class="cancel-btn">取消</button>
           </div>
         </div>
       </div>
+    
 
         <img
             src="../assets/images/plan/arrow.png"
@@ -233,13 +233,14 @@ function handleWheel(e) {
             alt="Back"
             @click="goBack"
         />
-
+          <div class="report-btn-wrapper">
            <img
               src="../assets/images/plan/reportMeerkat.png"
               class="report-btn"
               @click="showReportModal = true"
               alt="回報進度"
             />
+          </div>
 
         <div class="infinite-canvas-wrapper">
             <!--v-stage是整個畫部的框框-->
@@ -279,6 +280,7 @@ function handleWheel(e) {
                 </template>
                 </v-layer>
 
+
                 <v-layer><!--目標牌-->
                   <template v-if="centralImage">
                     <v-image
@@ -291,6 +293,20 @@ function handleWheel(e) {
                         zIndex: 5
                       }"
                     />
+                      <!-- 小島名稱 -->
+                      <v-text
+                        :config="{
+                          x: 3150+290 , // 中心位置微調
+                          y: 1950+170 ,
+                          text: currentIsland?.name || '未知島嶼',
+                          fontSize: 80,
+                          fontFamily: 'Arial',
+                          fontStyle: 'bold',
+                          fill: '#000000',
+                          width: 400, // 設定寬度才能置中
+                          align: 'center'
+                        }"
+                      />
                   </template>
                 </v-layer>
 
@@ -308,23 +324,13 @@ function handleWheel(e) {
                         draggable: false,         // 這樣 Konva 才不會預設跳過事件
                         hitStrokeWidth: 0         // 強制產生 hit 區域（即便是透明區域）
                     }"
-                    @mouseenter="() => handlePyramidMouseEnter(item, index)"
-                    @mouseleave="handlePyramidMouseLeave"
+                
                     />
                 </template>
                 </v-layer>
             </v-stage>
         </div>
-      <div
-        v-if="hoveredPyramidIndex !== null"
-        class="tooltip"
-        :style="{
-          top: tooltipPosition.y + 'px',
-          left: tooltipPosition.x + 'px'
-        }"
-      >
-        {{ revealedPyramid[hoveredPyramidIndex]?.content }}
-      </div>
+    
      </div>
       
 </template>
@@ -348,18 +354,33 @@ function handleWheel(e) {
   cursor: pointer;
   z-index: 10;
 }
-.report-btn {
+.report-btn-wrapper {
   position: absolute;
   bottom: 0;
   right: 40px;
-  width: 250px; /* 可自行調整大小 */
-  height: auto;
+  width: 250px; 
   cursor: pointer;
   z-index: 10;
+  display:inline-block;
 }
-.report-btn:hover {
-  filter: brightness(1.15);
-  transition: filter 0.2s ease;
+.report-btn {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.report-btn-wrapper:hover::after {
+  content: "\\ 點我回報進度/";
+  position: absolute;
+  bottom: 100%;
+  right: 0px;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight:bold ;
+  transform: rotate(20deg);
+  white-space: nowrap;
+  z-index: 100;
 }
 .modal-overlay {
   position: fixed;
@@ -376,27 +397,21 @@ function handleWheel(e) {
 
 .modal-content {
   background: white;
-  padding: 24px;
-  border-radius: 16px;
-  width: 400px;
+  padding: 16px;
+  border-radius: 10px;
+  width: 300px;
   max-width: 90%;
   display: flex;
+  align-items: center;  
   flex-direction: column;
   gap: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .modal-content h2 {
-  margin: 0;
+  margin: 10px;
+ 
 }
-
-.modal-content textarea {
-  resize: none;
-  height: 120px;
-  font-size: 16px;
-  padding: 8px;
-}
-
 .modal-actions {
   display: flex;
   justify-content: flex-end;
@@ -419,18 +434,7 @@ function handleWheel(e) {
   border-radius: 5px;
   cursor: pointer;
 }
-.tooltip {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  pointer-events: none;
-  white-space: pre-wrap;
-  max-width: 200px;
-  z-index: 999;
-}
+
 
 
 </style>
