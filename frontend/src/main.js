@@ -4,6 +4,7 @@ import router from './router'
 import VueKonva from 'vue-konva'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import './assets/tailwind.css'
 
 const app = createApp(App)
 const pinia = createPinia()
