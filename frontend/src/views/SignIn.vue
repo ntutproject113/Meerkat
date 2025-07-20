@@ -41,6 +41,9 @@
         <Menu />
         <!-- 基本資料表單 -->
         <form @submit.prevent="submit" class = "signinform">
+            <div class="graduatedMeerkatC">
+                <img src="../assets/images/signin/graduated.png" class="graduatedMeerkat"/>
+            </div>
             <div class="question">
                 <div class="signInTitle">註冊</div>
                 <div class="nameContainer">
@@ -149,6 +152,9 @@
                 <button type="submit" class="submitButton"></button>
             </div>
         </form>
+        <!--<form class="account">
+            <img src="../assets/images/login/Account.png"> 
+        </form>-->
     </div>
 </template>
 
@@ -158,6 +164,7 @@
         min-height: 100vh;
         width: 100%;
         position: relative;
+        display: flex;
     }
     .paper{
         position: absolute;
@@ -222,12 +229,12 @@
     .sexlabel {
         cursor: pointer;
         padding: 4px 10px;
-        border-radius: 100%;        /* 讓邊框變圓形 */
-        border: 4px solid transparent; /* 預設邊框透明 */
-        display: inline-flex;      /* 讓文字跟邊框合在一起 */
+        border-radius: 100%;       
+        border: 4px solid transparent; 
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 5px;               /* 你想要的圈大小 */
+        width: 5px;
         height: 15px;
     }
     .sexlabel:hover {
@@ -273,5 +280,27 @@
     }
     .checkedBox3{
         left:-23.5% ;
+    }
+    .account{
+        background: url(../assets/images/login/logInBoard.png) no-repeat;
+        z-index: 5;
+    }
+    .graduatedMeerkat{
+        position:relative;
+        top: 50%;
+        left: 60%;
+        width:650px;
+        object-fit: cover;
+        transform: rotate(-20deg);
+    }
+    .graduatedMeerkatC{
+        position:relative;
+        width: 100vw;
+        height: 1150px;
+        margin-left: auto;
+        display: flex;
+        margin: 0% 0% 0% 0%;
+        z-index: 6;
+        background-color: #000000;
     }
 </style>
