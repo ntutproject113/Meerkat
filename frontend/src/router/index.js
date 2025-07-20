@@ -10,6 +10,8 @@ import LogIn from '../views/LogIn.vue'
 import SignIn from '../views/SignIn.vue'
 import QA from '../views/Q&A.vue'
 import AptitudeTest from '../views/AptitudeTest.vue'
+import AptitudeTestResult from '../views/AptitudeTestResult.vue'
+import { name } from 'normalize-range'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -23,6 +25,7 @@ const routes = [
   { path: '/signIn', name: 'SignIn', component: SignIn},
   { path: '/q&a', name: 'Q&A', component: QA},
   { path: '/aptitudeTest', name: 'AptitudeTest', component:AptitudeTest},
+  { path: '/aptitudeTestResult', name: 'AptitudeTestResult', component:AptitudeTestResult},
   {path: '/InsideIsland', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入 
     },
     {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')

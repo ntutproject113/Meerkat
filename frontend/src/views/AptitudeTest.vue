@@ -14,7 +14,9 @@
         <img src="../assets/images/aptitude_test/BG5.png" class="BG5">
         <img src="../assets/images/aptitude_test/aptitude_test.png" class="word">
         <img src="../assets/images/aptitude_test/Pass.png" class="pass">
-        <img src="../assets/images/aptitude_test/start.png" class="start">
+        <RouterLink to = "/aptitudeTestResult">
+            <img src="../assets/images/aptitude_test/start.png" class="start">
+        </RouterLink>
     </div>
 </template>
 

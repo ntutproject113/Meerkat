@@ -16,7 +16,7 @@
     const plan = ref('')
     const username = ref('')     //儲存使用者帳號
     const password = ref('')  //儲存使用者密碼
-    const showSetPrompt = ref(true)     //控制提示框是否出現
+    const showSetPrompt = ref(false)     //控制提示框是否出現
 
     function submit(){
         if( !name.value || !sex.value  || !email.value || !phone.value || !school.value || !major.value || !grade.value || !interest.value || !skill.value || !plan.value){
@@ -39,11 +39,11 @@
 <template>
     <div class = "page-wrapper">
         <Menu />
+        <div class="graduatedMeerkatC">
+            <img src="../assets/images/signin/graduated.png" class="graduatedMeerkat"/>
+        </div>
         <!-- 基本資料表單 -->
         <form @submit.prevent="submit" class = "signinform">
-            <div class="graduatedMeerkatC">
-                <img src="../assets/images/signin/graduated.png" class="graduatedMeerkat"/>
-            </div>
             <div class="question">
                 <div class="signInTitle">註冊</div>
                 <div class="nameContainer">
@@ -155,6 +155,28 @@
         <!--<form class="account">
             <img src="../assets/images/login/Account.png"> 
         </form>-->
+        <div class="background2" v-if="showSetPrompt">
+            <img src="../assets/images/login/logInBoard.png" class="board"/>
+            <img src="../assets/images/login/Account.png" class="account" />
+            <img src="../assets/images/login/password.png" class="password" />
+            <img src="../assets/images/login/inputbox.png" class="inputbox1" />
+            <input 
+                type="email"
+                v-model="username"
+                name="account"
+                class="inputaccount" 
+                placeholder="請輸入電子郵件"
+            />
+            <img src="../assets/images/login/inputbox.png" class="inputbox2" />
+            <input 
+                type="password" 
+                v-model="password"
+                name="password" 
+                class="inputpassword"
+                placeholder="請輸入您的登入密碼"
+            />
+            <img src="../assets/images/signin/Submit.png" class="signin" @click="setAccountPassword"/>
+        </div>
     </div>
 </template>
 
@@ -287,20 +309,108 @@
     }
     .graduatedMeerkat{
         position:relative;
-        top: 50%;
-        left: 60%;
-        width:650px;
+        top: 45%;
+        left: 50%;
+        width: 650px;
         object-fit: cover;
         transform: rotate(-20deg);
     }
     .graduatedMeerkatC{
-        position:relative;
+        position: relative;
+        top: 0;
+        left: 0;
         width: 100vw;
-        height: 1150px;
-        margin-left: auto;
+        height: 100vh;
         display: flex;
-        margin: 0% 0% 0% 0%;
+        justify-content: center;
+        align-items: center;
         z-index: 6;
-        background-color: #000000;
+        pointer-events: none; /* 圖片不擋點擊事件 */
+    }
+    .background2{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 7;
+        display: flex;
+    }
+    .board{
+        position: fixed;
+        width: 525px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 8;
+    }
+    .account{
+        position: fixed;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-120%, -75%);
+        z-index: 9;
+    }
+    .password{
+        position: fixed;
+        width: 155px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-142%, -0%);
+        z-index: 9;
+    }
+    .inputbox1{
+        position: fixed;
+        width: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-24%, -110%);
+        z-index: 9;
+    }
+    .inputbox2{
+        position: fixed;
+        width: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-24%, 25%);
+        z-index: 9;
+    }
+    .inputaccount{
+        position: fixed;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -223%);
+        z-index: 10;
+        font-size: 20px;
+        color: #ffffff;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .inputpassword{
+        position: fixed;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, 157%);
+        z-index: 10;
+        font-size: 20px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #ffffff;
+    }
+    .signin{
+        position: fixed;
+        width: 165px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 82%);
+        z-index: 11;
+    }
+    input::placeholder {
+        color: #dbdbdb;            /* 淺灰色 */
+        font-size: 18px;
     }
 </style>
