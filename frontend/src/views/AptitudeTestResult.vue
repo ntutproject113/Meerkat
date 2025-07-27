@@ -6,7 +6,12 @@
     <div class="page-wrapper">
         <Menu />
         <div class="meerkatContainer">
-            <img src="../assets/images/signin/graduated.png" class="meerkat" />
+            <img src="../assets/images/aptitude_test_result/AMeerkat .png" class="Ameerkat" />
+            <img src="../assets/images/aptitude_test_result/CMeerkat.png" class="Cmeerkat" />
+            <img src="../assets/images/aptitude_test_result/EMeerkat.png" class="Emeerkat" />
+            <img src="../assets/images/aptitude_test_result/IMeerkat.png" class="Imeerkat" />
+            <img src="../assets/images/aptitude_test_result/RMeerkat.png" class="Rmeerkat" />
+            <img src="../assets/images/aptitude_test_result/SMeerkat.png" class="Smeerkat" />
         </div>
         <div class="resultTypeContainer">
             <div class="resultTypeContainer1">
@@ -58,14 +63,58 @@
         width: 40vw;
         height: 100vh;
     }
-    .meerkat{
-        width: 50vw;
-        max-width: 478px;
+    .Ameerkat{
+        max-width: 350px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 42.5%;
+        transform: translate(-109%,-50%);
+        display: none;
+    } 
+    .Cmeerkat{
+        max-width: 415px;
         object-fit: contain;
         position: absolute;
         top: 50%;
         left: 42.5%;
         transform: translate(-100%,-50%);
+        display: none;
+    }
+    .Emeerkat{
+        max-width: 400px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 42.5%;
+        transform: translate(-97%,-50%);
+        display: none;
+    }
+    .Imeerkat{
+        max-width: 440px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 42.5%;
+        transform: translate(-90%,-50%);
+        display: none;
+    }
+    .Rmeerkat{
+        max-width: 300px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 42.5%;
+        transform: translate(-110%,-50%);
+        display: none;
+    }
+    .Smeerkat{
+        max-width: 410px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 42.5%;
+        transform: translate(-95%,-55%);
     }
     .resultTypeContainer{
         position: relative;
@@ -117,7 +166,7 @@
         width: 90%;
         display: none;
     }
-    .A1, .C2, .E3{
+    .S1, .C2, .E3{
         display: flex;
     }
     .resultWordContainer{
