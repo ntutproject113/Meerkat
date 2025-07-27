@@ -1,146 +1,242 @@
 [
   {
-    "competetion": "Logitech MX 創意挑戰賽",
-    "content": "投稿中：還有 大約 1 個月",
-    "link": "https://bhuntr.com/tw/competitions/utwh8dxa622i49c2rq",
-    "prize": "--"
+    "cpName": "2025高通台灣AI黑客松",
+    "cpIdentifyLimit": {
+      "highSchool": false,
+      "juniorHighSchool": false,
+      "nonStudent": true,
+      "none": false,
+      "other": false,
+      "primarySchool": false,
+      "university": true
+    },
+    "cpPrizeTop": 150000,
+    "cpStartTime": 1749690000,
+    "cpEndTime": 1754927940,
+    "cpOrganizer": "高通台灣AI黑客松賽務小組",
+    "cpPrize": [
+      {
+        "cpPrizeName": "冠軍",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 150000
+      },
+      {
+        "cpPrizeName": "亞軍",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 100000
+      },
+      {
+        "cpPrizeName": "季軍",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 50000
+      },
+      {
+        "cpPrizeName": "人氣獎",
+        "cpPrizeName2": "Snapdragon®品牌背包",
+        "cpPrizeValue": 1050
+      }
+    ],
+    "cpHref": "https://bhuntr.com/tw/competitions/Qualcomm_TW_AIHackathon"
   },
   {
-    "competetion": "2025臺灣文學數位遊戲腳本徵選",
-    "content": "投稿中：還有 23 天",
-    "link": "https://bhuntr.com/tw/competitions/nfj1thmnx8vn8forl8",
-    "prize": "50,000"
+    "cpName": "統一發票推行暨「校園FUN稅趣」租稅教育及宣導活動之「流光街舞 閃耀國稅」 租稅教育及宣導活動",
+    "cpIdentifyLimit": {
+      "highSchool": true,
+      "juniorHighSchool": false,
+      "nonStudent": false,
+      "none": false,
+      "other": false,
+      "primarySchool": false,
+      "university": true
+    },
+    "cpPrizeTop": 30000,
+    "cpStartTime": 1752422400,
+    "cpEndTime": 1755250200,
+    "cpOrganizer": "財政部中區國稅局",
+    "cpPrize": [
+      {
+        "cpPrizeName": "第一名",
+        "cpPrizeName2": "獎狀乙紙",
+        "cpPrizeValue": 30000
+      },
+      {
+        "cpPrizeName": "第二名",
+        "cpPrizeName2": "獎狀乙紙",
+        "cpPrizeValue": 24000
+      },
+      {
+        "cpPrizeName": "第三名",
+        "cpPrizeName2": "獎狀乙紙",
+        "cpPrizeValue": 20000
+      },
+      {
+        "cpPrizeName": "第四名",
+        "cpPrizeName2": "獎狀乙紙",
+        "cpPrizeValue": 16000
+      },
+      {
+        "cpPrizeName": "第五名",
+        "cpPrizeName2": "獎狀乙紙",
+        "cpPrizeValue": 12000
+      },
+      {
+        "cpPrizeName": "佳作",
+        "cpPrizeName2": "獎狀乙紙",
+        "cpPrizeValue": 9000
+      },
+      {
+        "cpPrizeName": "比賽成績未獲名之隊伍：取2名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 5000
+      }
+    ],
+    "cpHref": "https://bhuntr.com/tw/competitions/tdjumr3ezuyhrv8rxn"
   },
   {
-    "competetion": "2025原鄉踏查影像紀錄獎 總獎金190萬：6/2起徵件90秒內直式短片、紀錄片競賽",
-    "content": "投稿中：還有 大約 2 個月",
-    "link": "https://bhuntr.com/tw/competitions/xede93iby5fpl1uyqz",
-    "prize": "300,000"
+    "cpName": "Logitech MX 創意挑戰賽",
+    "cpIdentifyLimit": {
+      "highSchool": false,
+      "juniorHighSchool": false,
+      "nonStudent": true,
+      "none": false,
+      "other": true,
+      "primarySchool": false,
+      "university": true
+    },
+    "cpPrizeTop": 0,
+    "cpStartTime": 1750415700,
+    "cpEndTime": 1754841540,
+    "cpOrganizer": "Logitech 羅技電子",
+    "cpPrize": [
+      {
+        "cpPrizeName": "🥇 頭獎:Adobe MAX 美國設計盛會行",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 80000
+      },
+      {
+        "cpPrizeName": "🥈 二獎: 赫綵設計學院 全科班課程任一門（香港參賽者請見簡章）",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 45000
+      },
+      {
+        "cpPrizeName": "🥉 三獎: Logitech MX 創作鍵鼠全套組合",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 14280
+      }
+    ],
+    "cpHref": "https://bhuntr.com/tw/competitions/utwh8dxa622i49c2rq"
   },
   {
-    "competetion": "2025「小夢想．大志氣」追夢計畫",
-    "content": "投稿中：還有 2 個月",
-    "link": "https://bhuntr.com/tw/competitions/dreammaker2025",
-    "prize": "1,500,000"
+    "cpName": "2025「小夢想．大志氣」追夢計畫",
+    "cpIdentifyLimit": {
+      "highSchool": true,
+      "juniorHighSchool": true,
+      "nonStudent": false,
+      "none": false,
+      "other": false,
+      "primarySchool": true,
+      "university": true
+    },
+    "cpPrizeTop": 1500000,
+    "cpStartTime": 1749657600,
+    "cpEndTime": 1757649600,
+    "cpOrganizer": "財團法人臺北市安麗希望工場慈善基金會",
+    "cpPrize": [
+      {
+        "cpPrizeName": "2025追夢計畫追夢基金前三名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 1500000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第四名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 450000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第五名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 400000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第六名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 350000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第七名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 300000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第八名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 250000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第九名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 200000
+      },
+      {
+        "cpPrizeName": "2025追夢計畫追夢鼓勵金第十名",
+        "cpPrizeName2": null,
+        "cpPrizeValue": 150000
+      }
+    ],
+    "cpHref": "https://bhuntr.com/tw/competitions/dreammaker2025"
   },
   {
-    "competetion": "好竹意租稅圖卡創作比賽",
-    "content": "投稿中：還有 大約 2 個月",
-    "link": "https://bhuntr.com/tw/competitions/fzbbm26ep3e2ku9g5s",
-    "prize": "--"
+    "cpName": "【徵件中】蔬菜狂想─2025農友基金會繪畫徵選比賽",
+    "cpIdentifyLimit": {
+      "highSchool": true,
+      "juniorHighSchool": true,
+      "nonStudent": false,
+      "none": false,
+      "other": false,
+      "primarySchool": true,
+      "university": true
+    },
+    "cpPrizeTop": 8000,
+    "cpStartTime": 1747375200,
+    "cpEndTime": 1753952400,
+    "cpOrganizer": "財團法人農友社會福利基金會",
+    "cpPrize": "請至官網查看",
+    "cpHref": "https://bhuntr.com/tw/competitions/bkvke5jsychd159xvc"
   },
   {
-    "competetion": "2026金車美展徵件",
-    "content": "投稿中：還有 26 天",
-    "link": "https://bhuntr.com/tw/competitions/78gnsxmgpbvzcpzhj6",
-    "prize": "--"
+    "cpName": "2025 玩具及生活用品創意設計競賽",
+    "cpIdentifyLimit": {
+      "highSchool": true,
+      "juniorHighSchool": false,
+      "nonStudent": false,
+      "none": false,
+      "other": false,
+      "primarySchool": false,
+      "university": true
+    },
+    "cpPrizeTop": 100000,
+    "cpStartTime": 1745218800,
+    "cpEndTime": 1760889540,
+    "cpOrganizer": "財團法人台灣玩具暨生活用品研發檢測中心",
+    "cpPrize": "請至官網查看",
+    "cpHref": "https://bhuntr.com/tw/competitions/ursffv34rwgn5479t2"
   },
   {
-    "competetion": "2025大坵梅花鹿攝影比賽",
-    "content": "投稿中：還有 大約 2 個月",
-    "link": "https://bhuntr.com/tw/competitions/surwzwjfgqkhftpp93",
-    "prize": "10,000"
-  },
-  {
-    "competetion": "來吧！Show出你的新『泰』度！國泰人壽全國創意行銷提案&圖文競賽",
-    "content": "投票中：還有 20 天",
-    "link": "https://bhuntr.com/tw/competitions/evdpi54xl3am6zlpmm",
-    "prize": "180,000"
-  },
-  {
-    "competetion": "2025高通台灣AI黑客松",
-    "content": "投稿中：還有 大約 1 個月",
-    "link": "https://bhuntr.com/tw/competitions/Qualcomm_TW_AIHackathon",
-    "prize": "150,000"
-  },
-  {
-    "competetion": "Truth about Weight 沉重的真相 大專青年創意影片競賽",
-    "content": "投稿中：還有 7 天",
-    "link": "https://bhuntr.com/tw/competitions/vkxq2swtso2f4oln67",
-    "prize": "100,000"
-  },
-  {
-    "competetion": "2025年第15屆新北市文學獎",
-    "content": "投稿中：還有 10 天",
-    "link": "https://bhuntr.com/tw/competitions/slcse4vb6f4xb8rinr",
-    "prize": "100,000"
-  },
-  {
-    "competetion": "2025紙上躍躍然．典美插畫大賞【逗號】徵件比賽",
-    "content": "投稿中：還有 大約 1 個月",
-    "link": "https://bhuntr.com/tw/competitions/sl92hnrev8ingaaswe",
-    "prize": "100,000"
-  },
-  {
-    "competetion": "2025《臺北文創天空創意節》百萬徵件",
-    "content": "投稿中：還有 5 天",
-    "link": "https://bhuntr.com/tw/competitions/r1fvipbzqdw7ps82g2",
-    "prize": "1,200,000"
-  },
-  {
-    "competetion": "這樣Sale也可以： 安聯人壽創意銷售法募集",
-    "content": "投稿中：還有 3 個月",
-    "link": "https://bhuntr.com/tw/competitions/72mmu4k42trqz7djdk",
-    "prize": "100,000"
-  },
-  {
-    "competetion": "2025「Art on Climate」國際繪畫比賽",
-    "content": "投稿中：還有 26 天",
-    "link": "https://bhuntr.com/tw/competitions/eujuwxhfea0kk5zwyx",
-    "prize": "2,000"
-  },
-  {
-    "competetion": "南投48拍-短影音限時創作賽",
-    "content": "投稿中：還有 25 天",
-    "link": "https://bhuntr.com/tw/competitions/m0qebb790z9d71sbgu",
-    "prize": "50,000"
-  },
-  {
-    "competetion": "【台灣好好玩】2025台北101國際繪畫比賽",
-    "content": "投稿中：還有 大約 2 個月",
-    "link": "https://bhuntr.com/tw/competitions/15n78fyroltcnl7ot6",
-    "prize": "30,000"
-  },
-  {
-    "competetion": "【徵件中】蔬菜狂想─2025農友基金會繪畫徵選比賽",
-    "content": "投稿中：還有 26 天",
-    "link": "https://bhuntr.com/tw/competitions/bkvke5jsychd159xvc",
-    "prize": "8,000"
-  },
-  {
-    "competetion": "故宮百年 一瞬留影【尋寶記】",
-    "content": "投稿中：還有 2 個月",
-    "link": "https://bhuntr.com/tw/competitions/l14eoefjh04k0nztcq",
-    "prize": "29,900"
-  },
-  {
-    "competetion": "i玩彰化:青春有歌 城市有聲",
-    "content": "投稿中：還有 13 天",
-    "link": "https://bhuntr.com/tw/competitions/7obx3yyyheoz8y07pm",
-    "prize": "30,000"
-  },
-  {
-    "competetion": "臺中文學獎",
-    "content": "投稿中：還有 大約 1 個月",
-    "link": "https://bhuntr.com/tw/competitions/k4niovsoud1rsej15w",
-    "prize": "150,000"
-  },
-  {
-    "competetion": "2025年吳濁流文學獎",
-    "content": "投稿中：還有 11 天",
-    "link": "https://bhuntr.com/tw/competitions/xro0tmgvsd2zgfvc7q",
-    "prize": "200,000"
-  },
-  {
-    "competetion": "文化部 114 年「青漫獎」",
-    "content": "投稿中：還有 3 個月",
-    "link": "https://bhuntr.com/tw/competitions/8o2ll4cahxibw2cixo",
-    "prize": "150,000"
-  },
-  {
-    "competetion": "《繪夢工坊 x 繪王(繪王趨勢-臺灣) 聯合繪圖比賽「屬於水母喵的第一抹色彩」》",
-    "content": "投稿中：還有 5 天",
-    "link": "https://bhuntr.com/tw/competitions/ov68jlv1qaji99l8qh",
-    "prize": "12,500"
+    "cpName": "梭哈青春 ALL IN —2025屏東青年社會創新競賽",
+    "cpIdentifyLimit": {
+      "highSchool": true,
+      "juniorHighSchool": false,
+      "nonStudent": true,
+      "none": false,
+      "other": false,
+      "primarySchool": false,
+      "university": true
+    },
+    "cpPrizeTop": 50000,
+    "cpStartTime": 1748502000,
+    "cpEndTime": 1758963600,
+    "cpOrganizer": "屏東縣政府",
+    "cpPrize": "請至官網查看",
+    "cpHref": "https://bhuntr.com/tw/competitions/xli5d294ekdeskrava"
   }
 ]
