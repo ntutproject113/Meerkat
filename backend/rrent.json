@@ -1,0 +1,1813 @@
+[
+    {
+        "rentName": "城中向陽上冠全新唯美兩房",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 54800,
+        "transportation": [
+            {
+                "stationName": "北門站",
+                "walkTime": 6
+            },
+            {
+                "stationName": "西門站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "台北車站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "台大醫院站",
+                "walkTime": 7
+            }
+        ],
+        "rentAdress": "台北市中正區漢口街一段",
+        "equipmentIds": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            13
+        ],
+        "publishDate": "2025-07-15T03:02:48.873Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTAwODM5NGhwaW1hZ2U,/9f8b1c3bff2c4805_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1254146_1902131"
+    },
+    {
+        "rentName": "重慶南~富比世~景觀住辦",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 43000,
+        "transportation": [
+            {
+                "stationName": "台大醫院站",
+                "walkTime": 6
+            },
+            {
+                "stationName": "台北車站",
+                "walkTime": 6
+            },
+            {
+                "stationName": "西門站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "北門站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市中正區重慶南路一段",
+        "equipmentIds": [
+            6
+        ],
+        "publishDate": "2025-07-18T00:44:00.73Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTczNjIzNGhwaW1hZ2U,/16236c40e12041a7_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1272406_1902131"
+    },
+    {
+        "rentName": "大安區精美小豪宅",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 45000,
+        "transportation": [
+            {
+                "stationName": "大安站",
+                "walkTime": 4
+            },
+            {
+                "stationName": "科技大樓站",
+                "walkTime": 7
+            }
+        ],
+        "rentAdress": "台北市大安區復興南路二段",
+        "equipmentIds": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-14T03:03:06.297Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NDczMjYxMWhwaW1hZ2U,/38ebaa7c6b6141e3_1440x1920.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1246655_285956"
+    },
+    {
+        "rentName": "仁愛首都高樓層四大房(坡平車位)住商仁光Ｗayne",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 90000,
+        "transportation": [
+            {
+                "stationName": "信義安和站",
+                "walkTime": 4
+            },
+            {
+                "stationName": "忠孝敦化站",
+                "walkTime": 9
+            }
+        ],
+        "rentAdress": "台北市大安區安和路一段",
+        "equipmentIds": [
+            1,
+            2,
+            6,
+            7,
+            8,
+            13
+        ],
+        "publishDate": "2025-07-11T12:42:38.253Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTYxMDU1OWhwaW1hZ2U,/acefbc7fe4114df8_1620x1080.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1269106_1612842"
+    },
+    {
+        "rentName": "🍎好屋報您知🍎象山站高樓101景觀2房",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 70000,
+        "transportation": [
+            {
+                "stationName": "象山站",
+                "walkTime": 5
+            }
+        ],
+        "rentAdress": "台北市信義區信義路五段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-26T03:11:38.347Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://hp-pic.houseprice.tw/20250217/f9d7e321f37e44eda095ba7a960e45f9.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1193140_291027"
+    },
+    {
+        "rentName": "🍎好屋報您知🍎內湖路二段新成屋有座君璧",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 57500,
+        "transportation": [
+            {
+                "stationName": "內湖站",
+                "walkTime": 5
+            }
+        ],
+        "rentAdress": "台北市內湖區內湖路二段",
+        "equipmentIds": [
+            1,
+            6,
+            7,
+            9,
+            13
+        ],
+        "publishDate": "2025-07-26T03:08:38.987Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTcyMTg3NmhwaW1hZ2U,/54b8ad0f1d344298_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1272109_291027"
+    },
+    {
+        "rentName": "🍎好屋報您知🍎伊通街商圈靜巷1+1房 ",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 63000,
+        "transportation": [
+            {
+                "stationName": "松江南京站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "忠孝新生站",
+                "walkTime": 9
+            }
+        ],
+        "rentAdress": "台北市中山區建國北路一段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13
+        ],
+        "publishDate": "2025-07-26T03:05:43.9Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTkwOTk3OGhwaW1hZ2U,/c4e60d7fa96f40df_1478x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1264409_291027"
+    },
+    {
+        "rentName": "🏆儀居團隊🏆租Z森業永春質感16樓",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 45000,
+        "transportation": [
+            {
+                "stationName": "永春站",
+                "walkTime": 3
+            },
+            {
+                "stationName": "後山埤站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市信義區忠孝東路五段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "publishDate": "2025-07-25T09:10:40.513Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTkwMjAzNWhwaW1hZ2U,/fdaebdbc8ae24798_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1277301_1670834"
+    },
+    {
+        "rentName": "🔥晴光捷運美妝挑高1+1🔥",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 36000,
+        "transportation": [
+            {
+                "stationName": "中山國小站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "民權西路站",
+                "walkTime": 8
+            },
+            {
+                "stationName": "圓山站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市中山區德惠街",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-22T17:44:26.18Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTg0MDk5NWhwaW1hZ2U,/4b93c2e38729460a_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1275508_1850915"
+    },
+    {
+        "rentName": "重北大龍華夏4房車",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 63000,
+        "transportation": [
+            {
+                "stationName": "圓山站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市大同區重慶北路三段",
+        "equipmentIds": [
+            6,
+            8,
+            13
+        ],
+        "publishDate": "2025-07-22T08:25:57.377Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTgzMjQ0N2hwaW1hZ2U,/1e9b420183aa4f47_1920x1442.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1275200_319935"
+    },
+    {
+        "rentName": "好想回家🌸邊間麗湖別墅🌸大庭院 | 雙車位",
+        "rentType": "整層住家",
+        "houseType": "別墅",
+        "rentPrice": 100000,
+        "transportation": [],
+        "rentAdress": "台北市內湖區金湖路",
+        "equipmentIds": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            13
+        ],
+        "publishDate": "2025-07-20T08:10:59.04Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTc4NjczMGhwaW1hZ2U,/6a06ab5573874b81_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1273693_325138"
+    },
+    {
+        "rentName": "捷運櫻花全新裝潢美宅0936256079鄭S",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 25000,
+        "transportation": [
+            {
+                "stationName": "新北投站",
+                "walkTime": 2
+            }
+        ],
+        "rentAdress": "台北市北投區溫泉路",
+        "equipmentIds": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        "publishDate": "2025-07-20T05:36:07.62Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTc4MzUxN2hwaW1hZ2U,/cba4d396c70a4193_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1218308_243716"
+    },
+    {
+        "rentName": "捷運大橋頭｜獨立套房｜靜巷不怕吵",
+        "rentType": "獨立套房",
+        "houseType": "公寓",
+        "rentPrice": 14300,
+        "transportation": [
+            {
+                "stationName": "大橋頭站",
+                "walkTime": 5
+            }
+        ],
+        "rentAdress": "台北市大同區伊寧街",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12
+        ],
+        "publishDate": "2025-07-19T09:24:03.54Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "不可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTc3MzAwNWhwaW1hZ2U,/0c909abf929b42e3_480x360.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1273429_1850915"
+    },
+    {
+        "rentName": "🍎可租補🍎西湖站高顏值二樓大套房~家電全配!!",
+        "rentType": "整層住家",
+        "houseType": "透天厝",
+        "rentPrice": 35000,
+        "transportation": [
+            {
+                "stationName": "西湖站",
+                "walkTime": 2
+            }
+        ],
+        "rentAdress": "台北市內湖區內湖路一段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-18T13:13:54.42Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "三年",
+            "moveInDate": "2025-08-01T00:00:00Z"
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTc1OTgyMmhwaW1hZ2U,/c14d7f634d2c4527_1920x1441.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1273099_594264"
+    },
+    {
+        "rentName": "圓環旁天生贏家3米6挑高美宅，可租補",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 28000,
+        "transportation": [
+            {
+                "stationName": "北門站",
+                "walkTime": 7
+            }
+        ],
+        "rentAdress": "台北市大同區華亭街",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-18T07:37:01.273Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可無火煮食",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTc0ODc2MGhwaW1hZ2U,/c31a5c8bb6364b92_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1272813_281622"
+    },
+    {
+        "rentName": "小南門站美三房設備齊全/可租補❤️",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 33000,
+        "transportation": [
+            {
+                "stationName": "小南門站",
+                "walkTime": 9
+            }
+        ],
+        "rentAdress": "台北市中正區汀州路一段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ],
+        "publishDate": "2025-07-14T07:25:13.83Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTY1Mjg2MmhwaW1hZ2U,/920050d0bd6e4f69_750x495.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1270382_1818355"
+    },
+    {
+        "rentName": "高島屋商圈美寓",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 35000,
+        "transportation": [],
+        "rentAdress": "台北市士林區忠誠路二段",
+        "equipmentIds": [
+            6,
+            13
+        ],
+        "publishDate": "2025-07-14T03:44:27.877Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTY0NTUyMGhwaW1hZ2U,/d8cfefd403ea4491_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1270239_855503"
+    },
+    {
+        "rentName": " 忠孝敦化🌸復旦華夏🌸捷運站300公尺",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 90000,
+        "transportation": [
+            {
+                "stationName": "忠孝敦化站",
+                "walkTime": 3
+            },
+            {
+                "stationName": "忠孝復興站",
+                "walkTime": 6
+            }
+        ],
+        "rentAdress": "台北市大安區敦化南路一段",
+        "equipmentIds": [
+            2,
+            6,
+            7,
+            8,
+            9,
+            13
+        ],
+        "publishDate": "2025-07-12T08:21:17.627Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTYyMjMyNGhwaW1hZ2U,/16e52a1470334a43_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1269458_325138"
+    },
+    {
+        "rentName": "後山埤捷運旁, 三房, 使用約35坪",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 85000,
+        "transportation": [
+            {
+                "stationName": "後山埤站",
+                "walkTime": 3
+            }
+        ],
+        "rentAdress": "台北市南港區玉成街",
+        "equipmentIds": [
+            6,
+            8,
+            13
+        ],
+        "publishDate": "2025-07-11T03:32:25.383Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NDgwODQxNWhwaW1hZ2U,/56bdd9f488ae4ba0_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1248536_298584"
+    },
+    {
+        "rentName": "信義光復靜巷3房美寓",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 38000,
+        "transportation": [
+            {
+                "stationName": "台北101/世貿站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "信義安和站",
+                "walkTime": 8
+            },
+            {
+                "stationName": "國父紀念館站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市信義區光復南路",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-10T11:57:10.62Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTU4MjgwMmhwaW1hZ2U,/21cdb1223c3d4c6a_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1268358_603845"
+    },
+    {
+        "rentName": "❤️奇岩公園電梯2房❤️0971002032",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 40000,
+        "transportation": [
+            {
+                "stationName": "唭哩岸站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "奇岩站",
+                "walkTime": 7
+            }
+        ],
+        "rentAdress": "台北市北投區公館路",
+        "equipmentIds": [],
+        "publishDate": "2025-07-10T11:07:34.583Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTU4MjAxNGhwaW1hZ2U,/7442370ffbbf4338_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1268336_1726769"
+    },
+    {
+        "rentName": "民族西路二樓三房出租",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 33000,
+        "transportation": [
+            {
+                "stationName": "大橋頭站",
+                "walkTime": 8
+            },
+            {
+                "stationName": "圓山站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市大同區民族西路",
+        "equipmentIds": [
+            6,
+            13
+        ],
+        "publishDate": "2025-07-09T10:50:42.053Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTYwODk5MWhwaW1hZ2U,/38c611b94f0446b0_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1267698_319935"
+    },
+    {
+        "rentName": "萬華優質 兩房公寓",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 25000,
+        "transportation": [],
+        "rentAdress": "台北市萬華區長泰街",
+        "equipmentIds": [
+            1,
+            2,
+            6,
+            8
+        ],
+        "publishDate": "2025-07-06T06:13:12.09Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://hp-pic.houseprice.tw/20250208/38de8b11ca2f4fd2854cd59e249db9d1.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1173472_639056"
+    },
+    {
+        "rentName": "🍎好屋報您知🍎BR4新屋美妝套房忠孝復興捷運站",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 58000,
+        "transportation": [
+            {
+                "stationName": "忠孝敦化站",
+                "walkTime": 1
+            },
+            {
+                "stationName": "忠孝復興站",
+                "walkTime": 9
+            }
+        ],
+        "rentAdress": "台北市大安區忠孝東路四段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ],
+        "publishDate": "2025-07-03T11:54:41.24Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://hp-pic.houseprice.tw/20250314/a7ab2b7d60084be893caa35845a91e06.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1209145_291027"
+    },
+    {
+        "rentName": "捷運櫻花全新美妝大套房0936256079鄭S",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 25000,
+        "transportation": [
+            {
+                "stationName": "新北投站",
+                "walkTime": 2
+            }
+        ],
+        "rentAdress": "台北市北投區溫泉路",
+        "equipmentIds": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13
+        ],
+        "publishDate": "2025-07-01T12:31:05.903Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTM4NjM2MGhwaW1hZ2U,/7dbda67ba6fa4976_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1263078_243716"
+    },
+    {
+        "rentName": "近石牌捷運電梯三房華廈❤️幸福規劃師 李婷婷 ❤️",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 39000,
+        "transportation": [
+            {
+                "stationName": "石牌站",
+                "walkTime": 4
+            },
+            {
+                "stationName": "明德站",
+                "walkTime": 6
+            }
+        ],
+        "rentAdress": "台北市北投區致遠一路二段",
+        "equipmentIds": [
+            1,
+            6,
+            7,
+            8
+        ],
+        "publishDate": "2025-07-15T08:00:51.71Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTMyNDU3OWhwaW1hZ2U,/d2222a7cfe964d4d_900x1200.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1249515_383515"
+    },
+    {
+        "rentName": "象山捷運,  信義香榭大套房",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 39500,
+        "transportation": [
+            {
+                "stationName": "象山站",
+                "walkTime": 6
+            }
+        ],
+        "rentAdress": "台北市信義區信義路五段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13
+        ],
+        "publishDate": "2025-07-10T07:59:51.57Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTU3NTY3MWhwaW1hZ2U,/e97214bb0fc94ff5_800x393.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1247282_298584"
+    },
+    {
+        "rentName": "敦化林蔭住家, 4大房, 大空間",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 140000,
+        "transportation": [
+            {
+                "stationName": "六張犁站",
+                "walkTime": 6
+            },
+            {
+                "stationName": "科技大樓站",
+                "walkTime": 7
+            }
+        ],
+        "rentAdress": "台北市大安區敦化南路二段",
+        "equipmentIds": [
+            13
+        ],
+        "publishDate": "2025-06-30T05:33:03.407Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTM0NzI0NWhwaW1hZ2U,/b63c186bc4964def_600x450.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1255026_298584"
+    },
+    {
+        "rentName": "信義區永春捷運, 3房, 門口可停車",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 50000,
+        "transportation": [
+            {
+                "stationName": "永春站",
+                "walkTime": 5
+            }
+        ],
+        "rentAdress": "台北市信義區虎林街",
+        "equipmentIds": [],
+        "publishDate": "2025-07-11T05:15:37.807Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTU5Mzc1M2hwaW1hZ2U,/88a09a23b73f4027_800x600.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1268721_298584"
+    },
+    {
+        "rentName": "近關渡捷運精美電梯兩房+車位",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 32000,
+        "transportation": [
+            {
+                "stationName": "關渡站",
+                "walkTime": 6
+            }
+        ],
+        "rentAdress": "台北市北投區知行路",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13
+        ],
+        "publishDate": "2025-07-06T09:00:43.303Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTQ4ODA1MmhwaW1hZ2U,/64a54ba364074d91_738x553.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1265960_1745931"
+    },
+    {
+        "rentName": "🏆儀居團隊🏆租Z森業永春質感高樓美套",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 45000,
+        "transportation": [
+            {
+                "stationName": "永春站",
+                "walkTime": 3
+            },
+            {
+                "stationName": "後山埤站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市信義區忠孝東路五段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11
+        ],
+        "publishDate": "2025-07-25T09:42:26.607Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTkwMzAzMGhwaW1hZ2U,/a05b3ef5359b4a15_1474x1110.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1277389_1670834"
+    },
+    {
+        "rentName": "🏠 新穎一房．質感生活宅",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 42800,
+        "transportation": [
+            {
+                "stationName": "劍潭站",
+                "walkTime": 3
+            }
+        ],
+        "rentAdress": "台北市士林區承德路四段",
+        "equipmentIds": [
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13
+        ],
+        "publishDate": "2025-07-24T11:11:33.47Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTg4MDE5MWhwaW1hZ2U,/e7e0be4988c4471c_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1276773_957396"
+    },
+    {
+        "rentName": "捷運央北美裝2房0936256079鄭S",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 28000,
+        "transportation": [
+            {
+                "stationName": "忠義站",
+                "walkTime": 4
+            },
+            {
+                "stationName": "關渡站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市北投區中央北路四段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ],
+        "publishDate": "2025-07-24T07:35:39.59Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": "2025-07-25T00:00:00Z"
+        },
+        "rentPictureHref": null,
+        "rentHref": "https://rent.houseprice.tw/house/1276564_243716"
+    },
+    {
+        "rentName": "⭐️台北晶麒兩房出租⭐️高樓層＋景觀＋近捷運⭐️",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 36000,
+        "transportation": [
+            {
+                "stationName": "龍山寺站",
+                "walkTime": 6
+            }
+        ],
+        "rentAdress": "台北市萬華區康定路",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-22T17:28:49.303Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTg0MDk2NmhwaW1hZ2U,/9d4290cbaa2b442b_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1275497_1850915"
+    },
+    {
+        "rentName": "晴光捷運挑高美妝1+1",
+        "rentType": "獨立套房",
+        "houseType": "大樓",
+        "rentPrice": 36000,
+        "transportation": [
+            {
+                "stationName": "中山國小站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "民權西路站",
+                "walkTime": 8
+            },
+            {
+                "stationName": "圓山站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市中山區德惠街",
+        "equipmentIds": [
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "publishDate": "2025-07-18T02:08:10.817Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTczNzQ1NmhwaW1hZ2U,/7cdf52c219c84a8b_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1272439_1370193"
+    },
+    {
+        "rentName": "🍎好屋報您知🍎石牌新落成陽明致遠3房",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 98000,
+        "transportation": [
+            {
+                "stationName": "石牌站",
+                "walkTime": 5
+            }
+        ],
+        "rentAdress": "台北市北投區致遠一路二段",
+        "equipmentIds": [
+            6,
+            8,
+            13
+        ],
+        "publishDate": "2025-07-10T05:21:30.437Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTU2OTMxNWhwaW1hZ2U,/aa739ce711fb40bc_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1268050_291027"
+    },
+    {
+        "rentName": "忠孝復興辦公空間",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 40000,
+        "transportation": [
+            {
+                "stationName": "忠孝復興站",
+                "walkTime": 2
+            }
+        ],
+        "rentAdress": "台北市大安區忠孝東路三段",
+        "equipmentIds": [
+            4,
+            6
+        ],
+        "publishDate": "2025-07-10T03:27:08.937Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "不可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTU2NTEyM2hwaW1hZ2U,/607eff7713f94e88_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1267940_594264"
+    },
+    {
+        "rentName": "台北科技大學旁 電梯華廈 SOGO商圈",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 58000,
+        "transportation": [
+            {
+                "stationName": "忠孝復興站",
+                "walkTime": 7
+            },
+            {
+                "stationName": "忠孝新生站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市大安區忠孝東路三段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13
+        ],
+        "publishDate": "2025-07-08T08:27:03.66Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTUyNDU5N2hwaW1hZ2U,/6c1fe81328b04425_1440x1920.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1266862_639056"
+    },
+    {
+        "rentName": "民族西公寓二樓三房",
+        "rentType": "整層住家",
+        "houseType": "公寓",
+        "rentPrice": 33000,
+        "transportation": [
+            {
+                "stationName": "大橋頭站",
+                "walkTime": 8
+            },
+            {
+                "stationName": "圓山站",
+                "walkTime": 8
+            }
+        ],
+        "rentAdress": "台北市大同區民族西路",
+        "equipmentIds": [
+            6,
+            8
+        ],
+        "publishDate": "2025-07-08T06:56:20.823Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": "2025-08-05T00:00:00Z"
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTUxOTAzMGhwaW1hZ2U,/67dcdf68327b45fe_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1266763_1974863"
+    },
+    {
+        "rentName": "信義安和優質套房",
+        "rentType": "分租套房",
+        "houseType": "公寓",
+        "rentPrice": 12000,
+        "transportation": [
+            {
+                "stationName": "信義安和站",
+                "walkTime": 5
+            }
+        ],
+        "rentAdress": "台北市大安區通化街",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        "publishDate": "2025-07-05T10:43:40.91Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "不可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTQ3NzAyNWhwaW1hZ2U,/a2b3d55c228c4e47_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1265707_603845"
+    },
+    {
+        "rentName": "閱禾居高樓美2房",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 45000,
+        "transportation": [
+            {
+                "stationName": "松江南京站",
+                "walkTime": 5
+            },
+            {
+                "stationName": "南京復興站",
+                "walkTime": 9
+            }
+        ],
+        "rentAdress": "台北市中山區建國北路一段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "publishDate": "2025-07-01T06:13:20.797Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": true,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTM3NDE4OGhwaW1hZ2U,/26a436b5335346ed_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1262891_596629"
+    },
+    {
+        "rentName": "👑可租補可營登善導寺電梯兩房大露臺👑",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 48000,
+        "transportation": [
+            {
+                "stationName": "善導寺站",
+                "walkTime": 3
+            }
+        ],
+        "rentAdress": "台北市中正區紹興北街",
+        "equipmentIds": [
+            6,
+            8,
+            13
+        ],
+        "publishDate": "2025-06-28T09:09:32.833Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTMyMjE4NWhwaW1hZ2U,/ff8e25f83b314f28_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1261923_2076030"
+    },
+    {
+        "rentName": "💘我是承辦中山綻兩房高樓到站即到家！",
+        "rentType": "整層住家",
+        "houseType": "大樓",
+        "rentPrice": 85000,
+        "transportation": [
+            {
+                "stationName": "中山站",
+                "walkTime": 2
+            },
+            {
+                "stationName": "雙連站",
+                "walkTime": 7
+            }
+        ],
+        "rentAdress": "台北市大同區南京西路",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13
+        ],
+        "publishDate": "2025-06-28T09:01:13.463Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTMyMjAyMGhwaW1hZ2U,/229d97c5ce13430b_1477x1108.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1261912_2076030"
+    },
+    {
+        "rentName": "屋主人超好~舒適大套房~台水台電",
+        "rentType": "分租套房",
+        "houseType": "公寓",
+        "rentPrice": 25000,
+        "transportation": [
+            {
+                "stationName": "南京三民站",
+                "walkTime": 6
+            }
+        ],
+        "rentAdress": "台北市松山區八德路四段",
+        "equipmentIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "publishDate": "2025-07-25T09:27:13.697Z",
+        "limitInfo": {
+            "allowMoveInImmediate": false,
+            "allowPet": false,
+            "cookLimitation": "可開伙",
+            "genderLimitation": "不限",
+            "jobLimitation": [
+                "學生",
+                "上班族",
+                "家庭"
+            ],
+            "minimumRentPeriod": "二年",
+            "moveInDate": "2025-08-05T00:00:00Z"
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTkwMjM3N2hwaW1hZ2U,/58e78bf7404d4fcf_1920x1441.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1277323_594264"
+    },
+    {
+        "rentName": "試院路雅房(限世新女學生)",
+        "rentType": "雅房",
+        "houseType": "公寓",
+        "rentPrice": 7000,
+        "transportation": [],
+        "rentAdress": "台北市文山區木新路二段",
+        "equipmentIds": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "publishDate": "2025-07-21T05:00:56.783Z",
+        "limitInfo": {
+            "allowMoveInImmediate": true,
+            "allowPet": false,
+            "cookLimitation": "可無火煮食",
+            "genderLimitation": "限女性",
+            "jobLimitation": [
+                "學生",
+                "上班族"
+            ],
+            "minimumRentPeriod": "一年",
+            "moveInDate": null
+        },
+        "rentPictureHref": "https://image.houseprice.tw/p1-hpimage/NTc5OTk2NmhwaW1hZ2U,/c445be4f2bad416b_1920x1440.jpg",
+        "rentHref": "https://rent.houseprice.tw/house/1273946_867812"
+    }
+]

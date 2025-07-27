@@ -96,13 +96,13 @@ const handleCheck = (item) => {
             <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
         </div>
         <!--為你推薦-->
-        <div class="recommand">
+        <div class="recommand mx-auto mt-[500px] w-full max-w-[800px] px-4">
             <img src="../assets/images/plan/rec_background.png" alt="背景" class="rec-background">
             <img src="../assets/images/plan/recommand_icon.png" alt="推薦圖示" class="recommand-icon">
             <p>
             <strong style="color: #703C05; font-size: 48px ; position: absolute; top: 70px; left: 160px;">為您推薦</strong>
             </p>
-            <div class="grid-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 py-6">
                 <div class="image-box" @click="goToRenting">
                     <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" />
                     <div class="image-text">租屋</div>
@@ -128,7 +128,7 @@ const handleCheck = (item) => {
 .earth {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 5%;
   height: 90vh;
   width: auto;
   max-height: 100vh;
@@ -137,21 +137,21 @@ const handleCheck = (item) => {
 }
 .earth-hover {
   left: 0;
-  top: 40px;
+  top: 5%;
   height: 95vh;
   width: auto;
   max-height: 100vh;
 }
 .goal{
     position: absolute;
-    right:10px;
-    top: 0px;
+    right:1%;
+    top: 0%;
     height:250px;
     width:400px;
 }
 .todolist{
     position: absolute;
-    left: 350px;
+    left: 30%;
     color:white;
 }
 .todolist-img{
@@ -204,10 +204,6 @@ li {
 
 .recommand{
     position:relative;
-    left: 350px;
-    top: 500px;
-    width:800px;
-    height: 800px;
     z-index: 1;
     
 }
