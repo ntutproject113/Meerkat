@@ -11,6 +11,13 @@ import SignIn from '../views/SignIn.vue'
 import QA from '../views/Q&A.vue'
 import AptitudeTest from '../views/AptitudeTest.vue'
 import AptitudeTestResult from '../views/AptitudeTestResult.vue'
+import AptitudeTest0 from '../views/AptitudeTest0.vue'
+import AptitudeTest1 from '../views/AptitudeTest1.vue'
+import AptitudeTest2 from '../views/AptitudeTest2.vue'
+import AptitudeTest3 from '../views/AptitudeTest3.vue'
+import AptitudeTest4 from '../views/AptitudeTest4.vue'
+import AptitudeTest5 from '../views/AptitudeTest5.vue'
+import AptitudeTest6 from '../views/AptitudeTest6.vue'
 import { name } from 'normalize-range'
 
 const routes = [
@@ -26,10 +33,16 @@ const routes = [
   { path: '/q&a', name: 'Q&A', component: QA},
   { path: '/aptitudeTest', name: 'AptitudeTest', component:AptitudeTest},
   { path: '/aptitudeTestResult', name: 'AptitudeTestResult', component:AptitudeTestResult},
-  {path: '/InsideIsland', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入 
-    },
-    {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')
-}
+  { path: '/aptitudeTest0', name: 'AptitudeTest0', component:AptitudeTest0},
+  { path: '/aptitudeTest1', name: 'AptitudeTest1', component:AptitudeTest1},
+  { path: '/aptitudeTest2', name: 'AptitudeTest2', component:AptitudeTest2},
+  { path: '/aptitudeTest3', name: 'AptitudeTest3', component:AptitudeTest3},
+  { path: '/aptitudeTest4', name: 'AptitudeTest4', component:AptitudeTest4},
+  { path: '/aptitudeTest5', name: 'AptitudeTest5', component:AptitudeTest5},
+  { path: '/aptitudeTest6', name: 'AptitudeTest6', component:AptitudeTest6},
+  { path: '/InsideIsland', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入 
+  },
+  {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')}
 ]
 
 const router = createRouter({
