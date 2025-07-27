@@ -174,9 +174,12 @@ function handleMouseMove(e) {
   const minY = Math.min(0, viewHeight - scaledHeight);
   const maxY = 0;
 
+  // 限制拖曳範圍
+  nextX = Math.max(minX, Math.min(maxX, nextX));
+  nextY = Math.max(minY, Math.min(maxY, nextY));
   //限制 X、Y 在範圍內
-  stageConfig.value.x = Math.max(minX, Math.min(maxX, nextX));
-  stageConfig.value.y = Math.max(minY, Math.min(maxY, nextY));
+  stageConfig.value.x = nextX;
+  stageConfig.value.y = nextY;
 
   lastPos = { x: e.evt.clientX, y: e.evt.clientY };
 }
@@ -184,6 +187,31 @@ function handleMouseMove(e) {
 
 function handleMouseUp() {
   isDragging = false
+}
+function limitStagePosition() {
+  const stage = stageRef.value.getNode()
+  const scale = stage.scaleX()
+
+  const scaledWidth = canvasSize.width * scale
+  const scaledHeight = canvasSize.height * scale
+
+  const viewWidth = window.innerWidth
+  const viewHeight = window.innerHeight
+
+  const minX = Math.min(0, viewWidth - scaledWidth)
+  const maxX = 0
+  const minY = Math.min(0, viewHeight - scaledHeight)
+  const maxY = 0
+
+  // 取得目前位置
+  let x = stage.x()
+  let y = stage.y()
+
+  // 限制位置
+  x = Math.max(minX, Math.min(maxX, x))
+  y = Math.max(minY, Math.min(maxY, y))
+
+  stage.position({ x, y })
 }
 
 //滾輪縮放功能
@@ -210,6 +238,7 @@ function handleWheel(e) {
   }
 
   stage.position(newPos)
+  limitStagePosition() 
   stage.batchDraw()
 }
 </script>
