@@ -275,13 +275,6 @@ li {
 </style>
 
 <style>
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: #210E59; /* 保險起見，讓 body 也有底色 */
-}
-
 .page-wrapper {
   background-color: #210E59;
   min-height: 100vh;

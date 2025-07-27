@@ -72,7 +72,7 @@ const isRentHover = ref(false)
         display: flex;
         justify-content: center;
         width: 100vw;   /* 100% 視窗寬度 */
-        height: 74.7vh;  /* 100% 視窗高度 */
+        height: 74vh;  /* 100% 視窗高度 */
         z-index: 2;
         position: absolute;
         left: 50%; transform: translateX(-50%);
