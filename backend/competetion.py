@@ -1,38 +1,65 @@
-import time
-from selenium import webdriver
-from selenium.webdriver.edge.service import Service
-from selenium.webdriver.edge.options import Options
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-from bs4 import BeautifulSoup
+import requests
 import json
-options= Options()
-options.add_argument("--headless")
-options.add_argument("--disable-gpu")
-service = Service(EdgeChromiumDriverManager().install())
-driver = webdriver.Edge(service=service, options=options)
-url="https://bhuntr.com/tw/competitions?page=[page]"
-allData = []
-for page in range(1, 3):
-    driver.get(url)
-    time.sleep(5) 
-    html=driver.page_source
-    soup = BeautifulSoup(html, "html.parser")
-    cpTag = soup.find_all("div", class_="bh-container")
-    cpTable= soup.find("div", class_="row bh-section bh-card-list")
-    cpColumn = soup.find_all("div", class_="col-lg-3 col-md-4 col-sm-6 col-12 bh-card-item")
-    for cpBlock in cpColumn:
-        cpName = cpBlock.find("a", class_="bh-title").text.strip()
-        cpContent = cpBlock.find("span", class_="bh-item is-processing").text.strip()
-        cpLink ="https://bhuntr.com"+cpBlock.find("a", class_="bh-title")["href"]
-        cpPrizeTag= cpBlock.find("div", class_="bh-item bh-item-top")
-        cpPrize = cpPrizeTag.find("span", class_="bh-amount").text.strip() 
-        #最高獎金
-        cpData = {}
-        cpData["competetion"] = cpName
-        cpData["content"] = cpContent
-        cpData["link"] = cpLink
-        cpData["prize"] = cpPrize
-        allData.append(cpData)
+url="https://api.bhuntr.com/tw/cms/bhuntr/contest?language=tw&target=competition&limit=24&page={page}&sort=mixed&timeline=notEnded&location=taiwan"
+result = []
+for page in range(1):
+    response=requests.get(url.format(page=page))
+    if response.status_code == 200:
+        data = response.json()
+        competitions = data.get('payload',{}).get('list',[])
+        for n in range(len(competitions)):
+            cpName = competitions[n].get('title', '無名稱')
+            cpIdentifyLimit= competitions[n].get('identifyLimit', '無限制')
+            cpPrizeTop=competitions[n].get('prizeTop', '無最高獎金')
+            cpStartTime= competitions[n].get('startTime', '無開始時間')
+            cpEndTime= competitions[n].get('endTime', '無截止時間')
+            cpOrganizer = competitions[n].get('organizerTitle', '無主辦單位')
+            cpHref="https://bhuntr.com/tw/competitions/"+competitions[n].get('alias', '無連結')
+            cpPrizeFields = competitions[n].get('prizeFields', {}).get('bundles', [])
+            cpPrize = []
+            cpPrizeFields = competitions[n].get('prizeFields', {}).get('bundles', [])
+
+            for cpPrizeField in cpPrizeFields:
+                # 取得分類名稱（例如：第一名、第二名）
+                cpPrizeName2 = cpPrizeField.get('machineName', '')
+                cpPrizeName = competitions[n].get('translatePrizeFields', {}).get(cpPrizeName2, {}).get('displayName', '')
+
+                details = cpPrizeField.get('details', [])
+                
+                # 初始化獎項內容
+                prize_data = {
+                    'cpPrizeName': cpPrizeName,
+                    'cpPrizeName2': None,
+                    'cpPrizeValue': None
+                }
+
+                for detail in details:
+                    machineName = detail.get('machineName', '')
+                    displayName = competitions[n].get('translatePrizeFields', {}).get(machineName, {}).get('displayName', '')
+                    value = detail.get('value', None)
+
+                    # 如果這筆是獎狀類型，記到 cpPrizeName2
+                    if displayName and prize_data['cpPrizeName2'] is None:
+                        prize_data['cpPrizeName2'] = displayName
+
+                    # 如果這筆是金額，記到 cpPrizeValue
+                    if value is not None:
+                        prize_data['cpPrizeValue'] = value
+
+                # 加入整合後的獎項
+                cpPrize.append(prize_data)
+            if cpIdentifyLimit['university']:
+                cpPrize=cpPrize if cpPrize else '請至官網查看'
+                result.append({
+                    'cpName': cpName,
+                    'cpIdentifyLimit': cpIdentifyLimit,
+                    'cpPrizeTop': cpPrizeTop,
+                    'cpStartTime': cpStartTime,
+                    'cpEndTime': cpEndTime,
+                    'cpOrganizer': cpOrganizer,
+                    'cpPrize': cpPrize,
+                    'cpHref': cpHref
+                })
+
 with open("competition.json", "w", encoding="utf-8") as f:
-    json.dump(allData, f, ensure_ascii=False, indent=2)        
-driver.quit()
+    json.dump(result, f, ensure_ascii=False, indent=2)

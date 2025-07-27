@@ -29,8 +29,8 @@ for page in range(1,4):
     response= req.get(url, headers=headers)
     if response.status_code == 200:
      data = response.json()
-     
      for job in data['data']['list']:
+        jobNo= job['jobNo']
         jobName=job['jobName']
         jobRo=job['jobRo']
         jobAddrNoDesc=job['jobAddrNoDesc']
@@ -44,6 +44,7 @@ for page in range(1,4):
         custName=job['custName']
         appearDate=job['appearDate']
         result.append({
+            'jobNo': jobNo,
             'jobName': jobName,
             'jobRo': jobRo,
             'jobAddrNoDesc': jobAddrNoDesc,
