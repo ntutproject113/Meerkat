@@ -12,7 +12,7 @@ const rentList = ref([
     address: '中山區雙城街19巷',
     distance: '距中山國中站 320公尺',
     price: 10000,
-    image: 'https://via.placeholder.com/150',
+    image: '../assets/images/renting/house1.jpg',
   }
 ])
 </script>
@@ -22,7 +22,9 @@ const rentList = ref([
     <Menu />
     <!-- Header -->
     <header class="flex items-center justify-between px-6 py-4 border-b border-black">
-      <div class="text-2xl font-bold">佈告欄</div>
+      <div class="flex justify-center items-center">
+        <img src="../assets/images/renting/word.png" alt="佈告欄" class="inline-block mr-2" />
+      </div>
       <div class="w-10 h-10 rounded-full overflow-hidden">
         
       </div>
