@@ -25,22 +25,21 @@ const bgImage = new URL('../assets/images/renting/background.png', import.meta.u
 
 <template> 
   <div
-  class="w-screen h-screen bg-center bg-no-repeat bg-[length:100%_100%] absolute top-0 left-0 bg-fixed -z-10"
-  :style="{ backgroundImage: `url(${bgImage})` }">
-    <Menu />
-    <!-- 標頭 -->
-    <header class="flex items-center justify-between px-6 py-4 border-b border-black">
-      <div class="flex items-center">
-        <img src="../assets/images/renting/word.png" alt="佈告欄" class="inline-block mr-2 w-6 h-auto" />
+    class="w-screen h-screen bg-center bg-no-repeat bg-[length:100%_100%] absolute top-0 left-0 bg-fixed -z-10"
+    :style="{ backgroundImage: `url(${bgImage})` }"
+  >
+    <div class="relative flex flex-col items-center justify-start min-h-screen w-full max-w-4xl mx-auto px-4 md:px-8">
+      <Menu />
+      <!-- 標頭 -->
+      <header class="flex items-center justify-center px-6 py-4 border-b border-black w-full">
+        <div class="flex items-center">
+          <img src="../assets/images/renting/word.png" alt="佈告欄" class="inline-block mr-2 w-6 h-auto" />
+        </div>
         <h1 class="text-lg font-bold">租屋佈告欄</h1>
-      </div>
-      <div class="w-10 h-10 rounded-full overflow-hidden">
-        
-      </div>
-    </header>
-    <div class="flex flex-1 overflow-hidden">
-    <!--租屋資訊-->
-    <div class="w-2/3 p-6 overflow-y-auto">
+      </header>
+      <div class="flex flex-1 w-full overflow-hidden">
+        <!--租屋資訊-->
+        <div class="w-2/3 p-6 overflow-y-auto">
      <div v-if="loading">載入中...</div>
     <div v-if="error" style="color:red;">{{ error }}</div>
 
@@ -56,32 +55,32 @@ const bgImage = new URL('../assets/images/renting/background.png', import.meta.u
     <div v-else-if="!loading">沒有資料</div>
     </div>
     
-      <!-- Right: 篩選 -->
-      <div class="w-1/3 p-6 border-l border-black relative">
-        <div class="flex items-center border border-black rounded-full px-4 py-1 mb-4">
-          <input type="text" placeholder="搜尋…" class="flex-1 outline-none" />
-          <span class="ml-2">🔍</span>
-        </div>
+        <!-- Right: 篩選 -->
+        <div class="w-1/3 p-6 border-l border-black relative">
+          <div class="flex items-center border border-black rounded-full px-4 py-1 mb-4">
+            <input type="text" placeholder="搜尋…" class="flex-1 outline-none" />
+            <span class="ml-2">🔍</span>
+          </div>
 
-        <div>
-          <p class="font-bold mb-2">篩選條件</p>
-          <ul class="space-y-2">
-            <li>地區 ⌄</li>
-            <li>價格 ⌄</li>
-            <li>類型 ⌄</li>
-            <li>其他條件 ⌄</li>
-          </ul>
+          <div>
+            <p class="font-bold mb-2">篩選條件</p>
+            <ul class="space-y-2">
+              <li>地區 ⌄</li>
+              <li>價格 ⌄</li>
+              <li>類型 ⌄</li>
+              <li>其他條件 ⌄</li>
+            </ul>
+          </div>
+          <!-- 狐獴-->
+          <img
+            src="../assets/images/renting/meerkat_Rent.png"
+            alt="狐獴"
+            class="absolute bottom-0 right-4 w-4 md:w-8 h-auto"
+          />
         </div>
-         <!-- 狐獴-->
-        <img
-          src="../assets/images/renting/meerkat_Rent.png"
-          alt="狐獴"
-          class="absolute bottom-0 right-4 w-4 md:w-8 h-auto"
-        />
-        </div>
-        </div>
-
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>

@@ -4,8 +4,6 @@ import { useRouter,useRoute } from 'vue-router';
 import Menu from '../components/Menu.vue';
 import { useTodoStore } from '../stores/todo'
 import { storeToRefs } from 'pinia'
-import { nextTick } from 'vue'
-
 
 const router = useRouter()
 const route = useRoute()
@@ -65,11 +63,11 @@ const handleCheck = (item) => {
 </script>
 
 <template>
-    <div class="page-wrapper">
+    <div class="page-wrapper flex flex-col md:flex-row justify-between items-center">
         <Menu />
         <!--地球-->
         <div>
-            <img :src="imgSrc" alt="成就" class="earth"
+            <img :src="imgSrc" alt="成就" class="earth w-[40vw] max-w-[300px]"
             :class="{ 'earth-hover': isHover }"
             @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"
             @click="goToIsland">
@@ -93,8 +91,9 @@ const handleCheck = (item) => {
 
         <!--目標牌-->
         <div @click="goToGoal">
-            <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
+            <img src="../assets/images/plan/goal.png" alt="目標" class="goal w-[40vw] max-w-[300px]" >
         </div>
+      
         <!--為你推薦-->
         <div class="recommand mx-auto mt-[500px] w-full max-w-[800px] px-4">
             <img src="../assets/images/plan/rec_background.png" alt="背景" class="rec-background">
@@ -128,7 +127,7 @@ const handleCheck = (item) => {
 .earth {
   position: absolute;
   left: 0;
-  top: 5%;
+  top: 1%;
   height: 90vh;
   width: auto;
   max-height: 100vh;
@@ -142,12 +141,13 @@ const handleCheck = (item) => {
   width: auto;
   max-height: 100vh;
 }
-.goal{
-    position: absolute;
-    right:1%;
-    top: 0%;
-    height:250px;
-    width:400px;
+.goal {
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  width: 50vw;    /* 例如佔螢幕寬度一半 */
+  max-width: 400px;
+  height: auto;
 }
 .todolist{
     position: absolute;
@@ -207,13 +207,14 @@ li {
     z-index: 1;
     
 }
-.rec-background{
-    width: 800px;
-    height: 800px;
-    object-fit: cover;
-    display:block;
-    position: absolute;
-    z-index:0;
+.rec-background {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: 0;
 }
 
 .recommand-icon{
@@ -233,27 +234,17 @@ li {
     object-fit: contain;
     z-index: 2;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  width: fit-content;
-  margin:0 auto;
-  z-index:1;
-  position: relative;
-  padding-top: 160px;
-  right:10px;
-}
-
 .image-box {
   position: relative;
   width: 300px; 
+  margin: 0 auto; 
 }
 
 .image-box img {
-  width: 320px;
-  height:270px;
+   width: 100%;
+  height: auto;
   display: block;
+  max-width: 100%;
 }
 
 .image-text {
@@ -279,6 +270,7 @@ li {
   overflow-x: hidden;
 }
 </style>
+
 
 
 
