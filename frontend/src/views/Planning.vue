@@ -95,27 +95,27 @@ const handleCheck = (item) => {
         </div>
       
         <!--為你推薦-->
-        <div class="recommand mx-auto mt-[500px] w-full max-w-[800px] px-4">
+        <div class="recommand">
             <img src="../assets/images/plan/rec_background.png" alt="背景" class="rec-background">
             <img src="../assets/images/plan/recommand_icon.png" alt="推薦圖示" class="recommand-icon">
             <p>
             <strong style="color: #703C05; font-size: 48px ; position: absolute; top: 70px; left: 160px;">為您推薦</strong>
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 py-6">
-                <div class="image-box" @click="goToRenting">
-                    <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" />
+            <div class="arrangement">
+                <div class="image-box1" @click="goToRenting">
+                    <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" class="box"/>
                     <div class="image-text">租屋</div>
                 </div>
-                <div class="image-box" @click="goToIntern">
-                    <img src="../assets/images/plan/rec_content.png" alt="實習推薦" />
+                <div class="image-box2" @click="goToIntern">
+                    <img src="../assets/images/plan/rec_content.png" alt="實習推薦" class="box"/>
                     <div class="image-text">實習</div>
                 </div>
-                <div class="image-box" @click="goToCompetition">
-                    <img src="../assets/images/plan/rec_content.png" alt="比賽推薦" />
+                <div class="image-box3" @click="goToCompetition">
+                    <img src="../assets/images/plan/rec_content.png" alt="比賽推薦" class="box"/>
                     <div class="image-text">比賽</div>
                 </div>
-                <div class="image-box" @click="goToScholarship">
-                    <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" />
+                <div class="image-box4" @click="goToScholarship">
+                    <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" class="box"/>
                     <div class="image-text">獎學金</div>
                 </div>
             </div>
@@ -203,9 +203,27 @@ li {
 }
 
 .recommand{
-    position:relative;
-    z-index: 1;
-    
+  display: flex;
+  position: relative;
+  position: absolute;
+  z-index: 1;
+  max-width: 770px;
+  width: 90%;
+  height: 81%;
+  top: 0%;
+  transform: translateY(105%);
+}
+.arrangement{
+  display: flex;
+  object-fit: cover;
+  position: relative;
+  position: absolute;
+  max-width: 770px;
+  width: 75%;
+  height: 70%;
+  top: 25%;
+  left: 11.5%;
+  z-index: 2;
 }
 .rec-background {
   width: 100%;
@@ -234,12 +252,43 @@ li {
     object-fit: contain;
     z-index: 2;
 }
-.image-box {
-  position: relative;
-  width: 300px; 
-  margin: 0 auto; 
+.image-box1 {
+  object-fit: contain;
+  position: absolute;
+  max-width: 280px; 
+  width: 45%;
+  height: 45%;
 }
-
+.image-box2 {
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  max-width: 280px; 
+  width: 45%;
+  height: 45%;
+}
+.image-box3 {
+  object-fit: contain;
+  position: absolute;
+  bottom: 3%;
+  max-width: 280px; 
+  width: 45%;
+  height: 45%;
+}
+.image-box4 {
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 3%;
+  max-width: 280px; 
+  width: 45%;
+  height: 45%;
+}
+.box{
+  position: absolute;
+  max-width: 280px; 
+  width: 100%;
+}
 .image-box img {
    width: 100%;
   height: auto;
@@ -249,8 +298,7 @@ li {
 
 .image-text {
   position: absolute;
-  top: 42px;
-  left: 10px;
+  top: 15px;
   width: 100%;
   text-align: center;
   font-weight: bold;

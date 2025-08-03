@@ -5,6 +5,9 @@
 <template>
     <div class="page-wrapper">
         <Menu />
+        <RouterLink to = "/aptitudeTestResult">
+            <img src="../assets/images/aptitude_test_result/arrow.png" class="arrow" >
+        </RouterLink>
         <div class="question">
             <div class="word">
                 一天放學後，
@@ -60,5 +63,12 @@
         width: 70vw;
         height: 55vh;
         background-color: #333333;
+    }
+    .arrow{
+        z-index: 2;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        width: 100px;
     }
 </style>
