@@ -1,10 +1,16 @@
 <script setup>
+    import { ref } from 'vue'
     import Menu from '../components/Menu.vue';
+
+    
 </script>
 
 <template>
     <div class="page-wrapper">
         <Menu />
+        <RouterLink to = "/aptitudeTest3">
+            <img src="../assets/images/aptitude_test_result/arrow.png" class="arrow" >
+        </RouterLink>
         <div class="question">
             <div class="word">
                 期末快到了，
@@ -59,5 +65,12 @@
         width: 70vw;
         height: 55vh;
         background-color: #333333;
+    }
+    .arrow{
+        z-index: 2;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        width: 100px;
     }
 </style>
