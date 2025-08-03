@@ -21,8 +21,7 @@ onMounted(async () => {
 </script>
 
 <template>
-
-
+ 
   <div class="fixed top-0 left-0 w-screen h-screen bg-no-repeat bg-cover bg-center pointer-events-none -z-10"
     style="background-image: url('../assets/images/background.png');"></div>
 
@@ -31,23 +30,24 @@ onMounted(async () => {
 
     <!-- 標題區 -->
     <header class="flex items-center justify-between px-6 py-4 border-b border-black w-full">
-      <h1 class="text-xl font-bold">推薦租屋資訊</h1>
-      <img src="../assets/images/renting/avatar.png" alt="使用者" class="w-10 h-10 rounded-full" />
+      <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
+    
     </header>
 
     <!-- 主內容 -->
     <div class="flex flex-1 w-full mt-4">
+    
       <!-- 左邊列表 -->
+
       <div class="w-2/3 pr-4 space-y-4 overflow-y-auto">
+        <h1 class="title">推薦租屋資訊</h1>
         <div v-if="loading">載入中...</div>
         <div v-if="error" class="text-red-600">{{ error }}</div>
         
-        <template v-if="rentList.length">
-          <div
-            v-for="(rent, index) in rentList"
-            :key="index"
-            class="rent-card"
-          >
+       <div v-if="rentList.length">
+        <div v-for="(rent, index) in rentList" :key="index">
+          <!-- 每一張租屋卡片 -->
+          <div class="rent-card">
             <img :src="rent.image || '../assets/images/default-room.jpg'" alt="房屋照片" class="rent-image" />
 
             <div class="rent-content">
@@ -55,7 +55,7 @@ onMounted(async () => {
 
               <div class="rent-info">
                 <img src="../assets/images/renting/name.png" class="icon" alt="房屋類型" />
-                {{ rent.rentType }} ｜{{ rent.houseType}}
+                {{ rent.rentType }} ｜{{ rent.houseType }}
               </div>
 
               <div class="rent-info">
@@ -76,10 +76,21 @@ onMounted(async () => {
               </p>
             </div>
           </div>
-        </template>
+
+          <!-- ✅ 分隔線：不是最後一張時顯示 -->
+          <img
+            v-if="index !== rentList.length - 1"
+            src="../assets/images/renting/line.png"
+            alt="分隔線"
+            class="line"
+          />
+        </div>
+      </div>
+
 
         <div v-else-if="!loading">沒有資料</div>
       </div>
+    
 
       <!-- 右邊篩選 -->
       <div class="w-1/3 pl-4 border-l border-black relative">
@@ -100,20 +111,41 @@ onMounted(async () => {
       <img
         src="../assets/images/renting/meerkat_Rent.png"
         alt="狐獴"
-        class="fixed bottom-0 right-4 w-10 md:w-16 h-auto z-20"
+        class="meerkat"
       />
     </div>
   </div>
 </template>
 
 <style scoped>
-.rent-card {
-  display: flex;
-  border: 1px solid black;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+.word {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+.title{
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
   margin-bottom: 16px;
+  text-align: center;
+}
+.rent-card {
+  position: relative;
+  display: flex;
+  border: none;
+  overflow: hidden;
+  margin-bottom: -5px;
+  
+}
+.line {
+  display: block;
+  width:700px;
+  height: 30%; /* 根據你的圖實際高度調整 */
+  object-fit: contain;
+  margin-left:auto;
+  margin-right: auto;
+  pointer-events: none;
 }
 
 .rent-image {
@@ -164,6 +196,14 @@ onMounted(async () => {
   color: black;
   font-size: 14px;
   margin-left: 4px;
+}
+.meerkat{
+  position: fixed;
+  bottom:0%;
+  right: 2%;
+  width: 350px;
+  height: auto;
+  z-index: 20;
 }
 
 </style>
