@@ -21,25 +21,25 @@ onMounted(async () => {
 </script>
 
 <template>
- 
-  <div class="fixed top-0 left-0 w-screen h-screen bg-no-repeat bg-cover bg-center pointer-events-none -z-10"
-    style="background-image: url('../assets/images/background.png');"></div>
 
-  <div class="relative flex flex-col items-center justify-start min-h-screen w-full max-w-6xl mx-auto px-4">
+  <div class="fullscreen-background"></div>
+
+  <div class="layout-container">
     <Menu />
 
     <!-- 標題區 -->
-    <header class="flex items-center justify-between px-6 py-4 border-b border-black w-full">
-      <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
-    
+    <header class="header">
+      <div class="header-border">
+        <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
+      </div>
     </header>
 
     <!-- 主內容 -->
-    <div class="flex flex-1 w-full mt-4">
+    <div class="block">
     
       <!-- 左邊列表 -->
 
-      <div class="w-2/3 pr-4 space-y-4 overflow-y-auto">
+      <div class="data-block">
         <h1 class="title">推薦租屋資訊</h1>
         <div v-if="loading">載入中...</div>
         <div v-if="error" class="text-red-600">{{ error }}</div>
@@ -77,7 +77,7 @@ onMounted(async () => {
             </div>
           </div>
 
-          <!-- ✅ 分隔線：不是最後一張時顯示 -->
+        
           <img
             v-if="index !== rentList.length - 1"
             src="../assets/images/renting/line.png"
@@ -93,10 +93,10 @@ onMounted(async () => {
     
 
       <!-- 右邊篩選 -->
-      <div class="w-1/3 pl-4 border-l border-black relative">
-        <div class="flex items-center border border-black rounded-full px-4 py-2 mb-4">
-          <input type="text" placeholder="搜尋…" class="flex-1 outline-none bg-transparent" />
-          <span class="ml-2">🔍</span>
+      <div class="search-block">
+        <div class="search">
+          <input class="search-input" type="text" placeholder="搜尋…" />
+          <img src="../assets/images/renting/search.png" class="icon" alt="搜尋圖示" />
         </div>
         <div>
           <p class="font-bold mb-2">篩選條件</p>
@@ -118,16 +118,83 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/renting/background.png');
+  background-size: cover;     
+  background-position: center;  
+  background-repeat: no-repeat; 
+  z-index: -1;                 
+}
+.layout-container {
+  position: relative;           
+  display: flex;                 
+  flex-direction: column;       
+  align-items: center;           
+  justify-content: flex-start;   
+  min-height: 100vh;              
+  width: 100%;   
+  height:100vh;               
+  max-width: 72rem;              
+  margin-left: auto;              
+  margin-right: auto;
+  padding-left: 1rem;             
+  padding-right: 1rem;
+  overflow: hidden;
+}
+.header {
+  display: flex;                  
+  align-items: center;             
+  justify-content: space-between;  
+  padding-left: 1.5rem;           
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;               
+  padding-bottom: 0.5rem;
+  border-bottom: none;  
+  width: 100%;     
+}     
+.header-border {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  background-image: url('../assets/images/renting/Header.png'); 
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% auto;
+}          
 .word {
   width: 150px;
   height: auto;
-  margin: 0 auto;
+  margin: -20px auto 10px auto;    
+}
+.block{
+  display: flex;          
+  flex: 1 1 0%;           
+  width: 100%;            
+  margin-top: 1rem; 
+  height: calc(100vh - 100px); 
+  overflow: hidden;      
+}
+.data-block {
+  width: 70%;   
+  height:100%;      
+  padding-right: 1rem;    
+  overflow-y: auto;        
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;   
 }
 .title{
   font-size: 32px;
   font-weight: bold;
   color: #000000;
-  margin-bottom: 16px;
+  margin:0px auto;
   text-align: center;
 }
 .rent-card {
@@ -140,11 +207,11 @@ onMounted(async () => {
 }
 .line {
   display: block;
-  width:700px;
-  height: 30%; /* 根據你的圖實際高度調整 */
+  width:100%;
+  max-width:800px;
+  height:auto;
+  margin:-70px auto;
   object-fit: contain;
-  margin-left:auto;
-  margin-right: auto;
   pointer-events: none;
 }
 
@@ -205,5 +272,39 @@ onMounted(async () => {
   height: auto;
   z-index: 20;
 }
+.search-block{
+  width: 30%;
+  padding-left: 2rem;
+  min-height:500px;
+  background-image: url('../assets/images/renting/right.png'); 
+  background-repeat: no-repeat;
+  background-position: left top;  /* 對齊左上角 */
+  background-size:40px 100%; 
+  position: relative;
+}
+.search{
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 9999px; 
+  padding-left: 1rem;  
+  padding-right: 1rem;
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem; 
+}
+.search-input{
+  flex: 1;
+  outline: none;
+  background-color: transparent; 
+  border: none;
+  font-size: 16px; 
+}
 
+</style>
+<style>
+html, body {
+  height: 100%;
+  overflow: hidden; /* 讓整頁不滾動 */
+}
 </style>
