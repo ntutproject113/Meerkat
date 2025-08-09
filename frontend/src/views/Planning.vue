@@ -202,46 +202,46 @@ li {
   background-image: url('../assets/images/plan/checked.png');
 }
 
+
 .recommand{
-  display: flex;
-  position: relative;
-  position: absolute;
-  z-index: 1;
-  max-width: 770px;
-  width: 90%;
-  height: 81%;
-  top: 0%;
-  transform: translateY(105%);
+    position:relative;
+    right:0%;
+    top: 500px;
+    width:800px;
+    height: 800px;
+    z-index: 1;
 }
+    
+
 .arrangement{
   display: flex;
   object-fit: cover;
-  position: relative;
   position: absolute;
   max-width: 770px;
   width: 75%;
   height: 70%;
-  top: 25%;
+  top: 20%;
   left: 11.5%;
   z-index: 2;
 }
 .rec-background {
-  width: 100%;
+  width:800px;
   max-width: 800px;
   height: auto;
   object-fit: cover;
   display: block;
   position: absolute;
   z-index: 0;
+  
 }
 
 .recommand-icon{
-        position: absolute;
-        top:60px;
-        left:75px;
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
+  position: absolute;
+  top:60px;
+  left:75px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 .rec-content{
     position: absolute;
@@ -256,38 +256,39 @@ li {
   object-fit: contain;
   position: absolute;
   max-width: 280px; 
-  width: 45%;
-  height: 45%;
+  width: 50%;
+  height: 50%;
 }
 .image-box2 {
   object-fit: contain;
   position: absolute;
   right: 0;
   max-width: 280px; 
-  width: 45%;
-  height: 45%;
+  width: 50%;
+  height: 50%;
 }
 .image-box3 {
   object-fit: contain;
   position: absolute;
-  bottom: 3%;
+  bottom: 7%;
   max-width: 280px; 
-  width: 45%;
-  height: 45%;
+  width: 50%;
+  height: 50%;
 }
 .image-box4 {
   object-fit: contain;
   position: absolute;
   right: 0;
-  bottom: 3%;
+  bottom: 7%;
   max-width: 280px; 
-  width: 45%;
-  height: 45%;
+  width: 50%;
+  height: 50%;
 }
 .box{
   position: absolute;
   max-width: 280px; 
   width: 100%;
+  height:auto;
 }
 .image-box img {
    width: 100%;
