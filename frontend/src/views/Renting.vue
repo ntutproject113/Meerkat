@@ -137,7 +137,7 @@ onMounted(async () => {
   align-items: center;           
   justify-content: flex-start;   
   min-height: 100vh;              
-  width: 100%;   
+  width: 90%;   
   height:100vh;               
   max-width: 72rem;              
   margin-left: auto;              
@@ -171,7 +171,7 @@ onMounted(async () => {
 .word {
   width: 150px;
   height: auto;
-  margin: -20px auto 10px auto;    
+  margin: 1% auto 1% auto;    
 }
 .block{
   display: flex;          
@@ -240,8 +240,8 @@ onMounted(async () => {
 }
 
 .icon {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-right: 6px;
   object-fit: contain;
 }
@@ -279,7 +279,7 @@ onMounted(async () => {
   background-image: url('../assets/images/renting/right.png'); 
   background-repeat: no-repeat;
   background-position: left top;  /* 對齊左上角 */
-  background-size:40px 100%; 
+  background-size:40px 80%; 
   position: relative;
 }
 .search{
