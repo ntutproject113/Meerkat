@@ -16,7 +16,7 @@ try:
 except Exception as e:
     print(e)
 
-url0 = "https://www.104.com.tw/jobs/search/list?asc=0&hotJob=0&jobsource=students_intern_PC&keyword=%E8%B3%87%E8%A8%8A%20%E8%B2%A1%E9%87%91&order=12&page={page}&pagesize=30&ro=2&rostatus=1024&showDutyTime=1&tab=intern"
+url0 = "https://www.104.com.tw/jobs/search/api/jobs?asc=0&hotJob=0&jobsource=students_intern_PC&keyword=%E8%B3%87%E8%A8%8A%20%E8%B2%A1%E9%87%91&order=12&page={page}&pagesize=30&rostatus=1024&showDutyTime=1&tab=intern"
 result = []
 for page in range(1,4):
     url = url0.format(page=page)
@@ -29,6 +29,7 @@ for page in range(1,4):
     response= req.get(url, headers=headers)
     if response.status_code == 200:
      data = response.json()
+     print(data)
      for job in data['data']['list']:
         jobNo= job['jobNo']
         jobName=job['jobName']
@@ -43,11 +44,15 @@ for page in range(1,4):
         salaryDesc=job['salaryDesc']
         custName=job['custName']
         appearDate=job['appearDate']
+        jobCat= job['jobCat']
+        major=job['major']
         result.append({
             'jobNo': jobNo,
             'jobName': jobName,
             'jobRo': jobRo,
-            'jobAddrNoDesc': jobAddrNoDesc,
+            'jobCat': jobCat, #
+            'major': major,#
+            'jobAddrNoDesc': jobAddrNoDesc,#
             'jobAddress': jobAddress,
             'description': description,
             'optionEdu': optionEdu,

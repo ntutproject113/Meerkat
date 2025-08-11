@@ -1,0 +1,2018 @@
+[
+  {
+    "cityNumber": "0",
+    "cityCode": "0000",
+    "cityName": "台北市",
+    "municipality": "true",
+    "areaList": [
+      {
+        "areaName": "北投區",
+        "zipcode": "112",
+        "sid": "9"
+      },
+      {
+        "areaName": "士林區",
+        "zipcode": "111",
+        "sid": "8"
+      },
+      {
+        "areaName": "大同區",
+        "zipcode": "103",
+        "sid": "2"
+      },
+      {
+        "areaName": "中山區",
+        "zipcode": "104",
+        "sid": "3"
+      },
+      {
+        "areaName": "松山區",
+        "zipcode": "105",
+        "sid": "4"
+      },
+      {
+        "areaName": "內湖區",
+        "zipcode": "114",
+        "sid": "10"
+      },
+      {
+        "areaName": "南港區",
+        "zipcode": "115",
+        "sid": "11"
+      },
+      {
+        "areaName": "萬華區",
+        "zipcode": "108",
+        "sid": "6"
+      },
+      {
+        "areaName": "中正區",
+        "zipcode": "100",
+        "sid": "1"
+      },
+      {
+        "areaName": "大安區",
+        "zipcode": "106",
+        "sid": "5"
+      },
+      {
+        "areaName": "信義區",
+        "zipcode": "110",
+        "sid": "7"
+      },
+      {
+        "areaName": "文山區",
+        "zipcode": "116",
+        "sid": "12"
+      }
+    ]
+  },
+  {
+    "cityNumber": "1",
+    "cityCode": "0001",
+    "cityName": "新北市",
+    "municipality": "true",
+    "areaList": [
+      {
+        "areaName": "中和區",
+        "zipcode": "235",
+        "sid": "27"
+      },
+      {
+        "areaName": "永和區",
+        "zipcode": "234",
+        "sid": "26"
+      },
+      {
+        "areaName": "板橋區",
+        "zipcode": "220",
+        "sid": "15"
+      },
+      {
+        "areaName": "新店區",
+        "zipcode": "231",
+        "sid": "23"
+      },
+      {
+        "areaName": "新莊區",
+        "zipcode": "242",
+        "sid": "33"
+      },
+      {
+        "areaName": "土城區",
+        "zipcode": "236",
+        "sid": "28"
+      },
+      {
+        "areaName": "三重區",
+        "zipcode": "241",
+        "sid": "32"
+      },
+      {
+        "areaName": "蘆洲區",
+        "zipcode": "247",
+        "sid": "36"
+      },
+      {
+        "areaName": "五股區",
+        "zipcode": "248",
+        "sid": "37"
+      },
+      {
+        "areaName": "泰山區",
+        "zipcode": "243",
+        "sid": "34"
+      },
+      {
+        "areaName": "林口區",
+        "zipcode": "244",
+        "sid": "35"
+      },
+      {
+        "areaName": "鶯歌區",
+        "zipcode": "239",
+        "sid": "31"
+      },
+      {
+        "areaName": "三峽區",
+        "zipcode": "237",
+        "sid": "29"
+      },
+      {
+        "areaName": "樹林區",
+        "zipcode": "238",
+        "sid": "30"
+      },
+      {
+        "areaName": "八里區",
+        "zipcode": "249",
+        "sid": "38"
+      },
+      {
+        "areaName": "淡水區",
+        "zipcode": "251",
+        "sid": "39"
+      },
+      {
+        "areaName": "三芝區",
+        "zipcode": "252",
+        "sid": "40"
+      },
+      {
+        "areaName": "石門區",
+        "zipcode": "253",
+        "sid": "41"
+      },
+      {
+        "areaName": "金山區",
+        "zipcode": "208",
+        "sid": "14"
+      },
+      {
+        "areaName": "萬里區",
+        "zipcode": "207",
+        "sid": "13"
+      },
+      {
+        "areaName": "汐止區",
+        "zipcode": "221",
+        "sid": "16"
+      },
+      {
+        "areaName": "平溪區",
+        "zipcode": "226",
+        "sid": "20"
+      },
+      {
+        "areaName": "瑞芳區",
+        "zipcode": "224",
+        "sid": "19"
+      },
+      {
+        "areaName": "雙溪區",
+        "zipcode": "227",
+        "sid": "21"
+      },
+      {
+        "areaName": "貢寮區",
+        "zipcode": "228",
+        "sid": "22"
+      },
+      {
+        "areaName": "石碇區",
+        "zipcode": "223",
+        "sid": "18"
+      },
+      {
+        "areaName": "深坑區",
+        "zipcode": "222",
+        "sid": "17"
+      },
+      {
+        "areaName": "坪林區",
+        "zipcode": "232",
+        "sid": "24"
+      },
+      {
+        "areaName": "烏來區",
+        "zipcode": "233",
+        "sid": "25"
+      }
+    ]
+  },
+  {
+    "cityNumber": "2",
+    "cityCode": "0002",
+    "cityName": "基隆市",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "七堵區",
+        "zipcode": "206",
+        "sid": "48"
+      },
+      {
+        "areaName": "安樂區",
+        "zipcode": "204",
+        "sid": "46"
+      },
+      {
+        "areaName": "中正區",
+        "zipcode": "202",
+        "sid": "44"
+      },
+      {
+        "areaName": "暖暖區",
+        "zipcode": "205",
+        "sid": "47"
+      },
+      {
+        "areaName": "信義區",
+        "zipcode": "201",
+        "sid": "43"
+      },
+      {
+        "areaName": "仁愛區",
+        "zipcode": "200",
+        "sid": "42"
+      },
+      {
+        "areaName": "中山區",
+        "zipcode": "203",
+        "sid": "45"
+      }
+    ]
+  },
+  {
+    "cityNumber": "3",
+    "cityCode": "0004",
+    "cityName": "宜蘭縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "宜蘭市",
+        "zipcode": "260",
+        "sid": "53"
+      },
+      {
+        "areaName": "羅東鎮",
+        "zipcode": "265",
+        "sid": "58"
+      },
+      {
+        "areaName": "蘇澳鎮",
+        "zipcode": "270",
+        "sid": "63"
+      },
+      {
+        "areaName": "頭城鎮",
+        "zipcode": "261",
+        "sid": "54"
+      },
+      {
+        "areaName": "三星鄉",
+        "zipcode": "266",
+        "sid": "59"
+      },
+      {
+        "areaName": "礁溪鄉",
+        "zipcode": "262",
+        "sid": "55"
+      },
+      {
+        "areaName": "冬山鄉",
+        "zipcode": "269",
+        "sid": "62"
+      },
+      {
+        "areaName": "員山鄉",
+        "zipcode": "264",
+        "sid": "57"
+      },
+      {
+        "areaName": "壯圍鄉",
+        "zipcode": "263",
+        "sid": "56"
+      },
+      {
+        "areaName": "五結鄉",
+        "zipcode": "268",
+        "sid": "61"
+      },
+      {
+        "areaName": "大同鄉",
+        "zipcode": "267",
+        "sid": "60"
+      },
+      {
+        "areaName": "南澳鄉",
+        "zipcode": "272",
+        "sid": "64"
+      }
+    ]
+  },
+  {
+    "cityNumber": "4",
+    "cityCode": "0006",
+    "cityName": "新竹市",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "東區",
+        "zipcode": "300",
+        "sid": "67"
+      },
+      {
+        "areaName": "北區",
+        "zipcode": "300",
+        "sid": "68"
+      },
+      {
+        "areaName": "香山區",
+        "zipcode": "300",
+        "sid": "69"
+      }
+    ]
+  },
+  {
+    "cityNumber": "5",
+    "cityCode": "0007",
+    "cityName": "新竹縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "竹北市",
+        "zipcode": "302",
+        "sid": "70"
+      },
+      {
+        "areaName": "竹東鎮",
+        "zipcode": "310",
+        "sid": "77"
+      },
+      {
+        "areaName": "新埔鎮",
+        "zipcode": "305",
+        "sid": "73"
+      },
+      {
+        "areaName": "關西鎮",
+        "zipcode": "306",
+        "sid": "74"
+      },
+      {
+        "areaName": "湖口鄉",
+        "zipcode": "303",
+        "sid": "71"
+      },
+      {
+        "areaName": "新豐鄉",
+        "zipcode": "304",
+        "sid": "72"
+      },
+      {
+        "areaName": "寶山鄉",
+        "zipcode": "308",
+        "sid": "76"
+      },
+      {
+        "areaName": "芎林鄉",
+        "zipcode": "307",
+        "sid": "75"
+      },
+      {
+        "areaName": "橫山鄉",
+        "zipcode": "312",
+        "sid": "79"
+      },
+      {
+        "areaName": "北埔鄉",
+        "zipcode": "314",
+        "sid": "81"
+      },
+      {
+        "areaName": "峨眉鄉",
+        "zipcode": "315",
+        "sid": "82"
+      },
+      {
+        "areaName": "尖石鄉",
+        "zipcode": "313",
+        "sid": "80"
+      },
+      {
+        "areaName": "五峰鄉",
+        "zipcode": "311",
+        "sid": "78"
+      }
+    ]
+  },
+  {
+    "cityNumber": "6",
+    "cityCode": "0008",
+    "cityName": "桃園市",
+    "municipality": "true",
+    "areaList": [
+      {
+        "areaName": "桃園區",
+        "zipcode": "330",
+        "sid": "89"
+      },
+      {
+        "areaName": "中壢區",
+        "zipcode": "320",
+        "sid": "83"
+      },
+      {
+        "areaName": "平鎮區",
+        "zipcode": "324",
+        "sid": "84"
+      },
+      {
+        "areaName": "八德區",
+        "zipcode": "334",
+        "sid": "91"
+      },
+      {
+        "areaName": "楊梅區",
+        "zipcode": "326",
+        "sid": "86"
+      },
+      {
+        "areaName": "大溪區",
+        "zipcode": "335",
+        "sid": "92"
+      },
+      {
+        "areaName": "蘆竹區",
+        "zipcode": "338",
+        "sid": "95"
+      },
+      {
+        "areaName": "龜山區",
+        "zipcode": "333",
+        "sid": "90"
+      },
+      {
+        "areaName": "龍潭區",
+        "zipcode": "325",
+        "sid": "85"
+      },
+      {
+        "areaName": "大園區",
+        "zipcode": "337",
+        "sid": "94"
+      },
+      {
+        "areaName": "觀音區",
+        "zipcode": "328",
+        "sid": "88"
+      },
+      {
+        "areaName": "新屋區",
+        "zipcode": "327",
+        "sid": "87"
+      },
+      {
+        "areaName": "復興區",
+        "zipcode": "336",
+        "sid": "93"
+      }
+    ]
+  },
+  {
+    "cityNumber": "7",
+    "cityCode": "0009",
+    "cityName": "苗栗縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "苗栗市",
+        "zipcode": "360",
+        "sid": "104"
+      },
+      {
+        "areaName": "頭份市",
+        "zipcode": "351",
+        "sid": "97"
+      },
+      {
+        "areaName": "竹南鎮",
+        "zipcode": "350",
+        "sid": "96"
+      },
+      {
+        "areaName": "後龍鎮",
+        "zipcode": "356",
+        "sid": "101"
+      },
+      {
+        "areaName": "苑裡鎮",
+        "zipcode": "358",
+        "sid": "103"
+      },
+      {
+        "areaName": "卓蘭鎮",
+        "zipcode": "369",
+        "sid": "113"
+      },
+      {
+        "areaName": "通霄鎮",
+        "zipcode": "357",
+        "sid": "102"
+      },
+      {
+        "areaName": "造橋鄉",
+        "zipcode": "361",
+        "sid": "105"
+      },
+      {
+        "areaName": "南庄鄉",
+        "zipcode": "353",
+        "sid": "99"
+      },
+      {
+        "areaName": "三灣鄉",
+        "zipcode": "352",
+        "sid": "98"
+      },
+      {
+        "areaName": "三義鄉",
+        "zipcode": "367",
+        "sid": "111"
+      },
+      {
+        "areaName": "大湖鄉",
+        "zipcode": "364",
+        "sid": "108"
+      },
+      {
+        "areaName": "公館鄉",
+        "zipcode": "363",
+        "sid": "107"
+      },
+      {
+        "areaName": "獅潭鄉",
+        "zipcode": "354",
+        "sid": "100"
+      },
+      {
+        "areaName": "頭屋鄉",
+        "zipcode": "362",
+        "sid": "106"
+      },
+      {
+        "areaName": "銅鑼鄉",
+        "zipcode": "366",
+        "sid": "110"
+      },
+      {
+        "areaName": "泰安鄉",
+        "zipcode": "365",
+        "sid": "109"
+      },
+      {
+        "areaName": "西湖鄉",
+        "zipcode": "368",
+        "sid": "112"
+      }
+    ]
+  },
+  {
+    "cityNumber": "8",
+    "cityCode": "0010",
+    "cityName": "台中市",
+    "municipality": "true",
+    "areaList": [
+      {
+        "areaName": "西屯區",
+        "zipcode": "407",
+        "sid": "120"
+      },
+      {
+        "areaName": "南屯區",
+        "zipcode": "408",
+        "sid": "121"
+      },
+      {
+        "areaName": "北屯區",
+        "zipcode": "406",
+        "sid": "119"
+      },
+      {
+        "areaName": "北區",
+        "zipcode": "404",
+        "sid": "118"
+      },
+      {
+        "areaName": "西區",
+        "zipcode": "403",
+        "sid": "117"
+      },
+      {
+        "areaName": "中區",
+        "zipcode": "400",
+        "sid": "114"
+      },
+      {
+        "areaName": "東區",
+        "zipcode": "401",
+        "sid": "115"
+      },
+      {
+        "areaName": "南區",
+        "zipcode": "402",
+        "sid": "116"
+      },
+      {
+        "areaName": "沙鹿區",
+        "zipcode": "433",
+        "sid": "136"
+      },
+      {
+        "areaName": "龍井區",
+        "zipcode": "434",
+        "sid": "137"
+      },
+      {
+        "areaName": "大肚區",
+        "zipcode": "432",
+        "sid": "135"
+      },
+      {
+        "areaName": "烏日區",
+        "zipcode": "414",
+        "sid": "125"
+      },
+      {
+        "areaName": "霧峰區",
+        "zipcode": "413",
+        "sid": "124"
+      },
+      {
+        "areaName": "大里區",
+        "zipcode": "412",
+        "sid": "123"
+      },
+      {
+        "areaName": "太平區",
+        "zipcode": "411",
+        "sid": "122"
+      },
+      {
+        "areaName": "豐原區",
+        "zipcode": "420",
+        "sid": "126"
+      },
+      {
+        "areaName": "石岡區",
+        "zipcode": "422",
+        "sid": "128"
+      },
+      {
+        "areaName": "新社區",
+        "zipcode": "426",
+        "sid": "131"
+      },
+      {
+        "areaName": "東勢區",
+        "zipcode": "423",
+        "sid": "129"
+      },
+      {
+        "areaName": "和平區",
+        "zipcode": "424",
+        "sid": "130"
+      },
+      {
+        "areaName": "后里區",
+        "zipcode": "421",
+        "sid": "127"
+      },
+      {
+        "areaName": "神岡區",
+        "zipcode": "429",
+        "sid": "134"
+      },
+      {
+        "areaName": "大雅區",
+        "zipcode": "428",
+        "sid": "133"
+      },
+      {
+        "areaName": "潭子區",
+        "zipcode": "427",
+        "sid": "132"
+      },
+      {
+        "areaName": "大甲區",
+        "zipcode": "437",
+        "sid": "140"
+      },
+      {
+        "areaName": "大安區",
+        "zipcode": "439",
+        "sid": "142"
+      },
+      {
+        "areaName": "外埔區",
+        "zipcode": "438",
+        "sid": "141"
+      },
+      {
+        "areaName": "清水區",
+        "zipcode": "436",
+        "sid": "139"
+      },
+      {
+        "areaName": "梧棲區",
+        "zipcode": "435",
+        "sid": "138"
+      }
+    ]
+  },
+  {
+    "cityNumber": "9",
+    "cityCode": "0012",
+    "cityName": "彰化縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "彰化市",
+        "zipcode": "500",
+        "sid": "143"
+      },
+      {
+        "areaName": "花壇鄉",
+        "zipcode": "503",
+        "sid": "145"
+      },
+      {
+        "areaName": "芬園鄉",
+        "zipcode": "502",
+        "sid": "144"
+      },
+      {
+        "areaName": "和美鎮",
+        "zipcode": "508",
+        "sid": "150"
+      },
+      {
+        "areaName": "鹿港鎮",
+        "zipcode": "505",
+        "sid": "147"
+      },
+      {
+        "areaName": "伸港鄉",
+        "zipcode": "509",
+        "sid": "151"
+      },
+      {
+        "areaName": "線西鄉",
+        "zipcode": "507",
+        "sid": "149"
+      },
+      {
+        "areaName": "福興鄉",
+        "zipcode": "506",
+        "sid": "148"
+      },
+      {
+        "areaName": "秀水鄉",
+        "zipcode": "504",
+        "sid": "146"
+      },
+      {
+        "areaName": "二林鎮",
+        "zipcode": "526",
+        "sid": "165"
+      },
+      {
+        "areaName": "溪湖鎮",
+        "zipcode": "514",
+        "sid": "156"
+      },
+      {
+        "areaName": "北斗鎮",
+        "zipcode": "521",
+        "sid": "160"
+      },
+      {
+        "areaName": "芳苑鄉",
+        "zipcode": "528",
+        "sid": "167"
+      },
+      {
+        "areaName": "埔鹽鄉",
+        "zipcode": "516",
+        "sid": "158"
+      },
+      {
+        "areaName": "埔心鄉",
+        "zipcode": "513",
+        "sid": "155"
+      },
+      {
+        "areaName": "大城鄉",
+        "zipcode": "527",
+        "sid": "166"
+      },
+      {
+        "areaName": "竹塘鄉",
+        "zipcode": "525",
+        "sid": "164"
+      },
+      {
+        "areaName": "埤頭鄉",
+        "zipcode": "523",
+        "sid": "162"
+      },
+      {
+        "areaName": "溪州鄉",
+        "zipcode": "524",
+        "sid": "163"
+      },
+      {
+        "areaName": "員林市",
+        "zipcode": "510",
+        "sid": "152"
+      },
+      {
+        "areaName": "田中鎮",
+        "zipcode": "520",
+        "sid": "159"
+      },
+      {
+        "areaName": "大村鄉",
+        "zipcode": "515",
+        "sid": "157"
+      },
+      {
+        "areaName": "永靖鄉",
+        "zipcode": "512",
+        "sid": "154"
+      },
+      {
+        "areaName": "社頭鄉",
+        "zipcode": "511",
+        "sid": "153"
+      },
+      {
+        "areaName": "田尾鄉",
+        "zipcode": "522",
+        "sid": "161"
+      },
+      {
+        "areaName": "二水鄉",
+        "zipcode": "530",
+        "sid": "168"
+      }
+    ]
+  },
+  {
+    "cityNumber": "10",
+    "cityCode": "0013",
+    "cityName": "南投縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "信義鄉",
+        "zipcode": "556",
+        "sid": "179"
+      },
+      {
+        "areaName": "南投市",
+        "zipcode": "540",
+        "sid": "169"
+      },
+      {
+        "areaName": "草屯鎮",
+        "zipcode": "542",
+        "sid": "171"
+      },
+      {
+        "areaName": "埔里鎮",
+        "zipcode": "545",
+        "sid": "173"
+      },
+      {
+        "areaName": "竹山鎮",
+        "zipcode": "557",
+        "sid": "180"
+      },
+      {
+        "areaName": "集集鎮",
+        "zipcode": "552",
+        "sid": "176"
+      },
+      {
+        "areaName": "名間鄉",
+        "zipcode": "551",
+        "sid": "175"
+      },
+      {
+        "areaName": "中寮鄉",
+        "zipcode": "541",
+        "sid": "170"
+      },
+      {
+        "areaName": "國姓鄉",
+        "zipcode": "544",
+        "sid": "172"
+      },
+      {
+        "areaName": "水里鄉",
+        "zipcode": "553",
+        "sid": "177"
+      },
+      {
+        "areaName": "魚池鄉",
+        "zipcode": "555",
+        "sid": "178"
+      },
+      {
+        "areaName": "仁愛鄉",
+        "zipcode": "546",
+        "sid": "174"
+      },
+      {
+        "areaName": "鹿谷鄉",
+        "zipcode": "558",
+        "sid": "181"
+      }
+    ]
+  },
+  {
+    "cityNumber": "11",
+    "cityCode": "0014",
+    "cityName": "嘉義市",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "東區",
+        "zipcode": "600",
+        "sid": "183"
+      },
+      {
+        "areaName": "西區",
+        "zipcode": "600",
+        "sid": "184"
+      }
+    ]
+  },
+  {
+    "cityNumber": "12",
+    "cityCode": "0015",
+    "cityName": "嘉義縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "朴子市",
+        "zipcode": "613",
+        "sid": "194"
+      },
+      {
+        "areaName": "太保市",
+        "zipcode": "612",
+        "sid": "193"
+      },
+      {
+        "areaName": "布袋鎮",
+        "zipcode": "625",
+        "sid": "202"
+      },
+      {
+        "areaName": "六腳鄉",
+        "zipcode": "615",
+        "sid": "196"
+      },
+      {
+        "areaName": "東石鄉",
+        "zipcode": "614",
+        "sid": "195"
+      },
+      {
+        "areaName": "義竹鄉",
+        "zipcode": "624",
+        "sid": "201"
+      },
+      {
+        "areaName": "鹿草鄉",
+        "zipcode": "611",
+        "sid": "192"
+      },
+      {
+        "areaName": "水上鄉",
+        "zipcode": "608",
+        "sid": "191"
+      },
+      {
+        "areaName": "大林鎮",
+        "zipcode": "622",
+        "sid": "199"
+      },
+      {
+        "areaName": "溪口鄉",
+        "zipcode": "623",
+        "sid": "200"
+      },
+      {
+        "areaName": "梅山鄉",
+        "zipcode": "603",
+        "sid": "186"
+      },
+      {
+        "areaName": "新港鄉",
+        "zipcode": "616",
+        "sid": "197"
+      },
+      {
+        "areaName": "民雄鄉",
+        "zipcode": "621",
+        "sid": "198"
+      },
+      {
+        "areaName": "竹崎鄉",
+        "zipcode": "604",
+        "sid": "187"
+      },
+      {
+        "areaName": "中埔鄉",
+        "zipcode": "606",
+        "sid": "189"
+      },
+      {
+        "areaName": "番路鄉",
+        "zipcode": "602",
+        "sid": "185"
+      },
+      {
+        "areaName": "大埔鄉",
+        "zipcode": "607",
+        "sid": "190"
+      },
+      {
+        "areaName": "阿里山鄉",
+        "zipcode": "605",
+        "sid": "188"
+      }
+    ]
+  },
+  {
+    "cityNumber": "13",
+    "cityCode": "0016",
+    "cityName": "雲林縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "斗六市",
+        "zipcode": "640",
+        "sid": "212"
+      },
+      {
+        "areaName": "土庫鎮",
+        "zipcode": "633",
+        "sid": "206"
+      },
+      {
+        "areaName": "虎尾鎮",
+        "zipcode": "632",
+        "sid": "205"
+      },
+      {
+        "areaName": "麥寮鄉",
+        "zipcode": "638",
+        "sid": "211"
+      },
+      {
+        "areaName": "台西鄉",
+        "zipcode": "636",
+        "sid": "209"
+      },
+      {
+        "areaName": "東勢鄉",
+        "zipcode": "635",
+        "sid": "208"
+      },
+      {
+        "areaName": "褒忠鄉",
+        "zipcode": "634",
+        "sid": "207"
+      },
+      {
+        "areaName": "四湖鄉",
+        "zipcode": "654",
+        "sid": "221"
+      },
+      {
+        "areaName": "元長鄉",
+        "zipcode": "655",
+        "sid": "222"
+      },
+      {
+        "areaName": "口湖鄉",
+        "zipcode": "653",
+        "sid": "220"
+      },
+      {
+        "areaName": "北港鎮",
+        "zipcode": "651",
+        "sid": "218"
+      },
+      {
+        "areaName": "西螺鎮",
+        "zipcode": "648",
+        "sid": "216"
+      },
+      {
+        "areaName": "斗南鎮",
+        "zipcode": "630",
+        "sid": "203"
+      },
+      {
+        "areaName": "水林鄉",
+        "zipcode": "652",
+        "sid": "219"
+      },
+      {
+        "areaName": "崙背鄉",
+        "zipcode": "637",
+        "sid": "210"
+      },
+      {
+        "areaName": "二崙鄉",
+        "zipcode": "649",
+        "sid": "217"
+      },
+      {
+        "areaName": "莿桐鄉",
+        "zipcode": "647",
+        "sid": "215"
+      },
+      {
+        "areaName": "林內鄉",
+        "zipcode": "643",
+        "sid": "213"
+      },
+      {
+        "areaName": "大埤鄉",
+        "zipcode": "631",
+        "sid": "204"
+      },
+      {
+        "areaName": "古坑鄉",
+        "zipcode": "646",
+        "sid": "214"
+      }
+    ]
+  },
+  {
+    "cityNumber": "14",
+    "cityCode": "0017",
+    "cityName": "台南市",
+    "municipality": "true",
+    "areaList": [
+      {
+        "areaName": "安南區",
+        "zipcode": "709",
+        "sid": "230"
+      },
+      {
+        "areaName": "北區",
+        "zipcode": "704",
+        "sid": "228"
+      },
+      {
+        "areaName": "中西區",
+        "zipcode": "700",
+        "sid": "224"
+      },
+      {
+        "areaName": "安平區",
+        "zipcode": "708",
+        "sid": "229"
+      },
+      {
+        "areaName": "南區",
+        "zipcode": "702",
+        "sid": "226"
+      },
+      {
+        "areaName": "東區",
+        "zipcode": "701",
+        "sid": "225"
+      },
+      {
+        "areaName": "永康區",
+        "zipcode": "710",
+        "sid": "231"
+      },
+      {
+        "areaName": "仁德區",
+        "zipcode": "717",
+        "sid": "238"
+      },
+      {
+        "areaName": "歸仁區",
+        "zipcode": "711",
+        "sid": "232"
+      },
+      {
+        "areaName": "關廟區",
+        "zipcode": "718",
+        "sid": "239"
+      },
+      {
+        "areaName": "龍崎區",
+        "zipcode": "719",
+        "sid": "240"
+      },
+      {
+        "areaName": "七股區",
+        "zipcode": "724",
+        "sid": "245"
+      },
+      {
+        "areaName": "佳里區",
+        "zipcode": "722",
+        "sid": "243"
+      },
+      {
+        "areaName": "麻豆區",
+        "zipcode": "721",
+        "sid": "242"
+      },
+      {
+        "areaName": "善化區",
+        "zipcode": "741",
+        "sid": "257"
+      },
+      {
+        "areaName": "大內區",
+        "zipcode": "742",
+        "sid": "258"
+      },
+      {
+        "areaName": "玉井區",
+        "zipcode": "714",
+        "sid": "235"
+      },
+      {
+        "areaName": "楠西區",
+        "zipcode": "715",
+        "sid": "236"
+      },
+      {
+        "areaName": "西港區",
+        "zipcode": "723",
+        "sid": "244"
+      },
+      {
+        "areaName": "安定區",
+        "zipcode": "745",
+        "sid": "261"
+      },
+      {
+        "areaName": "新市區",
+        "zipcode": "744",
+        "sid": "260"
+      },
+      {
+        "areaName": "山上區",
+        "zipcode": "743",
+        "sid": "259"
+      },
+      {
+        "areaName": "新化區",
+        "zipcode": "712",
+        "sid": "233"
+      },
+      {
+        "areaName": "左鎮區",
+        "zipcode": "713",
+        "sid": "234"
+      },
+      {
+        "areaName": "南化區",
+        "zipcode": "716",
+        "sid": "237"
+      },
+      {
+        "areaName": "後壁區",
+        "zipcode": "731",
+        "sid": "250"
+      },
+      {
+        "areaName": "白河區",
+        "zipcode": "732",
+        "sid": "251"
+      },
+      {
+        "areaName": "北門區",
+        "zipcode": "727",
+        "sid": "248"
+      },
+      {
+        "areaName": "學甲區",
+        "zipcode": "726",
+        "sid": "247"
+      },
+      {
+        "areaName": "鹽水區",
+        "zipcode": "737",
+        "sid": "256"
+      },
+      {
+        "areaName": "新營區",
+        "zipcode": "730",
+        "sid": "249"
+      },
+      {
+        "areaName": "柳營區",
+        "zipcode": "736",
+        "sid": "255"
+      },
+      {
+        "areaName": "東山區",
+        "zipcode": "733",
+        "sid": "252"
+      },
+      {
+        "areaName": "將軍區",
+        "zipcode": "725",
+        "sid": "246"
+      },
+      {
+        "areaName": "下營區",
+        "zipcode": "735",
+        "sid": "254"
+      },
+      {
+        "areaName": "六甲區",
+        "zipcode": "734",
+        "sid": "253"
+      },
+      {
+        "areaName": "官田區",
+        "zipcode": "720",
+        "sid": "241"
+      }
+    ]
+  },
+  {
+    "cityNumber": "15",
+    "cityCode": "0019",
+    "cityName": "高雄市",
+    "municipality": "true",
+    "areaList": [
+      {
+        "areaName": "那瑪夏區",
+        "zipcode": "849",
+        "sid": "299"
+      },
+      {
+        "areaName": "楠梓區",
+        "zipcode": "811",
+        "sid": "270"
+      },
+      {
+        "areaName": "左營區",
+        "zipcode": "813",
+        "sid": "272"
+      },
+      {
+        "areaName": "鼓山區",
+        "zipcode": "804",
+        "sid": "266"
+      },
+      {
+        "areaName": "鹽埕區",
+        "zipcode": "803",
+        "sid": "265"
+      },
+      {
+        "areaName": "旗津區",
+        "zipcode": "805",
+        "sid": "267"
+      },
+      {
+        "areaName": "三民區",
+        "zipcode": "807",
+        "sid": "269"
+      },
+      {
+        "areaName": "前金區",
+        "zipcode": "801",
+        "sid": "263"
+      },
+      {
+        "areaName": "新興區",
+        "zipcode": "800",
+        "sid": "262"
+      },
+      {
+        "areaName": "苓雅區",
+        "zipcode": "802",
+        "sid": "264"
+      },
+      {
+        "areaName": "前鎮區",
+        "zipcode": "806",
+        "sid": "268"
+      },
+      {
+        "areaName": "小港區",
+        "zipcode": "812",
+        "sid": "271"
+      },
+      {
+        "areaName": "鳳山區",
+        "zipcode": "830",
+        "sid": "287"
+      },
+      {
+        "areaName": "仁武區",
+        "zipcode": "814",
+        "sid": "275"
+      },
+      {
+        "areaName": "鳥松區",
+        "zipcode": "833",
+        "sid": "290"
+      },
+      {
+        "areaName": "大寮區",
+        "zipcode": "831",
+        "sid": "288"
+      },
+      {
+        "areaName": "林園區",
+        "zipcode": "832",
+        "sid": "289"
+      },
+      {
+        "areaName": "茄萣區",
+        "zipcode": "852",
+        "sid": "301"
+      },
+      {
+        "areaName": "湖內區",
+        "zipcode": "829",
+        "sid": "286"
+      },
+      {
+        "areaName": "路竹區",
+        "zipcode": "821",
+        "sid": "278"
+      },
+      {
+        "areaName": "永安區",
+        "zipcode": "828",
+        "sid": "285"
+      },
+      {
+        "areaName": "岡山區",
+        "zipcode": "820",
+        "sid": "277"
+      },
+      {
+        "areaName": "彌陀區",
+        "zipcode": "827",
+        "sid": "284"
+      },
+      {
+        "areaName": "梓官區",
+        "zipcode": "826",
+        "sid": "283"
+      },
+      {
+        "areaName": "橋頭區",
+        "zipcode": "825",
+        "sid": "282"
+      },
+      {
+        "areaName": "桃源區",
+        "zipcode": "848",
+        "sid": "298"
+      },
+      {
+        "areaName": "甲仙區",
+        "zipcode": "847",
+        "sid": "297"
+      },
+      {
+        "areaName": "內門區",
+        "zipcode": "845",
+        "sid": "295"
+      },
+      {
+        "areaName": "杉林區",
+        "zipcode": "846",
+        "sid": "296"
+      },
+      {
+        "areaName": "六龜區",
+        "zipcode": "844",
+        "sid": "294"
+      },
+      {
+        "areaName": "阿蓮區",
+        "zipcode": "822",
+        "sid": "279"
+      },
+      {
+        "areaName": "田寮區",
+        "zipcode": "823",
+        "sid": "280"
+      },
+      {
+        "areaName": "旗山區",
+        "zipcode": "842",
+        "sid": "292"
+      },
+      {
+        "areaName": "美濃區",
+        "zipcode": "843",
+        "sid": "293"
+      },
+      {
+        "areaName": "茂林區",
+        "zipcode": "851",
+        "sid": "300"
+      },
+      {
+        "areaName": "燕巢區",
+        "zipcode": "824",
+        "sid": "281"
+      },
+      {
+        "areaName": "大社區",
+        "zipcode": "815",
+        "sid": "276"
+      },
+      {
+        "areaName": "大樹區",
+        "zipcode": "840",
+        "sid": "291"
+      }
+    ]
+  },
+  {
+    "cityNumber": "16",
+    "cityCode": "0022",
+    "cityName": "澎湖縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "馬公市",
+        "zipcode": "880",
+        "sid": "302"
+      },
+      {
+        "areaName": "湖西鄉",
+        "zipcode": "885",
+        "sid": "307"
+      },
+      {
+        "areaName": "西嶼鄉",
+        "zipcode": "881",
+        "sid": "303"
+      },
+      {
+        "areaName": "白沙鄉",
+        "zipcode": "884",
+        "sid": "306"
+      },
+      {
+        "areaName": "望安鄉",
+        "zipcode": "882",
+        "sid": "304"
+      },
+      {
+        "areaName": "七美鄉",
+        "zipcode": "883",
+        "sid": "305"
+      }
+    ]
+  },
+  {
+    "cityNumber": "17",
+    "cityCode": "0023",
+    "cityName": "金門縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "金城鎮",
+        "zipcode": "893",
+        "sid": "311"
+      },
+      {
+        "areaName": "金沙鎮",
+        "zipcode": "890",
+        "sid": "308"
+      },
+      {
+        "areaName": "金湖鎮",
+        "zipcode": "891",
+        "sid": "309"
+      },
+      {
+        "areaName": "金寧鄉",
+        "zipcode": "892",
+        "sid": "310"
+      },
+      {
+        "areaName": "烈嶼鄉",
+        "zipcode": "894",
+        "sid": "312"
+      },
+      {
+        "areaName": "烏坵鄉",
+        "zipcode": "896",
+        "sid": "313"
+      }
+    ]
+  },
+  {
+    "cityNumber": "18",
+    "cityCode": "0024",
+    "cityName": "屏東縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "屏東市",
+        "zipcode": "900",
+        "sid": "314"
+      },
+      {
+        "areaName": "潮州鎮",
+        "zipcode": "920",
+        "sid": "327"
+      },
+      {
+        "areaName": "東港鎮",
+        "zipcode": "928",
+        "sid": "335"
+      },
+      {
+        "areaName": "恆春鎮",
+        "zipcode": "946",
+        "sid": "345"
+      },
+      {
+        "areaName": "枋寮鄉",
+        "zipcode": "940",
+        "sid": "339"
+      },
+      {
+        "areaName": "內埔鄉",
+        "zipcode": "912",
+        "sid": "325"
+      },
+      {
+        "areaName": "長治鄉",
+        "zipcode": "908",
+        "sid": "322"
+      },
+      {
+        "areaName": "萬丹鄉",
+        "zipcode": "913",
+        "sid": "326"
+      },
+      {
+        "areaName": "九如鄉",
+        "zipcode": "904",
+        "sid": "318"
+      },
+      {
+        "areaName": "高樹鄉",
+        "zipcode": "906",
+        "sid": "320"
+      },
+      {
+        "areaName": "佳冬鄉",
+        "zipcode": "931",
+        "sid": "337"
+      },
+      {
+        "areaName": "竹田鄉",
+        "zipcode": "911",
+        "sid": "324"
+      },
+      {
+        "areaName": "新園鄉",
+        "zipcode": "932",
+        "sid": "338"
+      },
+      {
+        "areaName": "麟洛鄉",
+        "zipcode": "909",
+        "sid": "323"
+      },
+      {
+        "areaName": "里港鄉",
+        "zipcode": "905",
+        "sid": "319"
+      },
+      {
+        "areaName": "鹽埔鄉",
+        "zipcode": "907",
+        "sid": "321"
+      },
+      {
+        "areaName": "萬巒鄉",
+        "zipcode": "923",
+        "sid": "330"
+      },
+      {
+        "areaName": "新埤鄉",
+        "zipcode": "925",
+        "sid": "332"
+      },
+      {
+        "areaName": "南州鄉",
+        "zipcode": "926",
+        "sid": "333"
+      },
+      {
+        "areaName": "林邊鄉",
+        "zipcode": "927",
+        "sid": "334"
+      },
+      {
+        "areaName": "崁頂鄉",
+        "zipcode": "924",
+        "sid": "331"
+      },
+      {
+        "areaName": "滿州鄉",
+        "zipcode": "947",
+        "sid": "346"
+      },
+      {
+        "areaName": "枋山鄉",
+        "zipcode": "941",
+        "sid": "340"
+      },
+      {
+        "areaName": "車城鄉",
+        "zipcode": "944",
+        "sid": "343"
+      },
+      {
+        "areaName": "三地門鄉",
+        "zipcode": "901",
+        "sid": "315"
+      },
+      {
+        "areaName": "牡丹鄉",
+        "zipcode": "945",
+        "sid": "344"
+      },
+      {
+        "areaName": "瑪家鄉",
+        "zipcode": "903",
+        "sid": "317"
+      },
+      {
+        "areaName": "琉球鄉",
+        "zipcode": "929",
+        "sid": "336"
+      },
+      {
+        "areaName": "獅子鄉",
+        "zipcode": "943",
+        "sid": "342"
+      },
+      {
+        "areaName": "春日鄉",
+        "zipcode": "942",
+        "sid": "341"
+      },
+      {
+        "areaName": "霧台鄉",
+        "zipcode": "902",
+        "sid": "316"
+      },
+      {
+        "areaName": "泰武鄉",
+        "zipcode": "921",
+        "sid": "328"
+      },
+      {
+        "areaName": "來義鄉",
+        "zipcode": "922",
+        "sid": "329"
+      }
+    ]
+  },
+  {
+    "cityNumber": "19",
+    "cityCode": "0025",
+    "cityName": "台東縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "台東市",
+        "zipcode": "950",
+        "sid": "347"
+      },
+      {
+        "areaName": "成功鎮",
+        "zipcode": "961",
+        "sid": "357"
+      },
+      {
+        "areaName": "關山鎮",
+        "zipcode": "956",
+        "sid": "353"
+      },
+      {
+        "areaName": "卑南鄉",
+        "zipcode": "954",
+        "sid": "351"
+      },
+      {
+        "areaName": "東河鄉",
+        "zipcode": "959",
+        "sid": "356"
+      },
+      {
+        "areaName": "鹿野鄉",
+        "zipcode": "955",
+        "sid": "352"
+      },
+      {
+        "areaName": "長濱鄉",
+        "zipcode": "962",
+        "sid": "358"
+      },
+      {
+        "areaName": "太麻里鄉",
+        "zipcode": "963",
+        "sid": "359"
+      },
+      {
+        "areaName": "池上鄉",
+        "zipcode": "958",
+        "sid": "355"
+      },
+      {
+        "areaName": "綠島鄉",
+        "zipcode": "951",
+        "sid": "348"
+      },
+      {
+        "areaName": "延平鄉",
+        "zipcode": "953",
+        "sid": "350"
+      },
+      {
+        "areaName": "大武鄉",
+        "zipcode": "965",
+        "sid": "361"
+      },
+      {
+        "areaName": "蘭嶼鄉",
+        "zipcode": "952",
+        "sid": "349"
+      },
+      {
+        "areaName": "海端鄉",
+        "zipcode": "957",
+        "sid": "354"
+      },
+      {
+        "areaName": "金峰鄉",
+        "zipcode": "964",
+        "sid": "360"
+      },
+      {
+        "areaName": "達仁鄉",
+        "zipcode": "966",
+        "sid": "362"
+      }
+    ]
+  },
+  {
+    "cityNumber": "20",
+    "cityCode": "0026",
+    "cityName": "花蓮縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "花蓮市",
+        "zipcode": "970",
+        "sid": "363"
+      },
+      {
+        "areaName": "鳳林鎮",
+        "zipcode": "975",
+        "sid": "368"
+      },
+      {
+        "areaName": "玉里鎮",
+        "zipcode": "981",
+        "sid": "373"
+      },
+      {
+        "areaName": "吉安鄉",
+        "zipcode": "973",
+        "sid": "366"
+      },
+      {
+        "areaName": "新城鄉",
+        "zipcode": "971",
+        "sid": "364"
+      },
+      {
+        "areaName": "壽豐鄉",
+        "zipcode": "974",
+        "sid": "367"
+      },
+      {
+        "areaName": "光復鄉",
+        "zipcode": "976",
+        "sid": "369"
+      },
+      {
+        "areaName": "秀林鄉",
+        "zipcode": "972",
+        "sid": "365"
+      },
+      {
+        "areaName": "瑞穗鄉",
+        "zipcode": "978",
+        "sid": "371"
+      },
+      {
+        "areaName": "富里鄉",
+        "zipcode": "983",
+        "sid": "375"
+      },
+      {
+        "areaName": "萬榮鄉",
+        "zipcode": "979",
+        "sid": "372"
+      },
+      {
+        "areaName": "豐濱鄉",
+        "zipcode": "977",
+        "sid": "370"
+      },
+      {
+        "areaName": "卓溪鄉",
+        "zipcode": "982",
+        "sid": "374"
+      }
+    ]
+  },
+  {
+    "cityNumber": "21",
+    "cityCode": "0003",
+    "cityName": "連江縣",
+    "municipality": "false",
+    "areaList": [
+      {
+        "areaName": "南竿鄉",
+        "zipcode": "209",
+        "sid": "49"
+      },
+      {
+        "areaName": "北竿鄉",
+        "zipcode": "210",
+        "sid": "50"
+      },
+      {
+        "areaName": "莒光鄉",
+        "zipcode": "211",
+        "sid": "51"
+      },
+      {
+        "areaName": "東引鄉",
+        "zipcode": "212",
+        "sid": "52"
+      }
+    ]
+  }
+]
