@@ -4,8 +4,6 @@ import { useRouter,useRoute } from 'vue-router';
 import Menu from '../components/Menu.vue';
 import { useTodoStore } from '../stores/todo'
 import { storeToRefs } from 'pinia'
-import { nextTick } from 'vue'
-
 
 const router = useRouter()
 const route = useRoute()
@@ -65,11 +63,11 @@ const handleCheck = (item) => {
 </script>
 
 <template>
-    <div class="page-wrapper">
+    <div class="page-wrapper flex flex-col md:flex-row justify-between items-center">
         <Menu />
         <!--地球-->
         <div>
-            <img :src="imgSrc" alt="成就" class="earth"
+            <img :src="imgSrc" alt="成就" class="earth w-[40vw] max-w-[300px]"
             :class="{ 'earth-hover': isHover }"
             @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"
             @click="goToIsland">
@@ -93,8 +91,9 @@ const handleCheck = (item) => {
 
         <!--目標牌-->
         <div @click="goToGoal">
-            <img src="../assets/images/plan/goal.png" alt="目標" class="goal">
+            <img src="../assets/images/plan/goal.png" alt="目標" class="goal w-[40vw] max-w-[300px]" >
         </div>
+      
         <!--為你推薦-->
         <div class="recommand">
             <img src="../assets/images/plan/rec_background.png" alt="背景" class="rec-background">
@@ -102,21 +101,21 @@ const handleCheck = (item) => {
             <p>
             <strong style="color: #703C05; font-size: 48px ; position: absolute; top: 70px; left: 160px;">為您推薦</strong>
             </p>
-            <div class="grid-container">
-                <div class="image-box" @click="goToRenting">
-                    <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" />
+            <div class="arrangement">
+                <div class="image-box1" @click="goToRenting">
+                    <img src="../assets/images/plan/rec_content.png" alt="租屋推薦" class="box"/>
                     <div class="image-text">租屋</div>
                 </div>
-                <div class="image-box" @click="goToIntern">
-                    <img src="../assets/images/plan/rec_content.png" alt="實習推薦" />
+                <div class="image-box2" @click="goToIntern">
+                    <img src="../assets/images/plan/rec_content.png" alt="實習推薦" class="box"/>
                     <div class="image-text">實習</div>
                 </div>
-                <div class="image-box" @click="goToCompetition">
-                    <img src="../assets/images/plan/rec_content.png" alt="比賽推薦" />
+                <div class="image-box3" @click="goToCompetition">
+                    <img src="../assets/images/plan/rec_content.png" alt="比賽推薦" class="box"/>
                     <div class="image-text">比賽</div>
                 </div>
-                <div class="image-box" @click="goToScholarship">
-                    <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" />
+                <div class="image-box4" @click="goToScholarship">
+                    <img src="../assets/images/plan/rec_content.png" alt="獎學金推薦" class="box"/>
                     <div class="image-text">獎學金</div>
                 </div>
             </div>
@@ -128,7 +127,7 @@ const handleCheck = (item) => {
 .earth {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 1%;
   height: 90vh;
   width: auto;
   max-height: 100vh;
@@ -137,21 +136,22 @@ const handleCheck = (item) => {
 }
 .earth-hover {
   left: 0;
-  top: 40px;
+  top: 5%;
   height: 95vh;
   width: auto;
   max-height: 100vh;
 }
-.goal{
-    position: absolute;
-    right:10px;
-    top: 0px;
-    height:250px;
-    width:400px;
+.goal {
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  width: 50vw;    /* 例如佔螢幕寬度一半 */
+  max-width: 400px;
+  height: auto;
 }
 .todolist{
     position: absolute;
-    left: 350px;
+    left: 30%;
     color:white;
 }
 .todolist-img{
@@ -202,31 +202,46 @@ li {
   background-image: url('../assets/images/plan/checked.png');
 }
 
+
 .recommand{
     position:relative;
-    left: 350px;
+    right:0%;
     top: 500px;
     width:800px;
     height: 800px;
     z-index: 1;
-    
 }
-.rec-background{
-    width: 800px;
-    height: 800px;
-    object-fit: cover;
-    display:block;
-    position: absolute;
-    z-index:0;
+    
+
+.arrangement{
+  display: flex;
+  object-fit: cover;
+  position: absolute;
+  max-width: 770px;
+  width: 75%;
+  height: 70%;
+  top: 20%;
+  left: 11.5%;
+  z-index: 2;
+}
+.rec-background {
+  width:800px;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: 0;
+  
 }
 
 .recommand-icon{
-        position: absolute;
-        top:60px;
-        left:75px;
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
+  position: absolute;
+  top:60px;
+  left:75px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 .rec-content{
     position: absolute;
@@ -237,33 +252,54 @@ li {
     object-fit: contain;
     z-index: 2;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  width: fit-content;
-  margin:0 auto;
-  z-index:1;
-  position: relative;
-  padding-top: 160px;
-  right:10px;
+.image-box1 {
+  object-fit: contain;
+  position: absolute;
+  max-width: 280px; 
+  width: 50%;
+  height: 50%;
 }
-
-.image-box {
-  position: relative;
-  width: 300px; 
+.image-box2 {
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  max-width: 280px; 
+  width: 50%;
+  height: 50%;
 }
-
+.image-box3 {
+  object-fit: contain;
+  position: absolute;
+  bottom: 7%;
+  max-width: 280px; 
+  width: 50%;
+  height: 50%;
+}
+.image-box4 {
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 7%;
+  max-width: 280px; 
+  width: 50%;
+  height: 50%;
+}
+.box{
+  position: absolute;
+  max-width: 280px; 
+  width: 100%;
+  height:auto;
+}
 .image-box img {
-  width: 320px;
-  height:270px;
+   width: 100%;
+  height: auto;
   display: block;
+  max-width: 100%;
 }
 
 .image-text {
   position: absolute;
-  top: 42px;
-  left: 10px;
+  top: 15px;
   width: 100%;
   text-align: center;
   font-weight: bold;
@@ -283,6 +319,7 @@ li {
   overflow-x: hidden;
 }
 </style>
+
 
 
 

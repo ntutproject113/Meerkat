@@ -165,7 +165,7 @@
                 v-model="username"
                 name="account"
                 class="inputaccount" 
-                placeholder="請輸入電子郵件"
+                placeholder="請設定您登入的電子郵件"
             />
             <img src="../assets/images/login/inputbox.png" class="inputbox2" />
             <input 
@@ -173,7 +173,7 @@
                 v-model="password"
                 name="password" 
                 class="inputpassword"
-                placeholder="請輸入您的登入密碼"
+                placeholder="請設定您登入的密碼"
             />
             <img src="../assets/images/signin/Submit.png" class="signin" @click="setAccountPassword"/>
         </div>

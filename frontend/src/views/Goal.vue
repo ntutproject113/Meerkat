@@ -10,6 +10,7 @@ function goBack() {
 </script>
 
 <template>
+  
   <div class="relative min-h-screen overflow-hidden bg-gray-200">
     <!-- 回前頁的箭頭 -->
     <img
