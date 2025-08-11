@@ -38,11 +38,9 @@ for page in range(1):
                     displayName = competitions[n].get('translatePrizeFields', {}).get(machineName, {}).get('displayName', '')
                     value = detail.get('value', None)
 
-                    # 如果這筆是獎狀類型，記到 cpPrizeName2
+                    
                     if displayName and prize_data['cpPrizeName2'] is None:
                         prize_data['cpPrizeName2'] = displayName
-
-                    # 如果這筆是金額，記到 cpPrizeValue
                     if value is not None:
                         prize_data['cpPrizeValue'] = value
 
