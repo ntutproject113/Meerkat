@@ -15,7 +15,8 @@ try:
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
-
+#https://www.104.com.tw/jobs/search/api/jobs?asc=0&edu=4&hotJob=0&jobsource=students_intern_PC&keyword=%E5%AF%A6%E7%BF%92&order=12&pagesize=30&rostatus=1024&showDutyTime=1&tab=intern
+#https://www.104.com.tw/jobs/search/api/jobs?area=6001001000&asc=0&hotJob=0&jobcat=2001001000&jobsource=students_intern_PC&keyword=%E8%B3%87%E8%A8%8A%20%E8%B2%A1%E9%87%91&order=12&pagesize=30&rostatus=1024&showDutyTime=1&tab=intern
 url0 = "https://www.104.com.tw/jobs/search/api/jobs?asc=0&hotJob=0&jobsource=students_intern_PC&keyword=%E8%B3%87%E8%A8%8A%20%E8%B2%A1%E9%87%91&order=12&page={page}&pagesize=30&rostatus=1024&showDutyTime=1&tab=intern"
 result = []
 for page in range(1,4):
