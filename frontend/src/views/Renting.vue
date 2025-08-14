@@ -10,7 +10,7 @@ const error = ref(null)
 onMounted(async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://localhost:8000/rents')
+    const res = await axios.get('')
     rentList.value = res.data
   } catch (e) {
     error.value = '載入失敗: ' + e.message
@@ -22,7 +22,7 @@ onMounted(async () => {
 
 <template>
 
-  <div class="fullscreen-background"></div>
+  <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
 
   <div class="layout-container">
     <Menu />
@@ -42,7 +42,7 @@ onMounted(async () => {
       <div class="data-block">
         <h1 class="title">推薦租屋資訊</h1>
         <div v-if="loading">載入中...</div>
-        <div v-if="error" class="text-red-600">{{ error }}</div>
+        <div v-if="error">{{ error }}</div>
         
        <div v-if="rentList.length">
         <div v-for="(rent, index) in rentList" :key="index">
@@ -118,17 +118,15 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-.fullscreen-background {
+.bg-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../assets/images/renting/background.png');
-  background-size: cover;     
-  background-position: center;  
-  background-repeat: no-repeat; 
-  z-index: -1;                 
+  object-fit: fill;   /* 確保整張圖顯示 */
+  pointer-events: none;
+  z-index: -1;
 }
 .layout-container {
   position: relative;           
