@@ -10,7 +10,7 @@ const error = ref(null)
 onMounted(async () => {
   loading.value = true
   try {
-    const res = await axios.get('')
+    const res = await axios.get('http://localhost:8000/rents')
     rentList.value = res.data
   } catch (e) {
     error.value = '載入失敗: ' + e.message

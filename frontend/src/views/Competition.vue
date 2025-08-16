@@ -9,7 +9,7 @@ const error = ref(null)
 onMounted(async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://127.0.0.1:8000/api/internapi')
+    const res = await axios.get('http://localhost:8000/contests')
     rentList.value = res.data
   } catch (e) {
     error.value = '載入失敗: ' + e.message
@@ -20,8 +20,6 @@ onMounted(async () => {
 </script>
 
 <template>
-     <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
-
         <div class="layout-container">
             <Menu class="page-menu" />
 
@@ -44,9 +42,9 @@ onMounted(async () => {
         
        <div v-if="rentList.length">
         <div v-for="(rent, index) in rentList" :key="index">
-          <!-- 每一張實習卡片 -->
+          <!-- 每一張比賽卡片 -->
           <div class="rent-card">
-            <img :src="rent.image || '../assets/images/default-room.jpg'" alt="房屋照片" class="rent-image" />
+          
 
             <div class="rent-content">
               <h3 class="rent-title">{{ rent.rentName }}</h3>

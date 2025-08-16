@@ -9,7 +9,7 @@ const error = ref(null)
 onMounted(async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://127.0.0.1:8000/api/internapi')
+    const res = await axios.get('http://localhost:8000/api/internapi')
     rentList.value = res.data
   } catch (e) {
     error.value = '載入失敗: ' + e.message
@@ -17,6 +17,10 @@ onMounted(async () => {
     loading.value = false
   }
 })
+//收藏
+const toggleFavorite = (item) => {
+  item.favorited = !item.favorited
+}
 </script>
 
 <template>
@@ -43,36 +47,34 @@ onMounted(async () => {
         <div v-if="error">{{ error }}</div>
         
        <div v-if="rentList.length">
-        <div v-for="(rent, index) in rentList" :key="index">
+        <div v-for="(item, index) in interns" :key="index">
           <!-- 每一張實習卡片 -->
           <div class="rent-card">
-            <img :src="rent.image || '../assets/images/default-room.jpg'" alt="房屋照片" class="rent-image" />
-
+   
             <div class="rent-content">
-              <h3 class="rent-title">{{ rent.rentName }}</h3>
+              <h3 class="rent-title">{{item.jobName}}</h3>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/name.png" class="icon" alt="房屋類型" />
-                {{ rent.rentType }} ｜{{ rent.houseType }}
+                <img src="../assets/images/intern/comp.png" class="icon" alt="公司" />
+                {{ item.rentType }} <!--公司名稱-->
               </div>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
-                {{ rent.rentAdress }}
+                <img src="../assets/images/intern/location.png" class="icon" alt="地點" />
+                {{ item.jobAddress}} <!--不知道是jobAddrNoDesc還是jobAddress-->
               </div>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/transport.png" class="icon" alt="捷運圖示" />
-                距{{ rent.transportation }} {{ rent.distance }}公尺
+                <img src="../assets/images/intern/money.png" class="icon" alt="薪資" />
+                {{ item.salaryLow }} 元
               </div>
             </div>
-
-            <div class="rent-price-wrapper">
-              <p class="rent-price">
-                {{ rent.rentPrice.toLocaleString() }}
-                <span class="price-unit">元/月</span>
-              </p>
-            </div>
+            <!-- 收藏按鈕 -->
+            <button 
+              @click="toggleFavorite(item)" 
+              class="favorite-btn"
+              :class="{ 'favorited': item.favorited }"
+            ></button>
           </div>
 
         
@@ -250,16 +252,18 @@ onMounted(async () => {
   padding-bottom: 8px;
 }
 
-.rent-price {
-  color: #f59e0b; /* 相當於 text-yellow-500 */
-  font-weight: bold;
-  font-size: 18px;
+.favorite-btn {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/images/intern/uncollected.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
-.price-unit {
-  color: black;
-  font-size: 14px;
-  margin-left: 4px;
+.favorite-btn.favorited {
+  background-image: url('../assets/images/intern/collected.png');
 }
 .meerkat{
   position: fixed;

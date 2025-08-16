@@ -44,27 +44,18 @@ onMounted(async () => {
         
        <div v-if="rentList.length">
         <div v-for="(rent, index) in rentList" :key="index">
-          <!-- 每一張實習卡片 -->
+          <!-- 每一張獎學金卡片 -->
           <div class="rent-card">
-            <img :src="rent.image || '../assets/images/default-room.jpg'" alt="房屋照片" class="rent-image" />
-
+            
             <div class="rent-content">
               <h3 class="rent-title">{{ rent.rentName }}</h3>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/name.png" class="icon" alt="房屋類型" />
-                {{ rent.rentType }} ｜{{ rent.houseType }}
+                <img src="../assets/images/scholarship/date.png" class="icon" alt="截止日期" />
+                {{ rent.rentType }} <!--截止日期-->
               </div>
 
-              <div class="rent-info">
-                <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
-                {{ rent.rentAdress }}
-              </div>
-
-              <div class="rent-info">
-                <img src="../assets/images/renting/transport.png" class="icon" alt="捷運圖示" />
-                距{{ rent.transportation }} {{ rent.distance }}公尺
-              </div>
+          
             </div>
 
             <div class="rent-price-wrapper">
