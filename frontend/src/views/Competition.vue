@@ -302,4 +302,193 @@ html, body {
   height: 100%;
   overflow: hidden; /* 讓整頁不滾動 */
 }
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;   /* 確保整張圖顯示 */
+  pointer-events: none;
+  z-index: -1;
+}
+.layout-container {
+  position: relative;           
+  display: flex;                 
+  flex-direction: column;       
+  align-items: center;           
+  justify-content: flex-start;   
+  min-height: 100vh;              
+  width: 90%;   
+  height:100vh;               
+  max-width: 72rem;              
+  margin-left: auto;              
+  margin-right: auto;
+  padding-left: 1rem;             
+  padding-right: 1rem;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;                  
+  align-items: center;             
+  justify-content: space-between;  
+  padding-left: 1.5rem;           
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;               
+  padding-bottom: 0.5rem;
+  border-bottom: none;  
+  width: 100%;     
+}     
+.header-border {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  background-image: url('../assets/images/renting/Header.png'); 
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% auto;
+}          
+.word {
+  width: 150px;
+  height: auto;
+  margin: 1% auto 1% auto;    
+}
+.block{
+  display: flex;          
+  flex: 1 1 0%;           
+  width: 100%;            
+  margin-top: 1rem; 
+  height: calc(100vh - 100px); 
+  overflow: hidden;      
+}
+.data-block {
+  width: 70%;   
+  height:100%;      
+  padding-right: 1rem;    
+  overflow-y: auto;        
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;   
+}
+.title{
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+  margin:0px auto;
+  text-align: center;
+}
+.rent-card {
+  position: relative;
+  display: flex;
+  border: none;
+  overflow: hidden;
+  margin-bottom: -5px;
+  
+}
+.line {
+  display: block;
+  width:100%;
+  max-width:800px;
+  height:auto;
+  margin:-70px auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.rent-image {
+  width: 144px;  
+  height: 112px; 
+  object-fit: cover;
+}
+
+.rent-content {
+  padding: 12px;
+  flex: 1;
+}
+
+.rent-title {
+  font-weight: bold;
+  color: #3B852B;
+  margin-bottom: 6px;
+}
+
+.rent-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  object-fit: contain;
+}
+
+.rent-price-wrapper {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 16px;
+  padding-bottom: 8px;
+}
+
+.rent-price {
+  color: #f59e0b; /* 相當於 text-yellow-500 */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.price-unit {
+  color: black;
+  font-size: 14px;
+  margin-left: 4px;
+}
+.meerkat{
+  position: fixed;
+  bottom:0%;
+  right: 2%;
+  width: 350px;
+  height: auto;
+  z-index: 20;
+}
+.search-block{
+  width: 30%;
+  padding-left: 2rem;
+  min-height:500px;
+  background-image: url('../assets/images/renting/right.png'); 
+  background-repeat: no-repeat;
+  background-position: left top;  /* 對齊左上角 */
+  background-size:40px 80%; 
+  position: relative;
+}
+.search{
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 9999px; 
+  padding-left: 1rem;  
+  padding-right: 1rem;
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem; 
+}
+.search-input{
+  flex: 1;
+  outline: none;
+  background-color: transparent; 
+  border: none;
+  font-size: 16px; 
+}
+
 </style>
+<style>
+html, body {
+  height: 100%;
+  overflow: hidden; /* 讓整頁不滾動 */
+}
+</style>
+
