@@ -3,21 +3,55 @@ import Menu from '../components/Menu.vue'
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
-const rentList = ref([])
+// 綁定查詢參數（初始值與 API 預設一致）
+const areaIds = ref('5-10-8-12-9-3-7-4-6-1-2-11')
+const price = ref(15000)
+const casetype = ref([])
+const page = ref(1)
+const fee = ref(true)
+
+// 狀態與資料
 const loading = ref(false)
 const error = ref(null)
+const rentList = ref([])
+const totalCount = ref(0)
 
-onMounted(async () => {
+const fetchRents = async () => {
   loading.value = true
+  error.value = null
+  rentList.value = []
   try {
-    const res = await axios.get('http://127.0.0.1:8000/rents_by_sid')
-    rentList.value = res.data
+    const res = await axios.get('http://localhost:8000/rents', {
+      params: {
+        area_ids: areaIds.value,
+        price: price.value,
+        casetype: casetype.value,
+        page: page.value,
+        fee: fee.value
+      }
+    
+    })
+    totalCount.value = res.data.total_count
+    rentList.value = res.data.result
   } catch (e) {
-    error.value = '載入失敗: ' + e.message
+    error.value = '載入失敗: ' + (e.response?.data?.detail || e.message)
   } finally {
     loading.value = false
   }
+}
+
+onMounted(() => {
+  fetchRents()
 })
+
+const houseTypes = [
+  { value: '0', label: '不限' },
+  { value: '1', label: '整層住家' },
+  { value: '2', label: '獨立套房' },
+  { value: '3', label: '分租套房' },
+  { value: '4', label: '雅房' },
+]
+
 </script>
 
 <template>
@@ -36,6 +70,7 @@ onMounted(async () => {
 
     <!-- 主內容 -->
     <div class="block">
+      
     
       <!-- 左邊列表 -->
 
@@ -48,8 +83,13 @@ onMounted(async () => {
         <div v-for="(rent, index) in rentList" :key="index">
           <!-- 每一張租屋卡片 -->
           <div class="rent-card">
-            <img :src="rent.image || '../assets/images/default-room.jpg'" alt="房屋照片" class="rent-image" />
-
+              <img
+                v-if="rent.rentPictureHref"
+                :src="rent.rentPictureHref"
+                alt="房屋圖片"
+                class="image"
+              />
+              <a :href="rent.rentHref" target="_blank">查看詳情</a>
             <div class="rent-content">
               <h3 class="rent-title">{{ rent.rentName }}</h3>
 
@@ -60,12 +100,12 @@ onMounted(async () => {
 
               <div class="rent-info">
                 <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
-                {{ rent.rentAdress }}
+                {{ rent.rentAddress }}
               </div>
 
               <div class="rent-info">
                 <img src="../assets/images/renting/transport.png" class="icon" alt="捷運圖示" />
-                距{{ rent.transportation }} {{ rent.distance }}公尺
+                距{{ rent.transportation}} 分鐘
               </div>
             </div>
 
@@ -95,18 +135,46 @@ onMounted(async () => {
       <!-- 右邊篩選 -->
       <div class="search-block">
         <div class="search">
-          <input class="search-input" type="text" placeholder="搜尋…" />
+          <input class="search-input" type="text" placeholder="輸入關鍵字…" />
           <img src="../assets/images/renting/search.png" class="icon" alt="搜尋圖示" />
         </div>
-        <div>
-          <p class="font-bold mb-2">篩選條件</p>
-          <ul class="space-y-3 text-sm font-medium">
-            <li class="cursor-pointer hover:underline">地區 ⌄</li>
-            <li class="cursor-pointer hover:underline">價格 ⌄</li>
-            <li class="cursor-pointer hover:underline">類型 ⌄</li>
-            <li class="cursor-pointer hover:underline">其他條件 ⌄</li>
-          </ul>
+    <div class="form-block">
+      <label>
+        地區 :
+        <input v-model="areaIds" class="input-field" />
+      </label>
+        <label for="price">價格上限：{{ price }} 元</label>
+          <input 
+            type="range" 
+            id="price" 
+            v-model="price" 
+            min="5000" 
+            max="50000" 
+            step="1000" 
+            class="range-slider"
+          />
+        <p>房型類別：</p>
+        <div class="checkbox-group">
+          <label v-for="type in houseTypes" :key="type.value">
+            <input 
+              type="checkbox" 
+              :value="type.value" 
+              v-model="casetype"
+            /> {{ type.label }}
+          </label>
         </div>
+      <label>
+        頁碼:
+        <input v-model.number="page" type="number" class="mini-input" />
+      </label>
+      <label>
+        包含管理費:<input type="checkbox" v-model="fee" />
+      </label>
+      
+      <button @click="fetchRents" class="btn">
+        查詢
+      </button>
+    </div>
       </div>
       <img
         src="../assets/images/renting/meerkat_Rent.png"
@@ -201,7 +269,13 @@ onMounted(async () => {
   border: none;
   overflow: hidden;
   margin-bottom: -5px;
-  
+}
+.image {
+  width: 150px;
+  height: 150px;   
+  object-fit: cover;     
+  display: block;
+  border-bottom: 1px solid #ddd;
 }
 .line {
   display: block;
@@ -248,13 +322,13 @@ onMounted(async () => {
   display: flex;
   align-items: flex-end;
   padding-right: 16px;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .rent-price {
   color: #f59e0b; /* 相當於 text-yellow-500 */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .price-unit {
@@ -266,7 +340,7 @@ onMounted(async () => {
   position: fixed;
   bottom:0%;
   right: 2%;
-  width: 350px;
+  width: 250px;
   height: auto;
   z-index: 20;
 }
@@ -277,7 +351,7 @@ onMounted(async () => {
   background-image: url('../assets/images/renting/right.png'); 
   background-repeat: no-repeat;
   background-position: left top;  /* 對齊左上角 */
-  background-size:40px 80%; 
+  background-size:40px 75%; 
   position: relative;
 }
 .search{
@@ -298,6 +372,101 @@ onMounted(async () => {
   border: none;
   font-size: 16px; 
 }
+/* 篩選區 */
+.form-block {
+  margin-bottom: 16px;       
+  display: flex;
+  flex-direction: column;
+  gap: 8px;               
+}
+.mini-input {
+  width: 80px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.input-field {
+  border: 1px solid #ccc;
+  padding: 4px 8px;         
+  border-radius: 6px;         
+  width: 256px;             
+  font-size: 14px;
+}
+.range-slider {
+  width: 80%;
+  -webkit-appearance: none; /* 移除預設樣式 */
+  appearance: none;
+  height: 6px;
+  background: #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: green; /* 綠色 */
+  cursor: pointer;
+  border: none;
+}
+p {
+  margin-bottom: 2px; 
+}
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 14px;
+}
+.btn {
+  background-color: #3B852B; 
+  color: white;
+  padding: 8px 16px;        
+  border-radius: 6px;        
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #78d663;
+}
+input[type="checkbox"] {
+  appearance: none; /* 移除預設樣式 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 勾選狀態 */
+input[type="checkbox"]:checked {
+  background-color: green;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: -2px;
+  left: 3px;
+}
+
+
 
 </style>
 <style>
