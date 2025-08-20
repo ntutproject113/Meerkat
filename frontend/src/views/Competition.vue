@@ -1,57 +1,40 @@
 <script setup>
-    import Menu from '../components/Menu.vue';
-    import { ref, onMounted } from 'vue'
-    import axios from 'axios'
+import Menu from '../components/Menu.vue';
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
 
-const page = ref(1)
-const timeline = ref('notEnded')
-const location = ref('taiwan')
-const category = ref('')
-
-// 狀態
+const contests = ref([])      // 存比賽清單
+const categories = ref([])    // 存分類清單
 const loading = ref(false)
 const error = ref(null)
-const contests = ref([])
-const categories = ref([])
 
-// 抓分類（flat 格式）
+// 取得比賽資料
+onMounted(async () => {
+  loading.value = true
+  try {
+    const res = await axios.get('http://localhost:8000/contests')
+    
+    contests.value = res.data
+  } catch (e) {
+    error.value = '載入失敗: ' + e.message
+  } finally {
+    loading.value = false
+  }
+})
+// 取得分類資料
 const fetchCategories = async () => {
   try {
-    const res = await axios.get('http://localhost:8000/categories', {
-      params: { format: 'flat' }
+    const res = await axios.get("http://localhost:8000/categories", {
+      params: { format: "flat" }
     })
     categories.value = res.data
   } catch (e) {
-    console.error('載入分類失敗', e)
-  }
-}
-
-// 抓比賽資料
-const fetchContests = async () => {
-  loading.value = true
-  error.value = null
-  contests.value = []
-  try {
-    const res = await axios.get('http://localhost:8000/contests', {
-      params: {
-        page: page.value,
-        timeline: timeline.value,
-        location: location.value,
-        category: category.value || undefined // 沒選分類時不傳此參數
-      }
-    })
-    // 從回傳的 result 中取出資料
-    contests.value = res.data.result.data || []
-  } catch (e) {
-    error.value = '載入失敗: ' + (e.response?.data?.detail || e.message)
-  } finally {
-    loading.value = false
+    console.error('載入分類失敗', e.message)
   }
 }
 
 onMounted(() => {
   fetchCategories()
-  fetchContests()
 })
 </script>
 
@@ -79,36 +62,43 @@ onMounted(() => {
         
       
           <!-- 每一張比賽卡片 -->
-           <div v-if="contests.length">
-              <div v-for="(item, index) in contests" :key="item.id" class="image">
-                <div class="contest-card">
-                  <div class="contest-content">
-                <h3 class="contest-title">{{ item.title }}</h3>
+         <div v-if="contests.length">
+            <div
+              v-for="(item, index) in contests"
+              :key="item.id || index"
+              class="contest-wrapper"
+            >
+              <div class="contest-card">
+                <div class="contest-content">
+                  <h3 class="contest-title">{{ item.cpName }}</h3>
 
-              
-                <div class="contest-info">
-                  <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
-                  開始時間：{{ item.startDate }}　結束時間：{{ item.endDate }}
+                  <div class="contest-info">
+                    <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
+                    結束時間：{{ item.deadline }}
+                  </div>
+                   <p>主辦單位: {{ item.cpOrganizer }}</p>
+                   <p>總獎金: {{ item.cpPrizeTop }}</p>
+
+                  <a :href="item.url" target="_blank" class="text-blue-600 underline">
+                    查看詳情
+                  </a>
                 </div>
-                <div class="contest-info"></div>
-                <a :href="item.url" target="_blank" class="text-blue-600 underline">
-                  查看詳情
-                </a>
               </div>
+
+              <!-- 分隔線 -->
+              <img
+                v-if="index !== contests.length - 1"
+                src="../assets/images/renting/line.png"
+                alt="分隔線"
+                class="line"
+              />
             </div>
           </div>
-           </div>
-        
-          <img
-            v-if="index !==contests.length - 1"
-            src="../assets/images/renting/line.png"
-            alt="分隔線"
-            class="line"
-          />
-       
-        <div v-else-if="!loading">沒有資料</div>
+
+          <!-- 沒有資料的顯示 -->
+          <div v-else-if="!loading">沒有資料</div>
+
       </div>
-    
 
       <!-- 右邊篩選 -->
       <div class="search-block">
