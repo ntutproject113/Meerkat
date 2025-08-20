@@ -83,13 +83,14 @@ const houseTypes = [
         <div v-for="(rent, index) in rentList" :key="index">
           <!-- 每一張租屋卡片 -->
           <div class="rent-card">
-              <img
-                v-if="rent.rentPictureHref"
-                :src="rent.rentPictureHref"
-                alt="房屋圖片"
-                class="image"
-              />
-              <a :href="rent.rentHref" target="_blank">查看詳情</a>
+             <a :href="rent.rentHref" target="_blank">
+                <img
+                  v-if="rent.rentPictureHref"
+                  :src="rent.rentPictureHref"
+                  alt="房屋圖片"
+                  class="image"
+                />
+              </a>
             <div class="rent-content">
               <h3 class="rent-title">{{ rent.rentName }}</h3>
 
@@ -105,7 +106,7 @@ const houseTypes = [
 
               <div class="rent-info">
                 <img src="../assets/images/renting/transport.png" class="icon" alt="捷運圖示" />
-                距{{ rent.transportation}} 分鐘
+                距{{ rent.transportation.stationName}} {{ rent.transportation.walkTime}}分鐘
               </div>
             </div>
 
@@ -194,7 +195,7 @@ const houseTypes = [
   height: 100vh;
   object-fit: fill;   /* 確保整張圖顯示 */
   pointer-events: none;
-  z-index: -1;
+  z-index:0;
 }
 .layout-container {
   position: relative;           
@@ -249,7 +250,7 @@ const houseTypes = [
 }
 .data-block {
   width: 70%;   
-  height:100%;      
+  height:92%;      
   padding-right: 1rem;    
   overflow-y: auto;        
   display: flex;
