@@ -2,19 +2,30 @@
 import Menu from '../components/Menu.vue';
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
+import collectedImg from '../assets/images/icon/collected.png'
+import uncollectedImg from '../assets/images/icon/uncollected.png'
 
 const contests = ref([])      // 存比賽清單
 const categories = ref([])    // 存分類清單
 const loading = ref(false)
 const error = ref(null)
 
+//收藏功能
+const favorites = ref([])
+const toggleFavorite = (index) => {
+  favorites.value[index] = !favorites.value[index]
+}
+
 // 取得比賽資料
 onMounted(async () => {
   loading.value = true
   try {
     const res = await axios.get('http://localhost:8000/contests')
-    
-    contests.value = res.data
+    console.log("API 回應資料：", res.data.result.payload.list)
+    contests.value = Array.isArray(res.data.result.payload.list) 
+                      ? res.data.result.payload.list 
+                      : []
+    favorites.value = contests.value.map(() => false) 
   } catch (e) {
     error.value = '載入失敗: ' + e.message
   } finally {
@@ -36,6 +47,7 @@ const fetchCategories = async () => {
 onMounted(() => {
   fetchCategories()
 })
+
 </script>
 
 <template>
@@ -62,29 +74,48 @@ onMounted(() => {
         
       
           <!-- 每一張比賽卡片 -->
-         <div v-if="contests.length">
+         <div v-if="contests && contests.length">
             <div
               v-for="(item, index) in contests"
               :key="item.id || index"
-              class="contest-wrapper"
             >
+              <!--類別-->
               <div class="contest-card">
+                 <div class="category-box">
+                  <span class="category-text">{{ item.id || '未分類' }}</span>
+                </div>
+                <!--資訊-->
                 <div class="contest-content">
-                  <h3 class="contest-title">{{ item.cpName }}</h3>
-
+                  <h3 class="contest-title">{{ item.alias }}</h3>
                   <div class="contest-info">
-                    <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
-                    結束時間：{{ item.deadline }}
+                    <img src="../assets/images/icon/date.png" class="icon" alt="日期圖示" />
+                          結束時間：{{ item.deadline }}
                   </div>
-                   <p>主辦單位: {{ item.cpOrganizer }}</p>
-                   <p>總獎金: {{ item.cpPrizeTop }}</p>
-
-                  <a :href="item.url" target="_blank" class="text-blue-600 underline">
+                  <div class="contest-info">
+                      主辦單位: {{ item.cpOrganizer }}
+                  </div>
+                      
+                  <!--好像不用寫在這裡
+                  <div class="contest-info">
+                   <div>總獎金: {{ item.cpPrizeTop }}</div>
+                  </div>
+                  <div class="contest-info">
+                  <a :href="item.url" target="_blank" class="link">
                     查看詳情
                   </a>
                 </div>
+                -->
+                  <div class="favorite-box" @click="toggleFavorite(item)">
+                    <img 
+                      :src="favorites[index] ? collectedImg : uncollectedImg"
+                      @click="toggleFavorite(index)"
+                      class="favorite-btn"
+                      alt="收藏按鈕"
+                    />
+                    </div>
+                </div>
               </div>
-
+                
               <!-- 分隔線 -->
               <img
                 v-if="index !== contests.length - 1"
@@ -97,6 +128,7 @@ onMounted(() => {
 
           <!-- 沒有資料的顯示 -->
           <div v-else-if="!loading">沒有資料</div>
+  
 
       </div>
 
@@ -104,7 +136,7 @@ onMounted(() => {
       <div class="search-block">
         <div class="search">
           <input class="search-input" type="text" placeholder="搜尋…" />
-          <img src="../assets/images/renting/search.png" class="icon" alt="搜尋圖示" />
+          <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
         </div>
         <div>
           <p class="font-bold mb-2">篩選條件</p>
@@ -205,13 +237,16 @@ onMounted(() => {
   text-align: center;
 }
 .contest-card {
-  position: relative;
   display: flex;
   border: none;
   overflow: hidden;
-  margin-bottom: -5px;
+  align-items: center;
+  justify-content: space-between;  
+  padding: 12px 16px;
+  margin-bottom: 12px;
   
 }
+
 
 .line {
   display: block;
@@ -227,7 +262,7 @@ onMounted(() => {
 .contest-content {
   padding: 12px;
   flex: 1;
-}
+ }
 
 .contest-title {
   font-weight: bold;
@@ -286,7 +321,34 @@ onMounted(() => {
   border: none;
   font-size: 16px; 
 }
-
+.category-box {
+  padding: 4px;
+  width:40px;
+  height: 40px;
+  background: #d9d9d9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.category-text {
+  color: #3B852B;
+  font-weight: bold;
+  font-size: 16px;
+}
+.favorite-box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;   /* 垂直置中 */
+  justify-content: center;
+}
+.favorite-btn {
+  flex: 0 0 40px;
+  width:70px;
+  height:70px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
 </style>
 
 <style>
