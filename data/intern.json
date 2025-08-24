@@ -1,1352 +1,2524 @@
 [
     {
+        "jobNo": "13817683",
+        "jobName": "資訊人員(新竹)無經驗可",
+        "jobRo": 1,
+        "jobCat": [
+            2007002007,
+            2007002005,
+            2007001010
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "新竹縣竹北市",
+        "jobAddress": "",
+        "description": "1.使用者端問題處理故障排除\n2.資訊設備資產採購，維護，盤點\n3.協助數位化專案推動及維護ERP軟體\n4.透過Postman進行API測試\n5.具備ISO經驗尤佳\n6.主管交辦事項\n",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 33000,
+        "salaryHigh": 45000,
+        "salaryDesc": "",
+        "custName": "聯宸科技股份有限公司",
+        "appearDate": "20250807",
+        "jobUrl": "https://www.104.com.tw/job/885sj"
+    },
+    {
+        "jobNo": "14778258",
+        "jobName": "【資訊處】客服行政人員(日薪)",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010,
+            2005001005,
+            2005001006
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市大安區",
+        "jobAddress": "和平東路二段106號10樓(科技大樓)",
+        "description": "1.辦理全會電信申請業務\n2.以服務導向傾聽內部客戶需求\n3.系統問題軌跡通報、追蹤與回覆\n4.協助系統測試與AI工具運用 \n5.協助資料收集與輔助資料處理 \n6.教育訓練協助 \n7.協助教材編制及知識庫發展 \n8.主管交辦事項與行政工作協助\n",
+        "optionEdu": [
+            3
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "資策會_財團法人資訊工業策進會",
+        "appearDate": "20250808",
+        "jobUrl": "https://www.104.com.tw/job/8sqz6"
+    },
+    {
         "jobNo": "14272075",
         "jobName": "資訊專員",
-        "jobRo": "2",
+        "jobRo": 2,
+        "jobCat": [
+            2007002007,
+            2007002006,
+            2007002001
+        ],
+        "major": [
+            "電機電子工程相關",
+            "資訊工程相關"
+        ],
         "jobAddrNoDesc": "台北市內湖區",
         "jobAddress": "新湖一路155號4樓",
-        "description": "1. 懂PBI語法。\n2. 有串連經驗。\n3. 協助公司串聯Power BI/Netsuite/微軟雲端。\n4. 協助其他[[[資訊]]]類工作項目。\n5. 歡迎在學學生投遞履歷，本工作可遠端作業，時間彈性可自由安排。",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪200元以上",
+        "description": "1. 懂PBI語法。\n2. 有串連經驗。\n3. 協助公司串聯Power BI/Netsuite/微軟雲端。\n4. 協助其他資訊類工作項目。\n5. 歡迎在學學生投遞履歷，本工作可遠端作業，時間彈性可自由安排。",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
         "custName": "加百利資產管理有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "13346740",
-        "jobName": "資訊部-資訊助理",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市北投區",
-        "jobAddress": "大業路10號6樓",
-        "description": "1. 系統運作環境建置、例行性維護、備援機制、資安稽核管理等\n2. [[[資訊]]]設備資產管理\n3. 人員到離職帳號、信箱等權限設定\n4. 協助團隊網路規劃、團隊監視系統規劃、團隊不斷電系統規劃、團隊防火牆規劃執行改善、導入及架設\n5. 執行部門內專案及主",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "朱宗慶打擊樂團隊_傑優文化事業股份有限公司",
-        "appearDate": "20250724"
-    },
-    {
-        "jobNo": "14722381",
-        "jobName": "資訊長期工讀生/助理",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市南港區",
-        "jobAddress": "南港路二段97號10樓(龍星大樓)",
-        "description": "工作內容：\n· 操作ERP系統進行資料處理\n\n· [[[資訊]]]設備基本維護、故障排除、報修\n\n· Microsoft M365、TEAMS、ONE DRIVE操作與教學\n\n· 協助主管處理日常行政工作\n\n· 主管交辦事項\n\n\n職涯收穫：\n· 了解ERP基",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "龍星企業股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "14743650",
-        "jobName": "【數轉院/共創協作中心】資訊服務協作工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "民生東路四段133號8樓",
-        "description": "1.協助電腦設定與流程處理，[[[資訊]]]資料維護。\n2.協作辦公室環境庶務。\n3.配合主管交辦事項。\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "資策會_財團法人資訊工業策進會",
-        "appearDate": "20250724"
-    },
-    {
-        "jobNo": "13718561",
-        "jobName": "(總公司-資訊部)程式設計工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "忠孝東路一段9號",
-        "description": "對程式教育、Scrtach有興趣，\n且對於程式教育曾有經驗或大學具[[[資訊]]]相關科系背景。\n==================\n【工作內容」\n1.兒童coding簡易教案編寫或簡易題目撰寫\n2.協助資料匯入\n3.協助主管交辦事項\n4.每週至少排班3天\n\n",
-        "optionEdu": "大學",
-        "periodDesc": "1年以上",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪190~250元",
-        "custName": "總公司_長頸鹿文化事業股份有限公司",
-        "appearDate": "20250716"
+        "appearDate": "20250721",
+        "jobUrl": "https://www.104.com.tw/job/8hwej"
     },
     {
         "jobNo": "10674974",
         "jobName": "資訊工讀生",
-        "jobRo": "2",
+        "jobRo": 2,
+        "jobCat": [
+            2010002003,
+            2007002006
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
         "jobAddrNoDesc": "雲林縣斗六市",
         "jobAddress": "八德里引善路196號",
-        "description": "1.協助產區生產電腦與設備正常運作。\r\n2.電腦軟、硬體安裝與維護。\r\n3.[[[資訊]]]設備定期保養維護。\r\n4.自動化設備簡易問題排除。\r\n5.其它主管交辦事項。",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0028590",
-        "salaryHigh": "0028590",
-        "salaryDesc": "月薪28,590元",
+        "description": "1.協助產區生產電腦與設備正常運作。\r\n2.電腦軟、硬體安裝與維護。\r\n3.資訊設備定期保養維護。\r\n4.自動化設備簡易問題排除。\r\n5.其它主管交辦事項。",
+        "optionEdu": [
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 28590,
+        "salaryHigh": 28590,
+        "salaryDesc": "",
         "custName": "凱馨實業股份有限公司",
-        "appearDate": "20250725"
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/6csv2"
     },
     {
-        "jobNo": "6190518",
-        "jobName": "資訊時薪人員",
-        "jobRo": "2",
-        "jobAddrNoDesc": "高雄市大樹區",
-        "jobAddress": "學城路一段5號3樓",
-        "description": "1.協助POS前場週邊安裝設定及故障排除\n2.協助公司電腦週邊安裝設定及故障排除\n3.同仁工作協助支援",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "義大遊樂世界_義大世界購物廣場_義大開發股份有限公司",
-        "appearDate": "20250722"
+        "jobNo": "14710316",
+        "jobName": "資訊網路工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002007,
+            2007001009,
+            2007002005
+        ],
+        "major": [
+            "資訊工程相關",
+            "其他數學及電算機科學相關"
+        ],
+        "jobAddrNoDesc": "台中市烏日區",
+        "jobAddress": "",
+        "description": "1.公司網路與資訊系統維護。\n2.客戶網路與資訊系統建置、維護、問題排除與回報。\n3.客戶網路與資訊系統回報問題與排除。\n4.工作日誌填寫、技術文件。\n5.樂於與客戶溝通。",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 45000,
+        "salaryDesc": "",
+        "custName": "偉邦資科股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8rajw"
     },
     {
-        "jobNo": "13572044",
-        "jobName": "【花蓮 新天堂樂園】資訊兼職",
-        "jobRo": "2",
-        "jobAddrNoDesc": "花蓮縣吉安鄉",
-        "jobAddress": "南濱路一段503號",
-        "description": "1.安裝、維修網路佈線/監視器/POS/電腦\n2.執行每日例行檢查及定期維護事項\n3.主管交辦事項",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "台灣土地開發股份有限公司",
-        "appearDate": "20250722"
+        "jobNo": "11885971",
+        "jobName": "網頁程式研發工程師(資訊組)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001006,
+            2007001010,
+            2007001004
+        ],
+        "major": [
+            "資訊工程相關",
+            "其他數學及電算機科學相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台北市大安區",
+        "jobAddress": "基隆路三段130號",
+        "description": " 一、負責網站作業系統開發及資料庫管理等資訊工程，工作項目包含：\n      1.負責專案網站作業平台功能開發\n      2.協助資料庫平台維運\n      3.定期需做開發進度說明及產品簡報\n\n二、能力條件：\n      1.熟悉PHP(若瞭",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 44125,
+        "salaryHigh": 65000,
+        "salaryDesc": "",
+        "custName": "國立臺灣師範大學_教育政策與行政研究所",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/72r9v"
     },
     {
-        "jobNo": "14493051",
-        "jobName": "文城教育學院 資訊部 MIS&amp;IT 長期工讀",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "和平西路一段20號4樓(捷運古亭站8號出口)",
-        "description": "另確保無待修狀況)\n3.資通訊相關圖表製作及更新(總公司及各據點)\n4.設備盤點及定檢維保作業(資通訊系統或設備、多媒體系統或設備)\n5.資料定期備份及移存處理(單位內系統參數或組態檔或其他單位重要檔案)\n6.[[[資訊]]]部SOP撰寫及更新\n7.其它交辦事",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000210",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪210元以上",
-        "custName": "臺北市私立文城文理短期補習班",
-        "appearDate": "20250714"
+        "jobNo": "14789144",
+        "jobName": "MIS資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2010002003,
+            2007001003,
+            2007002003
+        ],
+        "major": [
+            "通信學類",
+            "電機電子工程相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台中市新社區",
+        "jobAddress": "中正里中和街五段123號",
+        "description": "1.資訊安全管理及資料備份\n2.網路及資訊設備裝配及維護\n3.門禁/電話/監視系統管理\n4.公司形象網站管理\n5.ERP/圖件系統管理\n6.內部系統程式開發、修改及資料庫維護\n7.外包廠商聯繫與進度追蹤\n8.廠務例行工作\n9.主管交辦專案性任務",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 33000,
+        "salaryHigh": 38000,
+        "salaryDesc": "",
+        "custName": "旭春股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/8szdk"
+    },
+    {
+        "jobNo": "13925033",
+        "jobName": "(周休二日，穩定職涯發展，達標即享月獎金！)全台內勤客戶服務顧問(高雄)",
+        "jobRo": 1,
+        "jobCat": [
+            2005001004,
+            2004003003,
+            2007001009
+        ],
+        "major": [
+            "企業管理相關",
+            "資訊管理相關",
+            "會計學相關"
+        ],
+        "jobAddrNoDesc": "高雄市苓雅區",
+        "jobAddress": "中華四路2號9樓",
+        "description": "我們想要找這樣的你\n\n1.很喜歡與人聊天，一天講話連續12小時也不會累\n2.新人到職後提供完整2個月的教育訓練，所以你必須熱愛學習，隨時隨地都想要吸收新知識\n3.喜歡解題，沒有得到解答就會渾身不舒服\n4.腦中有超多解決方法，樂於與他人分享、切磋\n5.絕對不會玻璃心，面對再無理的客戶，也能冷靜的排除客戶問題\n6.千萬不要小看客服這份工作，它可以讓你擁有強大的公關溝通能力，還可以提升自我抗壓性、情緒管理，讓你瞬間升級2.0版本\n7.最好的是，我們不需要輪班，讓你可以擁有良好的休息時間\n\n",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 31000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "正航資訊股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8agmh"
+    },
+    {
+        "jobNo": "13643952",
+        "jobName": "【GIT100-2505081】資訊專員",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "新北市中和區",
+        "jobAddress": "建康路119號10樓",
+        "description": "1. 資訊設備測試、設定及安裝。\n2. 排除使用者軟硬體相關問題。\n3. 機房主機、網路、儲存等硬體維護。\n4. 熟悉 Windows 作業系統、Microsoft Office 操作。\n5. 其他主管交辦事務。",
+        "optionEdu": [
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 37000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "亞旭電腦股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/84fqo"
     },
     {
         "jobNo": "13232079",
         "jobName": "兼任資訊維護人員(沙鹿/向上院區)",
-        "jobRo": "2",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2007001009
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
         "jobAddrNoDesc": "台中市沙鹿區",
         "jobAddress": "向上路七段127號",
-        "description": "1.[[[資訊]]]設備檢易故障排除及安裝維護\n2.巡檢[[[資訊]]]機房設備確認狀態及異常通報\n3.電話線上技術服務及狀況排除\n4.簡易文書作業\n5.其他臨時交辦事項\n\n晚班時段：16:00-24:00",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
+        "description": "1.資訊設備檢易故障排除及安裝維護\n2.巡檢資訊機房設備確認狀態及異常通報\n3.電話線上技術服務及狀況排除\n4.簡易文書作業\n5.其他臨時交辦事項\n\n晚班時段：16:00-24:00",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
         "custName": "光田醫療社團法人光田綜合醫院",
-        "appearDate": "20250724"
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/7vlxr"
     },
     {
-        "jobNo": "12617282",
-        "jobName": "(實習)資訊專案助理",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "信義路5段2號B1樓",
-        "description": "1.協助大型ERP系統測試與開發，將學會ASP.NET(C#)、資料庫MS SQL語法操作、\n    第三方API串接等實務開發經驗及商業流程\n2.企業內部社群平台，教育訓練影片提案及多媒體設計、數位影音編輯。 \n3.收集、分析市場[[[資訊]]]，了解產業",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "震旦集團_震旦行股份有限公司",
-        "appearDate": "20250630"
-    },
-    {
-        "jobNo": "14658446",
-        "jobName": "資訊部實習生(2025年6月至2025年12月)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市內湖區",
-        "jobAddress": "基湖路三巷47號8樓",
-        "description": "前請先思考清楚。 且先行確認您可以配合以下的內容再行投遞\n\n◎實習期間：在學期間(依學校學期安排)\n◎實習時間：每週一至週五，9:00-17:30 \n◎實習部門：[[[資訊]]]部\n◎實習工作內容：1.電腦軟硬體安裝及[[[資訊]]]相關設備的設定及問題排除",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000500",
-        "salaryHigh": "0000500",
-        "salaryDesc": "論件計酬500元",
-        "custName": "星裕國際股份有限公司",
-        "appearDate": "20250722"
-    },
-    {
-        "jobNo": "13879290",
-        "jobName": "《實習》資訊安全處-資安實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "信義區市民大道六段151號",
-        "description": "【實習時間】\n每周至少3天實習\n\n【工作內容】\n1.資安治理：ISMS[[[資訊]]]安全管理系統、電腦系統[[[資訊]]]安全評估\n2.設備維運：USB、藍芽、DLP設備維運、社群媒體跳板機檢核等各項事務\n3.資安演練：社交工程、個資外洩及ATM應變等資安演練\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000210",
-        "salaryHigh": "0000230",
-        "salaryDesc": "時薪210~230元",
-        "custName": "永豐商業銀行股份有限公司",
-        "appearDate": "20250717"
-    },
-    {
-        "jobNo": "12620443",
-        "jobName": "【學生實習】財金社群行銷企劃實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "東興路57號11樓",
-        "description": "【實習內容】\n- 協同中文/英文[[[財金]]]社群維護 (FB、LINE、IG、Linkedin)\n- 協同產業分析及SEO文章撰寫或翻譯\n- 針對社群與官網瀏覽成果，主動提供市場回饋並創意發想文案主題\n- 瞭解或願學習 SEO 關鍵字基礎，並用於內容規劃",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "台灣經濟新報文化事業股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14556190",
-        "jobName": "台北資訊助理(短期兼職，配合到114年底)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市南港區",
-        "jobAddress": "",
-        "description": "1. PC、NB新機拆箱&amp;安裝\n2. 協助主管完成交辦任務，譬如整理貨架、儲位變更......等。\n\n有興趣的朋友歡迎洽詢!\n工作地點在南港高鐵站附近。",
-        "optionEdu": "高中以下",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000195",
-        "salaryHigh": "0000195",
-        "salaryDesc": "時薪195元",
-        "custName": "昊正科技股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "12461441",
-        "jobName": "[實習/兼職]JAVA軟體工程師",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市新店區",
-        "jobAddress": "北新路一段86號20樓",
-        "description": "1、進行網站前後端技術研究與實作，\n2、管理系統開發與維護，\n3、具備基礎Java Web概念、前端HTML、Javascript概念。",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪200元以上",
-        "custName": "碩網資訊股份有限公司",
-        "appearDate": "20250714"
-    },
-    {
-        "jobNo": "14611061",
-        "jobName": "桃園資訊助理(短期兼職，配合到114年底)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "桃園市中壢區",
-        "jobAddress": "桃園高鐵站",
-        "description": "1. PC、NB新機拆箱&amp;安裝\n2. 協助主管完成交辦任務，譬如整理貨架、儲位變更......等。\n\n有興趣的朋友歡迎洽詢!\n工作地點在桃園高鐵站附近",
-        "optionEdu": "高中以下",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000195",
-        "salaryHigh": "0000195",
-        "salaryDesc": "時薪195元",
-        "custName": "昊正科技股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14594092",
-        "jobName": "高雄資訊助理(短期兼職，配合到114年底)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "高雄市燕巢區",
-        "jobAddress": "",
-        "description": "1. PC、NB新機拆箱&amp;安裝\n2. 協助主管完成交辦任務，譬如整理貨架、儲位變更......等。\n\n有興趣的朋友歡迎洽詢!\n工作地點會分布在高雄市燕巢區跟左營區。",
-        "optionEdu": "高中以下",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000195",
-        "salaryHigh": "0000195",
-        "salaryDesc": "時薪195元",
-        "custName": "昊正科技股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "13891209",
-        "jobName": "資訊工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市大安區",
-        "jobAddress": "安和路一段27號14樓",
-        "description": "1.協助電腦整理及軟體安裝等事項\n2.協助電腦與印表機等硬體基本檢修及障礙排除\n3.協助請購或費用申請等文件處理\n4.部門其他協助事項(如：資料、檔案...整理)\n【每週出勤安排約16~24小時】",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "德記洋行股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14485131",
-        "jobName": "2025年實習生招募–資訊工程師(竹科)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新竹市",
-        "jobAddress": "新竹市東區力行路21號",
-        "description": "同學同學~還在擔心沒有足夠的工作經驗豐富你的履歷嗎? \n加入富采集團實習計劃，搶先認識科技產業，累積實戰經驗，為未來職涯加分吧！\n\n加入富采集團實習計畫，你將獲得：\n＃實際參與專案工作，實戰經驗UP UP\n＃專屬Mentor指導，快速與業界接軌\n＃專業實習證明，升學求職免煩惱\n＃跨縣市住宿津貼，不受實習地點困擾\n＃優先轉正機會，豐厚獎金等你來拿\n\n【工作內容】\n1. SAP ERP 系統管理實務\n2. ABAP程式語言學習/實作\n3. AI / RPA 運用\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "富采控股股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "13529758",
-        "jobName": "SAP系統維護工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市五股區",
-        "jobAddress": "",
-        "description": "\n希望畢業後有志從事『企業資源規劃』相關工作且有高度意願挑戰學習ABAP程式語言及SAP系統操作者，歡迎您的加入。\n工作期間將學習SAP開發技能和學習SAP SD(銷售與配銷)或MM(物料管理)運作流程等知識。\n\n1.主要負責SAP ABAP開發與測試任務。\n2.SAP模組日常維護、異常排除、程式文件編寫。\n3.其他主管交辦事項\n4.每周需到公司上班至少2~3天，每次至少3~8小時。\n\n\n\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000230",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪230~250元",
-        "custName": "町洋企業股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "13579731",
-        "jobName": "【2025年學期實習】資訊安全部實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "台北市中山區民權東路二段144號",
-        "description": "1.\t學習公司[[[資訊]]]安全防禦架構/縱深防禦與概念\n2.\t學習資安設備與日誌\n3.\t學習SIEM系統操作\n4.\t開發「資安報表自動檢核工具」",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000210",
-        "salaryHigh": "0000240",
-        "salaryDesc": "時薪210~240元",
-        "custName": "(總公司)南山人壽保險股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "12832619",
-        "jobName": "系統品質測試工讀",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "愛國東路31號",
-        "description": "1.[[[資訊]]]安全相關文書作業內容包括，文件整理及庶務等\n2.工單告警測試系統，包括整理告警統計、訊息通知、分析基礎案例等\n3.檢測系統功能，並針對檢測項目提供回饋意見。\n4.每週工作三天以上",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪190~250元",
-        "custName": "中華資安國際股份有限公司",
-        "appearDate": "20250711"
-    },
-    {
-        "jobNo": "13088776",
-        "jobName": "助理工程師-高雄",
-        "jobRo": "2",
-        "jobAddrNoDesc": "高雄市前鎮區",
-        "jobAddress": "",
-        "description": "1. 網站管理及資料更新。\n2. 網站操作諮詢輔導。\n3. 配合資料上稿或網頁設計需求提供服務。\n4. 辦理網站相關業務，如：增修需求收集、網站功能檢測、網站相關報告等。\n\n\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "哈瑪星科技股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14506373",
-        "jobName": "【在學生實習】元大證券-國際金融種子實習計畫（計量交易部-資訊類）-｛現正招募中｝",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "南京東路2段77號",
-        "description": "交易規模及獲利能力皆常年為同業之冠。各領域人才的充份交融協作、潛能激發是我們引以為傲的工作環境也是我們成功的關鍵。\n\n※ 實習資格條件：\n　（一）大四及研究所在學學生，就讀電算機科學、[[[資訊]]]、理工等相關系所。\n　（二）具備以下條件者為優先：",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000000",
-        "salaryHigh": "0000000",
-        "salaryDesc": "論件計酬0元",
-        "custName": "元大金融控股股份有限公司(元大金控) (元大證券) (元大銀行)",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14698655",
-        "jobName": "【實習職缺】資訊安全專案實習生-M212",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台中市西屯區",
-        "jobAddress": "台灣大道三段660號7樓之2",
-        "description": "我們正在尋找對資安事件分析有熱情的實習夥伴，一同參與真實企業的資安服務工作，主要內容包括：\n1.協助資安系統建置與日常維運作業，並參與相關報告撰寫\n2.參與MDR/EDR資安工具與SIEM平台之操作與使用\n3.協助進行資安威脅獵捕（Threat Hunting）與情資彙整\n4.協助製作與簡報資安服務成果，培養簡報與說明能力\n\n\n我們希望你具備\n1.對資安有高度熱忱，具備基本的系統與網路知識\n2.熟悉以下其中幾項尤佳（非絕對必要，進入實習後可持續學習）：\n   -TCP/IP 通訊協定\n   -Windows / Linux 作業系統基本操作\n   -主機服務基本認知（如 Web / AD / DNS 等）\n   -SQL語法與資料查詢經驗\n\n**實習期間：2025/7~2026/6\n    寒暑期時間每週5日，就學期間每週可配合3日以上尤佳\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "精誠軟體服務股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "11386747",
-        "jobName": "資訊企劃室長期工讀生(限在校生)8月底上班",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "基隆路一段200號16樓",
-        "description": "我們是遠雄建設，誠摯邀請熱愛技術的你加入IT團隊！\n這不只是工讀，而是你進入企業IT世界的絕佳機會！在這裡，你將親身參與企業[[[資訊]]]設備管理與專案協作，累積實戰經驗，為未來的職涯奠定穩固基礎！\n\n【你的任務】\n[[[資訊]]]設備管理：協助硬體設備管理與維護，確",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0028590",
-        "salaryHigh": "9999999",
-        "salaryDesc": "月薪28,590元以上",
-        "custName": "遠雄建設事業股份有限公司",
-        "appearDate": "20250722"
-    },
-    {
-        "jobNo": "14749485",
-        "jobName": "『兼職-電話客服專員』- 智慧裝置諮詢專線, 交通便利+環境舒適｜台北,近捷運永春/後山埤站 (02-27)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "忠孝東路五段(近捷運永春/後山埤站)",
-        "description": "\n\n    『為什麼選擇我們的團隊？』\n    如果您渴望在舒適、充滿活力的環境中工作，我們誠摯邀請您加入！\n    在這裡，您將與親切專業的同事攜手合作，提供卓越服務，實現職涯成長。\n\n    ˙我們提供固定座位、寬敞空間、戶外陽台與休息區，讓您自在工作、輕鬆放鬆。\n    ˙鄰近捷運永春與後山埤站，步行僅需5分鐘，通勤便利，電動機車還享免費停車！\n\n\n✅ 工作內容\n    - 產品諮詢與障礙排除。\n    - 活動資格審核。\n    - 外撥調查專案。\n    - 跨部門問題通報與協作。\n    - 其他主管交辦事項。\n\n✅ 薪資與福利\n    - 時薪：190元。\n    - 本職務享有公司完善的獎金與激勵機制，詳情將於面談時說明。\n\n✅ 排班彈性~個人休假日出遊不再人擠人\n    - 採平、假日排班。\n    - 排班時段：09:00~21:00。\n    - 每日排班至少4小時起，且每週排班時數需達24小時(含)以上。\n\n✅ 我們需要這樣的你\n    - 學歷：需高中職以上畢業\n    - 基本文書處理與中文輸入30字/分以上。\n    - 具有抗壓性及高度服務熱忱，良好的溝通協調能力及主動積極學習之態度。\n    - 歡迎產學實習生。\n\n✅ 立即加入我們！\n    - 立即投遞履歷，將有專人與您聯繫！\n    - 欲進一步了解請加入官方LINE@帳號：@980ksomj",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "程曦資訊整合股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14466462",
-        "jobName": "兼職前端軟體工程師",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "南京東路三段287號5樓之一",
-        "description": "1. 基於No code Low code工具開發，有美感，與團隊共同設計、開發平台功能 \n2. 實作Responsive、High usability的各種頁面(如Landing page、靜態[[[資訊]]]頁等) \n3. 熟悉Laravel、Vue",
-        "optionEdu": "大學",
-        "periodDesc": "1年以上",
-        "salaryLow": "0020000",
-        "salaryHigh": "0040000",
-        "salaryDesc": "論件計酬20,000~40,000元",
-        "custName": "瑞保網路科技股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "14472066",
-        "jobName": "系統維運實習生（資訊架構部）_I00020454",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市大安區",
-        "jobAddress": "敦化南路二段335號18樓",
-        "description": "業。\n3. 協助正職人員執行[[[資訊]]]治理相關文書作業。\n4. 主管交辦事項。\n\n※ 實習後將可視實習表現優先轉正。\n※ 如需簽訂與學校相關之學生實習合約，請提前告知，並提供相關資料，以利後續作業。",
-        "optionEdu": "學歷不拘",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000210",
-        "salaryDesc": "時薪200~210元",
-        "custName": "國泰綜合證券股份有限公司",
-        "appearDate": "20250718"
-    },
-    {
-        "jobNo": "11892343",
-        "jobName": "資安簡報美編助理(工讀生)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "杭州南路一段26號8樓",
-        "description": "1.協助資安服務規畫簡報製作與編輯。\n2.協助客戶訪談之規劃。\n2.協助企業網站內容更新。\n3.協助資安服務產品趨勢分析，提供部門做為新服務及開發之參考。",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪190~250元",
-        "custName": "中華資安國際股份有限公司",
-        "appearDate": "20250711"
-    },
-    {
-        "jobNo": "13931519",
-        "jobName": "資訊部-日班/長期工讀生【實習生可】",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "信義路五段7號3樓",
-        "description": "1.早班：週一~週五09:00~16:00\n2.專櫃收銀設備安裝、維護、故障排除、撤收及清潔。\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "台北101_台北金融大樓股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "14756085",
-        "jobName": "資訊部-晚班/長期工讀生【實習生可】",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "信義路五段7號3樓",
-        "description": "1.晚班：週一~週五15:30~22:00(22:30)\n2.專櫃收銀設備安裝、維護、故障排除、撤收及清潔。\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "台北101_台北金融大樓股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "12956802",
-        "jobName": "【2ndSTREET日本最大二手店】情報系統部 - POS/電腦/網路設備建置/維護-兼職人員",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "館前路49號5樓",
-        "description": "\n【工作內容】 \n\n主要：\n1.手機電腦軟設備、硬體設定及系統安裝和維護，故障排除 \n2.網路設備安裝設定，網路障礙排除 (須配合國內出差)\n3.建立硬體設備、軟體、系統等操作手冊發布\n4.[[[資訊]]]行政事務\n5.其他主管交辦事項\n\n次要：\n1.系統應",
-        "optionEdu": "學歷不拘",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000195",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪195~250元",
-        "custName": "2ndSTREET_台灣極沃股份有限公司",
-        "appearDate": "20250724"
-    },
-    {
-        "jobNo": "14756275",
-        "jobName": "醫療器材 (ECG) 實習 &amp; 測試工讀生 (中和)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市中和區",
-        "jobAddress": "建八路2號14樓之8",
-        "description": "展的學生加入團隊。歡迎希望提前接觸業界、累積實務經驗、拓展視野並培養專業技能的你！\n\n工作時間可彈性安排，每週約 3–5 個工作天（可討論），上班時間為 08:30–17:30，中午休息一小時。\n\n[[[資訊]]]/電機相關科系或醫療器材相關背景者優先考慮。",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "美商宇心生醫股份有限公司台灣分公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "14681278",
-        "jobName": "【資訊部】行政工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "民生東路三段156號13F",
-        "description": "\n●工作內容：1. 協助文件整理與歸檔、資料輸入、表單製作。\n                        2. 日常行政庶務與環境整理。\n                        3. 其他主管交辦事項。\n●具備條件：對行政工作有興趣，細心負責、熟悉基本文書處理。\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "群益金鼎證券股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "13535244",
-        "jobName": "資料處理 助理工程師-(年度工讀生)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市中和區",
-        "jobAddress": "立德街202號",
-        "description": "■主要職務與條件:\n　1.資料庫處理應用。\n　2.相關[[[資訊]]]網路硬體設備安裝、設定及維護。\n　3.與相關單位之業務連繫、溝通、執行，並支援日常行政庶務工作。\n　4.其它主管交辦事宜。\n■在職訓練：\n　1.現行VFP系統處理應用。\n　2.相關應用軟體",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "儒風資訊印刷股份有限公司",
-        "appearDate": "20250719"
-    },
-    {
-        "jobNo": "14138179",
-        "jobName": "私募基金實習生 [學生]",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "",
-        "description": "1. 公司及產業研究，撰寫分析報告並向投資團隊呈報。\n2. 參加法說會，並製作會議摘要。\n3. 協助籌辦定期的投資論壇。\n4. 完成主管交辦的其他研究專案與行政庶務事項。",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "博信資產管理股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "14668755",
-        "jobName": "【數轉院/跨域實證服務中心】互動體驗設計工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "民生東路四段133號2樓A 區",
-        "description": "我們是資策會數位轉型研究院跨域實證服務中心 Living Lab+，一個以體驗為核心價值的跨域創新平台。我們致力於打造一個獨特的場域，讓企業、科技專家和創意人才共同探索、試驗和創造未來的產品與服務。我們的使命是透過創新的方法將企業、科技和創意融合，為產品服務開發帶來全新的視角。\n\n我們正在尋找對互動體驗設計和AI技術充滿熱情的夥伴！職務內容：\n1.協助開發結合場域的互動體驗。\n2.實際參與公司的專案，發想活動互動內容。\n3.結合 AI 工具開發體驗。",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪200元以上",
-        "custName": "資策會_財團法人資訊工業策進會",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14604942",
-        "jobName": "60086RD_系統測試工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市內湖區",
-        "jobAddress": "堤頂大道二段187號",
-        "description": "1. 系統與API測試\n2. 自動化測試腳本開發 (API)\n3. 行政作業 (測試文件、報告等)\n\n※工作待遇：將依學經歷進行敘薪。",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "神通資訊科技股份有限公司",
-        "appearDate": "20250717"
-    },
-    {
-        "jobNo": "13573841",
-        "jobName": "遊戲監控(在校簽約實習生)-無經驗可!",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "",
-        "description": "你是否對 &quot;遊戲產業&quot; 充滿興趣與熱忱，想投身其中卻苦無門路可以加入呢？\n這將是你跨出第一步的最好機會！！\n只要你肯學習、肯努力，將可以在這裡獲得許多經驗的累積與成長！\n\n--------------------------- 工作內容 ---------------------------\n▶ 執行GM業務\n▶ 伺服器監控及遊戲監控\n▶ 玩家動向監控及整合/報告\n▶ 其他主管交辦或遊戲營運輔助業務\n\n------------------------- 實習相關規定 -------------------------\n▶ 在校簽約實習\n▶ 每週至少須出勤3日(共計18小時)以上\n▶ 出勤時間面議(週一至週日任選)，希望每週時間固定\n▶ 臨時內部人力急需時，必要時希望可配合做出勤日或時間調整\n▶ 如上班時間跨用餐時段則提供一小時用餐時間(不支薪)\n\n【實習生福利制度】\n★ 供應吃飽飽餐點!\n★ 全日提供吃不完的零食、飲料等!",
-        "optionEdu": "學歷不拘",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "Pearl Abyss_珍艾碧絲有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14756405",
-        "jobName": "【科法所】創智中心-工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市大安區",
-        "jobAddress": "敦化南路",
-        "description": "1. 協助處理工作行政庶務\n2. 協助智財相關議題參考資料蒐集、整理\n3. 協助處理業務相關報告等資料彙整\n4. 協助處理研討會等活動辦理相關庶務\n",
-        "optionEdu": "碩士",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "資策會_財團法人資訊工業策進會",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "12869184",
-        "jobName": "【外包實習生或兼職】AI 模型資料標注員",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市南港區",
-        "jobAddress": "三重路19之13號4樓",
-        "description": "(一)條件：\n實習身份：提供【大四在校生】與各大院校簽訂實習抵學分合約。或暑期實習\n實習科系：應數、資工、[[[資訊]]]、理工等相關科系\n實習相關：1. 需修習過相關程式語言課程，如 Python 或 C++ 等程式語言課程任一可",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0025000",
-        "salaryHigh": "0030000",
-        "salaryDesc": "論件計酬25,000~30,000元",
-        "custName": "富萱科技股份有限公司",
-        "appearDate": "20250724"
-    },
-    {
-        "jobNo": "12909210",
-        "jobName": "專案管理師(實習)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "八德路二段449號7樓",
-        "description": "以下說明為此職缺的工作內容，但如果您對學習充滿熱忱，期待全方位的成長；歡迎您跟我們聯絡。\n\n基本能力要求\n1. 基本文書處理 : 熟悉電腦office文書作業 Excel、PowerPoint、Word \n2. 追蹤專案進度\n3. 協助主管交辦事項處理\n\n其他說明\n1. 需協助處理專案事務，因此須具備統整規劃能力。\n2. 工作內容須閱讀及製作各類文件，做事需要非常細心。\n3. 本工作內容主要協助專案進行及相關事項追蹤，但非純粹庶務性工作，需要一直動腦，思考解決方案或優化相關流程，對於邏輯能力有一定要求。\n\n* 我們重視技術人才的培養與未來發展，我們強調共同討論、學習及成長，讓彼此互相進步，增進專業能力。\n*希望以長期實習為主",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000195",
-        "salaryHigh": "0000195",
-        "salaryDesc": "時薪195元",
-        "custName": "聯瞻資訊股份有限公司",
-        "appearDate": "20250627"
-    },
-    {
-        "jobNo": "14661249",
-        "jobName": "紫式大數據決策股份有限公司-實習生招募計畫",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新竹市",
-        "jobAddress": "光復路二段376-1號2樓",
-        "description": "理、文案撰寫或程式碼輔助等方面。\n4.\t具備良好的溝通協調能力、團隊合作精神及服務熱忱。\n5.\t主動積極、認真負責、樂於學習新事物。\n\n【實習[[[資訊]]]】\n1.\t實習期間與工作時間：天數與時間可面議。\n2.\t實習地點：新竹市光復路二段376-1號，必要時",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0004000",
-        "salaryHigh": "9999999",
-        "salaryDesc": "部分工時(月薪)4,000元以上",
-        "custName": "紫式大數據決策股份有限公司",
-        "appearDate": "20250724"
-    },
-    {
-        "jobNo": "14115237",
-        "jobName": "【2025 鴻佰科技實習專區 Ingrasys Internship Program】-IT供應鏈系統運維工程師 實習生 (實習廠區:土城海山)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市土城區",
-        "jobAddress": "海山",
-        "description": " Timeline】\n寒暑假full time\n學期中每週2-5天以上\n\n【Qualification】\n[[[資訊]]]管理、[[[資訊]]]工程、工業工程、工業管理相關科系\n1. 熟悉任何一門主流軟件開發語言開發\n2. 英文佳且邏輯推導能力優秀者有意願朝IT技能發展者可在",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "鴻佰科技股份有限公司",
-        "appearDate": "20250718"
-    },
-    {
-        "jobNo": "14747404",
-        "jobName": "AI工程師",
-        "jobRo": "2",
-        "jobAddrNoDesc": "苗栗縣竹南鎮",
-        "jobAddress": "仁愛路645巷23號",
-        "description": "理等。\n\n歡迎您的加入，一起成長，共創未來！\n\n工作內容：\n1. 協助撰寫相關AI辨識系統\n2. AI演算法開發\n3. AI建模和佈署\n4. 外掛程式開發\n5. 利用程式協助大量生態資料整理與生態資料庫\n6. 其他[[[資訊]]]相關交辦事項\n\n工作需具備能力",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000250",
-        "salaryHigh": "0000500",
-        "salaryDesc": "時薪250~500元",
-        "custName": "野聲環境生態有限公司",
-        "appearDate": "20250719"
-    },
-    {
-        "jobNo": "14364051",
-        "jobName": "《樺漢科技2025實習計劃》MIS工程師",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市中和區",
-        "jobAddress": "建康路10號6樓",
-        "description": "加入我們的 IT 團隊，成為科技的超級英雄！✨ \n在這裡，你將有機會解決挑戰、學習新技能，並成為夥伴們的救星。無論是硬體、軟體，還是權限控管，每一個細節都能讓你充滿成就感！邀請你一起加入我們的實習團隊！\n\n\nHelp Desk\n* 確保電腦軟硬體資源的供應，根據需求進行採購和配發。\n* 負責管理使用者的權限控管，包括帳號設定、角色分配和權限管理。\n* 負責人員電腦回收、重整和配發作業，確保使用者設備的合規性和效能。\n* 協助使用者進行軟硬體的安裝、設定。\n* 解決使用者在軟硬體方面的問題，包括操作系統、應用程式、網路等。\n* 提供使用者支援，包括故障排除、設定更改和問題解答。\n* 記錄和追蹤使用者問題，並及時解決或轉交給相關團隊進行處理。\n\n\n我們正在尋找的你\n-實習對象：2025/09升大四、預計2026/06畢業的碩士生\n-實習期間：即日起~2026/05/31\n-實習天數：\n寒暑假：每周一~五整天\n學期：每周至少三個整天(8hr/天)\n-本職缺為實習職缺，非實習生請勿投遞履歷\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0028590",
-        "salaryHigh": "9999999",
-        "salaryDesc": "月薪28,590元以上",
-        "custName": "樺漢科技股份有限公司_鴻海集團",
-        "appearDate": "20250722"
-    },
-    {
-        "jobNo": "14669133",
-        "jobName": "業務實習生 Sales Assistant (Intern)＿台北",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市內湖區",
-        "jobAddress": "瑞光路335號",
-        "description": "我們昕力[[[資訊]]]是一家規模超過550+人的B2B跨國軟體設計與開發公司，主要提供企業軟體建置與顧問服務，專精於AI智能客服機器人、Fintech與數位銀行、行動壽險、行動App應用、大數據等系統解決方案，並擁有多項自有產品，經營據點跨足台北、新竹、台",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "昕力資訊股份有限公司",
-        "appearDate": "20250703"
-    },
-    {
-        "jobNo": "14618034",
-        "jobName": "【資訊處_實習生】助理工程師",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "忠孝東路4段550號",
-        "description": "1.軟體開發工程師 (Python)\n  (1)工作內容: \n      1. 負責網頁資料分析, 與工程師協作開發自動化程式\n      2. 其他交辦事項支援\n      3. 實習期間: 114學年 (2025年9月 ~ 2026年6月)，若能於2025年7月到職者尤佳\n  (2)專業能力\n      1. 熟悉HTML, CSS, JavaScript等網頁前端技術\n      2. 具備網頁自動化(如: Playwright, Selenium)、WebAPI開發經驗\n      3. 善與人溝通、反應靈敏、邏輯性強且條理分明\n      4. 可配合專案開發時程\n\n2.軟體開發工程師 (Oracle ERP)\n   (1)工作內容: \n       1. 協助開發與維運Oracle ERP/APEX應用程式\n       2. 設計與開發API，撰寫與執行自動化或手動測試腳本，協助追蹤問題進度與回報異常\n       3. 實習期間: 114學年 (2025年9月 ~ 2026年6月)，若能於2025年7月到職者尤佳\n   (2)專業能力\n       1. 須具備SQL語法與PL/SQL基礎能力，Oracle APEX 使用經驗者尤佳\n       2. 經驗者加分:網頁程式設計(如: JavaScript、HTML、CSS）、API 開發與測試經驗(如:RESTfulAPI、JSON、Postman)\n       3. 對低代碼平台開發（Low-Code）有興趣者\n\n3.軟體開發工程師 \n   (1)工作內容: \n       1. 協助軟體工程師支援開發應用程式、前端網頁或報表等\n       2. 其他主管交辦事項 (如新技術或創新工具應用評估等)\n       3. 實習期間: 114學年 (2025年9月 ~ 2026年6月)，若能於2025年7月到職者尤佳\n   (2)專業能力\n       1. 了解C#程式及Web開發、具SQL 語法觀念\n       2. 願意接受團隊培養並能主動積極學習者\n       3. 擁有良好的邏輯思維和問題解決能力",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0032000",
-        "salaryHigh": "0032000",
-        "salaryDesc": "月薪32,000元",
-        "custName": "聚陽實業股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "12339895",
-        "jobName": "ISO資安制度助理",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "杭州南路一段 26 號八樓",
-        "description": "1.協助ISO制度導入及轉版相關工作\n2.公司ISO制度文件管理、[[[資訊]]]安全監測項目追蹤\n3.會議安排與邀請、待辦事項追蹤作業\n4.協助完成會議記錄、簽到表等準備工作\n5.完成主管交辦事項\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "中華資安國際股份有限公司",
-        "appearDate": "20250610"
-    },
-    {
-        "jobNo": "13859762",
-        "jobName": "銷售業務助理-Tele SR(24022701)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "德惠街9號5樓",
-        "description": "一、\t我們的方案：\n代理全世界第一名產品，提供給客戶數位轉型、自動化、智能維運相關方案，其中包含：資安/監控/大數據應用/API管理/檔案傳輸/批次排程…等。\n\n二、我們的客戶：\n[[[資訊]]]中心、數位轉型單位\n\n三、我們的需求\n我們正在尋找一位充滿熱情",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "叡揚資訊股份有限公司",
-        "appearDate": "20250718"
-    },
-    {
-        "jobNo": "14568484",
-        "jobName": "【台南】裝機工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台南市北區",
-        "jobAddress": "成大醫院",
-        "description": "電腦組裝／測試\n1. 執行電腦軟硬體各項設備的安裝。\n2. 找出並解決電腦故障原因。\n3. 幫客戶進行電腦升級分析，找出最適合的升級方案。\n4. 進行電腦穩定度測試，減少客戶當機的情況。\n5. 提供簡易的故障排除[[[資訊]]]，讓客戶也能解決簡單的問題。",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0028600",
-        "salaryHigh": "0029500",
-        "salaryDesc": "部分工時(月薪)28,600~29,500元",
-        "custName": "耀瑄科技股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "13021943",
-        "jobName": "【IT】數據分析實習生 (林口)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "桃園市龜山區",
-        "jobAddress": "文化二路200號",
-        "description": "策略性轉型將兩大事業體獨立專精營運，長遠提升整體競爭力。加入我們，您將可以接觸不同事業體間異質資料轉化為[[[資訊]]]的過程，為企業帶來效益的同時，還能體驗資料分析的樂趣及成就感，為您的將來累積源源不絕的成長動力！\n\n【關於團隊】\nMiTAC 數位發展中心-",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "神達電腦股份有限公司",
-        "appearDate": "20250722"
-    },
-    {
-        "jobNo": "14752255",
-        "jobName": "Investment Research-Intern",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市大安區",
-        "jobAddress": "敦化南路二段207號40樓",
-        "description": "Growth Responsibilities\nAs an Investment Research Intern, you will:\n• Assist in conducting equity, fixed income, and economic research.\n• Perform basic financial analysis and valuation of companies within selected sectors.\n• Support the team in preparing investment memos and presentations.\n• Participate in team discussions on market trends and investment opportunities\n• Assist in monitoring portfolio performance and risk metrics.\n• Support data collection and organization using Excel, Bloomberg, and/or AI tools.\n\nWe are seeking candidates who are enthusiastic about investment research and eager to learn. The ideal candidate should have:\n• Strong analytical skills with attention to detail.\n• Basic knowledge of financial modeling and valuation techniques (prior coursework or projects preferred).\n• Proficiency in Excel; familiarity with Bloomberg or other financial tools is a plus.\n• Excellent written and verbal communication skills in English; Mandarin Chinese proficiency is a plus but not required.\n• A proactive attitude with the ability to work independently as well as collaboratively within a team.",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "(遠東集團)鼎鼎企業管理顧問股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "13719808",
-        "jobName": "程式開發實習生 - 在校生專屬機會！(歡迎相關科系學生)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台中市西屯區",
-        "jobAddress": "至善路250號2樓",
-        "description": "加入我們，開啟你的 coding 之旅！\n不論你是初學者還是有一點基礎，只要你對學習充滿熱情，我們都歡迎你！\n\n【歡迎[[[資訊]]]、資管、AI相關科系學生】\n邀請熱愛挑戰、擁有英文閱讀及聆聽能力的你，一起踏入[[[資訊]]]科技的精彩世界！\n如果你渴望探索知識的無限",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0003600",
-        "salaryHigh": "0003600",
-        "salaryDesc": "論件計酬3,600元",
-        "custName": "尚進教育訓練有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14686364",
-        "jobName": "實習｜IT Intern. IT實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "松高路1號21樓",
-        "description": "We are seeking a motivated and tech-savvy IT Intern to join our dynamic IT team to be based in Taipei, Taiwan. This internship offers hands-on experience in IT support, systems administration, and project-based work. The ideal candidate is eager to learn, a strong communicator, and passionate about technology.\n\nKey Responsibilities:\n\n-Assist in troubleshooting hardware, software, and network issues.\n-Support the setup, configuration, and maintenance of IT equipment (laptops, printers, etc.).\n-Help manage user accounts, permissions, and access rights.\n-Participate in IT projects such as system upgrades, migrations, and deployments.\n-Document IT processes, procedures, and technical guides.\n-Provide first-level technical support to internal users.\n-Assist with cybersecurity monitoring and compliance tasks.\n\nWhat You’ll Gain:\n-Real-world experience in IT operations and support.\n-Mentorship from experienced IT professionals.\n-Opportunity to contribute to meaningful projects.\n-A collaborative and inclusive work environment.",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0030000",
-        "salaryHigh": "0032000",
-        "salaryDesc": "月薪30,000~32,000元",
-        "custName": "台灣韋能能源股份有限公司",
-        "appearDate": "20250723"
-    },
-    {
-        "jobNo": "14452274",
-        "jobName": "行政助理(25012301)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "德惠街9號5樓",
-        "description": "叡揚[[[資訊]]]人力資源部門，正尋找HR得力的小幫手，\nHR小幫手主要會負責的工作內容有~\n1、主要協助人力資源部門進行招聘、電話邀約、面試安排及相關行政工作。\n2、協助員工活動辦理。\n3、員工資料、徵選履歷整理及檔案管理。\n4、員工名片申請及門禁卡管理",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "叡揚資訊股份有限公司",
-        "appearDate": "20250718"
-    },
-    {
-        "jobNo": "7788534",
-        "jobName": "醫療器材 (ECG) 實習 &amp; 測試工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中正區",
-        "jobAddress": "忠孝東路一段9號6樓",
-        "description": "野並培養專業技能的你！\n\n工作時間可彈性安排，每週約 3–5 個工作天（可討論），上班時間為 09:00-18:00，中午休息一小時。\n\n[[[資訊]]]/電機相關科系或醫療器材相關背景者優先考慮。",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "美商宇心生醫股份有限公司台灣分公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14745806",
-        "jobName": "【2025 鴻佰科技實習專區 Ingrasys Internship Program】-IT助理工程師 實習生 (實習廠區:土城)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市土城區",
-        "jobAddress": "",
-        "description": " Timeline】\n寒暑假full time\n學期中每週2-5天以上\n\n【Qualification】\n[[[資訊]]]管理、[[[資訊]]]工程、工業工程、工業管理相關科系\n1. .IT背景或細心度高\n2. 資工, 資管背景\n3. 有意願朝IT技能發展者可在職培訓\n\n【",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "鴻佰科技股份有限公司",
-        "appearDate": "20250718"
-    },
-    {
-        "jobNo": "10858201",
-        "jobName": "Technology Intern",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "信義路五段7號30樓(台北101大樓)",
-        "description": "1. Gain understanding of business requirements through on job training to effectively analyze business requirements and manage test processes.\n2. Develop and implement software programs for ongoing IT projects\n3. Conduct thorough testing on developed software to ensure quality and identify potential defects.\n4. Proactively research and evaluate new technologies, culminating in comprehensive proposals outlining their potential integration and next steps for implementation.\n5. Ensure clear and timely communication of project issues, risks, and test progress through detailed reports and updates.",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000250",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪250元",
-        "custName": "野村證券投資信託股份有限公司",
-        "appearDate": "20250526"
-    },
-    {
-        "jobNo": "14630490",
-        "jobName": "【實習生專區】客服人員",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "信義路五段7號59樓",
-        "description": "設施 (電梯、票務及銷售系統)，維護公司利益與客戶安全及解決客戶問題。 \n      3.導引遊客參觀順暢度，提供場域[[[資訊]]]及確保客戶旅遊體驗。 \n   ※  購物中心 / 客服人員 ※\n      1.執行日常服務台諮詢事宜(嬰兒車/輪椅/毛毯出借",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0030000",
-        "salaryHigh": "0031000",
-        "salaryDesc": "月薪30,000~31,000元",
-        "custName": "台北101_台北金融大樓股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "14098578",
-        "jobName": "【寵物科技公司】Employee Engagement Intern 員工關係營運實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "民權東路三段178號4樓",
-        "description": "危險之中！\n\n立足台灣的Tomofun，至今每年都有超過200%的驚人成長！延攬多國菁英，組織扁平、[[[資訊]]]透明的環境，讓每位Tomofuner都是產品的重要推手。想加入AIoT智慧時代、不畏挑戰、夢想用能力改變世界的你，Tomofun是屬於你的舞台！",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "Tomofun_友愉股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "14670474",
-        "jobName": "軟體工程師",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市新莊區",
-        "jobAddress": "新莊新北大道三段7號20F之8 ",
-        "description": "我們正在尋找具備潛力的實習生加入團隊，一起參與前瞻性的專案，實際應用 Python 技術於 Compiler 開發與金融應用領域。\n1. Python Compiler 開發\n2. Python 在金融應用之研究與實作",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000220",
-        "salaryDesc": "時薪190~220元",
-        "custName": "立亞特科技股份有限公司",
-        "appearDate": "20250602"
-    },
-    {
-        "jobNo": "14401881",
-        "jobName": "【不限科系，無經驗可】網站管理實習生｜Website Management Intern（優先轉正機會）",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市萬華區",
-        "jobAddress": "中華路一段216號13樓",
-        "description": "運行和安全性\n   - 及時回應並解決客戶的網站問題，提供高效的技術與客服支持\n   - 定期更新網站內容，確保[[[資訊]]]的準確性\n\n2. 技術支持與協作\n   - 與客戶和團隊成員進行有效的溝通，理解客戶需求並提供適當的技術解決方案\n   - 定期與團",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "修煉有意思股份有限公司",
-        "appearDate": "20250523"
-    },
-    {
-        "jobNo": "11606008",
-        "jobName": "程式設計實習",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台南市仁德區",
-        "jobAddress": "仁德里中山路687巷28號",
-        "description": "⦿工作內容\r\n1. 維護內部系統，依照各部門需求新增功能\r\n2. 重構及優化現有系統程式碼\r\n3. 協助其他軟體設計\r\n4. 協助其他[[[資訊]]]相關工作任務指派\r\n5. 彈性上班時段\r\n\r\n⦿條件\r\n1. 熟悉ASP.NET, MVC, MS SQL,",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "林昌電子工業股份有限公司",
-        "appearDate": "20250724"
-    },
-    {
-        "jobNo": "14442811",
-        "jobName": "(這是平日班)兼職文書記錄訪談工讀或實習生(需國內出差)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市新莊區",
-        "jobAddress": "迴龍捷運3號出口步行3分鐘",
-        "description": "1、時薪： 新台幣230元\n\n2、word/excel/power point 的資料檢查、修訂 、排版(字型、字型大小、對齊)\n\n3、會使用gmail 、google meet 、google drive (包含共用雲端硬碟)、microsoft teams、google calendar、Windows或Mac的螢幕錄影功能\n\n4、★★★(這是平日班)需求人力時間 : 10:00-1830（切記，休息時間、通勤時間、面試時間、諦約過程、面試階段的測驗、訪談不列入工作時間計算，謝謝)\n\n5、★★★參與客戶會議，提問與作筆記。\n\n6、使用Email時會夾帶附檔 （知道如何在 Email中放入 超連結)\n\n7、 能夠參與遠端/ 現場會議，進行會議紀錄製作 (簡易排版)\n\n8、台北新北以外的縣市，另補貼交通費，實報實銷\n\n★9、須加入 LINE工作群組\n\n★10、本公司提供免費專業訓練。\n\n11、性格需求: 不排斥與人說中文，溝通、談話。\n\n12、看得懂阿拉伯數字、懂得西元年月日的、民國年。\n\n13、國內出差範圍：台北市/新北市為主、\n\n其餘包括: 桃園龜山 、新莊廻龍、新竹市、南投草屯、高雄市區(火車站附近)、苗栗竹南、台南市區(火車站附近)。\n\n14、出差地超出台北市/新北市 ，則另外補助 大眾運輸非商務倉的費用、計程車費用、捷運費用。\n\n\n\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000230",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪230元以上",
-        "custName": "萬弘資訊顧問有限公司",
-        "appearDate": "20250529"
-    },
-    {
-        "jobNo": "13343471",
-        "jobName": "工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "八德路4段123號3樓",
-        "description": " 需求條件：\n1. 做事細心、誠實盡責、態度積極\n2. 熟文書處理軟體\n3. 對網路管理與技術發展有興趣\n4. 熟中英文翻譯為佳\n\n\n\n工作內容描述：\n1.協助資安情資分享及事件通報\n2.協助應用系統開發及維護\n3.協助資安資料彙整與分析\n4. 其他交辦事項\n\n\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000205",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪205元以上",
-        "custName": "財團法人台灣網路資訊中心",
-        "appearDate": "20250708"
-    },
-    {
-        "jobNo": "3155303",
-        "jobName": "測試人員-實習/工讀 (中興新村南投高等研究園區)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "南投縣南投市",
-        "jobAddress": "中興路9號(中興新村南投高等研究園區)",
-        "description": "1. 電腦整合測試。\r\n2. 系統維護操作。\r\n3. 歡迎對電子產品有興趣者。",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0028590",
-        "salaryHigh": "0028590",
-        "salaryDesc": "月薪28,590元",
-        "custName": "Allion_百佳泰股份有限公司",
-        "appearDate": "20250725"
-    },
-    {
-        "jobNo": "13788731",
-        "jobName": "『兼職-電話客服專員』 - 運動賽事諮詢專線, 交通便利+環境舒適｜台北,近捷運永春/後山埤站 (02-15)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市信義區",
-        "jobAddress": "忠孝東路五段(近捷運永春/後山埤站)",
-        "description": "\n\n    『為什麼選擇我們的團隊？』\n    如果您渴望在舒適、充滿活力的環境中工作，並享有優渥薪資與完善福利，我們誠摯邀請您加入！\n    在這裡，您將與熱愛運動的同事攜手合作，提供卓越服務，實現職涯成長。\n\n    ˙我們提供固定座位、寬敞空間、戶外陽台與休息區，讓您自在工作、輕鬆放鬆。\n    ˙鄰近捷運永春與後山埤站，步行僅需5分鐘，通勤便利，電動機車還享免費停車！\n\n\n✅ 工作內容\n    - 運動賽事相關電話、文字及Email諮詢或報修服務。\n    - 協助相關業務系統操作與線上諮詢。\n    - 進行客戶關懷，提供優質服務，讓每位客戶都感受到我們的用心。\n    - 完成主管交辦的其他相關事務。\n\n✅ 薪資與福利\n    - 時薪：190-210元。\n    - 值班津貼：依實際輪值安排核發。\n    - 本職務享有公司完善的獎金與激勵機制，詳情將於面談時說明。\n\n✅ 排班彈性~個人休假日出遊不再人擠人\n    - 採平、假日排班。\n       .早班：08:00-19:00。\n       .晚班：13:00-00:00。\n       .大夜班：23:00-08:30。\n    - 每日排班至少4小時起，且每週排班時數需達24小時(含)以上。\n\n✅ 我們需要這樣的你\n    - 學歷：高中職(含)以上畢業，若具備客服或服務業相關經驗，無學歷限制。\n    - 具備基本電腦操作及文書軟體使用，中文輸入速度30字/分以上。\n    - 歡迎產學實習生。\n\n✅ 立即加入我們！\n    - 立即投遞履歷，將有專人與您聯繫！\n    - 欲進一步了解請加入官方LINE@帳號：@980ksomj",
-        "optionEdu": "學歷不拘",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000210",
-        "salaryDesc": "時薪190~210元",
-        "custName": "程曦資訊整合股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "11692327",
-        "jobName": "長期工讀生",
-        "jobRo": "2",
+        "jobNo": "11852375",
+        "jobName": "(周休二日，穩定職涯發展，達標即享月獎金！)全台客服中心服務專員",
+        "jobRo": 1,
+        "jobCat": [
+            2005001004,
+            2007001009,
+            2004003003
+        ],
+        "major": [
+            "企業管理相關",
+            "資訊管理相關",
+            "會計學相關"
+        ],
         "jobAddrNoDesc": "高雄市苓雅區",
-        "jobAddress": "大順三路183號5樓之3",
-        "description": "\n資料處裡、[[[資訊]]]、財稅、會計科系夜校生\n能配合每日上午工作\n1. 整理憑證及發票等文件\n2. 資料輸入、檔案整理\n3. 一般行政庶務工作\n4.至客戶處、個單位收送文件檔案",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "冠盟會計師事務所",
-        "appearDate": "20250703"
+        "jobAddress": "中華四路2號9樓",
+        "description": "協助企業用戶解決 ERP 系統使用問題（電話/線上為主）\n• 執行新客戶導入教育訓練與用戶培訓\n• 針對客戶現場協助排除問題（若有交通工具更佳）\n• 維繫穩定良好的客戶關係，提升用戶體驗\n• 撰寫系統標準操作流程文件，內部分享知識\n• 我們希望你是\n• 喜歡與人互動、具備高度耐心與同理心\n• 主動積極、擅長溝通與協調\n• 抗壓性高、願意持續學習與挑戰\n• 曾接觸或有 ERP 軟體經驗者尤佳\n\n【薪酬/獎金】\n1.固定薪資：給予同仁優於產業/區域市場薪資水平。\n2.變動薪資：轉正後，視績效表現，每月、每季發放績效獎金。",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 31000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "正航資訊股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/721cn"
     },
     {
-        "jobNo": "13422673",
-        "jobName": "(電源研發)暑期/學年實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "桃園市龜山區",
-        "jobAddress": "",
-        "description": "1協助研發工程師整理樣品備料清單\t\t\t\t\t\t\t\t\t\t\n2協助研發工程師進行產品開機\t\t\t\t\t\t\t\t\t\t\n3樣品測試與報告整理\t\t\t\t\t\t\t\t\t\t\n4樣品組裝與送樣\t",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0032000",
-        "salaryHigh": "0032000",
-        "salaryDesc": "月薪32,000元",
-        "custName": "善元科技股份有限公司",
-        "appearDate": "20250619"
+        "jobNo": "14706481",
+        "jobName": "資訊專員",
+        "jobRo": 1,
+        "jobCat": [
+            2004003002,
+            2007002002,
+            2007001009
+        ],
+        "major": [
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "桃園市蘆竹區",
+        "jobAddress": "大竹北路90-66號",
+        "description": "1. 使用者系統操作及電腦硬軟體之簡易問題處理 \n2. 資訊設備之維護與定期保養等作業執行 \n3. 具基礎SQL操作 \n4. 熟Office操作 \n5. 具ERP證照者尤佳 \n6. 限資管、資工科系，應屆畢業生可 \n\n☆具認真負責、主動積極、學習",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "金格食品股份有限公司",
+        "appearDate": "20250808",
+        "jobUrl": "https://www.104.com.tw/job/8r7ld"
     },
     {
-        "jobNo": "13231794",
-        "jobName": "軟體開發實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "桃園市中壢區",
-        "jobAddress": "明德路60號5樓",
-        "description": "【注意事項】\n1. 請先投遞履歷報名，並留意後續相關通知訊息。因申請資格不符合者恕不另行通知\n2. 審查通過者將安排後續面試 \n\n【公司產業類型】\n電腦軟體相關\n\n【公司簡介】\n雲育鏈主要提供專業的雲端顧問諮詢、雲端技術專案、雲端及軟體課程培訓、軟體應用開發與教學，講師擁有超過 10 年以上的雲端使用、顧問與教學經驗，在雲端產業中已有一定的口碑。\n\n至今已受邀至多家金控、保險業、電信業、科技業甚至是雲端原廠等企業或機構進行雲端技術人才內部培訓，以及至中央大學、緯育 Tibame 職訓等長期培育人才。所培育的學生遍布AWS、GCP、Azure原廠、各大雲端代理商、金控、銀行等雲端技術部門。\n\n雲育鏈當前提供實體與線上課程平台，並提供認證考題練習機器人作為雲端證照考前練習之利器。\n\n除教學外，雲育鏈也提供雲端軟體託管服務，曾託管維護的雲端系統共計有10案以上，超過50台以上虛擬機。\n\n在未來，雲育鏈將拓展線上影音服務、上架課程影音募資平台、出版新型雲端或軟體書籍、開發課程學習助力軟體等，以提供更多元的學習渠道，加速雲端潛力人才的學習效率以達台灣雲端人力市場的技術水平需求。\n\n【工作內容】\n1. 協助公司的專業技術書籍編寫。\n2. 協同產品開發\n3. 協助技術文件撰寫\n4. 協助技術專案開發\n5. 其他主管交辦事項",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "雲育鏈股份有限公司",
-        "appearDate": "20250715"
-    },
-    {
-        "jobNo": "14455277",
-        "jobName": "【王道銀行】2025 Intern Program-程式設計實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市內湖區",
-        "jobAddress": "陽光街298號",
-        "description": "王道銀行是台灣第一家原生數位銀行，運用創新的服務設計打造更便利、更安全、更貼近新世代客戶需求的金融服務。\n我們的實習夥伴將體驗一連串的實戰經驗，讓 O-Bank 打造你的專屬科技金融實習計畫 !\n\n【工作內容】\n1. 將於面談後依個人專長與興趣分發專案與單位，包含後端系統之維運與開發、API程式撰寫、ETL 程序(Trinity)開發……等。\n2. 協助委外廠商及專案管理之行政事務。\n3. 其他主管交辦事項。\n\n【申請條件】\n實習期間：2025/09/01-2026/06/30，每週至少到班3天以上（可配合學校合約與課表調整）\n實習對象：大四以上及碩班生\n實習津貼：每日到班者以月薪30,000元計；每週到班3-4天者以時薪200元計\n\n【我們期待】\n您已具備下列任一程式語言基礎 (請註明擅長/曾學習程式語言)\n需求條件 : Software Developer、Java\n基礎語言 : Java 、JavaScript、HTML、Python、XML、JQery\nDatabase : SQL、Oracle、PostgreSQL\n平台、框架 : Linux、Springboot、SpringMVC、VUE \nTools : Jenkins、git、Jbuilder、IDEA、SVN、Flowable\n\n【申請方式】\n請使用104制式履歷投遞，並檢附自傳、成績單與任何加分資料（金融證照、外語證照或專案成果等），讓我們更認識您！",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "O-Bank_王道商業銀行股份有限公司",
-        "appearDate": "20250722"
-    },
-    {
-        "jobNo": "14733859",
-        "jobName": "暑期工讀生(新店)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市新店區",
-        "jobAddress": "(彈性分派至大台北地區)",
-        "description": "具備個人電腦及週邊設備…等等[[[資訊]]]設備，安裝及維護經驗。\n",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "國眾電腦股份有限公司",
-        "appearDate": "20250721"
-    },
-    {
-        "jobNo": "11848593",
-        "jobName": "軟體系統工程師(實習)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "八德路二段449號7樓",
-        "description": "歡迎對[[[資訊]]]技術有熱誠、想要累積實務經驗，體驗職場生涯，了解[[[資訊]]]服務業工作內容的大專在學學生(大三以上)，竭誠的歡迎您成為我們的實習生，在實習的過程中將學到業界先進技術，開源碼的操作，團隊合作的精神等，讓您在學階段同時了解未來的工作方向。\n\n工作內",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "聯瞻資訊股份有限公司",
-        "appearDate": "20250627"
-    },
-    {
-        "jobNo": "13876865",
-        "jobName": "[校園專區-台北]實習生-行政助理",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "德惠街9號5樓",
-        "description": "1.文書處理、資料建檔、文件整理/製作/影印/掃描等相關行政作業。\n2.合約訂單資料核對、建檔、歸檔等。\n3.信件交寄及發送。\n4.訪客接待、行銷活動支援。\n5.辦公室環境維護。\n6.一般行政/總務庶務交辦。",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪200元",
-        "custName": "叡揚資訊股份有限公司",
-        "appearDate": "20250718"
-    },
-    {
-        "jobNo": "9612143",
-        "jobName": "評價助理(實習生)",
-        "jobRo": "2",
+        "jobNo": "14722381",
+        "jobName": "資訊長期工讀生/助理",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2002001006,
+            2005004004
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
         "jobAddrNoDesc": "台北市南港區",
-        "jobAddress": "忠孝東路5段815號7樓之2",
-        "description": "1.企業評價或無形資產評價、鑑價、估價專業的執行之實習助理\r\n2.國內外[[[財金]]]系所在學生或修習過至少投資學、財務管理兩科目。\r\n3.曾修習過中級會計學尤佳。 \r\n4.對文書處理工具Word、Excel、PowrerPoint熟練，尤其是Excel之",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000250",
-        "salaryDesc": "時薪190~250元",
-        "custName": "宏達創新財務顧問股份有限公司",
-        "appearDate": "20250724"
+        "jobAddress": "南港路二段97號10樓(龍星大樓)",
+        "description": "工作內容：\n· 操作ERP系統進行資料處理\n\n· 資訊設備基本維護、故障排除、報修\n\n· Microsoft M365、TEAMS、ONE DRIVE操作與教學\n\n· 協助主管處理日常行政工作\n\n· 主管交辦事項\n\n\n職涯收穫：\n· 了解ERP基",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
+        "custName": "龍星企業股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8rjv1"
     },
     {
-        "jobNo": "14342049",
-        "jobName": "早班工讀生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台中市沙鹿區",
-        "jobAddress": "福人街53號(433)",
-        "description": "1.協助主管文書處理\n2.[[[資訊]]]工程科系大四生者佳\n3.一日二至四小時協助處理事務\n4.可夜間部學生\n5.需懂Chat GPT\n6.時段7:00~9:00",
-        "optionEdu": "學歷不拘",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "源洋制服時裝有限公司",
-        "appearDate": "20250715"
+        "jobNo": "13346740",
+        "jobName": "資訊部-資訊助理",
+        "jobRo": 2,
+        "jobCat": [
+            2007002008,
+            2007002006,
+            2007001010
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市北投區",
+        "jobAddress": "大業路10號6樓",
+        "description": "1. 系統運作環境建置、例行性維護、備援機制、資安稽核管理等\n2. 資訊設備資產管理\n3. 人員到離職帳號、信箱等權限設定\n4. 協助團隊網路規劃、團隊監視系統規劃、團隊不斷電系統規劃、團隊防火牆規劃執行改善、導入及架設\n5. 執行部門內專案及主",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 200,
+        "salaryDesc": "",
+        "custName": "朱宗慶打擊樂團隊_傑優文化事業股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/7y2es"
     },
     {
-        "jobNo": "13965757",
-        "jobName": "T504.4-AI訓練師&lt;實習生&gt;",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "中山北路三段22號",
-        "description": "我們正在尋找對AI訓練師充滿熱情的實習生加入我們的團隊！作為AI訓練師實習生，您將有機會參與設計AI驅動的互動流程和界面，確保產品的用戶友好性和高效性。\n\n工作內容：\n設計AI驅動的互動流程和界面，確保產品的用戶友好性和高效性。\n與產品經理、開發工程師緊密合作，確保設計方案的可行性和目標一致性。\n進行客戶研究和可用性測試，並基於反饋優化設計。\n探索最新AI技術和設計趨勢，推動創新提升產品競爭力。\n定期分享知識，指導和激勵團隊成員。\n\n職位要求：\n對AI訓練師充滿熱情，有願意學習和成長的態度。\n具備良好的團隊合作能力和溝通能力。\n對最新的AI技術和設計趨勢有興趣和瞭解。\n能夠獨立思考和解決問題。\n\n加分條件：\n具有生成式AI經驗，尤其是大語言模型和RAG，並擁有實作專案經驗，具備豐富的NLP及AI知識、卓越的領導力與組織能力，以及出色的表達能力。\n\n福利待遇：\n實習期間有專業的導師指導和培訓。\n有機會參與多元化的項目和團隊活動。\n提供有競爭力的實習薪酬和福利。\n如果您對AI訓練師充滿熱情，並且希望在一個充滿挑戰和成長機會的環境中工作，歡迎您加入我們的團隊！\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0030000",
-        "salaryHigh": "0030000",
-        "salaryDesc": "月薪30,000元",
-        "custName": "大同世界科技股份有限公司",
-        "appearDate": "20250725"
+        "jobNo": "14294616",
+        "jobName": "資訊助理工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001019,
+            2007001010,
+            2007001009
+        ],
+        "major": [
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "桃園市平鎮區",
+        "jobAddress": "環南路二段11號18樓之1",
+        "description": "1. 現有系統之修改與擴充。\n2. 依系統分析之結果編寫程式、撰寫操作手冊及作業檔案，並進行系統測試。\n3. 負責制訂各種作業之標準程序，並評估系統作業績效。\n4. 客戶服務，同時進行使用者操作訓練。\n",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "新穎數位股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/8idso"
     },
     {
-        "jobNo": "12508024",
-        "jobName": "【總管理處】技術類-專案助理(實習)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台中市西屯區",
-        "jobAddress": "朝富路213號21樓之1",
-        "description": "●身份：大四生及研究生\n●期間：學期實習:每年2月-每年6月/每年暑假7月起-隔年1月\n●時間：一週至少可配合三天以上，需符合每天8小時\n               上午9點至下午6點半 ，中午休息1.5小時\n\n●執行任務內容：\n        資料挖掘、演算法實作模組化、資料清理\n\n●技能需求：\n1. 邏輯清晰\n2. 資料處理\n3. AI演算法\n\n\n●福利：\n1. 享有勞/健保、團保\n2. 享有公司內部專業培訓課程\n3. 享公司咖啡及點心\n4. 參與慶生、聚餐、團隊活動\n\n@請在自傳內提供作品連結，若多人分工專題，請詳述在專題內負擔責任與分工項目，\n    無自傳資料請勿投遞，謝謝！",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "巨鷗科技股份有限公司",
-        "appearDate": "20250722"
+        "jobNo": "14635113",
+        "jobName": "MIS資訊系統工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002006,
+            2007002007,
+            2007002005
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市大安區",
+        "jobAddress": "光復南路412號4樓",
+        "description": "1.企業伺服器之系統建置維護與管理\n2.基礎系統維護與管理\n3.虛擬化平臺建置維護與管理\n4.資訊安全的建置評估與應用\n5.備份備援架構規劃與管理\n6.評估、導入開源技術或新資訊科技應用\n\n需負責系統\n1. Windows Server、",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 36000,
+        "salaryHigh": 48000,
+        "salaryDesc": "",
+        "custName": "英科資訊科技股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8poix"
     },
     {
-        "jobNo": "13862870",
-        "jobName": "REQ_24025739 【一年期實習專案】LTE/5G CPE研發實習生",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新竹市",
-        "jobAddress": "新竹科學園區園區二路20號",
-        "description": "1. Product verification\n2. Learn embedded Linux to assist devlopment tasks. \n3. Help to analysis factory device issues.",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0030000",
-        "salaryHigh": "0032000",
-        "salaryDesc": "月薪30,000~32,000元",
-        "custName": "啟碁科技股份有限公司",
-        "appearDate": "20250716"
+        "jobNo": "13889896",
+        "jobName": "MIS資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002007,
+            2007002001,
+            2007002006
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新北市板橋區",
+        "jobAddress": "",
+        "description": "1. 協助處理公司網路架構、Sever、防火牆、郵件Sever相關\n2. 公司資訊設備管理\n3. 客戶、案場設備IP的管理\n4. 維護更新公司軟硬體設備之韌體\n5. 熟悉IOS、Andriod上架、更新事宜\n6. 熟悉網路資訊架構\n7. 協助處理",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 38000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "和典系統科技有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/89pig"
     },
     {
-        "jobNo": "13180174",
-        "jobName": "酷玩資訊館誠徵假日三班兼職人員",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新竹市",
-        "jobAddress": "中華路三段2號1樓",
-        "description": "上班時段\n早班:08:00~16:00\n中班:16:00~24:00\n夜班:00:00~08:00\n可選擇時段配合\n\n早班時薪183\n夜班時薪185\n\n※工作內容：\n1. 櫃台結帳、接待客戶、帳台操作\n2. 簡餐製作、飲品調製\n3. 帶位送餐、收桌清潔\n4. 環境維持、店面打掃\n5. 完成公司交辦事項",
-        "optionEdu": "學歷不拘",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "天空電競館",
-        "appearDate": "20250721"
+        "jobNo": "5411518",
+        "jobName": "(周休二日，穩定職涯發展，達標即享月獎金！)全台客服中心客戶服務管理師(高雄)",
+        "jobRo": 1,
+        "jobCat": [
+            2005001004,
+            2004003003,
+            2007001009
+        ],
+        "major": [
+            "企業管理相關",
+            "資訊管理相關",
+            "會計學相關"
+        ],
+        "jobAddrNoDesc": "高雄市苓雅區",
+        "jobAddress": "中華四路2號9樓",
+        "description": "1.商科畢業，無相關經驗可\n2.公司提供完整二個月之教育訓練\n3.軟體售後服務,電話接聽及出勤排除客戶問題\n4.ERP軟體經驗或概念者佳\n5.有記帳士、會計事務所經驗者佳\n\n【薪酬/獎金】\n1.固定薪資：給予同仁優於產業/區域市場薪資水平。\n2.變動薪資：轉正後，視部門/個人績效表現，每月、每季發放績效獎金。",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 31000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "正航資訊股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/37zjy"
     },
     {
-        "jobNo": "14480817",
-        "jobName": "2025年實習生招募–APP應用開發工程師(南科)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台南市新市區",
-        "jobAddress": "台南市新市區大順九路16號",
-        "description": "同學同學~還在擔心沒有足夠的工作經驗豐富你的履歷嗎? \n加入富采集團實習計劃，搶先認識科技產業，累積實戰經驗，為未來職涯加分吧！\n\n加入富采集團實習計畫，你將獲得：\n＃實際參與專案工作，實戰經驗UP UP\n＃專屬Mentor指導，快速與業界接軌\n＃專業實習證明，升學求職免煩惱\n＃跨縣市住宿津貼，不受實習地點困擾\n＃優先轉正機會，豐厚獎金等你來拿\n\n【工作內容】\n1. 協助開發及維護iOS或Android應用程式。\n2. 參與設計、功能實現及測試流程。\n3. 優化現有程式碼，提高應用效能與使用者體驗。\n4. 與團隊協作進行技術研究與問題解決。\n\n【需求條件】\n1. 熟悉至少一種行動應用程式開發語言（如Swift、Kotlin、Java或React Native）。\n2. 了解基本的前端開發概念及介面設計原則。\n3. 具備良好的資料結構、演算法基礎及問題解決能力。\n\n【加分條件】\n1. 有相關個人專案或作品集。\n2. 熟悉API整合（如RESTful API、GraphQL）。\n3. 了解版本控制工具（如Git）。\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪190元以上",
-        "custName": "富采控股股份有限公司",
-        "appearDate": "20250723"
+        "jobNo": "14744254",
+        "jobName": "ERP 資訊人員",
+        "jobRo": 1,
+        "jobCat": [
+            2004003002,
+            2004003003
+        ],
+        "major": [
+            "資訊管理相關",
+            "企業管理相關",
+            "工業管理相關"
+        ],
+        "jobAddrNoDesc": "台中市大甲區",
+        "jobAddress": "長安路20-7號",
+        "description": "1. 領導團隊進行現有軟體之測試與驗證。\n2. 管理整個軟體開發專案之流程（如：前置規劃、流程分析、解決方案評估、系統分析、系統設計、系統開發、資料驗證、系統測試、使用者測試）。\n3. 了解相關單位對於資訊化之需求，思考合適之解決方案，協助整體",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "禎佶祥實業股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8s0qm"
     },
     {
-        "jobNo": "12157192",
-        "jobName": "典藏咖啡-民權店早班或晚班兼職｜彈性排班 × 強力招募中",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市中山區",
-        "jobAddress": "近民權西路捷運站",
-        "description": "安心享用。」\n\n\n｜典藏咖啡民權店｜\n門市[[[資訊]]]：台北市大同區民權西路7號\n門市電話：25855569\n門市時間：07:30~21:00\n上班時間：早班07:00~14:00 / 晚班17:00~21:00\n\n#意者可於每日三點之後，直接至門市應徵。\n\n",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "典藏藝術家庭股份有限公司",
-        "appearDate": "20250724"
+        "jobNo": "6937765",
+        "jobName": "資訊軟體助理工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台中市烏日區",
+        "jobAddress": "高鐵五路156號4樓之6",
+        "description": "1.簡易程式設計概念，對程式設計有熱誠，願意主動學習。\n2.系統軟體測試，操作。\n3.記錄各系統維護及異動的相關資訊。\n4.操作手冊製作與排版。\n5.具備簡易photoshop操作修圖，尤佳\n6.回報所維護之軟、硬體問題，並將問題交由技術人員處理",
+        "optionEdu": [
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "雍盛科技股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/44p7p"
     },
     {
-        "jobNo": "13563656",
-        "jobName": "電商與數位行銷工讀生【明基亞太BenQ台灣區】",
-        "jobRo": "2",
-        "jobAddrNoDesc": "台北市內湖區",
-        "jobAddress": "基湖路16號",
-        "description": "1. 電商營運協助：BenQ購物網(包含官網/ZOWIE/員購)之銷售產品圖文上架、活動上架，協助官網銷售營運進行，學習電商營運操作\n2. 會員活動協助：會員電子報行銷素材編排設計（主要以促銷活動為主），學習會員經營之溝通、數位行銷操作的經營\n3. 其他行銷活動協助：除了電子商務，也可接觸參與產品的行銷活動舉辦\n\n* 本工作可多元接觸數位行銷的基本面向，如：︀電商專案協助、網頁後台架構、會員經營協助…...等\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
-        "custName": "明基電通股份有限公司",
-        "appearDate": "20250725"
+        "jobNo": "13168887",
+        "jobName": "MIS資訊人員",
+        "jobRo": 1,
+        "jobCat": [
+            2007002006,
+            2007002007,
+            2007002001
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市萬華區",
+        "jobAddress": "莒光路287號",
+        "description": ".資訊文件資料更新整理\n具備良好溝通協調能力，熱誠服務有責任感之工作態度及正向的道德觀念，能團隊分工合作。",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 36000,
+        "salaryHigh": 55000,
+        "salaryDesc": "",
+        "custName": "圜能科技股份有限公司",
+        "appearDate": "20250506",
+        "jobUrl": "https://www.104.com.tw/job/7u96f"
+    },
+    {
+        "jobNo": "13786326",
+        "jobName": "資訊處-系統操作員",
+        "jobRo": 1,
+        "jobCat": [
+            2007002006,
+            2007002007
+        ],
+        "major": [
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "新北市板橋區",
+        "jobAddress": "國慶路",
+        "description": "1. 機房主機操作、機房設備維護\n2. 需配合輪班作業",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "永豐商業銀行股份有限公司",
+        "appearDate": "20250807",
+        "jobUrl": "https://www.104.com.tw/job/87hli"
+    },
+    {
+        "jobNo": "14089005",
+        "jobName": "Lead Host 資訊主任",
+        "jobRo": 1,
+        "jobCat": [
+            2007002009,
+            2007002007,
+            2007002006
+        ],
+        "major": [
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "新北市新莊區",
+        "jobAddress": "新北大道三段79號",
+        "description": " industry as well as aware of systems development methods and tools that are available.\n\n• 政策和程式 – 瞭解適用的凱悅公司政策和資訊標準操作程式和其他相關資料。",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "HYATT PLACE 新北新莊凱悅嘉軒酒店_宏匯思源股份有限公司凱悅嘉軒分公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8dz59"
+    },
+    {
+        "jobNo": "11907021",
+        "jobName": "資訊助理(台北總部)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010,
+            2002001011,
+            2007001004
+        ],
+        "major": [
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "忠孝東路五段669號",
+        "description": "【職務內容】\n 1.協助專案系統開發。\n 2.上級交辦事項處理。\n\n【徵求條件】\n 1.具耐心、細心，認真負責。\n\n【加分條件(非必備)】\n 1.程式與資料庫基礎概念佳。\n 2.相關證照。\n 3.熟悉Microsoft Office文書相關軟體操作。\n\n【工作時間】\n 1. 上午9點至晚上6點，午休一小時 (時間可彈性安排，面試時不要害羞直接跟老闆談談)。\n",
+        "optionEdu": [
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 32000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "阿甘科技股份有限公司",
+        "appearDate": "20250512",
+        "jobUrl": "https://www.104.com.tw/job/737il"
+    },
+    {
+        "jobNo": "14765217",
+        "jobName": "【Ubiik Internship Program】【新竹】資訊實習生 IT Support Intern",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2007002005,
+            2007002007
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新竹縣竹北市",
+        "jobAddress": "復興二路251號",
+        "description": "【工作內容】\n1、資訊相關軟、硬體設備建置、維護及故障排除\n2、熟悉作業系統基本操作設定、一般軟體安裝\n3、Wireless AP 安裝、設定、維護管理\n4、資訊資產之請採購、驗收、請款等作業\n5、主管交辦事項\n\n【工作條件】\n1. 能負責資訊設",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 250,
+        "salaryDesc": "",
+        "custName": "優必闊科技股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8sgwx"
+    },
+    {
+        "jobNo": "13718561",
+        "jobName": "(總公司-資訊部)程式設計工讀生",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2007001008,
+            2007001010
+        ],
+        "major": [
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台北市中正區",
+        "jobAddress": "忠孝東路一段9號",
+        "description": "對程式教育、Scrtach有興趣，\n且對於程式教育曾有經驗或大學具資訊相關科系背景。\n==================\n【工作內容」\n1.兒童coding簡易教案編寫或簡易題目撰寫\n2.協助資料匯入\n3.協助主管交辦事項\n4.每週至少排班3天\n\n",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 250,
+        "salaryDesc": "",
+        "custName": "總公司_長頸鹿文化事業股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/861b5"
+    },
+    {
+        "jobNo": "14724791",
+        "jobName": "資訊管理人員",
+        "jobRo": 1,
+        "jobCat": [
+            2007002005,
+            2007002007
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "新北市三重區",
+        "jobAddress": "興德路100號7樓",
+        "description": "1.公司資訊相關設備與電腦維護及資訊類資產管理(Server 防火牆、NAS Mail server)。\n2.公司ERP主機維護(鼎新、正航)。\n3.各分公司之資訊設備維護及故障排除。 \n4.協助排除各廠系統及網管問題。\n5.建立使用手冊及程序，",
+        "optionEdu": [
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "愛科濾淨實業股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8rlpz"
+    },
+    {
+        "jobNo": "14767549",
+        "jobName": "MIS資訊人員",
+        "jobRo": 1,
+        "jobCat": [
+            2007002001,
+            2007002007,
+            2007002005
+        ],
+        "major": [],
+        "jobAddrNoDesc": "南投縣名間鄉",
+        "jobAddress": "名山路一段319號",
+        "description": "1.電腦硬體維護與故障排除（含桌機、筆電、印表機等週邊設備）\n\n2.協助規劃與管理NAS儲存架構（如備份、共用、存取效率等）\n\n3.維護資安軟體、防毒系統、防火牆\n\n4.建立與維護公司資安政策（帳號管理、權限設定）\n\n5.員工電腦操作問題排除與教育訓練\n\n6.基本網路架構維護（IP設定、Wi-Fi/Router等）\n\n7. 負責微軟O365維護管理。\n\n8. 負責文中ERP系統維護管理。\n\n9. 處理主管交辦事項。\n\n本職位是數位轉型領域中的關鍵職務，具有良好的發展前景。我們正在尋找一位有能力、有熱情、有創造力的人才來擔任這個職位，為公司未來的發展出一份力。\n如果您符合以上要求且對這個職位感興趣，歡迎投遞履歷，我們期待您的加入！",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 36000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "裕仁工業科技股份有限公司",
+        "appearDate": "20250810",
+        "jobUrl": "https://www.104.com.tw/job/8sipp"
+    },
+    {
+        "jobNo": "14018833",
+        "jobName": "資訊工程師(系統開發儲備幹部)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001004,
+            2007002001,
+            2007002005
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "高雄市鼓山區",
+        "jobAddress": "新德路1號",
+        "description": "1. 規劃、管理及維護館內各類資訊系統 \n2. 網站及APP、串接API維護及管理 \n3. 部門管理、工作分派與人力管理、績效分析\n4.專案領導與跨部門溝通協調。  \n5.規劃目標與調配達成目標所需之資源並安排時程，監控目標達成進度\n6.上級交辦",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 37900,
+        "salaryHigh": 43000,
+        "salaryDesc": "",
+        "custName": "義享樂國際股份有限公司",
+        "appearDate": "20250616",
+        "jobUrl": "https://www.104.com.tw/job/8ch01"
+    },
+    {
+        "jobNo": "13572044",
+        "jobName": "【花蓮 新天堂樂園】資訊兼職",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010
+        ],
+        "major": [],
+        "jobAddrNoDesc": "花蓮縣吉安鄉",
+        "jobAddress": "南濱路一段503號",
+        "description": "1.安裝、維修網路佈線/監視器/POS/電腦\n2.執行每日例行檢查及定期維護事項\n3.主管交辦事項",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
+        "custName": "台灣土地開發股份有限公司",
+        "appearDate": "20250722",
+        "jobUrl": "https://www.104.com.tw/job/82w98"
+    },
+    {
+        "jobNo": "14445257",
+        "jobName": "MIS資訊人員【具經驗】",
+        "jobRo": 1,
+        "jobCat": [
+            2007002003,
+            2007002007,
+            2007002002
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新北市中和區",
+        "jobAddress": "新北市中和區建一路186號6樓",
+        "description": "1. 建置、管理與維護公司系統。\n2. 開發MIS系統的功能，以符合企業需求。\n3. 設計與維護公司網頁。\n4. 處理個人電腦軟硬體的故障問題。\n5. 管理與維護公司網路和資料，並進行備份工作。\n6. 開發、設計及維護ERP軟體。\n7. 其他主管交辦事宜。\n",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "台超微國際股份有限公司",
+        "appearDate": "20250809",
+        "jobUrl": "https://www.104.com.tw/job/8lm15"
+    },
+    {
+        "jobNo": "14752717",
+        "jobName": "資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001004,
+            2007001009,
+            2007002006
+        ],
+        "major": [
+            "其他工程相關",
+            "通信學類",
+            "其他運輸通信相關"
+        ],
+        "jobAddrNoDesc": "台北市大同區",
+        "jobAddress": "寧夏路165號12樓之1",
+        "description": "1.數位列印設備修護/軟硬體整合研究 \n2.電腦網路伺服器維護。 \n3.系統軟體整合推動。\n4. 進行軟體之測試與修改。\n5. 規劃、執行與維護量產的產品。\n6. 協助軟體新技術與新工具。\n",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 38000,
+        "salaryHigh": 55000,
+        "salaryDesc": "",
+        "custName": "弘葦企業有限公司",
+        "appearDate": "20250806",
+        "jobUrl": "https://www.104.com.tw/job/8s79p"
+    },
+    {
+        "jobNo": "6190518",
+        "jobName": "資訊時薪人員",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010
+        ],
+        "major": [
+            "資訊管理相關",
+            "數學及電算機科學學科類"
+        ],
+        "jobAddrNoDesc": "高雄市大樹區",
+        "jobAddress": "學城路一段5號3樓",
+        "description": "1.協助POS前場週邊安裝設定及故障排除\n2.協助公司電腦週邊安裝設定及故障排除\n3.同仁工作協助支援",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
+        "custName": "義大遊樂世界_義大世界購物廣場_義大開發股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/3oomu"
+    },
+    {
+        "jobNo": "14650195",
+        "jobName": "資訊工程師(硬體)(需排班)",
+        "jobRo": 1,
+        "jobCat": [
+            2010002003,
+            2007002005,
+            2007002007
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關",
+            "其他數學及電算機科學相關"
+        ],
+        "jobAddrNoDesc": "高雄市鼓山區",
+        "jobAddress": "新德路1號",
+        "description": "1.POS機軟硬體業務管理及相關系統障礙排除。 \n2.電腦設備維護、軟體設定及障礙排除。 \n3.網路及網路設備、伺服器設備、資訊機房管理、帳號管控、軟體安裝及設定、PC故障排除、各項資訊相關終端設備故障排除。 \n4.主管交辦事項。",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 33200,
+        "salaryHigh": 34700,
+        "salaryDesc": "",
+        "custName": "義享樂國際股份有限公司",
+        "appearDate": "20250616",
+        "jobUrl": "https://www.104.com.tw/job/8q05v"
     },
     {
         "jobNo": "13381086",
         "jobName": "資訊部實習生",
-        "jobRo": "2",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
         "jobAddrNoDesc": "台北市信義區",
         "jobAddress": "松智路1號4樓",
         "description": "Eastspring Taiwan 的 IT 團隊開始年度實習生招募。\n我們正在尋找對 IT 充滿熱情、渴望了解台灣共同基金行業的候選人加入我們經驗豐富的團隊。這是一個有薪實習，將由你協助撰寫和實際運用軟體，想獲得實際操作經驗的難得機會，立即申請，開啟你在 Eastspring 的職業生涯！\n\n\n1.撰寫網頁爬蟲程式並自動化執行。\n2.優化 Power Apps 和 Power Automate 簽核流程。\n3.熟悉 API 相關知識。\n4.使用 Python 自動化清理報表並比對財報。\n5.使用 Python 撰寫自動化寄信系統。\n6.熟悉 SQL 語言，有管理資料庫經驗者佳。\n\n以上技能不需全部具備，擁有學習熱忱才是重點。\n非資工/資管領域，有程式語言基礎和相關經驗者也可嘗試。\n\n\n",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000190",
-        "salaryDesc": "時薪190元",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
         "custName": "瀚亞證券投資信託股份有限公司",
-        "appearDate": "20250718"
+        "appearDate": "20250730",
+        "jobUrl": "https://www.104.com.tw/job/7yswu"
     },
     {
-        "jobNo": "14630457",
-        "jobName": "(這是平日班且每週至少2天遠端機會) 大三大四兼職文書記錄訪談工讀或實習生(需國內出差)",
-        "jobRo": "2",
-        "jobAddrNoDesc": "新北市新莊區",
-        "jobAddress": "迴龍捷運3號出口步行3分鐘",
-        "description": "★ 工作時數 : 依照 工作產值 、填寫紀錄的精確度來進行工作時數分配。  (誠信為本公司優先考慮之項目)\n\n★ 這是平日班，但每週至少2天遠端工作機會  (前提是沒出差)\n\n★本公司為顧問公司，無償訓練大學生與實際職場接軌，個性需不排斥人際互動\n★ 「平日班，週一至週五」  需求人力時間 : 10:00-1830（切記，休息時間、通勤時間、面試時間、諦約過程、面試階段的測驗、訪談不列入工作時間計算，謝謝)\n★企管、行銷、資管、傳播、工管、商管 尤佳。\n\n★未出差情況下，每週（週一至週五），至少有  「2」個工作天  可遠距辦公\n\n1、時薪： 新台幣210元  \n\n2、word/excel/power point 的資料檢查、修訂 、排版(字型、字型大小、對齊)\n\n3、會使用gmail 、google meet 、google drive (包含共用雲端硬碟)、microsoft teams、google calendar、Windows或Mac的螢幕錄影功能\n\n★★★4、參與客戶會議，提問與作筆記。\n\n5、使用Email時會夾帶附檔 （知道如何在 Email中放入 超連結)\n\n6、 能夠參與遠端/ 現場會議，進行會議紀錄製作 (簡易排版)\n\n7、台北新北以外的縣市，另補貼交通費，實報實銷\n\n★8、須加入 LINE工作群組\n\n★9、本公司提供免費專業訓練。\n\n10、看得懂阿拉伯數字、懂得西元年月日的、民國年。\n\n11、國內出差範圍：台北市/新北市為主、\n\n其餘包括: 桃園龜山 、新莊廻龍、新竹市、南投草屯、高雄市區(火車站附近)、苗栗竹南、台南市區(火車站附近)。\n\n12、出差地超出台北市/新北市 ，則另外補助 大眾運輸非商務倉的費用、計程車費用、捷運費用。\n\n\n\n",
-        "optionEdu": "專科",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000210",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪210元以上",
-        "custName": "萬弘資訊顧問有限公司",
-        "appearDate": "20250529"
+        "jobNo": "13318854",
+        "jobName": "資訊助理工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002006,
+            2007002007,
+            2007002005
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市內湖區",
+        "jobAddress": "瑞光路408號8樓之3",
+        "description": "1. Windows AD 環境。\n2. 基礎網路知識。(TCP/IP)\n3. 辦公室資訊設備維護及管理\n4. 部門文件整理、彙總、歸檔及備份\n5. 委外資訊廠商溝通協調及事項追蹤\n6. 主管交辦事項執行及專案支援\n",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 42000,
+        "salaryDesc": "",
+        "custName": "安捷航空股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/7xgw6"
     },
     {
-        "jobNo": "13956707",
-        "jobName": "教育新創機構研發實習生",
-        "jobRo": "2",
+        "jobNo": "12283064",
+        "jobName": "資訊助理(歡迎管理、護理或資管科系應屆畢業生)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010,
+            2007002006,
+            2007001009
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關",
+            "企業管理相關"
+        ],
+        "jobAddrNoDesc": "宜蘭縣五結鄉",
+        "jobAddress": "",
+        "description": "1.資料處理\n2.軟體測試\n3.手冊文件製作\n4.線上客服\n5.主管交辦工作事項",
+        "optionEdu": [
+            2
+        ],
+        "periodDesc": "",
+        "salaryLow": 28590,
+        "salaryHigh": 32000,
+        "salaryDesc": "",
+        "custName": "艾立斯科技股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/7b9o8"
+    },
+    {
+        "jobNo": "13254361",
+        "jobName": "MIS 資訊專員(斗六)",
+        "jobRo": 1,
+        "jobCat": [
+            2007002005,
+            2007002001,
+            2007002007
+        ],
+        "major": [],
+        "jobAddrNoDesc": "雲林縣斗六市",
+        "jobAddress": "科加六路18號",
+        "description": "1.\t負責公司軟體、硬體及其他電子系統維護及維修 \n2.\t公司人員信件維護、安裝及資安維護管理 \n3.\t回報及處理公司硬體及維護軟體與系統供應商之溝通 \n4.\t建立電腦及電子設備使用手冊及教育訓練 \n5.\t與系統廠商、使用者和管理階層溝通，評估系統需求及更新 \n6.\t紀錄系統各更新及異動管理 \n7.\t工廠端及公司端區域網絡、系統維護及除錯 \n8.\tERP及EIP系統後台管理 \n9.\t主管交辦事項 \n10.\t須配合出差 \n\n",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 42000,
+        "salaryDesc": "",
+        "custName": "匯竑國際股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/7w34p"
+    },
+    {
+        "jobNo": "14085957",
+        "jobName": "MES資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001009,
+            2007001004,
+            2007001001
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "苗栗縣竹南鎮",
+        "jobAddress": "公義里科義街38號1樓",
+        "description": "1.   內部資安管控和半年/年度定期稽核\n2.   協助資訊資產盤點, 管理, 設定, 軟體管制\n3.   機房硬體設備維護/報修、辦公電腦日常故障排除\n4.   系統網路建置與規劃網路管理機制\n6.   WordPress監控與核心更新\n7.",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "群燿光學股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8dwsl"
+    },
+    {
+        "jobNo": "14780160",
+        "jobName": "IT／資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001004,
+            2007001009,
+            2007002006
+        ],
+        "major": [],
+        "jobAddrNoDesc": "桃園市龜山區",
+        "jobAddress": "民生北路一段536號5樓",
+        "description": "本職位將負責企業內部 ERP 系統的維運與開發，協助提升整體資訊化管理效益，並支援公司各部門資訊系統相關需求。具體工作內容如下：\n \nERP 系統運維與支援\n熟悉鼎新 ERP（TipTop）系統操作流程，協助使用單位進行系統操作指導與問題排除",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 50000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "英格爾科技股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8ssg0"
+    },
+    {
+        "jobNo": "14608449",
+        "jobName": "MIS資訊網管人員",
+        "jobRo": 1,
+        "jobCat": [
+            2007002005,
+            2007002007,
+            2007002001
+        ],
+        "major": [],
+        "jobAddrNoDesc": "高雄市岡山區",
+        "jobAddress": "本工環東路一號",
+        "description": "1. 用戶端PC軟硬體問題排除。\n2. 熟悉虛擬化架構。\n3. 防火牆、AD Server、Switch等資安相關軟硬體建置、管理及維護。\n4. 各系統伺服器維運管理。\n5. 執行公司資訊安全政策。\n6. 其他主管交辦事項之執行。",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 36000,
+        "salaryHigh": 42000,
+        "salaryDesc": "",
+        "custName": "易連工業股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/8p3y9"
+    },
+    {
+        "jobNo": "13922848",
+        "jobName": "資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001006,
+            2007001009,
+            2007002003
+        ],
+        "major": [
+            "資訊工程相關",
+            "其他數學及電算機科學相關"
+        ],
+        "jobAddrNoDesc": "新竹縣竹北市",
+        "jobAddress": "生醫二路66號(筑波醫電)",
+        "description": "1.負責ERP Workflow Easy Flow 相關管理報表規劃及撰寫、以協助各級主管的閱讀報表,故障排除、維護 。\n2.配合公司內部各部門需求，開發/撰寫/維護自動化系統，以優化作業。   \n3.協助ISO相關系統文件管理與資訊相關使用手",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "筑波科技股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8aexs"
+    },
+    {
+        "jobNo": "14210125",
+        "jobName": "資訊人員",
+        "jobRo": 1,
+        "jobCat": [
+            2007002007,
+            2007002005,
+            2007002001
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台中市北屯區",
+        "jobAddress": "太原路三段1315號",
+        "description": " 1.建置、管理及維護公司相關系統\n2.管理與維護公司網路及資料，並進行備份工作\n3.協助處理各部門電軟硬體相關問題\n4.網路環境相關設備安裝設定與Firewall /Router / Switch  有維護及管理能力(以Fortigate為優先)\n5.其他主管交辦事項\n",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "總太營造股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8gklp"
+    },
+    {
+        "jobNo": "13879290",
+        "jobName": "《實習》資訊安全處-資安實習生",
+        "jobRo": 2,
+        "jobCat": [
+            2007002007,
+            2007002008,
+            2007002009
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "信義區市民大道六段151號",
+        "description": "【實習時間】\n每周至少3天實習\n\n【工作內容】\n1.資安治理：ISMS資訊安全管理系統、電腦系統資訊安全評估\n2.設備維運：USB、藍芽、DLP設備維運、社群媒體跳板機檢核等各項事務\n3.資安演練：社交工程、個資外洩及ATM應變等資安演練\n",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 210,
+        "salaryHigh": 230,
+        "salaryDesc": "",
+        "custName": "永豐商業銀行股份有限公司",
+        "appearDate": "20250805",
+        "jobUrl": "https://www.104.com.tw/job/89hbu"
+    },
+    {
+        "jobNo": "14080219",
+        "jobName": "大型ERP客服專員(高雄)",
+        "jobRo": 1,
+        "jobCat": [
+            2005001005,
+            2004003002,
+            2010002001
+        ],
+        "major": [
+            "資訊管理相關",
+            "會計學相關",
+            "企業管理相關"
+        ],
+        "jobAddrNoDesc": "高雄市苓雅區",
+        "jobAddress": "高雄市苓雅區中華四路2號9樓",
+        "description": "⭐人生中沒有任何一項投資會比『投資自己』更划算⭐\n\n✅解決問題同時，能學習並獲得各行業最新知識\n✅想要有各行各業的情境挑戰，擺脫每日不斷重複的工作內容\n✅想嘗試解決各種難題，從中獲得成就感\n✅喜歡與客戶互動，與人交流\n",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 38000,
+        "salaryDesc": "",
+        "custName": "正航資訊股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8dsd7"
+    },
+    {
+        "jobNo": "14729801",
+        "jobName": "IT 資訊技術工程師 / 系統工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002005,
+            2007002010,
+            2007002001
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "新竹縣竹北市",
+        "jobAddress": "興隆路二段339號13樓",
+        "description": "1. 提供 IT 支援與疑難排解（PC、網路、作業系統、軟體）\n2. 管理 IT 資產與設定（作業系統、應用程式、硬體）\n3. 系統運維（環境建置、部署、監控、告警排除）\n4. 推動資訊安全管理與稽核流程\n5. 熟悉 Jira / Teams /",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 40000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "信曜科技股份有限公司",
+        "appearDate": "20250808",
+        "jobUrl": "https://www.104.com.tw/job/8rpl5"
+    },
+    {
+        "jobNo": "12620443",
+        "jobName": "【學生實習】財金社群行銷企劃實習生",
+        "jobRo": 2,
+        "jobCat": [
+            2004001005,
+            2004001014,
+            2004001007
+        ],
+        "major": [
+            "商業及管理學科類",
+            "經濟學相關"
+        ],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "東興路57號11樓",
+        "description": "【實習內容】\n- 協同中文/英文財金社群維護 (FB、LINE、IG、Linkedin)\n- 協同產業分析及SEO文章撰寫或翻譯\n- 針對社群與官網瀏覽成果，主動提供市場回饋並創意發想文案主題\n- 瞭解或願學習 SEO 關鍵字基礎，並用於內容規劃",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "台灣經濟新報文化事業股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/7ihzv"
+    },
+    {
+        "jobNo": "14053628",
+        "jobName": "【高雄大四/碩二實習生Internship Program-資訊部門】",
+        "jobRo": 1,
+        "jobCat": [
+            2007002004,
+            2007002005,
+            2007001004
+        ],
+        "major": [
+            "電機電子工程相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "高雄市大寮區",
+        "jobAddress": "和發產業園區上發五路1號",
+        "description": "世界，台郡引領】\n一、資訊相關實習單位_IT資訊部\n培訓計畫\n1.軟板相關專有名詞與基礎知識\n2.協助網路設備，硬體與韌體系統維護與一般障礙異常處理\n3.資訊相關程式開發(MES/IOT /SAP ABAP/SAP OA)\n\n二、實習內容輔導\n1.",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "台郡科技股份有限公司(總公司)",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/8d7uk"
+    },
+    {
+        "jobNo": "14064360",
+        "jobName": "資訊工程師(應屆可)",
+        "jobRo": 1,
+        "jobCat": [
+            2007002005,
+            2007002007,
+            2007001009
+        ],
+        "major": [],
+        "jobAddrNoDesc": "桃園市中壢區",
+        "jobAddress": "環北路400號7樓之3",
+        "description": "路設備維運、網路規畫、網路防火牆設定管理、網路障礙排除。 \n3.資訊安全：協助執行資訊安全相關工作，確保系統安全。 \n4.維護客戶端電腦系統，保持系統正常運作並進行除錯。 \n5.負責軟、硬體及其他系統周邊裝置的安裝及維修。 \n6.主管交辦事項。",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 33000,
+        "salaryHigh": 42000,
+        "salaryDesc": "",
+        "custName": "全得宏資訊有限公司",
+        "appearDate": "20250810",
+        "jobUrl": "https://www.104.com.tw/job/8dg4o"
+    },
+    {
+        "jobNo": "12617282",
+        "jobName": "(實習)資訊專案助理",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010,
+            2013001013,
+            2013001006
+        ],
+        "major": [
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "信義路5段2號B1樓",
+        "description": "1.協助大型ERP系統測試與開發，將學會ASP.NET(C#)、資料庫MS SQL語法操作、\n    第三方API串接等實務開發經驗及商業流程\n2.企業內部社群平台，教育訓練影片提案及多媒體設計、數位影音編輯。 \n3.收集、分析市場資訊，了解產業",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
+        "custName": "震旦集團_震旦行股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/7ifk2"
+    },
+    {
+        "jobNo": "14669581",
+        "jobName": "資訊服務工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2010002017,
+            2010002005,
+            2010002001
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台南市永康區",
+        "jobAddress": "中華路12號4樓之5",
+        "description": "1. 對於客戶親切且專業的態度以提升客戶服務滿意度。\n2. 銷售資訊相關產品獎金抽成\n3. 具有基礎網路概念、架設、維運相關知識，能對一般區域網故障進行分析、判定與排除異常。\n4.伺服器及電腦主機軟硬體維護安裝及效能管理。\n5.具備良好的電腦系統",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 31000,
+        "salaryHigh": 40000,
+        "salaryDesc": "",
+        "custName": "超匠資訊有限公司",
+        "appearDate": "20250611",
+        "jobUrl": "https://www.104.com.tw/job/8qf4d"
+    },
+    {
+        "jobNo": "13482070",
+        "jobName": "資安人員(資安管理室)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001009,
+            2007002009,
+            2004003004
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關",
+            "其他商業及管理相關"
+        ],
+        "jobAddrNoDesc": "台北市南港區",
+        "jobAddress": "經貿二路135號13樓",
+        "description": "1. 負責資訊安全及個人資料保護制度之制定、推行、維護與管理。\n2. 負責個人資料檔案安全維護計劃及實施情形之制定、推行、維護與管理。\n3. 協助資訊安全及個人資料保護認知宣導及教育訓練規劃與推動。\n4. 日常作業管考、各類報表彙整及分析。\n5.",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "中興保全科技股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/80yty"
+    },
+    {
+        "jobNo": "14735351",
+        "jobName": "工讀生、資訊助理",
+        "jobRo": 2,
+        "jobCat": [
+            2002001012,
+            2002001011,
+            2007001010
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "忠孝東路四段560號10樓",
+        "description": "1.一般總務行政文書助理工作、其他主管交辦事項。\n2.需迅速學會且熟練使用數位工具與軟體，如AI、ChatGPT等...。\n3.協助資訊設備架設\n\n*歡迎國立大學以上應屆畢業生、日間就讀...等。\n*歡迎成績前段班學生。 \n*歡迎所有求職者，即日",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 225,
+        "salaryHigh": 225,
+        "salaryDesc": "",
+        "custName": "晶偉電子股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8rtvb"
+    },
+    {
+        "jobNo": "14742432",
+        "jobName": "資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007001004,
+            2007001009,
+            2007002006
+        ],
+        "major": [
+            "資訊工程相關",
+            "電機電子工程相關"
+        ],
+        "jobAddrNoDesc": "高雄市仁武區",
+        "jobAddress": "八德東路515號",
+        "description": "1.備份管理、資安方針規劃與實施\n2.管理公司內部 IT 設備、基本網路環境及公司數位化工作\n3.規劃案件圖控系統設計及程式撰寫\n4.規劃案件報表系統設計、資料庫程式撰寫",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 35000,
+        "salaryDesc": "",
+        "custName": "合航企業有限公司",
+        "appearDate": "20250731",
+        "jobUrl": "https://www.104.com.tw/job/8rzc0"
+    },
+    {
+        "jobNo": "14723656",
+        "jobName": "助理工程師(114年在校實習生招募專區)(60)【技術中心】",
+        "jobRo": 1,
+        "jobCat": [
+            2008001023
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台北市內湖區",
+        "jobAddress": "行愛路78巷25號",
+        "description": "1、電腦硬體設備裝機。\n2、電腦設備保養相關維護。\n3、電腦設備維修與排除。\n4、實習時間預計114年07月01日起~115年06月30日止。(一年期)\n5、招募名額滿額為止。\n",
+        "optionEdu": [
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 29000,
+        "salaryHigh": 30990,
+        "salaryDesc": "",
+        "custName": "華經資訊企業股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/8rkug"
+    },
+    {
+        "jobNo": "14743650",
+        "jobName": "【數轉院/共創協作中心】資訊服務協作工讀生",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2002001012
+        ],
+        "major": [
+            "一般商業學類",
+            "資訊管理相關"
+        ],
         "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "/大安區/中山區",
-        "description": "\n●成為儲備講師：實習後通過講師能力測驗，即有機會成為協會種子講師，展開教學之路！\n***更多相關[[[資訊]]]請看 https://www.beyond-coding.org.tw/cooperation-prefecture/intern.html\n\n【實",
-        "optionEdu": "大學",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000200",
-        "salaryHigh": "9999999",
-        "salaryDesc": "時薪200元以上",
-        "custName": "艾思程式教育股份有限公司",
-        "appearDate": "20250721"
+        "jobAddress": "民生東路四段133號8樓",
+        "description": "1.協助電腦設定與流程處理，資訊資料維護。\n2.協作辦公室環境庶務。\n3.配合主管交辦事項。\n",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "資策會_財團法人資訊工業策進會",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8s09u"
     },
     {
-        "jobNo": "14747028",
-        "jobName": "DIY甜點門市幫手（彈性兼職）- 台北信義A13店｜現場支援",
-        "jobRo": "2",
+        "jobNo": "14662046",
+        "jobName": "資訊設備維護工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002005,
+            2007002009,
+            2007002008
+        ],
+        "major": [
+            "資訊工程相關",
+            "電機電子工程相關"
+        ],
+        "jobAddrNoDesc": "雲林縣褒忠鄉",
+        "jobAddress": "中正路98號",
+        "description": "1.網路系統及設備規劃、設定 \n2. 網路系統軟硬體安裝及維護、故障排除、售後服務\n3. 伺服器網路設備維護、備份、管理\n4. 主管交辦作業",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 40000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "國立通信工程有限公司",
+        "appearDate": "20250801",
+        "jobUrl": "https://www.104.com.tw/job/8q9b2"
+    },
+    {
+        "jobNo": "14601364",
+        "jobName": "MIS資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002001,
+            2007002007,
+            2007002005
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台北市內湖區",
+        "jobAddress": "堤頂大道二段475號4樓",
+        "description": "1. 負責ERP系統維護管理。\n2. 處理主管交辦事項。\n\n",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "奇郁國際股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8oyhg"
+    },
+    {
+        "jobNo": "12652710",
+        "jobName": "資訊安全產品技術支援助理工程師【台北】 (無經驗可，從基礎開始培訓)",
+        "jobRo": 1,
+        "jobCat": [
+            2010002001,
+            2005001004,
+            2007001010
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市中山區",
+        "jobAddress": "長春路176號5樓",
+        "description": "宇數科技是一家致力於提供全方位資安保護方案的專業技術公司。我們相信員工的培育是企業永續發展的關鍵因素，因此致力於提供完善的技能培訓制度和升遷管道。\n\n我們正在尋找願意從個人家庭用戶端開始學習資訊基礎，並期望未來成為具備問題解決能力和渴望成長發展的",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 29000,
+        "salaryHigh": 34000,
+        "salaryDesc": "",
+        "custName": "宇數科技股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/7j6w6"
+    },
+    {
+        "jobNo": "5368063",
+        "jobName": "維修技術資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2010002007
+        ],
+        "major": [
+            "汽車汽修相關",
+            "機械維護相關"
+        ],
+        "jobAddrNoDesc": "新北市三重區",
+        "jobAddress": "重新路5段609巷8號6樓之1",
+        "description": "1. 汽車維修資料編撰。\n2. 線路圖繪製。\n3. 實車量測。",
+        "optionEdu": [
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 50000,
+        "salaryDesc": "",
+        "custName": "卡爾世達股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/3720v"
+    },
+    {
+        "jobNo": "14680346",
+        "jobName": "資訊系統部門經理【IS】",
+        "jobRo": 1,
+        "jobCat": [
+            2007002011,
+            2007002001,
+            2007002006
+        ],
+        "major": [
+            "資訊工程相關",
+            "財稅金融相關",
+            "資訊管理相關"
+        ],
         "jobAddrNoDesc": "台北市松山區",
-        "jobAddress": "松仁路58號B3(遠東百貨台北信義A13)",
-        "description": "你喜歡甜點，也想嘗試門市工作？加入我們，從最基礎的支援任務開始累積經驗！\n\n主要工作內容：\n•開場與收場工作：環境清潔整理、補料\n•基礎營運任務：POS結帳、點/收貨\n•客人接待與製作引導：協助理解食譜步驟，解決操作上的疑問\n•客訴與突發狀況應變：提供第一線處理與必要通報\n\n我們在找這樣的你：\n•每週能排班 2 天以上，每次 4 小時起（以晚班收場為主）\n•適合學生、二度就業、假日工讀等彈性工作者\n•喜歡與人互動，對甜點與DIY體驗有興趣\n\n你將學到：\n•門市營運基礎、服務流程與顧客互動技巧\n•若表現穩定，未來可培訓成為核心兼職\n\n＊相關福利請看公司介紹。\n",
-        "optionEdu": "高中",
-        "periodDesc": "經歷不拘",
-        "salaryLow": "0000190",
-        "salaryHigh": "0000200",
-        "salaryDesc": "時薪190~200元",
-        "custName": "自己做-烘焙聚樂部_共享平台股份有限公司",
-        "appearDate": "20250718"
+        "jobAddress": "光復南路1號9F之2",
+        "description": "1.依公司策略目標，擬訂、推動與執行全公司系統專案。\n2.依據客戶專案需求，帶領團隊開發。\n3.需與客戶並跨單位溝通協調，督導系統專案執行品質。\n4.維護系統效能，保持系統正常運作並進行除錯。\n5.評估、規劃與執行公司資訊安全架構及系統相關專案。",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "普鴻資訊股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8qnfe"
+    },
+    {
+        "jobNo": "14556190",
+        "jobName": "台北資訊助理(短期兼職，配合到114年底)",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010,
+            2007002007,
+            2007001009
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市南港區",
+        "jobAddress": "",
+        "description": "1. PC、NB新機拆箱&安裝\n2. 協助主管完成交辦任務，譬如整理貨架、儲位變更......等。\n\n有興趣的朋友歡迎洽詢!\n工作地點在南港高鐵站附近。",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 195,
+        "salaryHigh": 195,
+        "salaryDesc": "",
+        "custName": "昊正科技股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8nzmm"
+    },
+    {
+        "jobNo": "14656540",
+        "jobName": "自動化測試實習生｜微程式資訊實習計畫(MP Internship Program，MPIP)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001004,
+            2007001017
+        ],
+        "major": [
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台中市西屯區",
+        "jobAddress": "市政路402號7樓",
+        "description": "▍實習計畫簡介\n\n你將會加入微程式資訊的產品開創者團隊，成為一位 MP Maker！\n在資深 Mentor 們的引導下參與各式專案，學習完整產品開發流程所需的技能。同時，你也將遇到真正的客戶與使用者，看見產品真實存在的阻礙，與夥伴用創新創意與團隊",
+        "optionEdu": [
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "微程式資訊股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/8q524"
+    },
+    {
+        "jobNo": "14784329",
+        "jobName": "『小夜班-電話客服專員(享值班津貼)』- 國營儲匯郵務諮詢專線, 穩定＋高薪＋優質環境｜台中,近BRT東海別墅站 (04-12)",
+        "jobRo": 1,
+        "jobCat": [
+            2005001004,
+            2005001005
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台中市西屯區",
+        "jobAddress": "臺灣大道4段（近東海大學）",
+        "description": "來電、文字訊息、Email 回覆民眾問題，並記錄相關資訊。\n    - 協助相關業務的系統操作與線上諮詢。\n    - 進行客戶關懷，提供優質服務。\n    - 主管交辦的其他相關事務。\n\n✅ 薪資與福利\n    - 月薪：36,000-43,",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 36000,
+        "salaryHigh": 43000,
+        "salaryDesc": "",
+        "custName": "程曦資訊整合股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8svnt"
+    },
+    {
+        "jobNo": "12485323",
+        "jobName": "國立臺灣師範大學_資訊中心林口校區全職工讀生",
+        "jobRo": 1,
+        "jobCat": [
+            2002001003,
+            2002001012,
+            2002001011
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新北市林口區",
+        "jobAddress": "仁愛路一段2號",
+        "description": "工半讀的最佳環境。\n\n工作地點: 臺師大資訊中心(林口校區)",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 31450,
+        "salaryHigh": 31450,
+        "salaryDesc": "",
+        "custName": "國立臺灣師範大學_資訊工程學系",
+        "appearDate": "20250731",
+        "jobUrl": "https://www.104.com.tw/job/7flqj"
+    },
+    {
+        "jobNo": "14594092",
+        "jobName": "高雄資訊助理(短期兼職，配合到114年底)",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010,
+            2007002007,
+            2007001009
+        ],
+        "major": [],
+        "jobAddrNoDesc": "高雄市燕巢區",
+        "jobAddress": "",
+        "description": "1. PC、NB新機拆箱&安裝\n2. 協助主管完成交辦任務，譬如整理貨架、儲位變更......等。\n\n有興趣的朋友歡迎洽詢!\n工作地點會分布在高雄市燕巢區跟左營區。",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 195,
+        "salaryHigh": 195,
+        "salaryDesc": "",
+        "custName": "昊正科技股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8osvg"
+    },
+    {
+        "jobNo": "14351195",
+        "jobName": "Intern實習生(IT Business Analysis)_資訊部",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2002001012,
+            2002001003
+        ],
+        "major": [
+            "銀行保險相關",
+            "其他商業及管理相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "信義路5段7號79樓",
+        "description": "\n\n*歡迎大學、研究所之金融保險、資訊管理相關科系全職學生投遞，能配合至2025年12月者優先。",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 200,
+        "salaryDesc": "",
+        "custName": "法商法國巴黎人壽保險股份有限公司台灣分公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/8jlgb"
+    },
+    {
+        "jobNo": "9733361",
+        "jobName": "大型ERP專案-客服專員(高雄)",
+        "jobRo": 1,
+        "jobCat": [
+            2005001005,
+            2004003002,
+            2010002001
+        ],
+        "major": [
+            "資訊管理相關",
+            "會計學相關",
+            "企業管理相關"
+        ],
+        "jobAddrNoDesc": "高雄市苓雅區",
+        "jobAddress": "高雄市苓雅區中華四路2號9樓",
+        "description": "中大型ERP專案，客戶服務人員\n1.公司提供教育訓練。\n2.軟體售後服務，電話接聽與問題排除。\n3.顧客關係建立與維繫。\n4.非電腦硬體相關工程師。\n5.有ERP軟體經驗或概念者佳。\n6.有會計師事務所經驗佳。",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 31000,
+        "salaryHigh": 38000,
+        "salaryDesc": "",
+        "custName": "正航資訊股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/5smb5"
+    },
+    {
+        "jobNo": "14726581",
+        "jobName": "【實習生】MIS資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2002001011,
+            2007002005,
+            2007002007
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關",
+            "電機電子工程相關"
+        ],
+        "jobAddrNoDesc": "桃園市平鎮區",
+        "jobAddress": "環南路二段27號16樓之2",
+        "description": "1.辦公設備如PC、NB、印表機及事務機等障礙處理與報修\n2.基本Windows系統維護，如Windows重灌與軟體安裝\n3.協助資訊資產盤點\n4.主管交辦事項",
+        "optionEdu": [
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 30000,
+        "salaryDesc": "",
+        "custName": "南桃園有線電視股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8rn3p"
+    },
+    {
+        "jobNo": "12525122",
+        "jobName": "【台北總公司】資訊實習生",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市中正區",
+        "jobAddress": "林森北路7-1號10樓1001室",
+        "description": "主要工作內容－\n資訊實習生－協助公司改善內部系統及各項資訊相關事務，\n有機會與業界各種不同的新創廠商接觸和交流，可認識產業新趨勢\n\n工作需求\n前端部分：Html/ Css/ Js\n後端部分：Laravel\n資料庫：MySQL\n\n其他工作內容－\n１",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
+        "custName": "綠雷德創新股份有限公司",
+        "appearDate": "20250810",
+        "jobUrl": "https://www.104.com.tw/job/7ggg2"
+    },
+    {
+        "jobNo": "13109050",
+        "jobName": "助理程式設計師(22103102)",
+        "jobRo": 2,
+        "jobCat": [
+            2008001023,
+            2007001004,
+            2007001006
+        ],
+        "major": [
+            "電機電子工程相關",
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台北市中山區",
+        "jobAddress": "德惠街9號5樓",
+        "description": "1. 使用 C.ai BotBuilder 平台開發對話機器人\n2. 使用 JavaScript or C# 撰寫資料處理小程式\n3. 使用 SQL 存取後端資料庫",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "叡揚資訊股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/7sz0a"
+    },
+    {
+        "jobNo": "14611061",
+        "jobName": "桃園資訊助理(短期兼職，配合到114年底)",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010,
+            2007002007,
+            2007001009
+        ],
+        "major": [],
+        "jobAddrNoDesc": "桃園市中壢區",
+        "jobAddress": "桃園高鐵站",
+        "description": "1. PC、NB新機拆箱&安裝\n2. 協助主管完成交辦任務，譬如整理貨架、儲位變更......等。\n\n有興趣的朋友歡迎洽詢!\n工作地點在桃園高鐵站附近",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "periodDesc": "",
+        "salaryLow": 195,
+        "salaryHigh": 195,
+        "salaryDesc": "",
+        "custName": "昊正科技股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/8p5yt"
+    },
+    {
+        "jobNo": "13983149",
+        "jobName": "【Chailease中租控股】GAIEP大東協實習及就業計畫｜泰國資訊人員 (需會泰文) Thai IT intern or full time 用泰語溝通",
+        "jobRo": 1,
+        "jobCat": [
+            2002001011,
+            2007001010,
+            2007001006
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台北市內湖區",
+        "jobAddress": "瑞光路362號",
+        "description": "發習慣。\n   -近朱者則赤：跟著優秀的團隊一起學習成長，耳濡目染，習慣卓越。\n   -贏在起跑點：表現優良者，畢業後有優先轉正機會，及早獲得加入大型企業門票。\n\n【實習期間】\n   - 每週一至五排班至少2天。\n\n【工作內容】\n   - 協助資訊",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 220,
+        "salaryHigh": 220,
+        "salaryDesc": "",
+        "custName": "中租控股_中租迪和股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8bpgt"
+    },
+    {
+        "jobNo": "12461441",
+        "jobName": "[實習/兼職]JAVA軟體工程師",
+        "jobRo": 2,
+        "jobCat": [
+            2007001004,
+            2007001006,
+            2007001003
+        ],
+        "major": [
+            "工程學科類",
+            "數理統計相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "新北市新店區",
+        "jobAddress": "北新路一段86號20樓",
+        "description": "1、進行網站前後端技術研究與實作，\n2、管理系統開發與維護，\n3、具備基礎Java Web概念、前端HTML、Javascript概念。",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "碩網資訊股份有限公司",
+        "appearDate": "20250804",
+        "jobUrl": "https://www.104.com.tw/job/7f3b5"
+    },
+    {
+        "jobNo": "14471624",
+        "jobName": "T03A21資訊助理(汐止)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010,
+            2007001009,
+            2007002007
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新北市汐止區",
+        "jobAddress": "大同路三段369巷28號(221)",
+        "description": "1. 資訊系統維護、網路故障排除與使用者電腦資訊問題協助。\n2. 採購評估協助與資產行政作業。\n3. 帳號異動、教育訓練與行政作業。\n4. ISO27001單據紀錄與流程作業。\n5. 系統問題需求紀錄與改善提案。\n6. 機房管理。\n",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 43000,
+        "salaryDesc": "",
+        "custName": "寺岡科技股份有限公司",
+        "appearDate": "20250809",
+        "jobUrl": "https://www.104.com.tw/job/8m6dk"
+    },
+    {
+        "jobNo": "11091303",
+        "jobName": "資訊助理(宜蘭研發中心)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010,
+            2002001011,
+            2007001019
+        ],
+        "major": [],
+        "jobAddrNoDesc": "宜蘭縣頭城鎮",
+        "jobAddress": "青雲路二段347號",
+        "description": "【職務內容】\n 1.協助專案系統開發。\n 2.上級交辦事項處理。\n\n【徵求條件】\n 1.具耐心、細心，認真負責。\n\n【加分條件(非必備)】\n 1.程式與資料庫基礎概念佳。\n 2.相關證照。\n 3.熟悉Microsoft Office文書相關軟體操作。\n\n【工作時間】\n 1. 上午9點至晚上6點，午休一小時 (時間可彈性安排，面試時不要害羞直接跟老闆談談)。\n",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 35000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "阿甘科技股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/6lq3r"
+    },
+    {
+        "jobNo": "9890022",
+        "jobName": "「 歡迎企業實習」派駐科技大廠-資訊助理人員-(台中市/大雅區)-【JD-00000085】",
+        "jobRo": 1,
+        "jobCat": [
+            2010002003,
+            2007002005,
+            2007002006
+        ],
+        "major": [
+            "電機電子工程相關",
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台中市大雅區",
+        "jobAddress": "",
+        "description": "■歡迎企業實習\n■接聽客服專線，提供客戶問題諮詢、應用程式異常故障排除\n■電腦周邊硬體各項設備的安裝、檢測\n■協助客戶電腦系統環境異常故障排除\n■熟悉微軟作業系統，office文書軟體等\n■委外駐廠資訊服務工作\n■可接受無經驗工作者，只要您擁有",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 29000,
+        "salaryHigh": 34000,
+        "salaryDesc": "",
+        "custName": "威策電腦股份有限公司",
+        "appearDate": "20250811",
+        "jobUrl": "https://www.104.com.tw/job/5vz6u"
+    },
+    {
+        "jobNo": "14728591",
+        "jobName": "【實習】MIS資訊工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2002001011,
+            2007002007,
+            2007001009
+        ],
+        "major": [
+            "電機電子工程相關",
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台中市西區",
+        "jobAddress": "五權五街151號12樓",
+        "description": "1. 辦公室設備障礙處理與報修(如PC、NB、印表機及事務機..等)。\n2. Windows系統基本維護(如Windows重灌與軟體安裝)。\n3. 協助資訊設備資產盤點。\n4. 其他主管交辦事項。\n",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 30000,
+        "salaryDesc": "",
+        "custName": "群健有線電視股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/8ronj"
+    },
+    {
+        "jobNo": "13802199",
+        "jobName": "資訊安全處-銀行資安專家",
+        "jobRo": 1,
+        "jobCat": [
+            2007002008
+        ],
+        "major": [],
+        "jobAddrNoDesc": "台北市松山區",
+        "jobAddress": "市民大道六段151號",
+        "description": "【資安治理】\n1. 資訊安全法規、政策、規範或準則之研訂\n2. 資安檢測、監控作業規劃與執行，資安情資蒐集\n3. 內、外部稽核及自行查核，缺改作業與改善追蹤\n4. 資訊安全教育訓練規劃與執行\n5. 情資蒐集及追蹤處理進度\n6. 資安事件管理，包含",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 0,
+        "salaryHigh": 0,
+        "salaryDesc": "",
+        "custName": "永豐商業銀行股份有限公司",
+        "appearDate": "20250807",
+        "jobUrl": "https://www.104.com.tw/job/87tuf"
+    },
+    {
+        "jobNo": "13529758",
+        "jobName": "SAP系統維護工讀生",
+        "jobRo": 2,
+        "jobCat": [
+            2007001010
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "新北市五股區",
+        "jobAddress": "",
+        "description": "\n希望畢業後有志從事『企業資源規劃』相關工作且有高度意願挑戰學習ABAP程式語言及SAP系統操作者，歡迎您的加入。\n工作期間將學習SAP開發技能和學習SAP SD(銷售與配銷)或MM(物料管理)運作流程等知識。\n\n1.主要負責SAP ABAP開發與測試任務。\n2.SAP模組日常維護、異常排除、程式文件編寫。\n3.其他主管交辦事項\n4.每周需到公司上班至少2~3天，每次至少3~8小時。\n\n\n\n",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 230,
+        "salaryHigh": 250,
+        "salaryDesc": "",
+        "custName": "町洋企業股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/81zmm"
+    },
+    {
+        "jobNo": "14698950",
+        "jobName": "【資訊部】INFRA工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002006
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新竹縣芎林鄉",
+        "jobAddress": "五和街176號",
+        "description": "1. 基礎架構建置與維運： 協助公司資訊基礎架構的建置與維運，包括伺服器、網路設備、儲存系統、雲端服務等。\n2. 系統維運與監控： 執行系統日常維運、監控、故障排除與效能調優，確保系統穩定運行與高可用性。\n3. 安全性管理： 參與資訊安全策略的制",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 45000,
+        "salaryHigh": 55000,
+        "salaryDesc": "",
+        "custName": "拓緯股份有限公司",
+        "appearDate": "20250810",
+        "jobUrl": "https://www.104.com.tw/job/8r1s6"
+    },
+    {
+        "jobNo": "14681278",
+        "jobName": "【資訊部】行政工讀生",
+        "jobRo": 2,
+        "jobCat": [
+            2002001011,
+            2007001010
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關",
+            "財稅金融相關"
+        ],
+        "jobAddrNoDesc": "台北市松山區",
+        "jobAddress": "民生東路三段156號13F",
+        "description": "\n●工作內容：1. 協助文件整理與歸檔、資料輸入、表單製作。\n                        2. 日常行政庶務與環境整理。\n                        3. 其他主管交辦事項。\n●具備條件：對行政工作有興趣，細心負責、熟悉基本文書處理。\n",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 190,
+        "salaryDesc": "",
+        "custName": "群益金鼎證券股份有限公司",
+        "appearDate": "20250815",
+        "jobUrl": "https://www.104.com.tw/job/8qo5a"
+    },
+    {
+        "jobNo": "14698655",
+        "jobName": "【實習職缺】資訊安全專案實習生-M212",
+        "jobRo": 2,
+        "jobCat": [
+            2007002008,
+            2007002009,
+            2002001011
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關"
+        ],
+        "jobAddrNoDesc": "台中市西屯區",
+        "jobAddress": "台灣大道三段660號7樓之2",
+        "description": "我們正在尋找對資安事件分析有熱情的實習夥伴，一同參與真實企業的資安服務工作，主要內容包括：\n1.協助資安系統建置與日常維運作業，並參與相關報告撰寫\n2.參與MDR/EDR資安工具與SIEM平台之操作與使用\n3.協助進行資安威脅獵捕（Threat Hunting）與情資彙整\n4.協助製作與簡報資安服務成果，培養簡報與說明能力\n\n\n我們希望你具備\n1.對資安有高度熱忱，具備基本的系統與網路知識\n2.熟悉以下其中幾項尤佳（非絕對必要，進入實習後可持續學習）：\n   -TCP/IP 通訊協定\n   -Windows / Linux 作業系統基本操作\n   -主機服務基本認知（如 Web / AD / DNS 等）\n   -SQL語法與資料查詢經驗\n\n**實習期間：2025/7~2026/6\n    寒暑期時間每週5日，就學期間每週可配合3日以上尤佳\n",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 200,
+        "salaryDesc": "",
+        "custName": "精誠軟體服務股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/8r1jz"
+    },
+    {
+        "jobNo": "14775210",
+        "jobName": "【實習專區】上學期或學年實習-資訊部實習生(台北總公司)(電商系統程式)",
+        "jobRo": 2,
+        "jobCat": [
+            2007001017,
+            2007001016,
+            2007001015
+        ],
+        "major": [
+            "資訊管理相關",
+            "資訊工程相關",
+            "其他數學及電算機科學相關"
+        ],
+        "jobAddrNoDesc": "台北市中山區",
+        "jobAddress": "建國北路二段15號",
+        "description": "個月會是未來您正式投入職場時相當重要的經驗。\n\n●申請條件：即將升大四 或 升碩二 之 資管系 或 資工系 或 資訊相關科系在學生。\n●實習期間：114/09-114/12 or 114/09-115/06\n (學期間須週一~週五每週出席至少3日)",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 210,
+        "salaryHigh": 210,
+        "salaryDesc": "",
+        "custName": "新光產物保險股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/8somi"
+    },
+    {
+        "jobNo": "14654224",
+        "jobName": "APP 開發實習生｜微程式資訊實習計畫(MP Internship Program，MPIP)",
+        "jobRo": 1,
+        "jobCat": [
+            2007001013,
+            2007001014,
+            2007001004
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台中市西屯區",
+        "jobAddress": "市政路402號7樓",
+        "description": "▍實習計畫簡介\n\n你將會加入微程式資訊的產品開創者團隊，成為一位 MP Maker！\n在資深 Mentor 們的引導下參與各式專案，學習完整產品開發流程所需的技能。同時，你也將遇到真正的客戶與使用者，看見產品真實存在的阻礙，與夥伴用創新創意與團隊",
+        "optionEdu": [
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 30000,
+        "salaryHigh": 9999999,
+        "salaryDesc": "",
+        "custName": "微程式資訊股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8q39s"
+    },
+    {
+        "jobNo": "14618034",
+        "jobName": "【資訊處_實習生】助理工程師",
+        "jobRo": 2,
+        "jobCat": [
+            2008001023,
+            2007001007,
+            2007001004
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關",
+            "企業管理相關"
+        ],
+        "jobAddrNoDesc": "台北市信義區",
+        "jobAddress": "忠孝東路4段550號",
+        "description": "1.軟體開發工程師 (Python)\n  (1)工作內容: \n      1. 負責網頁資料分析, 與工程師協作開發自動化程式\n      2. 其他交辦事項支援\n      3. 實習期間: 114學年 (2025年9月 ~ 2026年6月)，若能於2025年7月到職者尤佳\n  (2)專業能力\n      1. 熟悉HTML, CSS, JavaScript等網頁前端技術\n      2. 具備網頁自動化(如: Playwright, Selenium)、WebAPI開發經驗\n      3. 善與人溝通、反應靈敏、邏輯性強且條理分明\n      4. 可配合專案開發時程\n\n2.軟體開發工程師 (Oracle ERP)\n   (1)工作內容: \n       1. 協助開發與維運Oracle ERP/APEX應用程式\n       2. 設計與開發API，撰寫與執行自動化或手動測試腳本，協助追蹤問題進度與回報異常\n       3. 實習期間: 114學年 (2025年9月 ~ 2026年6月)，若能於2025年7月到職者尤佳\n   (2)專業能力\n       1. 須具備SQL語法與PL/SQL基礎能力，Oracle APEX 使用經驗者尤佳\n       2. 經驗者加分:網頁程式設計(如: JavaScript、HTML、CSS）、API 開發與測試經驗(如:RESTfulAPI、JSON、Postman)\n       3. 對低代碼平台開發（Low-Code）有興趣者\n\n3.軟體開發工程師 \n   (1)工作內容: \n       1. 協助軟體工程師支援開發應用程式、前端網頁或報表等\n       2. 其他主管交辦事項 (如新技術或創新工具應用評估等)\n       3. 實習期間: 114學年 (2025年9月 ~ 2026年6月)，若能於2025年7月到職者尤佳\n   (2)專業能力\n       1. 了解C#程式及Web開發、具SQL 語法觀念\n       2. 願意接受團隊培養並能主動積極學習者\n       3. 擁有良好的邏輯思維和問題解決能力",
+        "optionEdu": [
+            3,
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 32000,
+        "salaryHigh": 32000,
+        "salaryDesc": "",
+        "custName": "聚陽實業股份有限公司",
+        "appearDate": "20250812",
+        "jobUrl": "https://www.104.com.tw/job/8pbci"
+    },
+    {
+        "jobNo": "10818891",
+        "jobName": "電腦維修工程師【三井中壢NOVA店】",
+        "jobRo": 1,
+        "jobCat": [
+            2010002005,
+            2010002001,
+            2005002004
+        ],
+        "major": [],
+        "jobAddrNoDesc": "桃園市中壢區",
+        "jobAddress": "舊明里中正路389號2樓217室",
+        "description": "成結構者。\n3.客戶服務與管理。\n4.維修中心幹部培訓。\n5.偶爾須配合支援資訊展等活動。\n6.維修獎金另計。\n7.月休9~10天。",
+        "optionEdu": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 28590,
+        "salaryHigh": 50000,
+        "salaryDesc": "",
+        "custName": "三井資訊股份有限公司",
+        "appearDate": "20250814",
+        "jobUrl": "https://www.104.com.tw/job/6fvwr"
+    },
+    {
+        "jobNo": "14696199",
+        "jobName": "網頁管理工讀人員",
+        "jobRo": 1,
+        "jobCat": [
+            2007001010,
+            2007001009
+        ],
+        "major": [
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "新北市土城區",
+        "jobAddress": "中興路17之1號",
+        "description": "資訊助理\n1. 負責新系統之開發與設計，及現有系統之修改與擴充。\n2. 依系統分析之結果編寫程式、撰寫操作手冊及作業檔案，並進行系統測試。\n3. 分配與設計記憶儲存空間，並維護資料庫和系統安全。\n4. 負責制訂各種作業之標準程序，並評估系統作業績",
+        "optionEdu": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 190,
+        "salaryHigh": 220,
+        "salaryDesc": "",
+        "custName": "嵐藝企業股份有限公司",
+        "appearDate": "20250702",
+        "jobUrl": "https://www.104.com.tw/job/8qznr"
+    },
+    {
+        "jobNo": "14660713",
+        "jobName": "MIS資訊管理工程師",
+        "jobRo": 1,
+        "jobCat": [
+            2007002003
+        ],
+        "major": [],
+        "jobAddrNoDesc": "新北市三峽區",
+        "jobAddress": "中山路243號",
+        "description": "1. 設計電腦應用軟體及電腦操作系統。\n2. 維修與更新電腦應用軟體及電腦操作系統。\n3. 安裝電腦及執行電腦硬體診斷。\n4. 提供資訊相關的諮詢與專業建議。\n",
+        "optionEdu": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "periodDesc": "",
+        "salaryLow": 40000,
+        "salaryHigh": 49998,
+        "salaryDesc": "",
+        "custName": "盛生藥局",
+        "appearDate": "20250805",
+        "jobUrl": "https://www.104.com.tw/job/8q8a1"
+    },
+    {
+        "jobNo": "14774841",
+        "jobName": "銀行系統軟體測試工讀生｜資訊相關科系實習機會",
+        "jobRo": 2,
+        "jobCat": [
+            2007001019,
+            2009003007,
+            2009003005
+        ],
+        "major": [
+            "資訊工程相關",
+            "資訊管理相關"
+        ],
+        "jobAddrNoDesc": "台北市內湖區",
+        "jobAddress": "瑞光路335號5樓",
+        "description": "\n1.根據軟體規格書撰寫測試計劃&報告\n2.執行功能測試及回歸測試（含手動與自動化) 記錄問題\n3.可實際參與開發流程，了解 Git 協作與測試環境管理\n\n\n加分條件：\n\n曾參與軟體開發或測試專案者\n熟悉 CI/CD、自動化測試流程或效能測試工具者\n細心負責、樂於學習，對系統品質有熱情",
+        "optionEdu": [
+            4,
+            5
+        ],
+        "periodDesc": "",
+        "salaryLow": 200,
+        "salaryHigh": 230,
+        "salaryDesc": "",
+        "custName": "瑞思登科技股份有限公司",
+        "appearDate": "20250813",
+        "jobUrl": "https://www.104.com.tw/job/8soc9"
     }
 ]
