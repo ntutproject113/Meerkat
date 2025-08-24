@@ -31,29 +31,31 @@ for page in range(1,4):
     if response.status_code == 200:
      data = response.json()
      print(data)
-     for job in data['data']['list']:
-        jobNo= job['jobNo']
-        jobName=job['jobName']
-        jobRo=job['jobRo']
-        jobAddrNoDesc=job['jobAddrNoDesc']
-        jobAddress=job['jobAddress']
-        description=job['description']
-        optionEdu=job['optionEdu']
-        periodDesc=job['periodDesc']
-        salaryLow=job['salaryLow']
-        salaryHigh=job['salaryHigh']
-        salaryDesc=job['salaryDesc']
-        custName=job['custName']
-        appearDate=job['appearDate']
-        jobCat= job['jobCat']
-        major=job['major']
+     for job in data['data']:
+        jobNo = job['jobNo']
+        jobName = job['jobName']
+        jobRo = job['jobRo']
+        jobAddrNoDesc = job['jobAddrNoDesc']
+        jobAddress = job.get('jobAddress', '')  # 有些可能是空字串
+        description = job['description']
+        optionEdu = job['optionEdu']
+        periodDesc = job.get('periodDesc', '')
+        salaryLow = job['salaryLow']
+        salaryHigh = job['salaryHigh']
+        salaryDesc = job.get('salaryDesc', '')
+        custName = job['custName']
+        appearDate = job['appearDate']
+        jobCat = job['jobCat']
+        major = job['major']
+        jobUrl = job['link']['job']  # 取職缺網址
+
         result.append({
             'jobNo': jobNo,
             'jobName': jobName,
             'jobRo': jobRo,
-            'jobCat': jobCat, #
-            'major': major,#
-            'jobAddrNoDesc': jobAddrNoDesc,#
+            'jobCat': jobCat,
+            'major': major,
+            'jobAddrNoDesc': jobAddrNoDesc,
             'jobAddress': jobAddress,
             'description': description,
             'optionEdu': optionEdu,
@@ -62,7 +64,9 @@ for page in range(1,4):
             'salaryHigh': salaryHigh,
             'salaryDesc': salaryDesc,
             'custName': custName,
-            'appearDate': appearDate
+            'appearDate': appearDate,
+            'jobUrl': jobUrl  
+            
         })
 open("intern.json", "w", encoding="utf-8").write(json.dumps(result, indent=4, ensure_ascii=False))
 db=client.intern

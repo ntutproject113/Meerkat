@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Query, Path    
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Optional, List
+from typing import Optional
+from enum import Enum
 import requests
 import os
 import json
@@ -14,6 +15,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+class SortOptions(str, Enum):
+    price_asc = "price-asc_sort"
+    price_desc = "price-desc_sort"
+    publish_desc = "publish-desc_sort"
 
 # 載入地區資料
 def load_rent_area():
@@ -30,17 +35,17 @@ def get_rents(
     casetype: str = Query("0", description="房型類別，0=不限，1=整層住家，2=獨立套房，3=分租套房，4=雅房，可多選如 '1-2'"),
     page: int = Query(1, description="頁碼，從 1 開始"),
     fee:bool = Query(True, description="是否包含管理費，預設包含"),
+    sort: SortOptions = Query(SortOptions.price_desc, description="排序方式"),
 ):
     if casetype == "0":
         base_url = f"https://rent.houseprice.tw/api/RentCaseList/Search/21_usage/{area_ids}_zip/-{price}_price"
     else:
         base_url = f"https://rent.houseprice.tw/api/RentCaseList/Search/21_usage/{area_ids}_zip/-{price}_price/{casetype}_casetype"
 
-    # 只有「不包含管理費」而且要求免服務費時才加 noservicefee_filter
+    # 只有「不包含管理費」 noservicefee_filter
     if not fee:
         base_url += "/noservicefee_filter"
-
-    # 最後加分頁
+    
     base_url += f"/?p={page}"
 
     headers = {
@@ -118,6 +123,13 @@ def get_rents(
                         "rentPictureHref": rentPictureHref,
                         "rentHref": rentHref,
                     })
+    #到時候改成db排序全部!!
+    if sort == SortOptions.price_asc:
+        result.sort(key=lambda x: x.get("rentPrice", 0))
+    elif sort == SortOptions.price_desc:
+        result.sort(key=lambda x: x.get("rentPrice", 0), reverse=True)
+    elif sort == SortOptions.publish_desc:
+        result.sort(key=lambda x: x.get("publishDate", ""), reverse=True)
 
     return {
         "request_url": base_url,
