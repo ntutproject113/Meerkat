@@ -3,6 +3,12 @@
     <!-- 漢堡按鈕 -->
     <div class="menu-toggle" @click="toggleMenu">☰</div>
 
+     <div 
+      v-if="isOpen" 
+      class="menu-overlay" 
+      @click="closeMenu">
+    </div>
+
     <!-- 側邊選單 -->
     <div class="side-menu" :class="{ open: isOpen }">
       <router-link
@@ -27,6 +33,9 @@ import { ref } from 'vue'
 const isOpen = ref(false)
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
+}
+const closeMenu = () => {
+  isOpen.value = false
 }
 
 // 側邊欄選單資料
@@ -54,6 +63,15 @@ const menuItems = [
   position: fixed;
   top: 10px;
   left: 10px;
+}
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 999;
 }
 
 .side-menu {
