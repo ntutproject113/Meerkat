@@ -20,12 +20,18 @@ const toggleFavorite = (index) => {
 onMounted(async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://localhost:8000/contests')
-    console.log("API 回應資料：", res.data.result.payload.list)
-    contests.value = Array.isArray(res.data.result.payload.list) 
-                      ? res.data.result.payload.list 
-                      : []
+    const res = await axios.get('http://localhost:8000/contests',{
+      params: {
+        page: 1,
+        timeline: 'notEnded',
+        location: 'taiwan',
+        // category: '119,120,121' // 如果有分類需求可以加
+      }
+    })
+
+    contests.value =res.data.result
     favorites.value = contests.value.map(() => false) 
+
   } catch (e) {
     error.value = '載入失敗: ' + e.message
   } finally {
@@ -79,17 +85,17 @@ onMounted(() => {
               v-for="(item, index) in contests"
               :key="item.id || index"
             >
-              <!--類別-->
               <div class="contest-card">
+                <!--類別-->
                  <div class="category-box">
                   <span class="category-text">{{ item.id || '未分類' }}</span>
                 </div>
                 <!--資訊-->
                 <div class="contest-content">
-                  <h3 class="contest-title">{{ item.alias }}</h3>
+                  <h3 class="contest-title">{{ item.cpName }}</h3>
                   <div class="contest-info">
                     <img src="../assets/images/icon/date.png" class="icon" alt="日期圖示" />
-                          結束時間：{{ item.deadline }}
+                          結束時間：{{ item.cpEndTime }}
                   </div>
                   <div class="contest-info">
                       主辦單位: {{ item.cpOrganizer }}
