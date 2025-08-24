@@ -32,8 +32,7 @@ GET /contests
 
 ```bash
 # 範例 1：取得第 2 頁，投稿中的比賽（台灣地區）
-GET /contests?page=2&timeline=submitProcessing&location=taiwan
-
+GET /contests?page=2&timeline=submitProcessing&location=taiwan&category=119%2C120%2C121
 # 範例 2：取得分類 119 和 120 的比賽
 GET /contests?category=119,120
 ```
