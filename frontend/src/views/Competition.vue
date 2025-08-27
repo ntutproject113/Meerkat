@@ -1,14 +1,21 @@
 <script setup>
 import Menu from '../components/Menu.vue';
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import axios from 'axios'
 import collectedImg from '../assets/images/icon/collected.png'
 import uncollectedImg from '../assets/images/icon/uncollected.png'
 
+const filters = ref({
+  page: 1,
+  timeline: 'notEnded',
+  location: 'taiwan',
+  category: ['119','120','121']
+})
 const contests = ref([])      // 存比賽清單
 const categories = ref([])    // 存分類清單
 const loading = ref(false)
 const error = ref(null)
+
 
 //收藏功能
 const favorites = ref([])
@@ -16,27 +23,31 @@ const toggleFavorite = (index) => {
   favorites.value[index] = !favorites.value[index]
 }
 
-// 取得比賽資料
-onMounted(async () => {
+// 競賽資料 ---
+const fetchContests = async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://localhost:8000/contests',{
+    const res = await axios.get('http://localhost:8000/contests', {
       params: {
-        page: 1,
-        timeline: 'notEnded',
-        location: 'taiwan',
-        // category: '119,120,121' // 如果有分類需求可以加
+        page: filters.value.page,
+        timeline: filters.value.timeline,
+        location: filters.value.location,
+        category: filters.value.category.join(',')  // 陣列轉字串
       }
     })
-
-    contests.value =res.data.result
+    contests.value = res.data.result
     favorites.value = contests.value.map(() => false) 
-
   } catch (e) {
     error.value = '載入失敗: ' + e.message
   } finally {
     loading.value = false
   }
+}
+
+//頁面載入時抓資料 
+onMounted(() => {
+  fetchContests()
+  fetchCategories()
 })
 // 取得分類資料
 const fetchCategories = async () => {
@@ -50,10 +61,21 @@ const fetchCategories = async () => {
   }
 }
 
-onMounted(() => {
-  fetchCategories()
-})
+// 類別篩選相關
+const showCategoryModal = ref(false)
+const tempCategory = ref([...filters.value.category])
 
+const openCategoryModal = () => {
+  tempCategory.value = [...filters.value.category]
+  showCategoryModal.value = true
+}
+const closeCategoryModal = () => {
+  showCategoryModal.value = false
+}
+const confirmCategory = () => {
+  filters.value.category = [...tempCategory.value]
+  showCategoryModal.value = false
+}
 </script>
 
 <template>
@@ -77,31 +99,33 @@ onMounted(() => {
         <h1 class="title">推薦比賽資訊</h1>
         <div v-if="loading">載入中...</div>
         <div v-if="error">{{ error }}</div>
-        
-      
+
           <!-- 每一張比賽卡片 -->
-         <div v-if="contests && contests.length">
-            <div
-              v-for="(item, index) in contests"
-              :key="item.id || index"
-            >
-              <div class="contest-card">
-                <!--類別-->
-                 <div class="category-box">
-                  <span class="category-text">{{ item.id || '未分類' }}</span>
+        <div v-if="contests && contests.length">
+          <div 
+            v-for="(item, index) in contests" 
+            :key="item.id || index"
+            class="contest-wrapper"
+          >
+            <!-- 每一張比賽卡片 -->
+            <div class="contest-card">
+              <!-- 類別 -->
+              <div class="category-box">
+                <span class="category-text">{{ item.id || '未分類' }}</span>
+              </div>
+
+              <!-- 資訊 -->
+              <div class="contest-content">
+                <h3 class="contest-title">{{ item.cpName }}</h3>
+                <div class="contest-info">
+                  <img src="../assets/images/icon/date.png" class="icon" alt="日期圖示" />
+                  結束時間：{{ item.cpEndTime }}
                 </div>
-                <!--資訊-->
-                <div class="contest-content">
-                  <h3 class="contest-title">{{ item.cpName }}</h3>
-                  <div class="contest-info">
-                    <img src="../assets/images/icon/date.png" class="icon" alt="日期圖示" />
-                          結束時間：{{ item.cpEndTime }}
-                  </div>
-                  <div class="contest-info">
-                      主辦單位: {{ item.cpOrganizer }}
-                  </div>
-                      
-                  <!--好像不用寫在這裡
+                <div class="contest-info">
+                  主辦單位: {{ item.cpOrganizer }}
+                </div>
+              </div>
+              <!--好像不用寫在這裡
                   <div class="contest-info">
                    <div>總獎金: {{ item.cpPrizeTop }}</div>
                   </div>
@@ -111,32 +135,31 @@ onMounted(() => {
                   </a>
                 </div>
                 -->
-                  <div class="favorite-box" @click="toggleFavorite(item)">
-                    <img 
-                      :src="favorites[index] ? collectedImg : uncollectedImg"
-                      @click="toggleFavorite(index)"
-                      class="favorite-btn"
-                      alt="收藏按鈕"
-                    />
-                    </div>
-                </div>
+
+              <!-- 收藏按鈕 -->
+              <div class="favorite-box" @click="toggleFavorite(index)">
+                <img 
+                  :src="favorites[index] ? collectedImg : uncollectedImg"
+                  class="favorite-btn"
+                  alt="收藏按鈕"
+                />
               </div>
-                
-              <!-- 分隔線 -->
-              <img
-                v-if="index !== contests.length - 1"
-                src="../assets/images/renting/line.png"
-                alt="分隔線"
-                class="line"
-              />
             </div>
+
+            <!-- 分隔線（最後一張不要） -->
+            <img
+              v-if="index !== contests.length - 1"
+              src="../assets/images/renting/line.png"
+              alt="分隔線"
+              class="line"
+            />
           </div>
+        </div>
 
-          <!-- 沒有資料的顯示 -->
-          <div v-else-if="!loading">沒有資料</div>
-  
-
+        <!-- 沒有資料的顯示 -->
+        <div v-else-if="!loading">沒有資料</div>
       </div>
+
 
       <!-- 右邊篩選 -->
       <div class="search-block">
@@ -144,14 +167,43 @@ onMounted(() => {
           <input class="search-input" type="text" placeholder="搜尋…" />
           <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
         </div>
-        <div>
-          <p class="font-bold mb-2">篩選條件</p>
-          <ul class="space-y-3 text-sm font-medium">
-            <li class="cursor-pointer hover:underline">地區 ⌄</li>
-            <li class="cursor-pointer hover:underline">價格 ⌄</li>
-            <li class="cursor-pointer hover:underline">類型 ⌄</li>
-            <li class="cursor-pointer hover:underline">其他條件 ⌄</li>
-          </ul>
+        <div class="filter-container">
+          <!-- 時間 -->
+          <div class="filter-item">
+            <label for="timeline">時間：</label>
+            <select id="timeline" v-model="filters.timeline">
+              <option value="notEnded">尚未結束</option>
+              <option value="ended">已結束</option>
+              <option value="all">全部</option>
+            </select>
+          </div>
+
+          <!-- 地點 -->
+          <div class="filter-item">
+            <label for="location">地點：</label>
+            <select id="location" v-model="filters.location">
+              <option value="taiwan">台灣</option>
+              <option value="japan">日本</option>
+              <option value="global">全球</option>
+            </select>
+          </div>
+
+          <!-- 類別 -->
+
+          <!-- 比賽類別按鈕 -->
+          <div class="filter-item">
+            <button class="category-btn" @click="openCategoryModal">比賽類別</button>
+            <div class="selected-categories">
+              <span v-for="cat in filters.category" :key="cat" class="selected-category">
+                {{ categories.find(c => c.id == cat)?.name || cat }}
+              </span>
+            </div>
+          </div>
+
+          <!-- 查詢按鈕 -->
+          <div class="filter-actions">
+            <button @click="fetchContests">查詢</button>
+          </div>
         </div>
       </div>
       <img
@@ -159,6 +211,27 @@ onMounted(() => {
         alt="狐獴"
         class="meerkat"
       />
+
+      <!-- 類別選擇 Modal -->
+      <div v-if="showCategoryModal" class="modal-overlay">
+        <div class="modal-content">
+          <h3>選擇比賽類別</h3>
+          <div class="modal-category-list">
+            <label v-for="cat in categories" :key="cat.id" class="modal-category-item">
+              <input
+                type="checkbox"
+                :value="cat.id"
+                v-model="tempCategory"
+              />
+              {{ cat.name }}
+            </label>
+          </div>
+          <div class="modal-actions">
+            <button  class="confirm-btn"@click="confirmCategory">確定</button>
+            <button class="cancel-btn" @click="closeCategoryModal">取消</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -247,9 +320,7 @@ onMounted(() => {
   border: none;
   overflow: hidden;
   align-items: center;
-  justify-content: space-between;  
-  padding: 12px 16px;
-  margin-bottom: 12px;
+  padding: 12px 0;
   
 }
 
@@ -266,31 +337,24 @@ onMounted(() => {
 
 
 .contest-content {
-  padding: 12px;
+  padding: 0 12px;
   flex: 1;
  }
 
 .contest-title {
   font-weight: bold;
   color: #3B852B;
-  margin-bottom: 6px;
+  margin: 0;
 }
-
 .contest-info {
-  display: flex;
-  align-items: center;
   font-size: 14px;
-  margin-top: 4px;
+  margin-top: 4px 0 0;
 }
-
 .icon {
   width: 20px;
   height: 20px;
   margin-right: 6px;
-  object-fit: contain;
 }
-
-
 .meerkat{
   position: fixed;
   bottom:0%;
@@ -328,14 +392,13 @@ onMounted(() => {
   font-size: 16px; 
 }
 .category-box {
-  padding: 4px;
-  width:40px;
-  height: 40px;
+  height: 60px;
+  flex: 0 0 60px;
   background: #d9d9d9;
   border-radius: 8px;
   display: flex;
-  align-items: center; 
   justify-content: center;
+  align-items: center;
 }
 .category-text {
   color: #3B852B;
@@ -343,18 +406,124 @@ onMounted(() => {
   font-size: 16px;
 }
 .favorite-box {
-  cursor: pointer;
+  flex: 0 0 50px;           
   display: flex;
-  align-items: center;   /* 垂直置中 */
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .favorite-btn {
-  flex: 0 0 40px;
   width:70px;
   height:70px;
   cursor: pointer;
   transition: transform 0.1s;
 }
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+.filter-item label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.filter-item select,
+.filter-item input {
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.filter-actions button {
+  background-color: #3B852B; 
+  color: white;
+  padding: 8px 16px;        
+  border-radius: 6px;        
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+.filter-actions button:hover {
+  background-color: #78d663;
+}
+
+/* Modal 樣式 */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.modal-content {
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  min-width: 260px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.category-btn {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: #3B852B;
+  border: solid 2px #3B852B;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.selected-categories{
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 14px;
+}
+.modal-category-item{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.confirm-btn{
+  padding: 8px 12px;
+  background-color: #3B852B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cancel-btn{
+  padding: 8px 12px;
+  background-color: #bababa;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 </style>
 
 <style>
