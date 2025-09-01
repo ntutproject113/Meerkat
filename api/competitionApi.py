@@ -5,6 +5,7 @@ from typing import Optional
 import requests
 import os
 import json
+from datetime import datetime, timezone, timedelta
 
 class FormatEnum(str, Enum):
     tree = "tree"
@@ -28,7 +29,9 @@ def load_category_data():
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# ✅ 重新整理後的比賽查詢 API（套用爬蟲格式）
+
+
+
 @app.get("/contests")
 def get_contests(
     page: int = 1,
@@ -53,15 +56,27 @@ def get_contests(
     data = response.json()
     competitions = data.get("payload", {}).get("list", [])
 
+    # 台灣時區 UTC+8
+    tz = timezone(timedelta(hours=8))
+
     result = []
     for comp in competitions:
         cpName = comp.get("title", "無名稱")
         cpIdentifyLimit = comp.get("identifyLimit", {})
         cpPrizeTop = comp.get("prizeTop", "無最高獎金")
-        cpStartTime = comp.get("startTime", "無開始時間")
-        cpEndTime = comp.get("endTime", "無截止時間")
+        cpStartTime = comp.get("startTime", None)
+        cpEndTime = comp.get("endTime", None)
         cpOrganizer = comp.get("organizerTitle", "無主辦單位")
         cpHref = "https://bhuntr.com/tw/competitions/" + comp.get("alias", "無連結")
+
+        # 轉換時間戳記 -> 可讀日期
+        def ts_to_str(ts):
+            if ts:
+                return datetime.fromtimestamp(ts, tz).strftime("%Y-%m-%d %H:%M:%S")
+            return None
+
+        cpStartTimeStr = ts_to_str(cpStartTime)
+        cpEndTimeStr = ts_to_str(cpEndTime)
 
         # 整理獎項資訊
         cpPrize = []
@@ -95,8 +110,8 @@ def get_contests(
                 "cpName": cpName,
                 "cpIdentifyLimit": cpIdentifyLimit,
                 "cpPrizeTop": cpPrizeTop,
-                "cpStartTime": cpStartTime,
-                "cpEndTime": cpEndTime,
+                "cpStartTime": cpStartTimeStr,
+                "cpEndTime": cpEndTimeStr,
                 "cpOrganizer": cpOrganizer,
                 "cpPrize": cpPrize if cpPrize else "請至官網查看",
                 "cpHref": cpHref
