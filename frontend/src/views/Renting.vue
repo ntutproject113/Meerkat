@@ -95,18 +95,19 @@ const houseTypes = [
               <h3 class="rent-title">{{ rent.rentName }}</h3>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/name.png" class="icon" alt="房屋類型" />
+                <img src="../assets/images/icon/house.png" class="icon" alt="房屋類型" />
                 {{ rent.rentType }} ｜{{ rent.houseType }}
               </div>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
+                <img src="../assets/images/icon/location.png" class="icon" alt="地址圖示" />
                 {{ rent.rentAddress }}
               </div>
 
               <div class="rent-info">
-                <img src="../assets/images/renting/transport.png" class="icon" alt="捷運圖示" />
-                距{{ rent.transportation.stationName}} {{ rent.transportation.walkTime}}分鐘
+                <img src="../assets/images/icon/transport.png" class="icon" alt="捷運圖示" />
+                <div v-for="(t, index) in rent.transportation" :key="index">
+                    距{{ t.stationName }} {{ t.walkTime }}分鐘 </div>
               </div>
             </div>
 
@@ -137,7 +138,7 @@ const houseTypes = [
       <div class="search-block">
         <div class="search">
           <input class="search-input" type="text" placeholder="輸入關鍵字…" />
-          <img src="../assets/images/renting/search.png" class="icon" alt="搜尋圖示" />
+          <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
         </div>
     <div class="form-block">
       <label>
