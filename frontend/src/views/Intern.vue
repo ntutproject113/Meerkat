@@ -1,25 +1,46 @@
 <script setup>
-    import Menu from '../components/Menu.vue';
-    import { ref, onMounted } from 'vue'
-    import axios from 'axios'
-    const rentList = ref([])
+import Menu from '../components/Menu.vue';
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+import collectedImg from '../assets/images/icon/collected.png'
+import uncollectedImg from '../assets/images/icon/uncollected.png'
+const jobs = ref([])
 const loading = ref(false)
 const error = ref(null)
 
-onMounted(async () => {
+// 篩選條件
+const filters = ref({
+  keyword: '實習',    // 預設關鍵字
+  page: 1,            // 頁碼
+  asc: 0,             // 降冪
+  order: 12,          // 排序方式
+  edu: 4,             // 學歷限制
+  area: '6001000000', // 工作地區
+  jobcat: ''          // 職務分類，可選
+})
+
+// 取得工作資料
+const fetchJobs = async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://localhost:8000/api/internapi')
-    rentList.value = res.data
+    const res = await axios.get('http://localhost:8000/jobs', {
+      params: filters.value
+    })
+    jobs.value = res.data.jobs
   } catch (e) {
-    error.value = '載入失敗: ' + e.message
+    error.value = '載入失敗：' + e.message
   } finally {
     loading.value = false
   }
-})
-//收藏
-const toggleFavorite = (item) => {
-  item.favorited = !item.favorited
+}
+
+// 初始化時載入資料
+onMounted(fetchJobs)
+
+//收藏功能
+const favorites = ref([])
+const toggleFavorite = (index) => {
+  favorites.value[index] = !favorites.value[index]
 }
 </script>
 
@@ -45,41 +66,43 @@ const toggleFavorite = (item) => {
         <h1 class="title">推薦實習資訊</h1>
         <div v-if="loading">載入中...</div>
         <div v-if="error">{{ error }}</div>
-        
-       <div v-if="rentList.length">
-        <div v-for="(item, index) in interns" :key="index">
+
+       <div v-if="jobs.length">
+        <div v-for="job in jobs" :key="job.jobNo">
           <!-- 每一張實習卡片 -->
-          <div class="rent-card">
-   
-            <div class="rent-content">
-              <h3 class="rent-title">{{item.jobName}}</h3>
+          <div class="job-card">
 
-              <div class="rent-info">
-                <img src="../assets/images/intern/comp.png" class="icon" alt="公司" />
-                {{ item.rentType }} <!--公司名稱-->
+            <div class="job-content">
+              <h3 class="job-title">{{job.jobName}}</h3>
+
+              <div class="job-info">
+                <img src="../assets/images/icon/comp.png" class="icon" alt="公司" />
+                {{ job.custName }} <!--公司名稱-->
               </div>
 
-              <div class="rent-info">
-                <img src="../assets/images/intern/location.png" class="icon" alt="地點" />
-                {{ item.jobAddress}} <!--不知道是jobAddrNoDesc還是jobAddress-->
+              <div class="job-info">
+                <img src="../assets/images/icon/location.png" class="icon" alt="地點" />
+                {{ job.jobAddrNoDesc}} <!--工作地點-->
               </div>
 
-              <div class="rent-info">
-                <img src="../assets/images/intern/money.png" class="icon" alt="薪資" />
-                {{ item.salaryLow }} 元
+              <div class="job-info">
+                <img src="../assets/images/icon/money.png" class="icon" alt="薪資" />
+                {{ job.salaryLow }} 元以上
               </div>
             </div>
-            <!-- 收藏按鈕 -->
-            <button 
-              @click="toggleFavorite(item)" 
-              class="favorite-btn"
-              :class="{ 'favorited': item.favorited }"
-            ></button>
-          </div>
+             <!-- 收藏按鈕 -->
+              <div class="favorite-box" @click="toggleFavorite(index)">
+                <img 
+                  :src="favorites[index] ? collectedImg : uncollectedImg"
+                  class="favorite-btn"
+                  alt="收藏按鈕"
+                />
+              </div>
+            </div>
 
         
           <img
-            v-if="index !== rentList.length - 1"
+            v-if="index !== jobs.length - 1"
             src="../assets/images/renting/line.png"
             alt="分隔線"
             class="line"
@@ -96,7 +119,7 @@ const toggleFavorite = (item) => {
       <div class="search-block">
         <div class="search">
           <input class="search-input" type="text" placeholder="搜尋…" />
-          <img src="../assets/images/renting/search.png" class="icon" alt="搜尋圖示" />
+          <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
         </div>
         <div>
           <p class="font-bold mb-2">篩選條件</p>
@@ -196,7 +219,7 @@ const toggleFavorite = (item) => {
   margin:0px auto;
   text-align: center;
 }
-.rent-card {
+.job-card {
   position: relative;
   display: flex;
   border: none;
@@ -213,25 +236,18 @@ const toggleFavorite = (item) => {
   object-fit: contain;
   pointer-events: none;
 }
-
-.rent-image {
-  width: 144px;  
-  height: 112px; 
-  object-fit: cover;
-}
-
-.rent-content {
+.job-content {
   padding: 12px;
   flex: 1;
 }
 
-.rent-title {
+.job-title {
   font-weight: bold;
   color: #3B852B;
   margin-bottom: 6px;
 }
 
-.rent-info {
+.job-info {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -244,26 +260,18 @@ const toggleFavorite = (item) => {
   margin-right: 6px;
   object-fit: contain;
 }
-
-.rent-price-wrapper {
+.favorite-box {
+  flex: 0 0 50px;           
   display: flex;
-  align-items: flex-end;
-  padding-right: 16px;
-  padding-bottom: 8px;
-}
-
-.favorite-btn {
-  width: 24px;
-  height: 24px;
-  background-image: url('../assets/images/intern/uncollected.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: none;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
-
-.favorite-btn.favorited {
-  background-image: url('../assets/images/intern/collected.png');
+.favorite-btn {
+  width:70px;
+  height:70px;
+  cursor: pointer;
+  transition: transform 0.1s;
 }
 .meerkat{
   position: fixed;
