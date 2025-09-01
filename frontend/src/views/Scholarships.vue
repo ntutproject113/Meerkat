@@ -1,21 +1,55 @@
 <script setup>
-    import Menu from '../components/Menu.vue';
-    import { ref, onMounted } from 'vue'
-    import axios from 'axios'
-    const rentList = ref([])
+import Menu from '../components/Menu.vue';
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+
 const loading = ref(false)
 const error = ref(null)
+const scholarships = ref([])
+const count = ref(0)
 
-onMounted(async () => {
+// 篩選條件選項
+const categories = ['急難救助', '才藝技藝', '資訊/研究計畫', '清寒助學']
+const regions = ['北部', '中部', '南部', '東部', '全國']
+const identities = ['低收入戶', '中低收入戶', '原住民', '身心障礙', '不拘']
+const qualifications = ['清寒', '成績優良', '服務學習', '特殊境遇']
+const sorts = [
+  { value: '', label: '不排序' },
+  { value: 'asc', label: '金額由小到大' },
+  { value: 'desc', label: '金額由大到小' }
+]
+
+// 篩選條件狀態
+const selectedCategory = ref('')
+const selectedRegion = ref('')
+const selectedIdentity = ref('')
+const selectedQualification = ref('')
+const selectedSort = ref('')
+
+const getScholarships = async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://127.0.0.1:8000/api/internapi')
-    rentList.value = res.data
-  } catch (e) {
-    error.value = '載入失敗: ' + e.message
+    const res = await axios.get('http://localhost:8000/scholarships', {
+      params: {
+        category: selectedCategory.value,
+        region: selectedRegion.value,
+        identity: selectedIdentity.value,
+        qualification: selectedQualification.value,
+        sort: selectedSort.value
+      }
+    })
+    count.value = res.data.count
+    scholarships.value = res.data.data
+  } catch (error) {
+    console.error('API 請求失敗', error)
+    error.value = 'API 請求失敗：' + error.message
   } finally {
     loading.value = false
   }
+}
+
+onMounted(() => {
+  getScholarships()
 })
 </script>
 
@@ -39,45 +73,28 @@ onMounted(async () => {
 
       <div class="data-block">
         <h1 class="title">推薦獎學金資訊</h1>
+
         <div v-if="loading">載入中...</div>
-        <div v-if="error">{{ error }}</div>
-        
-       <div v-if="rentList.length">
-        <div v-for="(rent, index) in rentList" :key="index">
-          <!-- 每一張實習卡片 -->
-          <div class="rent-card">
-            <img :src="rent.image || '../assets/images/default-room.jpg'" alt="房屋照片" class="rent-image" />
-
-            <div class="rent-content">
-              <h3 class="rent-title">{{ rent.rentName }}</h3>
-
-              <div class="rent-info">
-                <img src="../assets/images/renting/name.png" class="icon" alt="房屋類型" />
-                {{ rent.rentType }} ｜{{ rent.houseType }}
+          <div v-else-if="error">{{ error }}</div>
+          <div v-else-if="scholarships.length">
+            <div v-for="(item, index) in scholarships" :key="index">
+              <div class="schol-card">
+                <div class="schol-content">
+                  <h3 class="schol-title">{{ item.ContentPlaceHolder1_divName }}</h3>
+                  <div class="schol-info">
+                    <img src="../assets/images/icon/comp.png" class="icon" alt="主辦單位" />
+                    {{ item.institution || '未提供' }}
+                  </div>
+                   <div class="schol-info">
+                    <img src="../assets/images/icon/money.png" class="icon" alt="金額" />
+                    ${{ item.min_amount || '未提供' }} ~ ${{ item.max_amount || '未提供' }}元
+                   </div>
+                </div>
               </div>
-
-              <div class="rent-info">
-                <img src="../assets/images/renting/location.png" class="icon" alt="地址圖示" />
-                {{ rent.rentAdress }}
-              </div>
-
-              <div class="rent-info">
-                <img src="../assets/images/renting/transport.png" class="icon" alt="捷運圖示" />
-                距{{ rent.transportation }} {{ rent.distance }}公尺
-              </div>
-            </div>
-
-            <div class="rent-price-wrapper">
-              <p class="rent-price">
-                {{ rent.rentPrice.toLocaleString() }}
-                <span class="price-unit">元/月</span>
-              </p>
-            </div>
-          </div>
 
         
           <img
-            v-if="index !== rentList.length - 1"
+            v-if="index !== scholarships.length - 1"
             src="../assets/images/renting/line.png"
             alt="分隔線"
             class="line"
@@ -94,17 +111,42 @@ onMounted(async () => {
       <div class="search-block">
         <div class="search">
           <input class="search-input" type="text" placeholder="搜尋…" />
-          <img src="../assets/images/renting/search.png" class="icon" alt="搜尋圖示" />
+          <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
         </div>
-        <div>
-          <p class="font-bold mb-2">篩選條件</p>
-          <ul class="space-y-3 text-sm font-medium">
-            <li class="cursor-pointer hover:underline">地區 ⌄</li>
-            <li class="cursor-pointer hover:underline">價格 ⌄</li>
-            <li class="cursor-pointer hover:underline">類型 ⌄</li>
-            <li class="cursor-pointer hover:underline">其他條件 ⌄</li>
-          </ul>
+      
+        <select v-model="selectedCategory">
+            <option value="">全部類別</option>
+            <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
+          </select>
+
+          <br/>
+          <select v-model="selectedRegion">
+            <option value="">全部地區</option>
+            <option v-for="r in regions" :key="r" :value="r">{{ r }}</option>
+          </select>
+
+          <br/>
+          <select v-model="selectedIdentity">
+            <option value="">不限身分</option>
+            <option v-for="i in identities" :key="i" :value="i">{{ i }}</option>
+          </select>
+
+          <br/>
+          <select v-model="selectedQualification">
+            <option value="">不限資格</option>
+            <option v-for="q in qualifications" :key="q" :value="q">{{ q }}</option>
+          </select>
+          
+          <br/>
+          <select v-model="selectedSort">
+            <option v-for="s in sorts" :key="s.value" :value="s.value">{{ s.label }}</option>
+          </select>
+         
+          <br/>
+          <button @click="getScholarships" class="btn">查詢</button>
         </div>
+       
+        
       </div>
       <img
         src=""
@@ -112,7 +154,7 @@ onMounted(async () => {
         class="meerkat"
       />
     </div>
-  </div>
+
 </template>
 
 <style scoped>
@@ -194,7 +236,7 @@ onMounted(async () => {
   margin:0px auto;
   text-align: center;
 }
-.rent-card {
+.schol-card {
   position: relative;
   display: flex;
   border: none;
@@ -212,24 +254,18 @@ onMounted(async () => {
   pointer-events: none;
 }
 
-.rent-image {
-  width: 144px;  
-  height: 112px; 
-  object-fit: cover;
-}
-
-.rent-content {
+.schol-content {
   padding: 12px;
   flex: 1;
 }
 
-.rent-title {
+.schol-title {
   font-weight: bold;
   color: #3B852B;
   margin-bottom: 6px;
 }
 
-.rent-info {
+.schol-info {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -241,25 +277,6 @@ onMounted(async () => {
   height: 20px;
   margin-right: 6px;
   object-fit: contain;
-}
-
-.rent-price-wrapper {
-  display: flex;
-  align-items: flex-end;
-  padding-right: 16px;
-  padding-bottom: 8px;
-}
-
-.rent-price {
-  color: #f59e0b; /* 相當於 text-yellow-500 */
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.price-unit {
-  color: black;
-  font-size: 14px;
-  margin-left: 4px;
 }
 .meerkat{
   position: fixed;
@@ -297,7 +314,25 @@ onMounted(async () => {
   border: none;
   font-size: 16px; 
 }
+.search-block select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn {
+  background-color: #3B852B; 
+  color: white;
+  padding: 8px 16px;        
+  border-radius: 6px;        
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
 
+.btn:hover {
+  background-color: #78d663;
+}
 </style>
 <style>
 html, body {
