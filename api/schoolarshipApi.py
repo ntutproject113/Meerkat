@@ -1,10 +1,19 @@
 from fastapi import FastAPI, Query
-from typing import List, Optional
+from typing import  Optional
+from fastapi.middleware.cors import CORSMiddleware
 import json
 import os
 
+
+
 app = FastAPI(title="Scholarship API", description="提供大學生的獎助學金查詢 API")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[ "http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 def load_scholarship():
     current_dir = os.path.dirname(__file__)
     file_path = os.path.join(current_dir, "../data/schoolarship.json")
