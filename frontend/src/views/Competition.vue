@@ -1,18 +1,13 @@
 <script setup>
 import Menu from '../components/Menu.vue';
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import collectedImg from '../assets/images/icon/collected.png'
 import uncollectedImg from '../assets/images/icon/uncollected.png'
 
-const filters = ref({
-  page: 1,
-  timeline: 'notEnded',
-  location: 'taiwan',
-  category: ['119','120','121']
-})
+
 const contests = ref([])      // 存比賽清單
-const categories = ref([])    // 存分類清單
+const categoryMap = ref({})    //競賽卡片前的對應類別
 const loading = ref(false)
 const error = ref(null)
 
@@ -44,26 +39,40 @@ const fetchContests = async () => {
   }
 }
 
-//頁面載入時抓資料 
-onMounted(() => {
-  fetchContests()
-  fetchCategories()
-})
-// 取得分類資料
+// 取得分類資料（flat & map）
 const fetchCategories = async () => {
   try {
-    const res = await axios.get("http://localhost:8000/categories", {
-      params: { format: "flat" }
-    })
-    categories.value = res.data
+    const flatRes = await axios.get('http://localhost:8000/categories', { params: { format: 'flat' } })
+    categories.value = flatRes.data
+
+    const mapRes = await axios.get('http://localhost:8000/categories', { params: { format: 'map' } })
+    categoryMap.value = mapRes.data
+
   } catch (e) {
     console.error('載入分類失敗', e.message)
   }
 }
 
+// 取得名稱
+function getCategoryNames(ids) {
+  if (!Array.isArray(ids)) return []
+  return ids.map(id => categoryMap.value[id]).filter(Boolean)
+}
+
+
+
 // 類別篩選相關
+const categories = ref([])    // 存分類清單
 const showCategoryModal = ref(false)
-const tempCategory = ref([...filters.value.category])
+const filters = ref({ 
+  page: 1, 
+  timeline: 'notEnded', 
+  location: 'taiwan', 
+  category: [] 
+})
+const tempCategory = ref([])  
+const selectedCategories = ref([])
+
 
 const openCategoryModal = () => {
   tempCategory.value = [...filters.value.category]
@@ -72,10 +81,25 @@ const openCategoryModal = () => {
 const closeCategoryModal = () => {
   showCategoryModal.value = false
 }
+const toggleCategory = (id) => {
+  const idx = tempCategory.value.indexOf(id)
+  if (idx > -1) {
+    tempCategory.value.splice(idx, 1)
+  } else {
+    tempCategory.value.push(id)
+  }
+}
 const confirmCategory = () => {
   filters.value.category = [...tempCategory.value]
-  showCategoryModal.value = false
+  selectedCategories.value = [...tempCategory.value]
+  closeCategoryModal()
 }
+
+onMounted(async () => {
+   fetchCategories()
+   fetchContests()
+})
+
 </script>
 
 <template>
@@ -110,8 +134,11 @@ const confirmCategory = () => {
             <!-- 每一張比賽卡片 -->
             <div class="contest-card">
               <!-- 類別 -->
-              <div class="category-box">
-                <span class="category-text">{{ item.id || '未分類' }}</span>
+               
+              <div  class="category-box">
+                <span class="category-text" 
+                v-for="name in getCategoryNames(item.categoryIds)" 
+                 :key="name"> {{ name }}</span>
               </div>
 
               <!-- 資訊 -->
@@ -191,12 +218,32 @@ const confirmCategory = () => {
           <!-- 類別 -->
 
           <!-- 比賽類別按鈕 -->
-          <div class="filter-item">
+         <div class="filter-item">
             <button class="category-btn" @click="openCategoryModal">比賽類別</button>
-            <div class="selected-categories">
-              <span v-for="cat in filters.category" :key="cat" class="selected-category">
-                {{ categories.find(c => c.id == cat)?.name || cat }}
+            
+            <!-- 顯示已選取類別 -->
+            <div v-if="selectedCategories.length" class="selected-category-list">
+              <span v-for="id in selectedCategories" :key="id" class="selected-category-tag">
+                {{ categories.find(c => c.id === id)?.name }}
               </span>
+            </div>
+
+            <div v-if="showCategoryModal" class="modal-overlay" @click.self="closeCategoryModal">
+              <div class="modal-content">
+                <h3>選擇比賽類別</h3>
+                <div class="modal-category-list">
+                  <label v-for="cat in categories" :key="cat.id"
+                        class="modal-category-item"
+                        :class="{ selected: tempCategory.includes(cat.id) }"
+                        @click="toggleCategory(cat.id)">
+                    {{ cat.name }}
+                  </label>
+                </div>
+                <div class="modal-actions">
+                  <button class="confirm-btn" @click="confirmCategory">確定</button>
+                  <button class="cancel-btn" @click="closeCategoryModal">取消</button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -206,32 +253,8 @@ const confirmCategory = () => {
           </div>
         </div>
       </div>
-      <img
-        src=""
-        alt="狐獴"
-        class="meerkat"
-      />
-
-      <!-- 類別選擇 Modal -->
-      <div v-if="showCategoryModal" class="modal-overlay">
-        <div class="modal-content">
-          <h3>選擇比賽類別</h3>
-          <div class="modal-category-list">
-            <label v-for="cat in categories" :key="cat.id" class="modal-category-item">
-              <input
-                type="checkbox"
-                :value="cat.id"
-                v-model="tempCategory"
-              />
-              {{ cat.name }}
-            </label>
-          </div>
-          <div class="modal-actions">
-            <button  class="confirm-btn"@click="confirmCategory">確定</button>
-            <button class="cancel-btn" @click="closeCategoryModal">取消</button>
-          </div>
-        </div>
-      </div>
+      <img src="" alt="狐獴" class="meerkat"/>
+       
     </div>
   </div>
 </template>
@@ -477,10 +500,11 @@ const confirmCategory = () => {
 }
 .modal-category-list {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin: 16px 0;
-}
+  }
+
 .modal-actions {
   display: flex;
   gap: 12px;
@@ -503,9 +527,23 @@ const confirmCategory = () => {
   font-size: 14px;
 }
 .modal-category-item{
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  min-width: 80px;
+  padding: 10px 18px;
+  border: 2px solid #3B852B;
+  border-radius: 8px;
+  background: #fff;
+  color: #3B852B;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  user-select: none;
+}
+.modal-category-item.selected {
+  background: #3B852B;
+  color: #fff;
+  border: 2px solid #3B852B;
 }
 .confirm-btn{
   padding: 8px 12px;
@@ -523,6 +561,19 @@ const confirmCategory = () => {
   border-radius: 6px;
   cursor: pointer;
 }
+.selected-category-list {
+  margin-top: 10px;
+}
+.selected-category-tag {
+  display: inline-block;
+  background: #e7e7e7;
+  color: #3B852B;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
 
 </style>
 
