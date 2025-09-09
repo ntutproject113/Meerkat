@@ -1,7 +1,12 @@
 <script setup>
     import { ref } from 'vue'
     import Menu from '../components/Menu.vue';
-    
+    import { useScoreStore } from '../stores/score'
+    import { useRouter } from 'vue-router'
+
+    const store = useScoreStore()
+    const router = useRouter()
+
     const options = [
         { key: 'R', text: '組裝佈景、布置現場、搬桌椅' },
         { key: 'A', text: '設計海報、社群宣傳圖' },
@@ -9,10 +14,12 @@
         { key: 'S', text: '招呼來賓、帶新朋友認識流程' },
         { key: 'I', text: '查找活動案例、設計問卷蒐集意見' },
         { key: 'C', text: '整理活動物資、記帳、製作進度追蹤表' }
-    ] 
-    //Array(陣列長度).fill(預設值)，[null, null, null, null, null, null]
+    ] .sort(() => Math.random() - 0.5)
+    //Array(陣列長度).fill(預設值)，被null填滿的一個陣列：[null, null, null, null, null, null]
+    //用來記錄每個選項被點擊的順序
+    
     const clickOrder = ref(Array(options.length).fill(null))
-    //curremtOrder控制我現在已經點擊第幾次了
+    //currentOrder控制我現在已經點擊第幾次了，每點一次，就會+1
     const currentOrder = ref(0)
 
     function handleClick(index) {
@@ -23,6 +30,17 @@
         }
     }
 
+    function calculateScore() {
+        clickOrder.value.forEach((order, index) => {
+            if (order !== null) {
+            // 名次越前面，分數越高 (6 - order)
+                let score = 6 - order
+                store.addScore(options[index].key, score)
+            }
+        })
+        console.log("目前分數，R", store.R,"A", store.A,"E", store.E,"S", store.S,"I", store.I,"C", store.C)
+        router.push('/aptitudeTest2')
+    }
     function resetOrder() {
         clickOrder.value = Array(options.length).fill(null)
         currentOrder.value = 0
@@ -32,8 +50,15 @@
 <template>
     <div class="page-wrapper">
         <Menu />
-        <RouterLink to = "/aptitudeTest2">
-            <img src="../assets/images/aptitude_test_result/arrow.png" class="arrow" >
+        <RouterLink to = "/aptitudeTest2" v-slot="{ navigate }">
+            <img 
+                src="../assets/images/aptitude_test_result/arrow.png" 
+                class="arrow"
+                @click="()=>{
+                    calculateScore();
+                    navigate({ query: { R: R.value, A: A.value, E: E.value, S: S.value, I: I.value, C: C.value } });
+                }" 
+            >
         </RouterLink>
         <div class="question">
             <div class="word">
@@ -91,7 +116,6 @@
     .word{
         align-self: flex-end;
         margin-bottom: 2%;
-        color: #ffffff;
     }
     .Q1{
         font-weight: bold;
