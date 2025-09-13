@@ -1,19 +1,21 @@
-# API 文件 – Competition & Rent API
+# API 文件 – Competition, Rent, Members & Todo API
 
 ## 概述
 
-此專案整合兩大功能 API：
+此專案整合四大功能 API：
 
 1. **Competition API** – 提供比賽清單與分類資訊。
 2. **Rent API** – 提供租屋清單與地區資訊，封裝自 houseprice.tw API。
+3. **Members API** – 提供會員註冊、登入與個人資料操作。
+4. **Todo API** – 提供會員個人 Todo 清單操作。
 
 所有 API 均採用 **FastAPI** 實作，支援 CORS，方便前端（如 Vue / React）直接串接。
+
+---
 
 # **1. Competition API**
 
 ## 1.1 `/contests` – 取得比賽清單
-
-**方法**
 
 ```
 GET /contests
@@ -31,9 +33,7 @@ GET /contests
 **範例**
 
 ```bash
-# 範例 1：取得第 2 頁，投稿中的比賽（台灣地區）
 GET /contests?page=2&timeline=submitProcessing&location=taiwan&category=119%2C120%2C121
-# 範例 2：取得分類 119 和 120 的比賽
 GET /contests?category=119,120
 ```
 
@@ -59,8 +59,6 @@ GET /contests?category=119,120
 ---
 
 ## 1.2 `/categories` – 取得比賽分類
-
-**方法**
 
 ```
 GET /categories
@@ -99,8 +97,6 @@ GET /categories?format=tree
 
 ## 2.1 `/rents` – 取得租屋資訊
 
-**方法**
-
 ```
 GET /rents
 ```
@@ -118,10 +114,7 @@ GET /rents
 **範例**
 
 ```bash
-# 範例 1：取得台北市第 2 頁，不限房型，含管理費
 GET /rents?page=2&area_ids=1-2-3&price=20000&casetype=0&fee=true
-
-# 範例 2：取得新北市套房（不含管理費）
 GET /rents?area_ids=5-6&casetype=2&fee=false
 ```
 
@@ -154,19 +147,13 @@ GET /rents?area_ids=5-6&casetype=2&fee=false
 
 ## 2.2 `/areas/tree` – 取得地區樹狀資料
 
-**方法**
-
 ```
 GET /areas/tree
 ```
-
-**範例**
 
 ```bash
 GET /areas/tree
 ```
-
-**回應格式**
 
 ```json
 [
@@ -185,25 +172,17 @@ GET /areas/tree
 
 ## 2.3 `/areas/{city_sid}` – 根據縣市取得區域 SID
 
-**方法**
-
 ```
 GET /areas/{city_sid}
 ```
-
-**參數**
 
 | 名稱         | 型別       | 必填 | 說明              |
 | ---------- | -------- | -- | --------------- |
 | `city_sid` | `string` | 是  | 縣市編號 cityNumber |
 
-**範例**
-
 ```bash
 GET /areas/1
 ```
-
-**回應格式**
 
 ```json
 {
@@ -212,4 +191,233 @@ GET /areas/1
 }
 ```
 
+---
 
+# **3. Members API**
+
+## /members/register – 註冊會員
+
+```
+POST /members/register
+```
+
+```json
+{
+  "username": "testuser",
+  "email": "test@test.com",
+  "password": "123456"
+}
+```
+
+```json
+{
+  "username": "testuser",
+  "email": "test@test.com",
+  "member_seq": 1
+}
+```
+
+---
+
+## /members/login – 登入會員
+
+```
+POST /members/login
+```
+
+```json
+{
+  "username": "testuser",
+  "password": "123456"
+}
+```
+
+```json
+{
+  "message": "登入成功"
+}
+```
+
+---
+
+## /members/me – 取得會員資訊
+
+```
+GET /members/me
+```
+
+```bash
+GET /members/me
+```
+
+```json
+{
+  "user": {
+    "username": "testuser",
+    "email": "test@test.com"
+  },
+  "profile": {
+    "member_id": "64f1234567",
+    "name": "",
+    "gender": "",
+    "phone": "",
+    "school": "",
+    "department": "",
+    "grade": "",
+    "interests": [],
+    "skills": [],
+    "plan_after_graduation": "升學"
+  }
+}
+```
+
+---
+
+## /members/profile – 更新會員詳細資料
+
+```
+POST /members/profile
+```
+
+```json
+{
+  "name": "小明",
+  "phone": "0912345678",
+  "school": "臺灣大學"
+}
+```
+
+```json
+{
+  "member_id": "64f1234567",
+  "name": "小明",
+  "gender": "",
+  "phone": "0912345678",
+  "school": "臺灣大學",
+  "department": "",
+  "grade": "",
+  "interests": [],
+  "skills": [],
+  "plan_after_graduation": "升學"
+}
+```
+
+---
+
+# **4. Todo API**
+
+# Todo API
+
+## /todos – 新增 Todo
+
+```
+POST /todos
+```
+
+```json
+{
+  "name": "買牛奶",
+  "completed": false,
+  "todo_date": "2025-09-09",
+  "priority": "medium",
+  "tags": ["shopping", "daily"]
+}
+```
+回傳id等資料
+```json
+{
+  "id": "1-1",
+  "name": "買牛奶",
+  "completed": false,
+  "todo_date": "2025-09-09T00:00:00",
+  "priority": "medium",
+  "tags": ["shopping", "daily"]
+}
+```
+
+---
+
+## /todos – 查詢 Todo
+
+```
+GET /todos
+```
+
+| 名稱          | 型別        | 必填 | 說明                     |
+| ----------- | --------- | -- | ---------------------- |
+| `todo_date` | `string`  | 否  | 篩選指定日期，格式 YYYY-MM-DD   |
+| `tags`      | `array`   | 否  | 篩選包含所有標籤               |
+| `priority`  | `string`  | 否  | 篩選優先度: low/medium/high |
+| `completed` | `boolean` | 否  | 篩選完成狀態                 |
+
+```bash
+GET /todos?todo_date=2025-09-09&tags=shopping,daily&priority=medium&completed=false
+```
+
+```json
+[
+  {
+    "id": "1-1",
+    "name": "買牛奶",
+    "completed": false,
+    "todo_date": "2025-09-09T00:00:00",
+    "priority": "medium",
+    "tags": ["shopping", "daily"]
+  }
+]
+```
+
+---
+
+## /todos/{todo\_id} – 更新 Todo
+
+```
+PUT /todos/{todo_id}
+```
+
+| 名稱        | 型別       | 必填 | 說明             |
+| --------- | -------- | -- | -------------- |
+| `todo_id` | `string` | 是  | Todo ID，例如 1-1 |
+
+```json
+{
+  "name": "買牛奶+麵包",
+  "completed": true,
+  "priority": "high",
+  "tags": ["shopping", "daily"]
+}
+```
+回傳
+```json
+
+{
+  "id": "1-1",
+  "name": "買牛奶+麵包",
+  "completed": true,
+  "todo_date": "2025-09-09T00:00:00",
+  "priority": "high",
+  "tags": ["shopping", "daily"]
+}
+```
+
+---
+
+## /todos/{todo\_id} – 刪除 Todo
+
+```
+DELETE /todos/{todo_id}
+```
+
+| 名稱        | 型別       | 必填 | 說明             |
+| --------- | -------- | -- | -------------- |
+| `todo_id` | `string` | 是  | Todo ID，例如 1-1 |
+
+```bash
+DELETE /todos/1-1
+```
+
+```json
+{
+  "message": "Todo deleted"
+}
+```

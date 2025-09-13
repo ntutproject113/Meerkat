@@ -1,0 +1,1122 @@
+{
+  "school": "臺灣大學",
+  "colleges": [
+    {
+      "name": "文學院",
+      "departments": [
+        {
+          "name": "中國文學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程著重於古典文學、現代文學及語言學的鑽研，並培養分析與批判閱讀能力；若能提早打好古文基礎、熟悉歷史文化背景及閱讀多樣文學作品，能在研究上更快進入狀況；未來可在教育、出版、研究與文化產業發展。",
+          "url": "http://www.cl.ntu.edu.tw"
+        },
+        {
+          "name": "外國語文學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "不僅提升英語能力，還強調文學、語言學及文化研究的跨領域理解；建議大學階段多閱讀英文報刊、原文小說，並熟悉第二外語，有助於深入課程；畢業後發展方向涵蓋教育、翻譯、跨國文化交流與研究。",
+          "url": "https://www.forex.ntu.edu.tw/"
+        },
+        {
+          "name": "歷史學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程以不同時期的中外歷史研究為核心，訓練文本解讀與史料分析；建議大學多閱讀史學入門書籍、建立年代與事件脈絡，並嘗試思考歷史與社會的連結；未來可從事研究、教育、文化資源與相關產業。",
+          "url": "https://history.ntu.edu.tw/"
+        },
+        {
+          "name": "哲學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "強調邏輯推理、倫理學及哲學史探討，課程需大量閱讀與論證；建議先熟悉邏輯思辨、閱讀哲學入門書籍，並養成辯證與寫作習慣；未來發展包含研究、教育，或延伸至公共議題分析與策略規劃。",
+          "url": "https://philo.ntu.edu.tw/"
+        },
+        {
+          "name": "人類學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程涵蓋文化人類學、考古學與社會研究，著重田野調查與跨文化比較分析；建議先閱讀社會科學入門文獻，關注不同文化及公共議題；未來可涉足研究、文化行政、非政府組織及國際交流等領域。",
+          "url": "https://anthro.ntu.edu.tw/"
+        },
+        {
+          "name": "圖書資訊學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合資訊科技與知識管理，課程兼顧數位資源、資訊檢索及圖書館學基礎；建議大學熟悉資訊工具、累積閱讀與分類整理經驗；未來發展在數位典藏、資訊系統設計、知識服務與圖書資訊產業。",
+          "url": "https://www.lis.ntu.edu.tw/"
+        },
+        {
+          "name": "日本語文學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "不僅學習日語能力，更強調文學、文化與社會背景理解；建議多接觸日語媒體、養成閱讀日文書籍與文章的習慣，並注意基礎文法；未來可於教育、翻譯、企業跨國交流與文化研究發展。",
+          "url": "https://japan.ntu.edu.tw/"
+        },
+        {
+          "name": "戲劇學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程涵蓋表演、導演、劇本分析與戲劇史，強調實務與理論並重；若能提前參與劇團活動、觀賞多類型演出並熟悉基礎戲劇知識，會更易進入學習；畢業可從事舞台藝術、影視產業及藝術研究。",
+          "url": "https://theatre.ntu.edu.tw/"
+        },
+        {
+          "name": "藝術史研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程聚焦中外藝術發展、圖像詮釋與美學理論，訓練跨時空與跨文化的分析力；建議大學多參觀展覽、閱讀藝術史入門著作，並兼顧語文能力；未來可投入博物館、藝術評論與研究領域。",
+          "url": "https://arthistory.ntu.edu.tw/"
+        },
+        {
+          "name": "語言學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "探討語言的結構、演變與應用，涵蓋音韻、句法、語意等專題；建議大學先打好語言學基礎，接觸跨語言比較與邏輯訓練；未來發展在學術研究、計算語言學、語言教育及人工智慧相關應用。",
+          "url": "https://linguistics.ntu.edu.tw/"
+        },
+        {
+          "name": "音樂學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程重點在音樂理論、民族音樂與音樂史研究，而不單是表演；建議大學時期多累積樂理知識、音樂分析以及跨文化音樂欣賞經驗；未來出路包含學術研究、音樂評論及藝術教育。",
+          "url": "https://gim.ntu.edu.tw/"
+        },
+        {
+          "name": "臺灣文學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦臺灣古典、現代及當代文學，並結合社會、歷史與文化脈絡探討；建議大學廣泛閱讀臺灣文學與相關評論，熟悉社會議題；未來可在研究、教育、出版、文化產業發揮專長。",
+          "url": "https://gitl.ntu.edu.tw/"
+        },
+        {
+          "name": "華語教學碩士學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "培養專業華語教學能力與跨文化溝通技巧，課程包含語言學理論與教學方法；大學可先累積語言學與教育基礎，並提升外語能力；未來適合從事對外華語教學及語言教育推廣工作。",
+          "url": "https://www.tcsl.ntu.edu.tw/"
+        },
+        {
+          "name": "翻譯碩士學位學程",
+          "admission": {
+            "recommendation": false,
+            "exam": true
+          },
+          "introduction": "專注於口筆譯專業訓練，涵蓋會議口譯、筆譯與專業寫作；建議大學扎實打好雙語能力、多關注不同專業領域知識；畢業後能進入國際組織、企業或翻譯產業發展。",
+          "url": "https://www.gpti.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "理學院",
+      "departments": [
+        {
+          "name": "數學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程涵蓋純數學與應用數學，強調抽象思維和嚴謹推理；建議在進修前熟悉分析、代數及微分方程基礎，並培養長時間演算與證明的耐心；未來發展可連結統計、金融、資訊或研究領域。",
+          "url": "https://www.math.ntu.edu.tw/"
+        },
+        {
+          "name": "物理學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "核心在力學、電磁學、量子與統計物理，並逐步延伸至前沿實驗或理論研究；若能在大學具備數學工具與實驗操作基礎，進入課程會較得心應手；未來可投向基礎研究、半導體、能源或跨領域應用。",
+          "url": "https://phys.ntu.edu.tw/"
+        },
+        {
+          "name": "化學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注於有機、無機、物化與分析化學核心知識，並搭配實驗技能訓練；若熟悉基礎化學反應機制，且具備實驗細心度與耐性，能更快銜接專題研究；畢業後廣泛應用於藥學、材料與產業研發。",
+          "url": "https://www.ch.ntu.edu.tw/"
+        },
+        {
+          "name": "地質科學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究地球結構、岩石礦物、地球物理及地球演化，並需要實地考察與資料分析能力；若能熟悉自然地理及觀察紀錄方法，能更快進入研究所訓練；未來可在地質調查、能源、災害評估等領域發展。",
+          "url": "http://web.gl.ntu.edu.tw/"
+        },
+        {
+          "name": "心理學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋認知、臨床、發展及社會心理，強調研究方法與統計訓練；建議具備基礎統計與實驗設計概念，並培養觀察與分析人類行為的敏感度；未來能進入研究、臨床助理、企業顧問等方向。",
+          "url": "http://www.psy.ntu.edu.tw/"
+        },
+        {
+          "name": "地理環境資源學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合理論與實務，探討人文地理、自然地理與資源規劃；若能熟悉 GIS 工具、地圖判讀與基礎統計，會更順利進入研究工作；未來出路包含都市規劃、環境政策及資源管理。",
+          "url": "https://www.geog.ntu.edu.tw/"
+        },
+        {
+          "name": "大氣科學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "核心在天氣動力、氣候模型與觀測技術，數學與物理能力需求高；若熟悉微積分、偏微分方程及資料分析工具，能快速銜接課程；應用到天氣預報、氣候變遷與環境研究。",
+          "url": "https://www.as.ntu.edu.tw/"
+        },
+        {
+          "name": "海洋研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋海洋物理、化學、生物及地質等跨領域研究，需兼顧野外調查與資料分析；先熟悉基礎物理與數據處理，並對環境科學有興趣會更合適；未來能從事氣候變遷、漁業資源、海洋保育方向。",
+          "url": "https://www.oc.ntu.edu.tw/"
+        },
+        {
+          "name": "天文物理研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程結合理論物理與天文觀測，聚焦宇宙學、恆星與行星科學；需具備良好的微積分與物理背景，並能處理大數據與程式分析；未來可投向天文研究、太空科技或相關高科技產業。",
+          "url": "https://phys.ntu.edu.tw/"
+        },
+        {
+          "name": "應用物理學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "關注奈米科技、光電、材料物理等應用領域，理論搭配實驗緊密；若大學階段具備電子儀器使用經驗與數值模擬，會更快上手；未來發展多見於半導體、光電與材料研發。",
+          "url": "https://phys.ntu.edu.tw/"
+        },
+        {
+          "name": "應用數學科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "強調數學方法在科學與工程上的應用，結合數值分析、統計與建模；大學生若先接觸程式設計及數學建模競賽，將有助於課程銜接；應用廣泛，包括金融工程、運籌學與人工智慧研究。",
+          "url": "https://www.math.ntu.edu.tw/"
+        },
+        {
+          "name": "氣候變遷與永續發展國際碩士學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "跨領域結合大氣、地理、政策與環境科學，探討氣候變遷因應策略；大學生若熟悉基礎氣候知識、統計工具與國際議題，將更快銜接；未來能投入國際組織、環境政策與永續規劃工作。",
+          "url": "https://www.ipcs.ntu.edu.tw/"
+        },
+        {
+          "name": "統計與數據科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "重視統計理論與資料科學應用，課程涵蓋機器學習、貝氏推論與大數據分析；大學生若能提早熟悉程式語言（R、Python）與實際資料處理，進入課程將更順利；未來出路跨足學術、產業與金融科技。",
+          "url": "https://stat-ds.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "社會科學院",
+      "departments": [
+        {
+          "name": "政治學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程核心在政治理論、比較政治、國際關係與公共政策；若能熟悉政治學入門文本、追蹤時事並培養統計與寫作基礎，會更快適應進階研究；未來發展涵蓋學術研究、外交、公共政策與非政府組織。",
+          "url": "https://politics.ntu.edu.tw/"
+        },
+        {
+          "name": "經濟學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "以微觀、總體、計量方法為三大基礎，並延伸到金融、產業與政策分析；若能提前熟悉數學工具（微積分、線性代數、統計）與資料處理，能更輕鬆銜接課程；未來方向廣泛，包括政府政策、金融產業及研究單位。",
+          "url": "https://econ.ntu.edu.tw/"
+        },
+        {
+          "name": "社會學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "探討社會結構、文化、群體與制度運作，課程強調質化研究與理論應用；若能習慣長時間閱讀理論著作，並具備統計與調查研究的基礎，進入後會更順利；未來可走研究、社會調查、公共政策與NGO領域。",
+          "url": "https://sociology.ntu.edu.tw/"
+        },
+        {
+          "name": "社會工作學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程強調社會政策、社會服務與助人專業實務，並結合理論與實習經驗；若能提早熟悉社會議題、累積服務經驗並建立溝通與同理能力，會更快適應所內的專業訓練；未來可投入社福機構、政府政策推動及非營利組織。",
+          "url": "https://ntusw.ntu.edu.tw/"
+        },
+        {
+          "name": "國家發展研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "跨足政治、經濟與社會發展，強調政策分析與區域研究；若能熟悉國際時事、台灣社會議題，並具備統計分析與英文資料閱讀能力，會更快銜接；畢業後可在公部門、智庫及國際組織發揮專長。",
+          "url": "https://www.nd.ntu.edu.tw/"
+        },
+        {
+          "name": "新聞研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "課程結合新聞實務與傳播理論，重視媒體倫理、數位內容與研究方法；若能累積寫作經驗、熟悉多媒體工具，並具備批判思考能力，能更快進入狀況；未來走向新聞產業、媒體管理與公共溝通。",
+          "url": "http://www.journalism.ntu.edu.tw/"
+        },
+        {
+          "name": "公共事務研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦公共政策、行政管理與社會議題解決，需結合理論與實務案例；建議熟悉政策文件、資料分析與公共議題討論，進來會更快銜接；未來可投身政府決策、非營利組織與跨國公共事務。",
+          "url": "https://pa.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "醫學院",
+      "departments": [
+        {
+          "name": "臨床牙醫學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "本所專注於牙科臨床技術與口腔疾病診療，課程包含口腔解剖、生物學及臨床實務。建議熟悉基礎牙科知識與手眼協調能力，為未來臨床或研究工作打下扎實基礎。",
+          "url": "https://www.mc.ntu.edu.tw/gicd"
+        },
+        {
+          "name": "藥學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "強調藥物研發、藥理與臨床運用，涵蓋生命科學與化學基礎。建議加強化學、生理學基礎及細心的實驗操作技巧，未來可從事藥品研究、臨床藥學及藥師工作。",
+          "url": "https://rx.mc.ntu.edu.tw/"
+        },
+        {
+          "name": "醫學檢驗暨生物技術學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合臨床檢驗與分子生物技術，重視實驗技能與數據解析。建議熟悉分子生物學與實驗操作，具備耐心及細心，未來多在醫檢及生物技術領域發展。",
+          "url": "https://www.mc.ntu.edu.tw/clsmb"
+        },
+        {
+          "name": "護理學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "提供護理理論與臨床照護技能培訓，強調溝通及人文關懷。建議提前培養人際溝通技巧及臨床基礎經驗，畢業後可投身醫療和公共衛生護理職場。",
+          "url": "https://www.mc.ntu.edu.tw/nursing/"
+        },
+        {
+          "name": "物理治療學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "培育肌肉骨骼和神經疾病的康復治療專才，結合理論及臨床實務。建議具備生理學與解剖學基礎，養成細心且耐心的觀察能力，未來可在醫院及復健中心工作。",
+          "url": "https://www.mc.ntu.edu.tw/ntupt"
+        },
+        {
+          "name": "職能治療學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注於提升患者日常生活功能，融合心理與醫療知識，培養動手與溝通能力。建議提前學習心理學基礎與動作療法，畢業後可從事醫療、教育與社區服務。",
+          "url": "https://www.mc.ntu.edu.tw/otntu"
+        },
+        {
+          "name": "生理學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "深究人體系統功能及調控機制，配合實驗與資料分析。建議具備生物醫學知識和實驗經驗，對基礎研究感興趣可選擇本所深造。",
+          "url": "https://physiology.mc.ntu.edu.tw/"
+        },
+        {
+          "name": "生物化學暨分子生物學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究分子層級生命現象，強調蛋白質與基因調控。建議打好化學及分子生物學基礎，具備實驗技能及研究興趣，將有助未來生技或醫學研究工作。",
+          "url": "https://www.mc.ntu.edu.tw/ibmb"
+        },
+        {
+          "name": "藥理學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "探討藥物對生理機制的影響及新藥開發，結合理論與實驗。建議熟悉分子生理學及藥學技術，具備耐性及數據分析能力，適合生醫研究方向。",
+          "url": "https://www.mc.ntu.edu.tw/pharmacology"
+        },
+        {
+          "name": "病理學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注疾病機制探索與組織病理學，強化顯微操作及診斷能力。建議熟悉顯微鏡技術及分子病理學課題，適合未來臨床研究與病理診斷工作。",
+          "url": "https://www.mc.ntu.edu.tw/path/"
+        },
+        {
+          "name": "微生物學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究微生物結構與感染機制，涵蓋病毒、細菌及免疫反應。建議具備分子生物學及免疫學基礎，並熟悉實驗設計，適合公共衛生及疫苗研發。",
+          "url": "https://www.mc.ntu.edu.tw/micro"
+        },
+        {
+          "name": "解剖學暨細胞生物學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "重視基礎醫學研究與人才培育。研究涵蓋癌症生物學、神經科學、心血管疾病、肝臟疾病等多元主題。申請者應具人體解剖和分子生物學基礎，畢業後多投身醫學基礎研究與教學。",
+          "url": "https://www.mc.ntu.edu.tw/anatomy"
+        },
+        {
+          "name": "毒理學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "探討化學及藥物對生物體的毒性影響，注重風險評估與實驗研究。建議紮實化學及藥理學基礎，具備實驗設計與統計能力，畢業後多從事藥廠及環境監測工作。",
+          "url": "https://www.mc.ntu.edu.tw/toxico"
+        },
+        {
+          "name": "分子醫學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合分子生物學與臨床醫學，聚焦疾病基因及分子機制。建議熟悉基因組學與分子檢測技術，重視跨領域研究，適合醫學研究及生技發展。",
+          "url": "https://molecular.ntu.edu.tw/"
+        },
+        {
+          "name": "免疫學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "深入研究免疫系統與疾病防治，強調實驗技術及疫苗研發。建議具備細胞生物學及免疫學基礎，耐心且細心者適合，未來廣泛應用於醫療與生技產業。",
+          "url": "https://immunology.mc.ntu.edu.tw/"
+        },
+        {
+          "name": "口腔生物科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究牙齒及口腔相關生物學，結合臨床與基礎科學。建議熟悉分子及組織生物學，適合進行口腔醫學相關研究與應用。",
+          "url": "https://www.mc.ntu.edu.tw/giob"
+        },
+        {
+          "name": "臨床藥學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "著重藥物治療與用藥管理，融合臨床實務與藥理知識。建議熟悉藥物交互作用與病例分析，畢業後多從事臨床藥師及藥政工作。",
+          "url": "https://www.mc.ntu.edu.tw/ntugicp"
+        },
+        {
+          "name": "法醫學研究所",
+          "admission": {
+            "recommendation": false,
+            "exam": true
+          },
+          "introduction": "結合醫學與司法鑑識，涵蓋屍體解剖、毒理及鑑定技術。建議具備病理及法律基礎，適合醫學司法鑑識相關工作。",
+          "url": "https://www.mc.ntu.edu.tw/forensic"
+        },
+        {
+          "name": "基因體暨蛋白體醫學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "利用基因體與蛋白質體技術解析疾病及藥物標靶，強調高通量資料分析。建議具備生物資訊與統計技能，未來專注於精準醫學與新藥開發。",
+          "url": "https://www.mc.ntu.edu.tw/medgenpro"
+        },
+        {
+          "name": "腦與心智科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究神經科學與心智機制，涵蓋心理模型與計算方法。建議先熟悉神經生物學與程式設計，適合從事腦科學與人工智慧相關研究。",
+          "url": "https://www.mc.ntu.edu.tw/gibms"
+        },
+        {
+          "name": "醫學教育暨生醫倫理研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "探討醫學教育策略與生物醫學倫理，融合實務與倫理思辨。建議具有醫學背景及倫理問題理解，畢業後適合醫療教育及政策領域。",
+          "url": "http://mebe.mc.ntu.edu.tw/"
+        },
+        {
+          "name": "醫學器材與醫學影像研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦醫療器材研發及影像診斷技術，跨足醫學與工程。建議具備數理與程式能力，未來從事醫療技術及器材開發。",
+          "url": "https://www.mc.ntu.edu.tw/mdi/"
+        },
+        {
+          "name": "國際三校農業生技與健康醫療碩士學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "跨國合作項目結合農業生技與健康醫療，強調永續發展與國際視野。建議具生物學及外語能力，未來發展方向涵蓋國際生技與醫療交流。",
+          "url": "https://www.ntugip-triad.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "工學院",
+      "departments": [
+        {
+          "name": "土木工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注於建築結構、施工技術與環境工程，強調理論與實務結合。建議熟悉物理、力學與材料科學，具備數學分析能力，畢業後廣泛應用於基礎建設與環境保護領域。",
+          "url": "https://www.ce.ntu.edu.tw/"
+        },
+        {
+          "name": "機械工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋機械設計、自動控制與熱流體等領域，課程結合理論與實驗。建議扎實力學、材料和控制理論基礎，適合發展自動化、製造及機械研發。",
+          "url": "http://www.me.ntu.edu.tw/"
+        },
+        {
+          "name": "化學工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦物質轉換、反應工程及過程設計，強調化學與工程整合。建議具備化學、熱力學及計算技能，畢業後在能源、製藥與環境工程有廣泛應用。",
+          "url": "https://che.ntu.edu.tw/che/"
+        },
+        {
+          "name": "工程科學及海洋工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合力學、材料及海洋工程應用，強調跨領域整合。建議熟悉海洋力學及工程分析，畢業後適合從事海洋結構、環境調控與工程設計。",
+          "url": "https://homepage.ntu.edu.tw/~ntuesoe/"
+        },
+        {
+          "name": "材料科學與工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究材料性質、製備與應用，涵蓋金屬、半導體及高分子。建議打好物理與化學基礎，具備實驗與分析技能，廣泛應用於電子、能源和製造業。",
+          "url": "https://mse.ntu.edu.tw/"
+        },
+        {
+          "name": "材料系國際應用材料班",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "本班專為國際交流設計，強調材料科學與產業應用結合。建議具備材料基礎知識及英語溝通能力，畢業後可在國際材料研發及應用領域發展。",
+          "url": "https://mse.ntu.edu.tw/"
+        },
+        {
+          "name": "環境工程學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "致力於水質、大氣與廢棄物處理技術研究，強調環境保護與永續發展。建議具備化學及生態基礎，適合進入環境監測、政策及工程實務領域。",
+          "url": "https://enve.ntu.edu.tw/"
+        },
+        {
+          "name": "應用力學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋固體與流體力學、結構分析等，注重理論與數值模擬。建議強化數學與物理能力，未來適合結構設計、航空航太與計算力學領域發展。",
+          "url": "https://www.iam.ntu.edu.tw/"
+        },
+        {
+          "name": "建築與城鄉研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合建築設計、城市計畫與環境規劃，重視空間美學與功能性。建議具備設計概念與環境認知能力，畢業後可從事建築設計、市政規劃與永續城市建設。",
+          "url": "https://bp.ntu.edu.tw/"
+        },
+        {
+          "name": "工業工程學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注生產系統優化、品質管控與作業管理，強調數理與資訊應用。建議熟悉統計、運籌及資料分析，未來適用於製造業、物流及服務管理等領域。",
+          "url": "https://ie.ntu.edu.tw/"
+        },
+        {
+          "name": "醫學工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合工程與醫學，發展醫療器材與影像技術。建議具備生物醫學及工程原理，重視跨領域整合，畢業後可在醫材產業及醫療技術開發。",
+          "url": "https://bme.ntu.edu.tw/"
+        },
+        {
+          "name": "高分子科學與工程學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究高分子材料合成、性質與應用，涵蓋塑膠、複合材料等。建議紮實化學與材料科學基礎，畢業可從事高分子材料研發與製造業工作。",
+          "url": "https://pse.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "生物資源暨農學院",
+      "departments": [
+        {
+          "name": "農藝學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦作物生產技術與品種改良，結合生物科技與田間管理。建議具植物學和生物技能基礎，未來應用於農業研發與食品安全。",
+          "url": "https://agron.ntu.edu.tw/"
+        },
+        {
+          "name": "生物環境系統工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注環境與生物系統工程，結合水資源與污染控制技術。需具工程基礎與生態認知，畢業後適合環境規劃與資源管理。",
+          "url": "https://www.bse.ntu.edu.tw/"
+        },
+        {
+          "name": "農業化學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究農業生物化學與土壤肥料，強調作物健康與環境保護。建議熟悉化學與生物基礎，未來在農業研發與環境領域發展。",
+          "url": "https://ac.ntu.edu.tw/"
+        },
+        {
+          "name": "森林環境暨資源學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋森林生態、資源保育與永續管理。具環境科學與生態基礎者更易入門，未來可從事森林管理與環境保護工作。",
+          "url": "https://www.fo.ntu.edu.tw/"
+        },
+        {
+          "name": "動物科學技術學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專研動物生產、健康與遺傳改良。具動物生物學基礎與實驗經驗者更適合，畢業後可投入畜牧及相關產業。",
+          "url": "http://www.ansc.ntu.edu.tw/"
+        },
+        {
+          "name": "農業經濟學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究農業市場與政策，結合經濟學理論與實務。建議具統計與經濟基礎，未來適合政府、農企與市場分析。",
+          "url": "https://www.agec.ntu.edu.tw/"
+        },
+        {
+          "name": "園藝暨景觀學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋園藝作物栽培與景觀設計，強調美學與生態。建議具植物學與設計基礎，畢業後可從事園藝研究與城市綠化規劃。",
+          "url": "https://www.hort.ntu.edu.tw/"
+        },
+        {
+          "name": "獸醫學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "培養動物醫療與防疫專業人才，強調臨床與疾病控制。建議具動物生理與醫學基礎，未來進入臨床或公共衛生領域。",
+          "url": "https://www.vm.ntu.edu.tw/"
+        },
+        {
+          "name": "生物產業傳播暨發展學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合生物科技與傳播，推動農業及生物產業發展。建議熟悉生物科學及溝通技巧，適合從事產業推廣與政策研究。",
+          "url": "https://bicd.ntu.edu.tw/"
+        },
+        {
+          "name": "生物機電工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "融合生物技術與機電工程，開發農業智能裝置。具工程與生物基礎者更合適，未來發展在生物感測及智慧農業。",
+          "url": "https://www.bime.ntu.edu.tw/"
+        },
+        {
+          "name": "昆蟲學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專研昆蟲分類、生態與防治，應用於農業及環境保護。建議具生物學基礎及野外調查技能，畢業後向農害防治及生態保育發展。",
+          "url": "https://entomol.ntu.edu.tw/"
+        },
+        {
+          "name": "植物病理與微生物學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究植物病害及微生物與環境互動，強調病害控制技術。建議熟悉微生物及植物學知識，未來從事農業防疫與生物技術研發。",
+          "url": "https://ppm.ntu.edu.tw/"
+        },
+        {
+          "name": "食品科技研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "重點在食品加工、品質與安全監管，結合生物與化學技術。具食品科學和實驗技能基礎者適合，未來涵蓋研發與產業管理。",
+          "url": "https://www.fst.ntu.edu.tw/"
+        },
+        {
+          "name": "生物科技研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦基因工程與分子生物技術，推動生物醫藥與產業應用。建議具分子生物學與實驗經驗，未來發展於生技產業及研究領域。",
+          "url": "https://iob.ntu.edu.tw/"
+        },
+        {
+          "name": "臨床動物醫學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "關注獸醫臨床診療與疾病防治，強化理論與實務訓練。具臨床基礎及動物健康知識者更合適，未來可服務於動物醫療與公共衛生。",
+          "url": "https://www.vm.ntu.edu.tw/"
+        },
+        {
+          "name": "植物醫學碩士學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注植物健康管理與病蟲害防治，結合分子及生態方法。建議具植物學與病理學基礎，畢業後從事農業保護及研究工作。",
+          "url": "https://mspm.ntu.edu.tw/"
+        },
+        {
+          "name": "分子暨比較病理生物學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究疾病分子機制與病理變化，結合分子生物與組織分析。具分子生物與病理學基礎者較易適應，未來專注於疾病機轉與醫學研究。",
+          "url": "https://sites.google.com/view/ntugimcp/"
+        }
+      ]
+    },
+    {
+      "name": "管理學院",
+      "departments": [
+        {
+          "name": "商學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋企業管理、行銷、組織與策略等多元領域，強調理論與實務結合。建議具備經濟學與統計基礎，熟悉案例分析，未來可從事企管研究、企業經營與顧問工作。",
+          "url": "https://management.ntu.edu.tw/BA/"
+        },
+        {
+          "name": "會計學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注財務報表分析、審計與稅務，注重數據精準與法規理解。建議紮實會計基礎與邏輯思維能力，未來發展於審計、財務管理與企業合規領域。",
+          "url": "https://management.ntu.edu.tw/Acc"
+        },
+        {
+          "name": "財務金融學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "重視金融市場、投資理論與風險管理，結合數理方法與經濟學。建議具備數學、計量與財務基礎，未來廣泛進入金融分析、投資銀行與資產管理。",
+          "url": "https://management.ntu.edu.tw/Fin"
+        },
+        {
+          "name": "國際企業學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "探討跨國經營、國際行銷與全球策略，強調國際視野與文化理解。建議具備國際經濟與語言能力，未來適合跨國企業、貿易及國際諮詢工作。",
+          "url": "https://management.ntu.edu.tw/IB"
+        },
+        {
+          "name": "資訊管理學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "融合資訊科技與企業管理，強調系統分析與資料應用。建議具備程式設計與資訊系統基礎，未來可至IT管理、數據分析及數位轉型領域發展。",
+          "url": "https://management.ntu.edu.tw/IM"
+        }
+      ]
+    },
+    {
+      "name": "公衛學院",
+      "departments": [
+        {
+          "name": "環境與職業健康科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦環境與職場健康風險評估與管理，重視化學、生物與流行病學基礎。建議具備理工及公共衛生知識，畢業後多從事政策制定、職場安全及環境監測。",
+          "url": "https://eohs.ntu.edu.tw/"
+        },
+        {
+          "name": "健康政策與管理研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋衛生政策、醫療管理與經濟評估，強調系統性思考與資料分析。建議熟悉公共衛生及管理理論，未來適合醫療行政、政策規劃與健康管理職涯。",
+          "url": "https://ntuhpm.ntu.edu.tw/"
+        },
+        {
+          "name": "健康行為與社區科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究健康促進、行為改變與社區干預，重視社會科學與統計方法。建議具備心理學及社會調查經驗，畢業後從事健康教育、社區發展與公共衛生推廣。",
+          "url": "https://hbcs.ntu.edu.tw/"
+        },
+        {
+          "name": "流行病學與預防醫學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注疾病流行模式、預防策略與公共健康監測，需強化統計與生物醫學基礎。建議熟悉流行病學方法與數據分析，未來多投入疾病控制與健康研究。",
+          "url": "https://epm.ntu.edu.tw/"
+        },
+        {
+          "name": "食品安全與健康研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦食品安全監測、毒理學與健康風險評估，結合生物及化學知識。建議具食品科學及環境衛生基礎，適合未來食品檢測、監管及公共衛生領域。",
+          "url": "https://ifsh.ntu.edu.tw/"
+        },
+        {
+          "name": "健康數據拓析統計研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專攻公共衛生與醫療大數據分析、機器學習與統計應用。建議熟悉統計學、程式語言及資料科學，未來可從事健康資訊系統與數據決策支援。",
+          "url": "https://hdas.ntu.edu.tw/"
+        },
+        {
+          "name": "全球衛生碩士學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "關注全球公共衛生議題、健康政策及跨國合作，強調多元文化與國際視野。建議具公共衛生基礎與英文能力，畢業後適合國際組織與跨國健康推動工作。",
+          "url": "https://ghp.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "電機資訊學院",
+      "departments": [
+        {
+          "name": "電機工程學系一般組",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注電路、系統與訊號處理，強調理論與實務並重。建議紮實數學、電子基礎與程式能力，未來適合半導體、通訊及電力系統等領域。",
+          "url": "https://web.ee.ntu.edu.tw/"
+        },
+        {
+          "name": "電機工程學系資訊安全(班)組",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦網路安全、加密技術與系統防護，結合軟硬體技術。需具備程式設計與密碼學基礎，未來發展方向包含資安研發與防護工程。",
+          "url": "https://cyber.ntu.edu.tw/"
+        },
+        {
+          "name": "資訊工程學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋軟體設計、演算法及系統架構，重視計算理論與實作。建議有程式設計與數學演算法基礎，潮往軟體開發、系統設計及AI等領域。",
+          "url": "https://www.csie.ntu.edu.tw/"
+        },
+        {
+          "name": "資訊工程學系人工智慧碩士班",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注機器學習、深度學習與資料分析技術。建議具備強數學與程式能力，對AI算法感興趣，未來適用於智慧系統、資料科學及自動化應用。",
+          "url": "https://www.csie.ntu.edu.tw/"
+        },
+        {
+          "name": "光電工程學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究光電元件、光通訊及雷射技術，結合物理與工程。建議具備光學、電子學與程式基礎，未來可進入光電產業及研發領域。",
+          "url": "https://gipo.ntu.edu.tw/"
+        },
+        {
+          "name": "電信工程學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "聚焦通訊理論、無線網路與信號處理。建議強化數學、通訊理論與程式設計能力，畢業後多進入通訊產業與研發工作。",
+          "url": "https://gice.ntu.edu.tw/"
+        },
+        {
+          "name": "電子工程學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專研半導體元件、電路設計及系統整合。建議熟悉電子學與電路設計，適合半導體與電子製造領域。",
+          "url": "https://giee.ntu.edu.tw/"
+        },
+        {
+          "name": "資訊網路與多媒體研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究網路架構、多媒體系統與資料傳輸技術。具網路與系統基礎者適合，畢業後可投入網路管理、影像運算及多媒體開發。",
+          "url": "https://www.inm.ntu.edu.tw/"
+        },
+        {
+          "name": "生醫電子與資訊學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合電子工程與生醫應用，發展醫療影像、穿戴裝置等技術。建議具備電子與生醫基礎，未來多在醫療器材及生物資訊領域發展。",
+          "url": "https://www.bebi.ntu.edu.tw/"
+        },
+        {
+          "name": "資料科學碩士/博士學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注大數據分析、機器學習及人工智慧技術。建議掌握統計學、程式設計和數據處理技能，未來廣泛應用於企業、研究及科技產業。",
+          "url": "https://ds.ntu.edu.tw/"
+        }
+      ]
+    },
+    {
+      "name": "法律學院",
+      "departments": [
+        {
+          "name": "法律學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋憲法、民法、刑法與國際法等法律基礎理論與實務。建議熟悉法律基本概念與邏輯思考，並培養大量閱讀與嚴謹寫作能力，未來適合從事法律實務與研究工作。",
+          "url": "https://www.law.ntu.edu.tw/"
+        },
+        {
+          "name": "科際整合法律學研究所",
+          "admission": {
+            "recommendation": false,
+            "exam": true
+          },
+          "introduction": "強調法律與其他學科交叉融合，涵蓋科技、經濟及社會議題中的法律應用。建議具跨領域背景並有法律基礎，未來可在政策制定、法律顧問及跨領域研究發揮所長。",
+          "url": "https://www.law.ntu.edu.tw/giilslaw/"
+        }
+      ]
+    },
+    {
+      "name": "生命科學院",
+      "departments": [
+        {
+          "name": "生命科學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋細胞生物學、分子生物學及生物化學，強調基礎與應用研究。建議熟悉生物學與化學基礎，具備實驗技能，未來可投入基礎及應用生物醫學研究。",
+          "url": "https://homepage.ntu.edu.tw/~deptlifesci/"
+        },
+        {
+          "name": "植物科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "專注植物生理、生態與遺傳改良研究。建議具植物學基礎及實驗經驗，畢業後多從事農業及生態研究相關工作。",
+          "url": "https://www.ntuipb.info/"
+        },
+        {
+          "name": "分子與細胞生物學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "深化分子機制與細胞功能，重視實驗技能與跨學科研究。建議具強生物及化學背景，未來從事分子醫學及生物技術領域。",
+          "url": "https://ntuclsimcb.ntu.edu.tw/"
+        },
+        {
+          "name": "生態學與演化生物學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究生態系統互動與物種演化，強調野外調查及數據分析。建議熟悉生態理論與統計方法，畢業後可從事環境保育與生物多樣性研究。",
+          "url": "https://ecology.lifescience.ntu.edu.tw/"
+        },
+        {
+          "name": "漁業科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "涵蓋魚類生物學、水產養殖與漁業管理。建議具生物學及水產相關知識，適合從事漁業資源維護與養殖技術開發。",
+          "url": "https://fisheryscience.ntu.edu.tw/"
+        },
+        {
+          "name": "生化科學研究所",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "研究生物分子機制與代謝路徑，聚焦生命現象的化學本質。建議具化學及分子生物學基礎，未來可投入生技與醫藥研究。",
+          "url": "https://ibs.ntu.edu.tw/"
+        },
+        {
+          "name": "生化科技學系",
+          "admission": {
+            "recommendation": true,
+            "exam": true
+          },
+          "introduction": "結合生物化學與工業應用，強調技術轉移與產業發展。建議具實驗技能及產業導向思維，畢業後多進入生技與製藥產業。",
+          "url": "https://bst.ntu.edu.tw/"
+        },
+        {
+          "name": "基因體與系統生物學學位學程",
+          "admission": {
+            "recommendation": true,
+            "exam": false
+          },
+          "introduction": "專注基因體學與系統生物學，強調跨領域資料整合與解析。建議具生物及資訊基礎，適合未來從事高通量數據及精準醫療研究。",
+          "url": "https://ntugsb.ntu.edu.tw/"
+        }
+      ]
+    }
+  ]
+}
