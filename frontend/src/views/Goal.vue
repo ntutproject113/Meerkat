@@ -31,44 +31,73 @@ function goBack() {
       />
 
       <!-- 路標：使用 Tailwind 絕對定位 + 響應式大小 -->
-      <img
-        src="../assets/images/plan/goal1.png"
-        alt="短期目標"
-        class="absolute z-20 w-[10vw] sm:w-[100px] md:w-[120px] lg:w-[200px]"
-        style="top: 8%; left: 20%; transform: translate(-50%, -50%)"
-      />
-      <img
-        src="../assets/images/plan/goal1.png"
-        alt="短期目標2"
-        class="absolute z-20 w-[10vw] sm:w-[100px] md:w-[120px] lg:w-[200px]"
-        style="top: 15%; left: 40%; transform: translate(-50%, -50%)"
-      />
-      <img
-        src="../assets/images/plan/goal1.png"
-        alt="短期目標3"
-        class="absolute z-20 w-[10vw] sm:w-[100px] md:w-[120px] lg:w-[200px]"
-        style="top: 15%; left: 65%; transform: translate(-50%, -50%)"
-      />
+     <div class="target-container">
+        <!-- 圖片 -->
+        <img
+          src="../assets/images/plan/goal1.png"
+          alt="短期目標"
+          class="goal-img"
+        />
+        <!-- 疊在圖片上的文字 -->
+        <div class="target-text">
+          短期目標
+        </div>
+      </div>
 
-      <img
-        src="../assets/images/plan/goal2.png"
-        alt="中期目標"
-        class="absolute z-20 w-[14vw] sm:w-[120px] md:w-[150px] lg:w-[180px]"
-        style="top: 10%; left: 85%; transform: translate(-50%, -50%)"
-      />
-      <img
-        src="../assets/images/plan/goal2.png"
-        alt="中期目標2"
-        class="absolute z-20 w-[14vw] sm:w-[120px] md:w-[150px] lg:w-[180px]"
-        style="top: 50%; left: 15%; transform: translate(-50%, -50%)"
-      />
+      <div class="target-container2">
+        <img
+          src="../assets/images/plan/goal1.png"
+          alt="短期目標2"
+          class="goal-img"
+        />
+        <div class="target-text">
+          短期目標2
+        </div>
+      </div>
 
-      <img
-        src="../assets/images/plan/goal3.png"
-        alt="最終目標"
-        class="absolute z-20 w-[16vw] sm:w-[150px] md:w-[180px] lg:w-[220px]"
-        style="top: 75%; left: 90%; transform: translate(-50%, -50%)"
-      />
+      <div class="target-container3">
+        <img
+          src="../assets/images/plan/goal1.png"
+          alt="短期目標3"
+          class="goal-img"
+        />
+        <div class="target-text">
+          短期目標3
+        </div>
+      </div>
+
+      <div class="target-container4">
+        <img
+          src="../assets/images/plan/goal2.png"
+          alt="中期目標"
+          class="goal-img2"
+        />
+        <div class="target-text2">
+            中期目標
+          </div>
+      </div>
+
+      <div class="target-container5">
+        <img
+          src="../assets/images/plan/goal2.png"
+          alt="中期目標2"
+          class="goal-img2"
+        />
+        <div class="target-text2">
+            中期目標2
+          </div>
+      </div>
+
+      <div class="target-container6">
+        <img
+          src="../assets/images/plan/goal3.png"
+          alt="最終目標"
+          class="goal-img2"
+        />
+        <div class="target-text2">
+              最終目標
+            </div>
+      </div>
       </div>
     </div>
     </div>
@@ -99,6 +128,87 @@ function goBack() {
   max-width: 100px;
   min-width: 80px;
   height: auto;
+}
+.target-container {
+  position: absolute;
+  top: 8%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.goal-img {
+  width: 10vw;        
+}
+@media (min-width: 640px) {  /* sm */
+  .goal-img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 768px) {  /* md */
+  .goal-img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .goal-img {
+    width: 150px;
+    }
+}
+.target-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  z-index:20;
+}
+.target-container2{
+  position: absolute;
+  top: 16%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.target-container3{
+  position: absolute;
+  top: 14%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.target-container4{
+  position: absolute;
+  top: 15%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+.goal-img2 {
+  width: 14vw;        
+}
+.target-text2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  z-index:20;
+}
+.target-container5 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.target-container6{
+  position: absolute;
+  top: 75%;
+  left: 90%;
+  transform: translate(-50%, -50%);
 }
 
 </style>

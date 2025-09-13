@@ -1,10 +1,10 @@
 <script setup>
 import Menu from '../components/Menu.vue'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import axios from 'axios'
 
 // 綁定查詢參數（初始值與 API 預設一致）
-const areaIds = ref('5-10-8-12-9-3-7-4-6-1-2-11')
+
 const price = ref(15000)
 const casetype = ref([])
 const page = ref(1)
@@ -23,7 +23,7 @@ const fetchRents = async () => {
   try {
     const res = await axios.get('http://localhost:8000/rents', {
       params: {
-        area_ids: areaIds.value,
+        area_ids:  filters.value.area,
         price: price.value,
         casetype: casetype.value,
         page: page.value,
@@ -39,9 +39,91 @@ const fetchRents = async () => {
     loading.value = false
   }
 }
-
 onMounted(() => {
   fetchRents()
+})
+
+const showModal = ref(false)
+//篩選
+const filters = ref({
+  city: [],   // 選中的縣市 cityNumber
+  area: []    // 選中的區域 sid
+})
+const cities = ref([])
+const areas = ref([])
+
+// 已選項目
+const selectedCities = ref([])
+const selectedAreas = ref([])
+
+// 暫存選擇（避免取消直接改到已選項目）
+const tempCities = ref([])
+const tempAreas = ref([])
+
+const showLocationModal = ref(false)
+
+const openLocationModal = () => {
+  tempCities.value = [...filters.value.city]
+  tempAreas.value = [...filters.value.area]
+  showLocationModal.value = true
+}
+const closeLocationModal = () => {
+  showLocationModal.value = false
+}
+
+// 切換選擇
+const toggleCity = (id) => {
+  if (tempCities.value.includes(id)) {
+    tempCities.value = tempCities.value.filter(c => c !== id)
+  } else {
+    tempCities.value.push(id)
+  }
+}
+
+const toggleArea = (id) => {
+  if (id === '') {
+    tempAreas.value = [''] // 不限選項，清除其他
+    return
+  }
+  tempAreas.value = tempAreas.value.filter(a => a !== '') // 移除不限
+  if (tempAreas.value.includes(id)) {
+    tempAreas.value = tempAreas.value.filter(a => a !== id)
+  } else {
+    tempAreas.value.push(id)
+  }
+}
+
+// 確認
+const confirmLocation = () => {
+  filters.value.city = [...tempCities.value]
+  filters.value.area = [...tempAreas.value]
+  selectedCities.value = [...tempCities.value]
+  selectedAreas.value = [...tempAreas.value]
+  closeLocationModal()
+}
+// 取得全部縣市
+async function fetchCities() {
+  const res = await axios.get('http://localhost:8000/areas/tree')
+  cities.value = res.data
+}
+
+// 根據縣市取得該縣市的區域
+async function fetchAreas(cityNumber) {
+  if (!cityNumber) {
+    areas.value = []
+    return
+  }
+  const city = cities.value.find(c => c.cityNumber === cityNumber)
+  areas.value = city ? city.areaList : []
+}
+
+// 當縣市變動時重新抓取區域
+watch(() => filters.value.city, (newCity) => {
+  fetchAreas(newCity)
+})
+
+onMounted(() => {
+  fetchCities()
 })
 
 const houseTypes = [
@@ -140,11 +222,59 @@ const houseTypes = [
           <input class="search-input" type="text" placeholder="輸入關鍵字…" />
           <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
         </div>
-    <div class="form-block">
-      <label>
-        地區 :
-        <input v-model="areaIds" class="input-field" />
-      </label>
+            <div class="form-block">
+              <!-- 地區與區域篩選 -->
+              <div class="filter-item">
+                <button class="category-btn" @click="openLocationModal">地區篩選</button>
+                
+                <!-- 顯示已選取的區域 -->
+                <div v-if="selectedAreas.length" class="selected-category-list">
+                  <span v-for="id in selectedAreas" :key="id" class="selected-category-tag">
+                    {{ allAreas.find(a => a.sid === id)?.areaName }}
+                  </span>
+                </div>
+
+                <!-- Modal -->
+                <div v-if="showLocationModal" class="modal-overlay" @click.self="closeLocationModal">
+                  <div class="modal-content">
+                    <h3>選擇地區與區域</h3>
+                    
+                    <!-- 顯示縣市與區域 -->
+                    <div v-for="city in cities" :key="city.cityNumber" class="city-block">
+                      <h4>{{ city.cityName }}</h4>
+                      <div class="modal-category-list">
+                        <label
+                          v-for="area in city.areas"
+                          :key="area.sid"
+                          class="modal-category-item"
+                          :class="{ selected: tempAreas.includes(area.sid) }"
+                          @click="toggleArea(area.sid)"
+                        >
+                          {{ area.areaName }}
+                        </label>
+                        <!-- 加上不限 -->
+                        <label
+                          class="modal-category-item"
+                          :class="{ selected: tempAreas.includes(`${city.cityNumber}-不限`) }"
+                          @click="toggleArea(`${city.cityNumber}-不限`)"
+                        >
+                          不限
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- 按鈕 -->
+                    <div class="modal-actions">
+                      <button class="confirm-btn" @click="confirmLocation">確定</button>
+                      <button class="cancel-btn" @click="closeLocationModal">取消</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        
+
         <label for="price">價格上限：{{ price }} 元</label>
           <input 
             type="range" 
@@ -466,6 +596,118 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   top: -2px;
   left: 3px;
+}
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+.filter-item label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.filter-item select,
+.filter-item input {
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.filter-actions button {
+  background-color: #3B852B; 
+  color: white;
+  padding: 8px 16px;        
+  border-radius: 6px;        
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+.filter-actions button:hover {
+  background-color: #78d663;
+}
+
+/* Modal 樣式 */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.modal-content {
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  min-width: 260px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal-category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+  }
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.category-btn {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: #3B852B;
+  border: solid 2px #3B852B;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.selected-categories{
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 14px;
+}
+.modal-category-item{
+  min-width: 80px;
+  padding: 10px 18px;
+  border: 2px solid #3B852B;
+  border-radius: 8px;
+  background: #fff;
+  color: #3B852B;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  user-select: none;
+}
+.modal-category-item.selected {
+  background: #3B852B;
+  color: #fff;
+  border: 2px solid #3B852B;
+}
+.confirm-btn{
+  padding: 8px 12px;
+  background-color: #3B852B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cancel-btn{
+  padding: 8px 12px;
+  background-color: #bababa;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 

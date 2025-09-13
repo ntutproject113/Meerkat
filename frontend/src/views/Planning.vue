@@ -90,8 +90,9 @@ const handleCheck = (item) => {
       
 
         <!--目標牌-->
-        <div @click="goToGoal">
-            <img src="../assets/images/plan/goal.png" alt="目標" class="goal w-[40vw] max-w-[300px]" >
+        <div @click="goToGoal" class="goal-board">
+            <img src="../assets/images/plan/goal.png" alt="目標" class="goal" >
+             <span class="goal-word">北科資財系</span>
         </div>
       
         <!--為你推薦-->
@@ -141,14 +142,34 @@ const handleCheck = (item) => {
   width: auto;
   max-height: 100vh;
 }
-.goal {
-  position: absolute;
-  right: 1%;
+.goal-board{
+  position:fixed;
+  right: 5%;
   top: 0%;
-  width: 50vw;    /* 例如佔螢幕寬度一半 */
-  max-width: 400px;
+  width: 350px;     
+  height: auto;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.goal-board .goal {
+  display: block;
+  width: 350px;     
   height: auto;
 }
+.goal-board .goal-word {
+  position: absolute;
+  top: 55%;        
+  left: 50%;     
+  transform: translate(-50%, -50%);
+  color: rgb(160, 0, 0);     
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none; 
+  white-space: nowrap;
+}
+
 .todolist{
     position: absolute;
     left: 30%;
