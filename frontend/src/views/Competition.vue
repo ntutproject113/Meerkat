@@ -543,7 +543,7 @@ onMounted(async () => {
 .modal-category-item.selected {
   background: #3B852B;
   color: #fff;
-  border: 2px solid #3B852B;
+  border: 2px solid ;
 }
 .confirm-btn{
   padding: 8px 12px;
