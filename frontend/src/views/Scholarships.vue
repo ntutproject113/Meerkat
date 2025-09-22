@@ -109,47 +109,39 @@ onMounted(() => {
 
       <!-- 右邊篩選 -->
       <div class="search-block">
-        <div class="search">
-          <input class="search-input" type="text" placeholder="搜尋…" />
-          <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
-        </div>
-      
-        <select v-model="selectedCategory">
+        <div class="filter-container">
+          <select v-model="selectedCategory">
             <option value="">全部類別</option>
             <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
           </select>
 
-          <br/>
           <select v-model="selectedRegion">
             <option value="">全部地區</option>
             <option v-for="r in regions" :key="r" :value="r">{{ r }}</option>
           </select>
 
-          <br/>
           <select v-model="selectedIdentity">
             <option value="">不限身分</option>
             <option v-for="i in identities" :key="i" :value="i">{{ i }}</option>
           </select>
 
-          <br/>
           <select v-model="selectedQualification">
             <option value="">不限資格</option>
             <option v-for="q in qualifications" :key="q" :value="q">{{ q }}</option>
           </select>
           
-          <br/>
           <select v-model="selectedSort">
             <option v-for="s in sorts" :key="s.value" :value="s.value">{{ s.label }}</option>
           </select>
-         
-          <br/>
+
           <button @click="getScholarships" class="btn">查詢</button>
         </div>
+    </div>
        
         
       </div>
       <img
-        src=""
+        src="../assets/images/renting/meerkat_Scho.png"
         alt="狐獴"
         class="meerkat"
       />
@@ -161,12 +153,13 @@ onMounted(() => {
 .bg-image {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: fill;   /* 確保整張圖顯示 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;         
+  height: 100vh;         
+  object-fit: contain;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 .layout-container {
   position: relative;           
@@ -175,9 +168,8 @@ onMounted(() => {
   align-items: center;           
   justify-content: flex-start;   
   min-height: 100vh;              
-  width: 90%;   
-  height:100vh;               
-  max-width: 72rem;              
+  width: 900px;                
+  max-width: 100vw;              
   margin-left: auto;              
   margin-right: auto;
   padding-left: 1rem;             
@@ -200,13 +192,13 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1rem;
   width: 100%;
   background-image: url('../assets/images/renting/Header.png'); 
   background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% auto;
-}          
+  background-position: bottom center;
+  background-size: 80% auto;
+}              
 .word {
   width: 150px;
   height: auto;
@@ -221,19 +213,19 @@ onMounted(() => {
   overflow: hidden;      
 }
 .data-block {
-  width: 70%;   
+  width: 60%;   
   height:100%;      
-  padding-right: 1rem;    
-  overflow-y: auto;        
+  padding-left: 5.7rem;    
+  overflow-y:auto;        
   display: flex;
   flex-direction: column;
-  gap: 1rem;   
+  gap: 1rem;  
 }
 .title{
   font-size: 32px;
   font-weight: bold;
   color: #000000;
-  margin:0px auto;
+  margin:-8px auto;
   text-align: center;
 }
 .schol-card {
@@ -249,7 +241,7 @@ onMounted(() => {
   width:100%;
   max-width:800px;
   height:auto;
-  margin:-70px auto;
+  margin:15px auto;
   object-fit: contain;
   pointer-events: none;
 }
@@ -278,41 +270,25 @@ onMounted(() => {
   margin-right: 6px;
   object-fit: contain;
 }
+.filter-container {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  gap: 1rem;              /* 子元素之間間距，可調整 */
+  width: 150px;            /* 根據需求設定容器寬度 */
+}
 .meerkat{
   position: fixed;
   bottom:0%;
   right: 2%;
-  width: 350px;
+  width: 250px;
   height: auto;
   z-index: 20;
 }
 .search-block{
-  width: 30%;
-  padding-left: 2rem;
+  width: 20%;
+  padding-right: 2rem;
   min-height:500px;
-  background-image: url('../assets/images/renting/right.png'); 
-  background-repeat: no-repeat;
-  background-position: left top;  /* 對齊左上角 */
-  background-size:40px 80%; 
   position: relative;
-}
-.search{
-  display: flex;
-  align-items: center;
-  border: 3px solid black;
-  border-radius: 9999px; 
-  padding-left: 1rem;  
-  padding-right: 1rem;
-  padding-top: 0.5rem; 
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem; 
-}
-.search-input{
-  flex: 1;
-  outline: none;
-  background-color: transparent; 
-  border: none;
-  font-size: 16px; 
 }
 .search-block select {
   padding: 6px 10px;

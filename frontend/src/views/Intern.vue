@@ -33,10 +33,33 @@ const fetchJobs = async () => {
     loading.value = false
   }
 }
+// 抓取地區 / 職務 map
+const loadMaps = async () => {
+  const resAreas = await axios.get('http://localhost:8000/map/areas')
+  const resJobcats = await axios.get('http://localhost:8000/map/jobcats')
+  areas.value = resAreas.data
+  jobcats.value = resJobcats.data
+}
 
-// 初始化時載入資料
-onMounted(fetchJobs)
+// 清除篩選條件
+const resetFilters = () => {
+  filters.value = {
+    keyword: '',
+    page: 1,
+    asc: 0,
+    order: 12,
+    edu: '',
+    area: '',
+    jobcat: ''
+  }
+  fetchJobs()
+}
 
+// 初始化
+onMounted(() => {
+  loadMaps()
+  fetchJobs()
+})
 //收藏功能
 const favorites = ref([])
 const toggleFavorite = (index) => {
@@ -100,7 +123,6 @@ const toggleFavorite = (index) => {
               </div>
             </div>
 
-        
           <img
             v-if="index !== jobs.length - 1"
             src="../assets/images/renting/line.png"
@@ -110,29 +132,42 @@ const toggleFavorite = (index) => {
         </div>
       </div>
 
-
         <div v-else-if="!loading">沒有資料</div>
       </div>
     
 
       <!-- 右邊篩選 -->
       <div class="search-block">
-        <div class="search">
-          <input class="search-input" type="text" placeholder="搜尋…" />
-          <img src="../assets/images/icon/search.png" class="icon" alt="搜尋圖示" />
+
+        <div class="filters">
+         
+          <select id="area">
+            <option value="">選擇地區</option>
+          </select>
+          <select id="jobcat">
+            <option value="">選擇職務</option>
+          </select>
+          <select id="edu">
+            <option value="">不限學歷</option>
+            <option value="2">高中以上</option>
+            <option value="3">專科以上</option>
+            <option value="4">大學以上</option>
+          </select>
         </div>
-        <div>
-          <p class="font-bold mb-2">篩選條件</p>
-          <ul class="space-y-3 text-sm font-medium">
-            <li class="cursor-pointer hover:underline">地區 ⌄</li>
-            <li class="cursor-pointer hover:underline">價格 ⌄</li>
-            <li class="cursor-pointer hover:underline">類型 ⌄</li>
-            <li class="cursor-pointer hover:underline">其他條件 ⌄</li>
-          </ul>
+
+        <!-- 按鈕 -->
+        <div class="buttons">
+          <button class="search" onclick="fetchJobs()">查詢</button>
+          <button class="reset" onclick="resetFilters()">清除條件</button>
         </div>
+
+        <!-- 結果 -->
+        <div id="results" class="job-list"></div>
+
+        
       </div>
       <img
-        src=""
+        src="../assets/images/renting/meerkat_Intern.png"
         alt="狐獴"
         class="meerkat"
       />
@@ -144,12 +179,13 @@ const toggleFavorite = (index) => {
 .bg-image {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: fill;   /* 確保整張圖顯示 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;         
+  height: 100vh;         
+  object-fit: contain;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 .layout-container {
   position: relative;           
@@ -158,16 +194,14 @@ const toggleFavorite = (index) => {
   align-items: center;           
   justify-content: flex-start;   
   min-height: 100vh;              
-  width: 90%;   
-  height:100vh;               
-  max-width: 72rem;              
+  width: 900px;                
+  max-width: 100vw;              
   margin-left: auto;              
   margin-right: auto;
   padding-left: 1rem;             
   padding-right: 1rem;
   overflow: hidden;
 }
-
 .header {
   display: flex;                  
   align-items: center;             
@@ -178,17 +212,17 @@ const toggleFavorite = (index) => {
   padding-bottom: 0.5rem;
   border-bottom: none;  
   width: 100%;     
-}     
+}  
 .header-border {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1rem;
   width: 100%;
   background-image: url('../assets/images/renting/Header.png'); 
   background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% auto;
+  background-position: bottom center;
+  background-size: 80% auto;
 }          
 .word {
   width: 150px;
@@ -204,19 +238,20 @@ const toggleFavorite = (index) => {
   overflow: hidden;      
 }
 .data-block {
-  width: 70%;   
+  width: 60%;   
   height:100%;      
-  padding-right: 1rem;    
+  padding-left: 5.7rem; 
+  padding-top: 0;   
   overflow-y: auto;        
   display: flex;
   flex-direction: column;
-  gap: 1rem;   
+  gap: 1rem;  
 }
 .title{
   font-size: 32px;
   font-weight: bold;
   color: #000000;
-  margin:0px auto;
+  margin:-10px auto;
   text-align: center;
 }
 .job-card {
@@ -225,14 +260,14 @@ const toggleFavorite = (index) => {
   border: none;
   overflow: hidden;
   margin-bottom: -5px;
-  
+  margin-top:-15px;
 }
 .line {
   display: block;
   width:100%;
   max-width:800px;
   height:auto;
-  margin:-70px auto;
+  margin:10px auto;
   object-fit: contain;
   pointer-events: none;
 }
@@ -276,39 +311,62 @@ const toggleFavorite = (index) => {
 .meerkat{
   position: fixed;
   bottom:0%;
-  right: 2%;
-  width: 350px;
+  right: 0%;
+  width: 300px;
   height: auto;
   z-index: 20;
 }
 .search-block{
-  width: 30%;
-  padding-left: 2rem;
+  width: 20%;
+  padding-right: 2rem;
   min-height:500px;
-  background-image: url('../assets/images/renting/right.png'); 
-  background-repeat: no-repeat;
-  background-position: left top;  /* 對齊左上角 */
-  background-size:40px 80%; 
   position: relative;
 }
-.search{
-  display: flex;
-  align-items: center;
-  border: 3px solid black;
-  border-radius: 9999px; 
-  padding-left: 1rem;  
-  padding-right: 1rem;
-  padding-top: 0.5rem; 
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem; 
-}
-.search-input{
-  flex: 1;
-  outline: none;
-  background-color: transparent; 
-  border: none;
-  font-size: 16px; 
-}
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .filters select,
+    .filters input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      min-width: 150px;
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .buttons button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .buttons .search {
+      background-color: #3B852B;
+      color: white;
+    }
+    .buttons .search:hover {
+      background-color: #78d663;
+    }
+    .buttons .reset {
+      background-color: #bdc3c7;
+      color: black;
+    }
+    .buttons .reset:hover {
+      background-color: #95a5a6;
+    }
+    .job-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
 
 </style>
 <style>
