@@ -145,9 +145,12 @@ const houseTypes = [
 
     <!-- 標題區 -->
     <header class="header">
-      <div class="header-border">
+      <RouterLink to="/insideRenting" class="header-border">
         <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
-      </div>
+      </RouterLink>
+      <!--<div class="header-border">
+        <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
+      </div>-->
     </header>
 
     <!-- 主內容 -->

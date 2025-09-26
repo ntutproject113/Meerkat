@@ -72,7 +72,9 @@ onMounted(() => {
       <!-- 左邊列表 -->
 
       <div class="data-block">
+        <RouterLink to="/insideScholarship">
         <h1 class="title">推薦獎學金資訊</h1>
+        </RouterLink>
 
         <div v-if="loading">載入中...</div>
           <div v-else-if="error">{{ error }}</div>
