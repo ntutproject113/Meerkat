@@ -26,7 +26,10 @@ const fetchJobs = async () => {
     const res = await axios.get('http://localhost:8000/jobs', {
       params: filters.value
     })
-    jobs.value = res.data.jobs
+     jobs.value = res.data.jobs.map(job => ({
+      ...job,
+      isFavorite: false   // 預設沒收藏
+    }))
   } catch (e) {
     error.value = '載入失敗：' + e.message
   } finally {
@@ -62,8 +65,8 @@ onMounted(() => {
 })
 //收藏功能
 const favorites = ref([])
-const toggleFavorite = (index) => {
-  favorites.value[index] = !favorites.value[index]
+const toggleFavorite = (job) => {
+  job.isFavorite = !job.isFavorite
 }
 </script>
 
@@ -114,9 +117,9 @@ const toggleFavorite = (index) => {
               </div>
             </div>
              <!-- 收藏按鈕 -->
-              <div class="favorite-box" @click="toggleFavorite(index)">
+              <div class="favorite-box" @click="toggleFavorite(job)">
                 <img 
-                  :src="favorites[index] ? collectedImg : uncollectedImg"
+                  :src="job.isFavorite ? collectedImg : uncollectedImg"
                   class="favorite-btn"
                   alt="收藏按鈕"
                 />
@@ -233,13 +236,12 @@ const toggleFavorite = (index) => {
   display: flex;          
   flex: 1 1 0%;           
   width: 100%;            
-  margin-top: 1rem; 
-  height: calc(100vh - 100px); 
-  overflow: hidden;      
+  margin-top: 0.5rem; 
+  height: calc(100vh - 100px);      
 }
 .data-block {
   width: 60%;   
-  height:100%;      
+  height:400px;      
   padding-left: 5.7rem; 
   padding-top: 0;   
   overflow-y: auto;        

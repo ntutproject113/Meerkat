@@ -208,13 +208,12 @@ onMounted(() => {
   display: flex;          
   flex: 1 1 0%;           
   width: 100%;            
-  margin-top: 1rem; 
-  height: calc(100vh - 100px); 
-  overflow: hidden;      
+  margin-top: 0.5rem; 
+  height: calc(100vh - 100px);      
 }
 .data-block {
   width: 60%;   
-  height:100%;      
+  height:400px ;     
   padding-left: 5.7rem;    
   overflow-y:auto;        
   display: flex;
