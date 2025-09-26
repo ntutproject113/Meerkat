@@ -42,7 +42,10 @@ const routes = [
   { path: '/aptitudeTest6', name: 'AptitudeTest6', component:AptitudeTest6},
   { path: '/InsideIsland', name: 'InsideIsland', component: () => import('../views/InsideIsland.vue') //訪問頁面時才載入 
   },
-  {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')}
+  {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')},
+  {path: '/insideRenting', name: 'InsideRenting', component: () => import('../views/InsideRenting.vue') //訪問頁面時才載入
+  },
+  {path: '/insideScholarship', name:'InsideScholarship', component: () => import('../views/InsideScholarship.vue')}
 ]
 
 const router = createRouter({

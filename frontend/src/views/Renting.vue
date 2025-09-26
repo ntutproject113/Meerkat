@@ -145,9 +145,12 @@ const houseTypes = [
 
     <!-- 標題區 -->
     <header class="header">
-      <div class="header-border">
+      <RouterLink to="/insideRenting" class="header-border">
         <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
-      </div>
+      </RouterLink>
+      <!--<div class="header-border">
+        <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
+      </div>-->
     </header>
 
     <!-- 主內容 -->
@@ -372,13 +375,12 @@ const houseTypes = [
   display: flex;          
   flex: 1 1 0%;           
   width: 100%;            
-  margin-top: 1rem; 
-  height: calc(100vh - 100px); 
-  overflow: hidden;      
+  margin-top: 0.5rem; 
+  height: calc(100vh - 100px);       
 }
 .data-block {
   width: 60%;   
-  height:100%;      
+  height:400px;      
   padding-left: 5.7rem;    
   overflow-y: auto;        
   display: flex;

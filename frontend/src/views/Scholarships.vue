@@ -72,7 +72,9 @@ onMounted(() => {
       <!-- 左邊列表 -->
 
       <div class="data-block">
+        <RouterLink to="/insideScholarship">
         <h1 class="title">推薦獎學金資訊</h1>
+        </RouterLink>
 
         <div v-if="loading">載入中...</div>
           <div v-else-if="error">{{ error }}</div>
@@ -208,13 +210,12 @@ onMounted(() => {
   display: flex;          
   flex: 1 1 0%;           
   width: 100%;            
-  margin-top: 1rem; 
-  height: calc(100vh - 100px); 
-  overflow: hidden;      
+  margin-top: 0.5rem; 
+  height: calc(100vh - 100px);      
 }
 .data-block {
   width: 60%;   
-  height:100%;      
+  height:400px ;     
   padding-left: 5.7rem;    
   overflow-y:auto;        
   display: flex;
