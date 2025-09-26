@@ -15,7 +15,7 @@ import Menu from '../components/Menu.vue'
     <!-- 主內容 -->
     <div class="block">
         <div class="data-block">
-            <h1 class="title">租屋資訊</h1>
+            <h1 class="title">競賽資訊</h1>
             <h2 class="rent-title">大安區精美小豪宅</h2>
             <div>類型：獨立套房</div>
             <div>租金：NT$12,000/月</div>  

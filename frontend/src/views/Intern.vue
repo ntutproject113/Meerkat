@@ -78,9 +78,13 @@ const toggleFavorite = (job) => {
 
     <!-- 標題區 -->
     <header class="header">
+      <!--
       <div class="header-border">
         <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
-      </div>
+      </div>-->
+      <RouterLink to="/insideIntern" class="header-border">
+        <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
+      </RouterLink>
     </header>
 
     <!-- 主內容 -->
