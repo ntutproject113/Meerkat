@@ -45,7 +45,9 @@ const routes = [
   {path: '/goal',name: 'Goal',component: () => import('../views/Goal.vue')},
   {path: '/insideRenting', name: 'InsideRenting', component: () => import('../views/InsideRenting.vue') //訪問頁面時才載入
   },
-  {path: '/insideScholarship', name:'InsideScholarship', component: () => import('../views/InsideScholarship.vue')}
+  {path: '/insideScholarship', name:'InsideScholarship', component: () => import('../views/InsideScholarship.vue')},
+  {path: '/insideCompetition', name:'InsideCompetition', component: () => import('../views/InsideCompetition.vue')},
+  {path: '/insideIntern', name:'InsideIntern', component: () => import('../views/InsideIntern.vue')},
 ]
 
 const router = createRouter({

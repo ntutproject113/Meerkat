@@ -61,9 +61,14 @@ onMounted(() => {
 
     <!-- 標題區 -->
     <header class="header">
+      <!--
       <div class="header-border">
         <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
       </div>
+    -->
+      <RouterLink to="/insideScholarship" class="header-border">
+        <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
+      </RouterLink>
     </header>
 
     <!-- 主內容 -->
@@ -72,10 +77,7 @@ onMounted(() => {
       <!-- 左邊列表 -->
 
       <div class="data-block">
-        <RouterLink to="/insideScholarship">
         <h1 class="title">推薦獎學金資訊</h1>
-        </RouterLink>
-
         <div v-if="loading">載入中...</div>
           <div v-else-if="error">{{ error }}</div>
           <div v-else-if="scholarships.length">

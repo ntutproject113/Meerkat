@@ -8,15 +8,15 @@ function goBack() {
 }
 </script>
 <template>
-       <div>
-          <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
-          <img
-                src="../assets/images/plan/arrow.png"
-                class="back-arrow"
-                alt="Back"
-                @click="goBack"
-            />
-        </div>
+  <div>
+    <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
+    <img
+          src="../assets/images/plan/arrow.png"
+          class="back-arrow"
+          alt="Back"
+          @click="goBack"
+      />
+  </div>
 
   <div class="layout-container">
     <Menu />
@@ -26,59 +26,73 @@ function goBack() {
       </div>
     </header>
 
-
-      <!-- 主內容 -->
-      <div class="block">
-        <div class="data-block">
-          <!-- Left: Scholarship Info -->
-          <section class="scholarship-card">
-            <h2 class="scholarship-title">
-              🎓 青年清寒助學金
+    <!-- 主內容 -->
+    <div class="block">
+         <div class="data-block">
+          <!-- Left: Job Info -->
+          <section class="job-card">
+            <h2 class="job-title">
+              前端工程師 實習生（Vue3、Nuxt）
             </h2>
-            <p class="org">主辦單位：教育部</p>
-            <p class="amount">💰 獎學金金額：每學期 20,000 元</p>
+            <div class="company">異特資訊股份有限公司</div>
+            <div>📍 台北市中正區</div>
+            <div class="salary">💰 時薪 200 元</div>
 
-            <h3 class="section-title">獎學金類別</h3>
-            <div class="scholarship-content">
-              <p>清寒助學金</p>
+            <h3 class="section-title">職務內容</h3>
+            <div class="job-content">
+              <ol>
+                <li>設計出圖像豐富、高互動性、創意十足的前端網站，帶給用戶沉浸式的體驗。</li>
+                <li>與後端工程師合作，將前端畫面與後端資料串接，打造穩定的產品功能。</li>
+                <li>熟悉 Vue3、Nuxt 並在專案中能靈活應用，解決實際問題。</li>
+                <li>能將 3D 與互動式動畫整合到網站，提升視覺效果，讓平台內容更具吸引力。</li>
+              </ol>
             </div>
 
-            <h3 class="section-title">身分別</h3>
-            <div class="scholarship-content">
-              <p>大專院校學生、研究所學生</p>
-            </div>
-
-            <h3 class="section-title">地區</h3>
-            <div class="scholarship-content">
-              <p>全國皆可申請</p>
-            </div>
-
-            <h3 class="section-title">申請資格</h3>
-            <div class="scholarship-conditions">
-              <ul>
-                <li>設籍於中華民國，具學生身份。</li>
-                <li>家庭年所得低於 100 萬。</li>
-                <li>前一學期學業成績平均達 70 分以上。</li>
-                <li>未同時領取其他政府補助性質獎助學金。</li>
-              </ul>
+            <h3 class="section-title">職務需求</h3>
+            <div class="job-requirements">
+              <p>工作經歷：3年以上</p>
+              <p>學歷要求：大專以上</p>
+              <p>科系要求：資訊相關</p>
+              <p>語文條件：英⽂ 700 分以上</p>
             </div>
           </section>
 
-          <!-- Right: Extra Info -->
-          
+          <!-- Right: Company & Reviews -->
+           <h2 class="section-title">公司介紹</h2>
             <div class="side-card">
-              <h3>注意事項</h3>
+              <h3>異特公司</h3>
               <p>
-                申請需檢附戶籍謄本、財力證明及在學證明，
-                請於期限內繳交，逾期恕不受理。
+                我們秉持專業、效率並重的精神，提供客戶最佳解決方案，
+                團隊重視成員的學習與成長，並鼓勵提出創新想法。
               </p>
             </div>
 
-          
-          </div>
+            <h2 class="section-title">心得</h2>
+            <div class="side-card">
+              <h3>後端工程師</h3>
+              <p>我最近加入異特公司的後端團隊，團隊氛圍很好，學習到許多新技術。</p>
+              <p class="date">2025.04.25</p>
+            </div>
+
+            <div class="side-card">
+              <h3>前端工程師 實習生</h3>
+              <p>
+                這次在異特實習的經驗讓我受益良多，從基礎開始學起，逐漸能夠獨立完成小專案。
+              </p>
+              <p class="date">2025.06.25</p>
+            </div>
+
+            <div class="side-card">
+              <h3>行銷企劃 實習生</h3>
+              <p>
+                在行銷實習期間，我不僅學到如何規劃專案，也更懂得團隊合作的重要性。
+              </p>
+              <p class="date">2025.06.30</p>
+            </div>
         </div>
       </div>
-  </template>
+  </div>
+</template>
 <style scoped>
 .bg-image {
   position: fixed;
@@ -155,22 +169,23 @@ function goBack() {
   min-height:500px;
   position: relative;
 }
-.scholarship-card {
+/* Job Info Card */
+.job-card {
   background: #fff;
-  padding: 20px;
+  padding:  0px 10px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.scholarship-title {
+.job-title {
   font-size: 22px;
   font-weight: bold;
-  color: #3b852B;
+  color: #3B852B;
 }
-.org {
+.company {
   margin: 5px 0;
   color: #555;
 }
-.amount {
+.salary {
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -178,8 +193,8 @@ function goBack() {
   font-weight: bold;
   margin: 15px 0 8px;
 }
-.scholarship-content,
-.scholarship-conditions {
+.job-content,
+.job-requirements {
   background: #eee;
   padding: 15px;
   border-radius: 8px;
@@ -190,7 +205,7 @@ function goBack() {
 /* Right Side Cards */
 .side-card {
   background: #fff;
-  padding: 15px;
+  padding:20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   margin-bottom: 20px;
