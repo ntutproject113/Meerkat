@@ -66,7 +66,7 @@ onMounted(() => {
         <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
       </div>
     -->
-      <RouterLink to="/insideRenting" class="header-border">
+      <RouterLink to="/insideScholarship" class="header-border">
         <img src="../assets/images/renting/word.png" alt="布告欄˙" class="word"/>
       </RouterLink>
     </header>

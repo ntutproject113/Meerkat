@@ -1,8 +1,22 @@
 <script setup>
 import Menu from '../components/Menu.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+function goBack() {
+  router.back() 
+}
 </script>
 <template>
-     <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
+  <div>
+    <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
+    <img
+          src="../assets/images/plan/arrow.png"
+          class="back-arrow"
+          alt="Back"
+          @click="goBack"
+      />
+  </div>
 
   <div class="layout-container">
     <Menu />
@@ -14,45 +28,69 @@ import Menu from '../components/Menu.vue'
 
     <!-- 主內容 -->
     <div class="block">
-        <div class="data-block">
-            <h1 class="title">實習資訊</h1>
-            <h2 class="rent-title">大安區精美小豪宅</h2>
-            <div>類型：獨立套房</div>
-            <div>租金：NT$12,000/月</div>  
-            <div>地址：台北市大安區和平東路三段</div>
-            <div>聯絡方式：0912-345-678</div>
-            <div>交通：捷運大安站 步行時間：4分鐘</div>
-            
+         <div class="data-block">
+          <!-- Left: Job Info -->
+          <section class="job-card">
+            <h2 class="job-title">
+              前端工程師 實習生（Vue3、Nuxt）
+            </h2>
+            <div class="company">異特資訊股份有限公司</div>
+            <div>📍 台北市中正區</div>
+            <div class="salary">💰 時薪 200 元</div>
 
+            <h3 class="section-title">職務內容</h3>
+            <div class="job-content">
+              <ol>
+                <li>設計出圖像豐富、高互動性、創意十足的前端網站，帶給用戶沉浸式的體驗。</li>
+                <li>與後端工程師合作，將前端畫面與後端資料串接，打造穩定的產品功能。</li>
+                <li>熟悉 Vue3、Nuxt 並在專案中能靈活應用，解決實際問題。</li>
+                <li>能將 3D 與互動式動畫整合到網站，提升視覺效果，讓平台內容更具吸引力。</li>
+              </ol>
+            </div>
+
+            <h3 class="section-title">職務需求</h3>
+            <div class="job-requirements">
+              <p>工作經歷：3年以上</p>
+              <p>學歷要求：大專以上</p>
+              <p>科系要求：資訊相關</p>
+              <p>語文條件：英⽂ 700 分以上</p>
+            </div>
+          </section>
+
+          <!-- Right: Company & Reviews -->
+           <h2 class="section-title">公司介紹</h2>
+            <div class="side-card">
+              <h3>異特公司</h3>
+              <p>
+                我們秉持專業、效率並重的精神，提供客戶最佳解決方案，
+                團隊重視成員的學習與成長，並鼓勵提出創新想法。
+              </p>
+            </div>
+
+            <h2 class="section-title">心得</h2>
+            <div class="side-card">
+              <h3>後端工程師</h3>
+              <p>我最近加入異特公司的後端團隊，團隊氛圍很好，學習到許多新技術。</p>
+              <p class="date">2025.04.25</p>
+            </div>
+
+            <div class="side-card">
+              <h3>前端工程師 實習生</h3>
+              <p>
+                這次在異特實習的經驗讓我受益良多，從基礎開始學起，逐漸能夠獨立完成小專案。
+              </p>
+              <p class="date">2025.06.25</p>
+            </div>
+
+            <div class="side-card">
+              <h3>行銷企劃 實習生</h3>
+              <p>
+                在行銷實習期間，我不僅學到如何規劃專案，也更懂得團隊合作的重要性。
+              </p>
+              <p class="date">2025.06.30</p>
+            </div>
         </div>
-        <div class="detail-info">
-          <h3>詳細資訊</h3>
-          <div class="row">
-            <span>開伙：</span>
-            <span>✅</span>
-          </div>
-          <div class="row">
-            <span>陽台：</span>
-            <span>✅</span>
-          </div>
-          <div class="row">
-            <span>洗衣機：</span>
-            <span>✅</span>
-          </div>
-           <div class="row">
-            <span>網路：</span>
-            <span>❎</span>
-          </div>
-          <div class="row">
-            <span>對外窗：</span>
-            <span>❎</span>
-          </div>
-           <div class="row">
-            <span>租期：</span>
-            <span>一年</span>
-          </div>
-        </div>
-    </div>
+      </div>
   </div>
 </template>
 <style scoped>
@@ -117,9 +155,9 @@ import Menu from '../components/Menu.vue'
   height: calc(100vh - 100px);       
 }
 .data-block {
-  width: 60%;   
+  width: 80%;   
   height:400px;      
-  padding-left: 5.7rem;    
+  padding-left: 6rem;    
   overflow-y: auto;        
   display: flex;
   flex-direction: column;
@@ -131,27 +169,67 @@ import Menu from '../components/Menu.vue'
   min-height:500px;
   position: relative;
 }
-.title{ 
-  font-size: 32px;
-  font-weight: bold;
-  color: #000000;
-  margin:-8px auto;
-  text-align: center;
+/* Job Info Card */
+.job-card {
+  background: #fff;
+  padding:  0px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.rent-title {
+.job-title {
+  font-size: 22px;
   font-weight: bold;
   color: #3B852B;
-  margin-bottom: 6px;
 }
-.detail-info {
-  font-size: 16px;
+.company {
+  margin: 5px 0;
+  color: #555;
 }
-.row {
-  display: flex;
-  justify-content: space-between; /* 左右分散 */
-  padding: 4px 0;
-}
-.row span:first-child {
+.salary {
   font-weight: bold;
+  margin-bottom: 15px;
+}
+.section-title {
+  font-weight: bold;
+  margin: 15px 0 8px;
+}
+.job-content,
+.job-requirements {
+  background: #eee;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Right Side Cards */
+.side-card {
+  background: #fff;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.side-card h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.date {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+}
+.back-arrow {
+  position: fixed;
+  top: 0;
+  left: 60%;
+  transform: translate(-470px, 50px); /* 1000px/2 - 25px/2，根據 .bg-image 寬度調整 */
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 10;
 }
 </style>

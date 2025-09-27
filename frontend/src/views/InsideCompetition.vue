@@ -1,9 +1,22 @@
 <script setup>
 import Menu from '../components/Menu.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+function goBack() {
+  router.back() 
+}
 </script>
 <template>
-     <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
-
+     <div>
+        <img src="../assets/images/renting/background.png" class="bg-image" alt="背景">
+        <img
+              src="../assets/images/plan/arrow.png"
+              class="back-arrow"
+              alt="Back"
+              @click="goBack"
+          />
+      </div>
   <div class="layout-container">
     <Menu />
     <header class="header">
@@ -15,45 +28,48 @@ import Menu from '../components/Menu.vue'
     <!-- 主內容 -->
     <div class="block">
         <div class="data-block">
-            <h1 class="title">競賽資訊</h1>
-            <h2 class="rent-title">大安區精美小豪宅</h2>
-            <div>類型：獨立套房</div>
-            <div>租金：NT$12,000/月</div>  
-            <div>地址：台北市大安區和平東路三段</div>
-            <div>聯絡方式：0912-345-678</div>
-            <div>交通：捷運大安站 步行時間：4分鐘</div>
-            
+      <!-- 左側：比賽資訊 -->
+      <section class="card">
+        <h2 class="contest-title">全國大專程式設計競賽</h2>
+        <p class="info"><strong>比賽類型：</strong>程式設計 / 科技競賽</p>
+        <p class="info"><strong>地區：</strong>全國</p>
+        <p class="info"><strong>報名期間：</strong>2025/10/01 ~ 2025/11/15</p>
+      
+        <u>報名連結</u>
 
+        <h3 class="section-title">比賽說明</h3>
+        <div class="box">
+          <p>
+            本競賽旨在提升大專學生程式設計能力，促進跨校交流與團隊合作，
+            初賽為線上測驗，決賽於台北舉辦，設有豐富獎金。
+          </p>
         </div>
-        <div class="detail-info">
-          <h3>詳細資訊</h3>
-          <div class="row">
-            <span>開伙：</span>
-            <span>✅</span>
-          </div>
-          <div class="row">
-            <span>陽台：</span>
-            <span>✅</span>
-          </div>
-          <div class="row">
-            <span>洗衣機：</span>
-            <span>✅</span>
-          </div>
-           <div class="row">
-            <span>網路：</span>
-            <span>❎</span>
-          </div>
-          <div class="row">
-            <span>對外窗：</span>
-            <span>❎</span>
-          </div>
-           <div class="row">
-            <span>租期：</span>
-            <span>一年</span>
-          </div>
+        <h3 class="section-title">相關簡章</h3>
+        <div class="box">
+          <u> 競賽完整簡章</u>
         </div>
+
+        <h3 class="section-title">參賽資格</h3>
+        <div class="box">
+          <p>
+            全國大專院校在學學生皆可組隊參加，每隊至多 3 人。
+          </p>
+        </div>
+      </section>
+
+      <!-- 右側：補充資訊 -->
+      <div>
+        <div class="side-card">
+          <h3>主辦單位</h3>
+          <p>教育部資訊及科技教育司</p>
+        </div>
+
+       
+      </div>
     </div>
   </div>
+  </div>
+   
 </template>
 <style scoped>
 .bg-image {
@@ -117,41 +133,70 @@ import Menu from '../components/Menu.vue'
   height: calc(100vh - 100px);       
 }
 .data-block {
-  width: 60%;   
+  width: 80%;   
   height:400px;      
-  padding-left: 5.7rem;    
+  padding-left: 6rem;    
   overflow-y: auto;        
   display: flex;
   flex-direction: column;
   gap: 1rem;  
 }
-.detail-block{
-  width: 20%;
-  padding-right: 2rem;
-  min-height:500px;
-  position: relative;
+
+.card {
+  background: #fff;
+  padding:  0px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.title{ 
-  font-size: 32px;
+.contest-title {
+  font-size: 22px;
   font-weight: bold;
-  color: #000000;
-  margin:-8px auto;
-  text-align: center;
+  color: #3b852b;
+  margin-bottom: 10px;
 }
-.rent-title {
+.info {
+  margin: 5px 0;
+}
+.section-title {
   font-weight: bold;
-  color: #3B852B;
-  margin-bottom: 6px;
+  margin: 15px 0 8px;
 }
-.detail-info {
+.box {
+  background: #eee;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 右側 */
+.side-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.side-card h3 {
+  margin: 5px 0;
   font-size: 16px;
-}
-.row {
-  display: flex;
-  justify-content: space-between; /* 左右分散 */
-  padding: 4px 0;
-}
-.row span:first-child {
   font-weight: bold;
+}
+.date {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+}
+.back-arrow {
+  position: fixed;
+  top: 0;
+  left: 60%;
+  transform: translate(-470px, 50px); /* 1000px/2 - 25px/2，根據 .bg-image 寬度調整 */
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 10;
 }
 </style>
